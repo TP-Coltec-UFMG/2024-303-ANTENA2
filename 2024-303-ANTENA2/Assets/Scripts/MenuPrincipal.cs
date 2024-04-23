@@ -11,17 +11,20 @@ public class MenuPrincipal : MonoBehaviour
     public void Jogar(){
         //SceneManager.LoadScene(diaDoJogo); *não tem jogo ainda
         Debug.Log("Abrir Jogo");
-
     }
 
     public void Configurar(){
         painelInicial.SetActive(false);
-        painelConfig.SetActive(true);
+        painelConfig.SetActive(true); 
     }
 
     public void FecharConfig(){
         painelConfig.SetActive(false);
         painelInicial.SetActive(true);
+    }
+
+    public void Creditos(){
+        Debug.Log("Joguinho feito por nós :)");
     }
     public void Sair(){
         Debug.Log("Sair do Jogo");
