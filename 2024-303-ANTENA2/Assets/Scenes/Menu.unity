@@ -360,7 +360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fbb87b24fde0574e92a6ff7c3749d9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cca4a1e6769e39f43a349b44cc14f4df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -409,8 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diaDoJogo: 
-  painelInicial: {fileID: 504292240}
-  painelConfig: {fileID: 1627805954}
+  painelInicial: {fileID: 0}
+  painelConfig: {fileID: 0}
 --- !u!4 &69960572
 Transform:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3188c2f64b8b9204fae94d4cecfc1979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicaFundo: {fileID: 561822907}
+  musicaFundo: {fileID: 0}
 --- !u!1 &102386987
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d0280b484e6479f4aa8d74af11f1ac82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 716be38ee8caa344e937d8bbec160891, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d0280b484e6479f4aa8d74af11f1ac82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 716be38ee8caa344e937d8bbec160891, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d0280b484e6479f4aa8d74af11f1ac82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 716be38ee8caa344e937d8bbec160891, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fbb87b24fde0574e92a6ff7c3749d9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cca4a1e6769e39f43a349b44cc14f4df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fbb87b24fde0574e92a6ff7c3749d9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cca4a1e6769e39f43a349b44cc14f4df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2451,7 +2451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20d92357db50554489a3130f64fa47c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb743d163fbb8c24eb85e757ec647788, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2526,7 +2526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: be58842d9360a994c9cd13b5610b7c4e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28f9b3bda59720843b4b9b0a738ec217, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46c907f2da76874448bf21bbc3679520, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6727ec2d138f78849bb26f744b851dd6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2720,7 +2720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 427aa31b919957640a0b489ff518510a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8aaad42c2cd1e0b498aa44f936948792, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3254,7 +3254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9003739c44db1ad43ba726d45da035cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edc1bf204f7232a42a418a5da9272ff2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
