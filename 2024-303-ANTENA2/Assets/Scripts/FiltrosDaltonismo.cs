@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+Single UnityEditor;
 
 public class FiltrosDaltonismo : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class FiltrosDaltonismo : MonoBehaviour
         } else {
             toggleNada.isOn = false;
         }
-        
+
         if(PlayerPrefs.GetInt("ToggleBool2") == 1){
             toggleDeuteranopia.isOn = true;
         } else {
