@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-Single UnityEditor;
+
 
 public class FiltrosDaltonismo : MonoBehaviour
 {
@@ -46,21 +46,21 @@ public class FiltrosDaltonismo : MonoBehaviour
         }
 
         if(toggleDeuteranopia.isOn == true){
-            PlayerPrefs.GetInt("ToggleBool", 1);
+            PlayerPrefs.GetInt("ToggleBool1", 1);
         } else {
-            PlayerPrefs.GetInt("ToggleBool", 0);
+            PlayerPrefs.GetInt("ToggleBool1", 0);
         }
 
         if(toggleProtanopia.isOn == true){
-            PlayerPrefs.GetInt("ToggleBool", 1);
+            PlayerPrefs.GetInt("ToggleBool2", 1);
         } else {
-            PlayerPrefs.GetInt("ToggleBool", 0);
+            PlayerPrefs.GetInt("ToggleBool2", 0);
         }
 
         if(toggleTritanopia.isOn == true){
-            PlayerPrefs.GetInt("ToggleBool", 1);
+            PlayerPrefs.GetInt("ToggleBool3", 1);
         } else {
-            PlayerPrefs.GetInt("ToggleBool", 0);
+            PlayerPrefs.GetInt("ToggleBool3", 0);
         }
     }
 }
