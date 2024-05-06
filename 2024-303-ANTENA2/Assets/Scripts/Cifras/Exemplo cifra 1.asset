@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: Exemplo cifra 1
   m_EditorClassIdentifier: 
-  tipo: 1
+  tipo: 0
   frequencia: 100.2
   mensagem: "O novo empregado j\xE1 foi alocado na Antena 2 e est\xE1 pronto para
     o servi\xE7o. O Instrutor dever\xE1 come\xE7ar a orient\xE1-lo em breve. Operadores

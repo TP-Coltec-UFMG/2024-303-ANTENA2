@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: Exemplo cifra 4
   m_EditorClassIdentifier: 
-  tipo: 4
+  tipo: 3
   frequencia: 115.7
   mensagem: "O Ex\xE9rcito come\xE7ou a fazer, desde o m\xEAs passado, incurs\xF5es
     n\xE3o autorizadas em nossos territ\xF3rios. Isso \xE9 inaceit\xE1vel! A Suprema

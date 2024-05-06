@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: Exemplo cifra 2
   m_EditorClassIdentifier: 
-  tipo: 2
+  tipo: 1
   frequencia: 105.9
   mensagem: "O operador da Antena 3 solicitou o envio de equipamento reserva, enquanto
     seus sistemas de recebimento de mensagens n\xE3o s\xE3o consertados. Ele havia

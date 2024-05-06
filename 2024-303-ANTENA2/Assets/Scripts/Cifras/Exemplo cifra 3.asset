@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: Exemplo cifra 3
   m_EditorClassIdentifier: 
-  tipo: 3
+  tipo: 2
   frequencia: 142.7
   mensagem: "Funcionamento do aeroporto provis\xF3rio da Regi\xE3o Norte provisoriamente
     interrompido devido a instabilidades no fornecimento de energia. Quedas constantes
