@@ -5,16 +5,17 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace Wilberforce
-{
-    [ExecuteInEditMode]
+// namespace Wilberforce
+
+    // [ExecuteInEditMode]
     [RequireComponent(typeof(Camera))]
 	[HelpURL("https://projectwilberforce.github.io/colorblind/")]
     [AddComponentMenu("Image Effects/Color Adjustments/Colorblind")]
     public class Colorblind : MonoBehaviour
     {
         // public Parameters  
-		public int Type = 0;
+		// public int Type = 0;
+        public static int Type = 0;
 
         // private Parameters
 		public Shader colorblindShader;
@@ -135,7 +136,7 @@ namespace Wilberforce
 		private readonly GUIContent[] typeTexts = new GUIContent[4] {
 			new GUIContent("Normal Vision"),
 			new GUIContent("Protanopia"),
-			new GUIContent("Deuteranopia"),
+			new GUIContent("'Deuteranopia'"),
 			new GUIContent("Tritanopia")
 		};
 		// label and tooltip for the dropdown menu
@@ -151,7 +152,7 @@ namespace Wilberforce
 			var colorblindScript = target as Colorblind;
 
             // bind the 'Type' parameter of the Colorblind script to dropdown in GUI
-            colorblindScript.Type = EditorGUILayout.IntPopup(typeLabelContent, colorblindScript.Type, typeTexts, typeInts);
+            Colorblind.Type = EditorGUILayout.IntPopup(typeLabelContent, Colorblind.Type, typeTexts, typeInts);
 
 			// if user made some changes (selected new value from the dropdown) we have to forward the notification
 			if (GUI.changed)
@@ -162,4 +163,3 @@ namespace Wilberforce
 		}
 	}
 	#endif
-}
