@@ -8,6 +8,7 @@ public class MenuPrincipal : MonoBehaviour
     [SerializeField] private string diaDoJogo;
     [SerializeField] private GameObject painelInicial;
     [SerializeField] private GameObject painelConfig;
+    [SerializeField] private GameObject painelCreditos;
     public void Jogar(){
         //SceneManager.LoadScene(diaDoJogo); *não tem jogo ainda
         Debug.Log("Abrir Jogo");
@@ -24,7 +25,14 @@ public class MenuPrincipal : MonoBehaviour
     }
 
     public void Creditos(){
-        Debug.Log("Joguinho feito por nós :)");
+        painelInicial.SetActive(false);
+        painelCreditos.SetActive(true);
+    }
+
+    public void FecharCreditos()
+    {
+        painelCreditos.SetActive(false);
+        painelInicial.SetActive(true);
     }
     public void Sair(){
         Debug.Log("Sair do Jogo");
