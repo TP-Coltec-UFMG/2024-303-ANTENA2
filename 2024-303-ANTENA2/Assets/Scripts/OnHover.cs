@@ -10,7 +10,7 @@ public class OnHover : MonoBehaviour
     private SpriteRenderer rend;
     private Sprite protSprite, tritSprite, deutSprite, nadaSprite;
     public Botao botoes;
-    public int filtroAtual;
+    public int filtro;
 
     void Start()
     {
@@ -37,27 +37,21 @@ public class OnHover : MonoBehaviour
         {
             rend.enabled = true;
             
-            /*switch (botoes) 
+            /*switch (filtro) 
             {
-                case Botao.Deuteranopia:
-                    rend.sprite = deutSprite;
-                    Debug.Log("Deuteranopia sprite set.");
+                case 0:
+                    Colorblind.Type = 0;
                     break;
-                case Botao.Protanopia:
-                    rend.sprite = protSprite;
-                    Debug.Log("Protanopia sprite set.");
+                case 1:
+                    Colorblind.Type = 1;
                     break;
-                case Botao.Tritanopia:
-                    rend.sprite = tritSprite;
-                    Debug.Log("Tritanopia sprite set.");
+                case 2:
+                    Colorblind.Type = 2;
                     break;
-                case Botao.SemFiltro:
-                    rend.sprite = nadaSprite;
-                    Debug.Log("SemFiltro sprite set.");
+                case 3:
+                    Colorblind.Type = 3;
                     break;
                 default:
-                    rend.sprite = nadaSprite;
-                    Debug.Log("Default sprite set.");
                     break;
             }*/
         }

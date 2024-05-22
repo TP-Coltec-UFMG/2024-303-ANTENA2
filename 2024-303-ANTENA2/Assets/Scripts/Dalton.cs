@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Dalton : MonoBehaviour
 {
-    public int filtroAtual = Colorblind.Type;
+    public int filtroAtual;
     public void protanopia() {
         Colorblind.Type = 1;
         filtroAtual = 1;
+        //botao.Select();
     }
     
     public void tritanopia() {
