@@ -12,8 +12,8 @@ O menu inicial possui quatro botões:
 <img src="configs.png">
 Opções do painel de configurações:
 - Buscando alcançar maior acessibilidade auditiva implementamos três opções de mudanças de volume:
-    * Volume geral (volume da música e efeitos sonoros juntos);
-    * Volume da música;
+    Volume geral (volume da música e efeitos sonoros juntos);
+    Volume da música;
     * Efeitos sonoros;
 - Área de dificuldade que controla a quantidade de tarefas durante o jogo
 - Para acessibilidade visual:
