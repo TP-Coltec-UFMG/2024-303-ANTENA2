@@ -1,7 +1,7 @@
 # ANTENA2
 Antena 2 é um jogo.
 ## Menu Inicial
-<img src="configs.png">
+<img src="inicioprint.png">
 O menu inicial possui quatro botões: 
 - Jogar: dá play no jogo;
 - Créditos: abre informações sobre quem fez o jogo;
@@ -9,7 +9,7 @@ O menu inicial possui quatro botões:
 - Configurações: abre o painel para configurar as opções.
 
 ## Configurações de jogo e acessibilidade
-<img >
+<img src="configs.png">
 Opções do painel de configurações:
 - Buscando alcançar maior acessibilidade auditiva implementamos três opções de mudanças de volume:
     * Volume geral (volume da música e efeitos sonoros juntos);
