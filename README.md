@@ -1,5 +1,5 @@
 # ANTENA2
-Antena 2 é um jogo.
+Antena 2 será um jogo.
 ## Menu Inicial
 <img src="inicioprint.png">
 <div>O menu inicial possui quatro botões: </div>
