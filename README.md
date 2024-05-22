@@ -11,10 +11,12 @@ Antena 2 é um jogo.
 ## Configurações de jogo e acessibilidade
 <img src="configs.png">
 <div>Opções do painel de configurações:</div>
-<p>- Buscando alcançar maior acessibilidade auditiva implementamos três opções de mudanças de volume:</p>
-    <p>Volume geral (volume da música e efeitos sonoros juntos);</p>
-    <div>Volume da música;</div>
+<div>- Buscando alcançar maior acessibilidade auditiva implementamos três opções de mudanças de volume:
+    <div>* Volume geral (volume da música e efeitos sonoros juntos);</div>
+    <div>* Volume da música;</div>
     <div>* Efeitos sonoros;</div>
-<div>- Área de dificuldade que controla a quantidade de tarefas durante o jogo</div>
+    <p></p>
+    </div>
+<p>- Área de dificuldade que controla a quantidade de tarefas durante o jogo.</p>
 <div>- Para acessibilidade visual:</div>
     <div>* Opções de filtros de daltonismo:  protanopia, deuteranopia, tritanopia e sem filtro.</div>
