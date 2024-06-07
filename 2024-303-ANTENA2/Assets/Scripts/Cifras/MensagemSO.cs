@@ -4,14 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class CifraSO : ScriptableObject
+public class MensagemSO : ScriptableObject
 {
-    public TipoCifra tipo;
+    [TextArea(1, int.MaxValue)] public string mensagem;
+    [SerializeField] private TipoCifra[] tiposDeCifra;
     public float frequencia;
-    [TextArea(1, int.MaxValue)]
-    public string mensagem;
-    [Tooltip("Em porcentagem")] [Range(0, 1)]
-    public float chanceDeAparecer;
+    public float chave;
 }
 
 [Serializable]

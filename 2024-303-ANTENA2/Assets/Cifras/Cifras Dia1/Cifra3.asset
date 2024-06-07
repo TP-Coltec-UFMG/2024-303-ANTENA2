@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: Exemplo cifra 3
+  m_Name: Cifra3
   m_EditorClassIdentifier: 
-  tipo: 2
-  frequencia: 142.7
   mensagem: "Funcionamento do aeroporto provis\xF3rio da Regi\xE3o Norte provisoriamente
     interrompido devido a instabilidades no fornecimento de energia. Quedas constantes
     est\xE3o ocorrendo, solicitamos o envio de pessoal de manuten\xE7\xE3o o quanto
     antes."
-  chanceDeAparecer: 0
+  tiposDeCifra: 
+  frequencia: 142.7
+  chave: 0
