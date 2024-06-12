@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6754945545976119364}
   - component: {fileID: 2943469482334459638}
-  - component: {fileID: 807884264388071159}
+  - component: {fileID: 4607605049623250384}
   - component: {fileID: 2607106598882998262}
   - component: {fileID: 5116295585667717275}
   m_Layer: 0
@@ -87,8 +87,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &807884264388071159
-PolygonCollider2D:
+--- !u!70 &4607605049623250384
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,7 +96,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 6558460305239066046}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 63a476ebdfcd6ef45b6d45b2bb4f8d22, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -119,35 +119,9 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 3}
-    newSize: {x: 6, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.28103828, y: -0.9136811}
-      - {x: 0.29999998, y: -0.42}
-      - {x: 0.29999998, y: 0.29999998}
-      - {x: 0.22999999, y: 0.95}
-      - {x: 0.14999999, y: 1.04}
-      - {x: -0.22, y: 1.04}
-      - {x: -0.26, y: 0.45999998}
-      - {x: -0.29999998, y: 0.35}
-      - {x: -0.29999998, y: -0.42999998}
-      - {x: -0.3123714, y: -0.45411855}
-      - {x: -0.29812032, y: -0.53358895}
-      - {x: -0.29999998, y: -0.96999997}
-      - {x: -0.29999998, y: -1.24}
-      - {x: 0.29999998, y: -1.24}
-      - {x: 0.29999998, y: -1.13}
-      - {x: 0.28766, y: -1.1247116}
-  m_UseDelaunayMesh: 0
+  m_Offset: {x: 0, y: -0.14735135}
+  m_Size: {x: 0.65522003, y: 2.534824}
+  m_Direction: 0
 --- !u!50 &2607106598882998262
 Rigidbody2D:
   serializedVersion: 4
@@ -164,7 +138,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 63a476ebdfcd6ef45b6d45b2bb4f8d22, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
