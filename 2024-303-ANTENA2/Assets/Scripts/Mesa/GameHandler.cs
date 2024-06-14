@@ -9,6 +9,8 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private int dia;
     [SerializeField] private List<DiaSO> dias;
 
+    private List<MensagemSO> _mensagensDisponiveisDia = new();
+
     private const float TimerNovaMensagemMax = 2f;
     private float _timerNovaMensagemCounter;
 
