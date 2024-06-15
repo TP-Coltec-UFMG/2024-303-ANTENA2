@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698f24a2577548747810fb545bbbfa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imgToHighlight: {fileID: 6859678789861228740}
   text: {fileID: 8606908610631468775}
 --- !u!1 &9206477087202854504
 GameObject:
@@ -324,8 +325,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284525669
+  m_fontColor: {r: 0.39607844, g: 0.6745098, b: 0.3764706, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
