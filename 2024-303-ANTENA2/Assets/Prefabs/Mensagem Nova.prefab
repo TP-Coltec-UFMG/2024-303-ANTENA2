@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.10196079, g: 0.07450981, b: 0.10980393, a: 1}
+  m_Color: {r: 0.15686275, g: 0.16470589, b: 0.21176472, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.34117648, g: 0.18823531, b: 0.227451, a: 1}
+  m_Color: {r: 0.39607844, g: 0.6745098, b: 0.3764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -215,6 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698f24a2577548747810fb545bbbfa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseOverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedHighlightColor: {r: 0, g: 1, b: 0, a: 1}
   imgToHighlight: {fileID: 6859678789861228740}
   text: {fileID: 8606908610631468775}
 --- !u!1 &9206477087202854504
@@ -274,7 +276,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6409748170669665552, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
+  - {fileID: 558772344448813986, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -319,14 +321,14 @@ MonoBehaviour:
   m_text: NOVA MENSAGEM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
-  m_sharedMaterial: {fileID: -6409748170669665552, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
+  m_sharedMaterial: {fileID: 558772344448813986, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4284525669
-  m_fontColor: {r: 0.39607844, g: 0.6745098, b: 0.3764706, a: 1}
+  m_fontColor: {r: 0.39607847, g: 0.6745098, b: 0.37647063, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
