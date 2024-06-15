@@ -19,6 +19,8 @@ public class GameHandler : MonoBehaviour
     private void Start()
     {
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
+
+        _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
     }
 
     private void Update()
@@ -41,7 +43,11 @@ public class GameHandler : MonoBehaviour
     
     private void GeraNovaMensagem()
     {
-        List<MensagemSO> mensagensDia = dias[dia - 1].mensagens;
-        _mensagensChegando.AddMensagem(mensagensDia[Random.Range(0, mensagensDia.Count)]);
+        int numMensagensDisponiveis = _mensagensDisponiveisDia.Count;
+        if (numMensagensDisponiveis <= 0) return;
+        
+        MensagemSO mensagem = _mensagensDisponiveisDia[Random.Range(0, numMensagensDisponiveis)];
+        _mensagensChegando.AddMensagem(mensagem);
+        _mensagensDisponiveisDia.Remove(mensagem);
     }
 }
