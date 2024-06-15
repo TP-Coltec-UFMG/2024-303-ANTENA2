@@ -2442,7 +2442,7 @@ Transform:
   m_GameObject: {fileID: 575187466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1499999, y: -0.375, z: 0}
+  m_LocalPosition: {x: -2.12501, y: -0.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3532,7 +3532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 512394969}
-  textoFrequencia: {fileID: 0}
+  textoFrequencia: {fileID: 2009827457}
 --- !u!4 &893012679
 Transform:
   m_ObjectHideFlags: 0
@@ -5148,7 +5148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: 10.026, y: 9.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866073034
@@ -5657,8 +5657,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
-  m_sharedMaterial: {fileID: -6409748170669665552, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6426,6 +6426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6471921348888212015, guid: 8a7664d886c8a654582f9ed22d2bc0cc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 6767059077187248, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
