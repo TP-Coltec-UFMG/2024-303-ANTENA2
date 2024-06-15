@@ -13,7 +13,7 @@ public class Frequencias : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        textoFrequencia = GameObject.FindGameObjectWithTag("TextoFrequencia").GetComponent<TextMeshPro>();
     }
 
     // Update is called once per frame
