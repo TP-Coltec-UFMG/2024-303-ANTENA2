@@ -20,7 +20,7 @@ public class Frequencias : MonoBehaviour
     void Update()
     {
         frequencia = slider.value + 100;
-        textoFrequencia.text = frequencia.ToString();
+        // textoFrequencia.text = frequencia.ToString();
         Debug.Log(frequencia);
     }
 
