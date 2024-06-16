@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class MouseInteractive : MonoBehaviour
 {
-    [SerializeField] private Color mouseOverHighlightColor = Color.white;
-    [SerializeField] private Color selectedHighlightColor = Color.green;
+    private Color mouseOverHighlightColor = new(185 / 255f, 199 / 255f, 173 / 255f);
+    private Color selectedHighlightColor = new(171 / 255f, 96 / 255f, 172 / 255f);
     
     [SerializeField] protected SpriteRenderer imgToHighlight;
     private Color _imgOriginalColor;
