@@ -38,24 +38,7 @@ public class GameHandler : MonoBehaviour
     private void Update()
     {
         NovaMensagemUpdate();
-
-        if (mensagemSelecionada is not null && mensagemSelecionada.IsSelected)
-        {
-            _editorCentral.Highlight();
-            
-            if (Input.GetMouseButtonDown(0) && _editorCentral.MouseOver()) // Botao esquerdo apertado
-            {
-                _editorCentral.AddMensagem(mensagemSelecionada.Mensagem);
-                _mensagensChegando.RemoveMensagem(mensagemSelecionada.Mensagem);
-
-                mensagemSelecionada = null;
-            }
-        }
-        else
-        {
-            _editorCentral.DesHighlight();
-            mensagemSelecionada = null;
-        }
+        EditorCentral();
     }
 
 
@@ -79,5 +62,24 @@ public class GameHandler : MonoBehaviour
         MensagemSO mensagem = _mensagensDisponiveisDia[Random.Range(0, numMensagensDisponiveis)];
         _mensagensChegando.AddMensagem(mensagem);
         _mensagensDisponiveisDia.Remove(mensagem);
+    }
+
+    private void EditorCentral()
+    {
+        if (mensagemSelecionada is not null && mensagemSelecionada.IsSelected)
+        {
+            _editorCentral.Highlight();
+
+            if (!Input.GetMouseButtonDown(0) || !_editorCentral.MouseOver() || _editorCentral.HasMensagem) return; // Botao esquerdo apertado
+            _editorCentral.AddMensagem(mensagemSelecionada.Mensagem);
+            _mensagensChegando.RemoveMensagem(mensagemSelecionada.Mensagem);
+
+            mensagemSelecionada = null;
+        }
+        else
+        {
+            _editorCentral.DesHighlight();
+            mensagemSelecionada = null;
+        }
     }
 }

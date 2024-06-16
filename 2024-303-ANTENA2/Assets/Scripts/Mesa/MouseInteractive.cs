@@ -14,7 +14,7 @@ public class MouseInteractive : MonoBehaviour
     public bool IsHighlighted { get; protected set; }
     public bool IsSelected { get; protected set; }
 
-    private void Start()
+    protected void Start()
     {
         _imgOriginalColor = imgToHighlight.color;
     }
