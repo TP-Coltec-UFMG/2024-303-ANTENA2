@@ -13,9 +13,9 @@ public class Frequencias : MonoBehaviour
     private float frequencia;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
-        Debug.Log(textoFrequencia.gameObject.name);
+        
     }
 
     // Update is called once per frame
@@ -28,8 +28,6 @@ public class Frequencias : MonoBehaviour
         string aux3 = aux2[3].ToString();
         aux2 = aux2.Remove(3);
 
-        Debug.Log(aux2);
-        Debug.Log(frequencia);
         textoFrequencia.text = aux2;
         textoFrequencia2.text = aux3;
     }

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 
 public class DialogueUI : MonoBehaviour {
-
     Image background;
     TextMeshProUGUI legendas;
 
@@ -14,7 +13,7 @@ public class DialogueUI : MonoBehaviour {
 
     void Awake() {
         background = transform.GetChild(0).GetComponent<Image>();
-        legendas = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        legendas = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     void Start() {

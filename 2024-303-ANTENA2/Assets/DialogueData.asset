@@ -16,10 +16,14 @@ MonoBehaviour:
   - name: 
     text: "Iniciando conex\xE3o com a Esta\xE7\xE3o de Transmiss\xE3o N\xB02, protocolo
       0981568-002.\r\nAntena 2, na escuta?\r\n"
+  - name: Jogador
+    text: "\u2014 sim! "
+  - name: 
+    text: "Perfeito, ent\xE3o podemos come\xE7ar."
   - name: 
     text: "Seja bem vindo ao que voc\xEA vai chamar de lar por um bom tempo..."
   - name: 
-    text: "pode n\xE3o ser o mais confort\xE1vel, muito menos o mais limpo, mas tenho
+    text: "Pode n\xE3o ser o mais confort\xE1vel, muito menos o mais limpo, mas tenho
       certeza que voc\xEA vai se acostumar rapidinho. "
   - name: 
     text: "Deve ter algumas comidas na geladeira que v\xE3o durar a semana inteira,
@@ -38,6 +42,58 @@ MonoBehaviour:
   - name: 
     text: "Ent\xE3o vamos come\xE7ar explicando as fun\xE7\xF5es dela:\r\n"
   - name: 
-    text: bem
+    text: "Do lado esquerdo da mesa temos a Caixa de Entrada, onde voc\xEA receber\xE1
+      as mensagens que voc\xEA precisa decodificar. Para visualiz\xE1-las melhor,
+      s\xF3 selecione-as e depois clique no centro da Mesa. "
   - name: 
-    text: '!'
+    text: "Voc\xEA vai perceber que as mensagens chegam no m\xEDnimo, estranhas\u2026
+      \r"
+  - name: 
+    text: "mas n\xE3o se preocupe, isso s\xE3o apenas Cifras, medidas de seguran\xE7a
+      para que caso elas sejam interceptadas por aqueles rebeldizinhos de merda. "
+  - name: 
+    text: "Desse jeito eles n\xE3o conseguiriam entender o que as mensagens dizem
+      nem se tentassem!"
+  - name: 
+    text: "Para conseguir decodific\xE1-las voc\xEA vai precisar do seu Cat\xE1logo
+      de Cifras. "
+  - name: 
+    text: "Nele, voc\xEA precisa encontrar o alfabeto que corresponde ao utilizado
+      na mensagem, e ent\xE3o, inseri-lo na Parte de Baixo da Mesa."
+  - name: 
+    text: "A\xED sua amiga vai fazer todo o trabalho por voc\xEA, e como num passe
+      de m\xE1gica a mensagem vai aparecer completamente leg\xEDvel! Incr\xEDvel
+      n\xE9?\r\n"
+  - name: 
+    text: "Depois disso voc\xEA vai precisar olhar duas coisinhas: se a frequ\xEAncia
+      para transmiss\xE3o da mensagem \xE9 v\xE1lida e se o conte\xFAdo dela \xE9
+      de teor oficial.\r\n"
+  - name: 
+    text: "Como voc\xEA j\xE1 deve saber, a faixa de transmiss\xE3o da Antena 2 \xE9
+      de xxx.x MHz at\xE9 xxx.x MHz, qualquer coisa fora desse intervalo deve ser
+      descartada"
+  - name: 
+    text: "Al\xE9m disso, se voc\xEA julgar que alguma mensagem pode ter sido enviada
+      por rebeldes, ela deve ser denunciada, e n\xF3s tomaremos as devidas provid\xEAncias."
+  - name: 
+    text: "Mas, caso esteja tudo certinho, selecione a frequ\xEAncia correta no Mostrador
+      de Frequ\xEAncias e envie-a! \r      \r\n"
+  - name: 
+    text: "\xC9 isso! Nada muito complicado, n\xE3o \xE9?\n"
+  - name: 
+    text: "Amm, eu tinha que falar mais alguma coisa? \r\n"
+  - name: 
+    text: 'Verdade quase ia me esquecendo!
+
+'
+  - name: 
+    text: "Antes de encerrar seu turno, lembre-se de desligar o maquin\xE1rio e as
+      luzes da cabana, voc\xEA n\xE3o vai querer receber uma visitinha dos animais
+      que est\xE3o passeando por a\xED.\r\n"
+  - name: 
+    text: "Bom, por hoje \xE9 isso! Em breve voc\xEA deve come\xE7ar a receber as
+      mensagens."
+  - name: 
+    text: "Boa sorte novato! Gl\xF3ria a Invicta!\r\n"
+  - name: 
+    text: "Encerrando conex\xE3o com a Esta\xE7\xE3o de Transmiss\xE3o N\xB0 2.\r\n"

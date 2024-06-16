@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class AtendeTelefone : MonoBehaviour {
-    
-    public GameObject PopUp;
     public DialogueSystem dialogueSystem;
     void Awake() {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
@@ -14,10 +12,7 @@ public class AtendeTelefone : MonoBehaviour {
 
     void Update() {
         if(Input.GetButtonDown("Fire1")) {
-            PopUp.SetActive(true);
-            
-            dialogueSystem.Next();
-            
+            dialogueSystem.Next();   
         }
     }
 }

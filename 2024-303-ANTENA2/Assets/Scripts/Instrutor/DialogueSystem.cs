@@ -15,12 +15,12 @@ public class DialogueSystem : MonoBehaviour {
     bool finalizado = false;
 
     TypeTextAnimation typeText;
-
+    DialogueUI dialogueUI;
     ESTADO estado;
 
     void Awake() {
         typeText = FindObjectOfType<TypeTextAnimation>();
-
+        dialogueUI = FindObjectOfType<DialogueUI>();
         typeText.TypeFinished = OnTypeFinish;
     }
 
@@ -42,7 +42,10 @@ public class DialogueSystem : MonoBehaviour {
     }
 
     public void Next() {
-
+        if(textoAtual == 0) {
+            dialogueUI.Enable();
+        }
+        
         typeText.fullText = dialogueData.talkScript[textoAtual++].text;
         
         if (textoAtual == dialogueData.talkScript.Count) {
@@ -62,6 +65,7 @@ public class DialogueSystem : MonoBehaviour {
                 Next();
             }
             else {
+                dialogueUI.Disable();
                 estado = ESTADO.DESATIVADO;
                 textoAtual = 0;
                 finalizado = false;
