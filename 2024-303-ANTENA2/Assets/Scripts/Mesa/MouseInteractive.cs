@@ -8,7 +8,7 @@ public class MouseInteractive : MonoBehaviour
     [SerializeField] private Color mouseOverHighlightColor = Color.white;
     [SerializeField] private Color selectedHighlightColor = Color.green;
     
-    [SerializeField] private SpriteRenderer imgToHighlight;
+    [SerializeField] protected SpriteRenderer imgToHighlight;
     private Color _imgOriginalColor;
     
     public bool IsHighlighted { get; protected set; }
