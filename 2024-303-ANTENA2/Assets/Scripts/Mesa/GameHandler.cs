@@ -6,19 +6,31 @@ using Random = UnityEngine.Random;
 
 public class GameHandler : MonoBehaviour
 {
+    public static GameHandler Instance { get; private set; }
+    
     [SerializeField] private int dia;
     [SerializeField] private List<DiaSO> dias;
 
     private List<MensagemSO> _mensagensDisponiveisDia = new();
-
+    
     private const float TimerNovaMensagemMax = 2f;
     private float _timerNovaMensagemCounter;
 
     private MensagensChegando _mensagensChegando;
+    private EditorCentral _editorCentral;
+
+    public MensagemNova mensagemSelecionada;
+
+
+    private void Awake()
+    {
+        Instance ??= this;
+    }
 
     private void Start()
     {
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
+        _editorCentral = FindObjectOfType<EditorCentral>();
 
         _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
     }
@@ -26,6 +38,16 @@ public class GameHandler : MonoBehaviour
     private void Update()
     {
         NovaMensagemUpdate();
+
+        if (mensagemSelecionada is not null && mensagemSelecionada.isSelected)
+        {
+            _editorCentral.Highlight();
+            mensagemSelecionada = null;
+        }
+        else
+        {
+            _editorCentral.DesHighlight();
+        }
     }
 
 

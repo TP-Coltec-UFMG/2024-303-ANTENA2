@@ -41,9 +41,9 @@ public class MouseInteractive : MonoBehaviour
     }
 
 
-    protected void Highlight() => imgToHighlight.color = isSelected ? selectedHighlightColor : mouseOverHighlightColor;
+    public void Highlight() => imgToHighlight.color = isSelected ? selectedHighlightColor : mouseOverHighlightColor;
 
-    protected void DesHighlight() => imgToHighlight.color = imgOriginalColor;
+    public void DesHighlight() => imgToHighlight.color = imgOriginalColor;
 
     private static bool IsInside(Vector2 check, Bounds bounds) =>
         check.x <= bounds.max.x && check.x >= bounds.min.x && check.y <= bounds.max.y && check.y >= bounds.min.y;

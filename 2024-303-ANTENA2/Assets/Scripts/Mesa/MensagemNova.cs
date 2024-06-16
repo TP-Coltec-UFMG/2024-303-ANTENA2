@@ -15,6 +15,9 @@ public class MensagemNova : MouseInteractive
     private void Update()
     {
         MouseOver();
+
+        if (isSelected)
+            GameHandler.Instance.mensagemSelecionada = this;
     }
 
     public void SetMensagem(MensagemSO mensagem)
