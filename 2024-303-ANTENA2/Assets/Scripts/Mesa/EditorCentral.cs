@@ -12,8 +12,8 @@ public class EditorCentral : MouseInteractive
 
     public void AddMensagem(MensagemSO mensagemSO)
     {
-        frequencia.text = " F: " + mensagemSO.frequencia;
-        chave.text = " C: " + mensagemSO.chave;
+        frequencia.text = "F: " + mensagemSO.frequencia;
+        chave.text = "C: " + mensagemSO.chave;
         mensagem.text = mensagemSO.mensagem;
     }
 }

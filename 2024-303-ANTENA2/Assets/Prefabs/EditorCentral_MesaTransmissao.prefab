@@ -462,7 +462,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.11, y: 0.269}
-  m_SizeDelta: {x: 0.405, y: 0.055}
+  m_SizeDelta: {x: 0.395, y: 0.055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5006959413891637473
 MeshRenderer:
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' C:'
+  m_text: 'C:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
   m_sharedMaterial: {fileID: 558772344448813986, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
@@ -1186,7 +1186,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.105, y: 0.02016}
-  m_SizeDelta: {x: 0.835, y: 0.395}
+  m_SizeDelta: {x: 0.825, y: 0.385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4276851791146988200
 MeshRenderer:
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_fontSizeMax: 1
   m_fontStyle: 0
   m_HorizontalAlignment: 8
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -1609,7 +1609,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.3203, y: 0.269}
-  m_SizeDelta: {x: 0.405, y: 0.055}
+  m_SizeDelta: {x: 0.3955, y: 0.055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8679780562471101559
 MeshRenderer:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' F: '
+  m_text: 'F: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}
   m_sharedMaterial: {fileID: 558772344448813986, guid: 3ed207f226c3deb4b9d42d661e59115d, type: 2}

@@ -19,7 +19,7 @@ public class MouseInteractive : MonoBehaviour
         _imgOriginalColor = imgToHighlight.color;
     }
 
-    protected bool MouseOver()
+    public bool MouseOver()
     {
         // mouse world position
         Vector2 mwp = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);

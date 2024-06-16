@@ -43,9 +43,12 @@ public class GameHandler : MonoBehaviour
         {
             _editorCentral.Highlight();
             
-            if (Input.GetMouseButtonDown(0)) // Botao esquerdo apertado
+            if (Input.GetMouseButtonDown(0) && _editorCentral.MouseOver()) // Botao esquerdo apertado
             {
                 _editorCentral.AddMensagem(mensagemSelecionada.Mensagem);
+                _mensagensChegando.RemoveMensagem(mensagemSelecionada.Mensagem);
+
+                mensagemSelecionada = null;
             }
         }
         else
