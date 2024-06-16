@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class EditorCentral : MouseInteractive
 {
-    [SerializeField] private TextMeshPro text;
+    [SerializeField] private TextMeshPro frequencia;
+    [SerializeField] private TextMeshPro chave;
+    [SerializeField] private TextMeshPro mensagem;
 
-    private void Update()
+
+    public void AddMensagem(MensagemSO mensagemSO)
     {
-        MouseOver();
+        frequencia.text = " F: " + mensagemSO.frequencia;
+        chave.text = " C: " + mensagemSO.chave;
+        mensagem.text = mensagemSO.mensagem;
     }
 }

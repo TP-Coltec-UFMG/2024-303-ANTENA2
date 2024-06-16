@@ -39,14 +39,19 @@ public class GameHandler : MonoBehaviour
     {
         NovaMensagemUpdate();
 
-        if (mensagemSelecionada is not null && mensagemSelecionada.isSelected)
+        if (mensagemSelecionada is not null && mensagemSelecionada.IsSelected)
         {
             _editorCentral.Highlight();
-            mensagemSelecionada = null;
+            
+            if (Input.GetMouseButtonDown(0)) // Botao esquerdo apertado
+            {
+                _editorCentral.AddMensagem(mensagemSelecionada.Mensagem);
+            }
         }
         else
         {
             _editorCentral.DesHighlight();
+            mensagemSelecionada = null;
         }
     }
 

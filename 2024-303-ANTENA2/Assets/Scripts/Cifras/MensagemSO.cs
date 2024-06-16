@@ -10,6 +10,7 @@ public class MensagemSO : ScriptableObject
     [SerializeField] private TipoCifra[] tiposDeCifra;
     public float frequencia;
     public float chave;
+    public bool ehRebelde;
 }
 
 [Serializable]

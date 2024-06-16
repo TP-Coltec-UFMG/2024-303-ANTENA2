@@ -9,42 +9,35 @@ public class MouseInteractive : MonoBehaviour
     [SerializeField] private Color selectedHighlightColor = Color.green;
     
     [SerializeField] private SpriteRenderer imgToHighlight;
-    private Color imgOriginalColor;
-    public bool isSelected { get; private set; }
+    private Color _imgOriginalColor;
+    
+    public bool IsHighlighted { get; protected set; }
+    public bool IsSelected { get; protected set; }
 
     private void Start()
     {
-        imgOriginalColor = imgToHighlight.color;
+        _imgOriginalColor = imgToHighlight.color;
     }
 
-    protected void MouseOver()
+    protected bool MouseOver()
     {
-        Vector2 mouseWorldPos = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // mouse world position
+        Vector2 mwp = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Bounds imgB = imgToHighlight.bounds;
 
-        if (isSelected) Highlight();
-        
-        if (IsInside(mouseWorldPos, imgToHighlight.bounds))
-        {
-            if (Input.GetMouseButtonDown(0)) // Botao esquerdo apertado
-                isSelected = true;
-            
-            Highlight();
-        }
-        else
-        {
-            if (Input.GetMouseButtonDown(0)) // Botao esquerdo apertado
-                isSelected = false;
-
-            if (!isSelected)
-                DesHighlight();
-        }
+        return mwp.x <= imgB.max.x && mwp.x >= imgB.min.x && mwp.y <= imgB.max.y && mwp.y >= imgB.min.y;
     }
 
 
-    public void Highlight() => imgToHighlight.color = isSelected ? selectedHighlightColor : mouseOverHighlightColor;
+    public void Highlight()
+    {
+        imgToHighlight.color = IsSelected ? selectedHighlightColor : mouseOverHighlightColor;
+        IsHighlighted = true;
+    }
 
-    public void DesHighlight() => imgToHighlight.color = imgOriginalColor;
-
-    private static bool IsInside(Vector2 check, Bounds bounds) =>
-        check.x <= bounds.max.x && check.x >= bounds.min.x && check.y <= bounds.max.y && check.y >= bounds.min.y;
+    public void DesHighlight()
+    {
+        imgToHighlight.color = _imgOriginalColor;
+        IsHighlighted = false;
+    }
 }
