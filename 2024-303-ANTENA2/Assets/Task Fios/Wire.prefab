@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62725887f174914ca2ddf27a6a4d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wireEnd: {fileID: 0}
+  wireEnd: {fileID: 1202711445026421347}
   lightOn: {fileID: 57552351219445032}
 --- !u!1 &8211295509777140697
 GameObject:
