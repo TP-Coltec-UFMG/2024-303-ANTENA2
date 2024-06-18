@@ -9,6 +9,7 @@ public class Wire : MonoBehaviour
     public GameObject lightOn;
     Vector3 startPoint;
     Vector3 startPosition;
+    
     void Start()
     {
         startPoint = transform.parent.position;
