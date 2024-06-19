@@ -66,7 +66,7 @@ public class Wire : MonoBehaviour
         transform.right = direction * transform.lossyScale.x;
 
         //update scale
-        float distance = Vector2.Distance(startPoint, newPosition);
+        float distance = Vector2.Distance(startPoint, newPosition) / 12;
         wireEnd.size = new Vector2(distance, wireEnd.size.y);
     }
 }
