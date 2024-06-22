@@ -26,7 +26,7 @@ public class MiniGames : MonoBehaviour
 
     private void Update()
     {
-        if (Main.Instance is not null && !Main.Instance.Ganhou) return;
+        if (WiresLogic.Instance is not null && !WiresLogic.Instance.Ganhou) return;
         EndFios();
     }
 
