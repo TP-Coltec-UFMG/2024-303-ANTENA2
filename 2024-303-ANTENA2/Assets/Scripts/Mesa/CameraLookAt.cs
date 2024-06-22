@@ -47,7 +47,7 @@ public class CameraLookAt : MonoBehaviour
         StartCoroutine(ChangeOrthoSize(orthoSize ?? _cvcOrthoSizeDefault));
         currentFollow = local;
 
-        _cvc.Follow = _currentFollowTransform = currentFollow switch
+        _cvc.Follow = currentFollow switch
         {
             Locais.Transmissao => transmissaoTransform,
             Locais.Maleta => maletaTransform,
