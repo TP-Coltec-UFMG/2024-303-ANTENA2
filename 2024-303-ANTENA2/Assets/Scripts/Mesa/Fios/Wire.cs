@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,7 @@ using UnityEngine;
 public class Wire : MonoBehaviour
 {
     [SerializeField] private Transform parentTransform;
+    [SerializeField] private Transform wholeWireTransform;
     public SpriteRenderer wireEnd;
     public GameObject lightOn;
     Vector3 startPoint;
@@ -19,7 +21,10 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDrag(){
         //posição do mouse
-        Vector3 newPosition = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        newPosition.x = wholeWireTransform.localScale.x > 0
+            ? Mathf.Clamp(newPosition.x, startPoint.x, float.PositiveInfinity)
+            : Mathf.Clamp(newPosition.x, float.NegativeInfinity, startPoint.x);
         newPosition.z = 0;
 
         //checar se existe conexão por perto

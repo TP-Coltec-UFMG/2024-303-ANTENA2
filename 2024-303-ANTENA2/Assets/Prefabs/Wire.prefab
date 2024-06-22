@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentTransform: {fileID: 0}
+  wholeWireTransform: {fileID: 4034469809848009597}
   wireEnd: {fileID: 1202711445026421347}
   lightOn: {fileID: 57552351219445032}
 --- !u!61 &7641215658599162092

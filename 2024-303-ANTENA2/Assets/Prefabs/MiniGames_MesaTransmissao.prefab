@@ -193,7 +193,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.2154818, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5027491074677113600}
@@ -242,7 +242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9160444140525685296
 Transform:
   m_ObjectHideFlags: 0
@@ -324,6 +324,10 @@ PrefabInstance:
     - target: {fileID: 2016455287286194461, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Name
       value: Wire Vermelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,6 +472,10 @@ PrefabInstance:
     - target: {fileID: 2016455287286194461, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Name
       value: Wire Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,6 +634,10 @@ PrefabInstance:
       value: Wire Azul
       objectReference: {fileID: 0}
     - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -776,6 +788,10 @@ PrefabInstance:
     - target: {fileID: 2016455287286194461, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Name
       value: Wire Amarelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4034469809848009597, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_LocalPosition.x
