@@ -10,7 +10,6 @@ public class CameraLookAt : MonoBehaviour
     private CinemachineVirtualCamera _cvc;
     private float _cvcOrthoSizeDefault;
     [SerializeField] private Locais currentFollow;
-    private Transform _currentFollowTransform;
     [SerializeField] private Transform transmissaoTransform;
     [SerializeField] private Transform maletaTransform;
     private const float TvMinigamesOrthoSize = .5f;
@@ -21,7 +20,6 @@ public class CameraLookAt : MonoBehaviour
     {
         _cvc = GetComponent<CinemachineVirtualCamera>();
         _cvcOrthoSizeDefault = _cvc.m_Lens.OrthographicSize;
-        _currentFollowTransform = _cvc.Follow;
     }
 
     private void Update()
