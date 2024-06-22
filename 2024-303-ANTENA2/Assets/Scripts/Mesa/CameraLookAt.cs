@@ -5,7 +5,7 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class Camera : MonoBehaviour
+public class CameraLookAt : MonoBehaviour
 {
     private CinemachineVirtualCamera _cvc;
     [SerializeField] private Locais currentFollow;
@@ -20,27 +20,38 @@ public class Camera : MonoBehaviour
 
     private void Update()
     {
+        HandleInput();
+    }
+
+    public void LookAt(Locais local)
+    {
+        currentFollow = local;
+
+        _cvc.Follow = currentFollow switch
+        {
+            Locais.Transmissao => transmissaoTransform,
+            Locais.Maleta => maletaTransform,
+            _ => _cvc.Follow
+        };
+    }
+
+    private void HandleInput()
+    {
         switch (currentFollow)
         {
             case Locais.Transmissao:
-                _cvc.Follow = transmissaoTransform;
-                
                 if (Input.GetAxisRaw("Horizontal") > 0) // Pediu pra olhar pra direita
-                    currentFollow = Locais.Maleta;
-
+                    LookAt(Locais.Maleta);
                 break;
             
             case Locais.Maleta:
-                _cvc.Follow = maletaTransform;
-
                 if (Input.GetAxisRaw("Horizontal") < 0) // Pediu pra olhar pra esquerda
-                    currentFollow = Locais.Transmissao;
-
+                    LookAt(Locais.Transmissao);
                 break;
         }
     }
 
-    private enum Locais
+    public enum Locais
     {
         Transmissao,
         Maleta
