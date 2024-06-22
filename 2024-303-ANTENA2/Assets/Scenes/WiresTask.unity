@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1315278189}
     - target: {fileID: 6855827908591312078, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -279,6 +283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1654031388}
     - target: {fileID: 5538527309360856224, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -366,6 +374,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1315278189}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -468,6 +480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1654031388}
     - target: {fileID: 5538527309360856224, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -758,6 +774,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1654031388}
     - target: {fileID: 5538527309360856224, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -843,6 +863,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1315278189}
     - target: {fileID: 6855827908591312078, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -924,6 +948,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1315278189}
     - target: {fileID: 6855827908591312078, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1001,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4473424114715295381, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
+      propertyPath: parentTransform
+      value: 
+      objectReference: {fileID: 1654031388}
     - target: {fileID: 5538527309360856224, guid: 267222711f128774da53d0bbb6000ce8, type: 3}
       propertyPath: m_Enabled
       value: 1

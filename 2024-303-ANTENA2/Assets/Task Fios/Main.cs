@@ -8,14 +8,15 @@ public class Main : MonoBehaviour
     public int objectsCount;
     //public GameObject winText;
     private int onCount = 0;
+    public bool Ganhou { get; private set; }
     private void Awake(){
         Instance = this;
     }
     public void SwitchChange(int points){
         onCount = onCount + points;
-        if(onCount == objectsCount){
-            //winText.SetActive(true);
-            Debug.Log("ganhou!!!!!!!!");
+        if(onCount == objectsCount)
+        {
+            Ganhou = true;
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Wire : MonoBehaviour
 {
+    [SerializeField] private Transform parentTransform;
     public SpriteRenderer wireEnd;
     public GameObject lightOn;
     Vector3 startPoint;
@@ -22,7 +23,7 @@ public class Wire : MonoBehaviour
         newPosition.z = 0;
 
         //checar se existe conexão por perto
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(newPosition, .2f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(newPosition, .02f);
 
         foreach(Collider2D collider in colliders){
             //olhar se não é seu prórpio collider
@@ -66,7 +67,7 @@ public class Wire : MonoBehaviour
         transform.right = direction * transform.lossyScale.x;
 
         //update scale
-        float distance = Vector2.Distance(startPoint, newPosition) / 12;
+        float distance = Vector2.Distance(startPoint, newPosition) / parentTransform.localScale.x;
         wireEnd.size = new Vector2(distance, wireEnd.size.y);
     }
 }

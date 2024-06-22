@@ -5,16 +5,23 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class CameraLookAt : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
+    public static CameraFollow Instance { get; private set; }
+    
     private CinemachineVirtualCamera _cvc;
     private float _cvcOrthoSizeDefault;
     [SerializeField] private Locais currentFollow;
     [SerializeField] private Transform transmissaoTransform;
     [SerializeField] private Transform maletaTransform;
-    private const float TvMinigamesOrthoSize = .5f;
+    public static readonly float TvMinigamesOrthoSize = .5f;
     [SerializeField] private Transform tvMinigamesTransform;
 
+
+    private void Awake()
+    {
+        Instance ??= this;
+    }
 
     private void Start()
     {
@@ -58,18 +65,6 @@ public class CameraLookAt : MonoBehaviour
 
     private void HandleInput()
     {
-        #region Teste TVminigame
-
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if (currentFollow == Locais.TVminigames)
-                Follow(Locais.Transmissao, null);
-            else
-                Follow(Locais.TVminigames, TvMinigamesOrthoSize);
-        }
-        
-        #endregion
-        
         switch (currentFollow)
         {
             case Locais.Transmissao:

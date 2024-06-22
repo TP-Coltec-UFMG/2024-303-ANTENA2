@@ -37,6 +37,16 @@ public class GameHandler : MonoBehaviour
 
     private void Update()
     {
+        #region Teste Fios
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            MiniGames.Instance.StartFios();
+        }
+        
+        #endregion
+
+        
         NovaMensagemUpdate();
         EditorCentral();
     }
