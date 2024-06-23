@@ -13,13 +13,14 @@ public class Wire : MonoBehaviour
     Vector3 startPoint;
     Vector3 startPosition;
     
-    void Start()
+    private void Start()
     {
         startPoint = transform.parent.position;
         startPosition = transform.position;
     }
 
-    private void OnMouseDrag(){
+    private void OnMouseDrag()
+    {
         //posição do mouse
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         newPosition.x = wholeWireTransform.localScale.x > 0
