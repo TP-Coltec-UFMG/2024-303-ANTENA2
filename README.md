@@ -1,5 +1,5 @@
 # ANTENA2
-Antena 2 será um jogo.
+Antena 2 é um jogo que consiste em.
 ## Menu Inicial
 <img src="inicioprint.png">
 <div>O menu inicial possui quatro botões: </div>
@@ -20,3 +20,12 @@ Antena 2 será um jogo.
 <p>- Área de dificuldade que controla a quantidade de tarefas durante o jogo.</p>
 <div>- Para acessibilidade visual:</div>
     <div>* Opções de filtros de daltonismo:  protanopia, deuteranopia, tritanopia e sem filtro.</div>
+
+## Cenas
+### Mesa de Trabalho
+<img src="mesatrans.png">
+<div><p>Essa é a mesa de transmissão, a cena principal de nosso jogo, o local que o personagem passará mais tempo, onde ele trabalha.</p></div>
+
+### Cabana
+<img src="cabana.png">
+<div><p>Essa é a casa que abriga o novo trabalhador da Antena 2, possui uma sala integrada a cozinha, um armazém, sala de transmissão e, ao subir as escadas, se acessa o dormitório e banheiro, entretanto ao subí-la, infere-se que o personagem foi dormir e o dia acaba para que outro se inicie. </p></div>
