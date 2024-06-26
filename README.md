@@ -23,7 +23,7 @@ Antena 2 é um jogo que consiste em.
 
 ## Cenas
 ### Mesa de Trabalho
-
+<img src="mesatrans.png">
 <div><p>Essa é a mesa de transmissão, a cena principal de nosso jogo, o local que o personagem passará mais tempo, onde ele trabalha.</p></div>
 
 ### Cabana
