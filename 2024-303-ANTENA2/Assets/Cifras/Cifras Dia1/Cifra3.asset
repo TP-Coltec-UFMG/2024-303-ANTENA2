@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Cifra3
   m_EditorClassIdentifier: 
   mensagem: "Funcionamento do aeroporto provis\xF3rio da Regi\xE3o Norte provisoriamente
-    interrompido devido a instabilidades no fornecimento de energia. Quedas constantes
+    interrompido devido a instabilidades no fornecimento de energia.\nQuedas constantes
     est\xE3o ocorrendo, solicitamos o envio de pessoal de manuten\xE7\xE3o o quanto
     antes."
   tiposDeCifra: 
   frequencia: 142.7
   chave: 0
+  ehRebelde: 0

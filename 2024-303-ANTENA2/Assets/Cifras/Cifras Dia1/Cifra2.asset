@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Cifra2
   m_EditorClassIdentifier: 
   mensagem: "O operador da Antena 3 solicitou o envio de equipamento reserva, enquanto
-    seus sistemas de recebimento de mensagens n\xE3o s\xE3o consertados. Ele havia
-    reportado o mal-funcionamento do equipamento anteontem. De acordo com seu relat\xF3rio,
+    seus sistemas de recebimento de mensagens n\xE3o s\xE3o consertados.\nEle havia
+    reportado o mal-funcionamento do equipamento anteontem.\nDe acordo com seu relat\xF3rio,
     suas Mensagens est\xE3o chegando com conte\xFAdo corrompido e \xE9, portanto,
-    imposs\xEDvel retransmiti-las. Assim, solicitamos o envio do equipamento reserva
+    imposs\xEDvel retransmiti-las.\nAssim, solicitamos o envio do equipamento reserva
     o quanto antes."
   tiposDeCifra: 
   frequencia: 105.9
   chave: 0
+  ehRebelde: 0

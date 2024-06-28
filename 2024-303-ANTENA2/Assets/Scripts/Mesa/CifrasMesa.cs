@@ -8,8 +8,12 @@ public class CifrasMesa : MouseInteractive
     private Vector3 _initialPos;
     private Vector3 _initialITHpos;
     private bool _isCoroutinePlaying;
+    [SerializeField] private TipoCifra tipoCifra;
 
+    public TipoCifra GetTipoCifra() => tipoCifra;
 
+    public static event Action<TipoCifra> OnClick;
+    
     private new void Start()
     {
         base.Start();
@@ -22,6 +26,11 @@ public class CifrasMesa : MouseInteractive
     {
         const float upAmount = .035f;
 
+        if (MouseOver() && Input.GetMouseButtonDown(0))
+        {
+            OnClick?.Invoke(tipoCifra);
+        }
+        
         if (MouseOver() && !_isCoroutinePlaying)
         {
             StartCoroutine(MoveVerticalSmooth(_initialPos.y + upAmount));

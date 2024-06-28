@@ -16,8 +16,9 @@ public class MensagemSO : ScriptableObject
 [Serializable]
 public enum TipoCifra
 {
-    Numero,
-    LetraAleatoria,
-    Simbolos,
-    Asteriscos
+    Azul,
+    Amarelo,
+    Vermelho,
+    Roxo,
+    Verde
 }

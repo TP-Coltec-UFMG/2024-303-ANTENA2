@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Cifra1
   m_EditorClassIdentifier: 
   mensagem: "O novo empregado j\xE1 foi alocado na Antena 2 e est\xE1 pronto para
-    o servi\xE7o. O Instrutor dever\xE1 come\xE7ar a orient\xE1-lo em breve. Operadores
+    o servi\xE7o.\nO Instrutor dever\xE1 come\xE7ar a orient\xE1-lo em breve.\nOperadores
     das Antenas 4 e 5, que estavam cuidando provisoriamente do intervalo de frequ\xEAncia
     da Antena 2, j\xE1 foram orientados que voltar\xE3o \xE0 atua\xE7\xE3o normal
-    a partir de hoje. Avaliaremos o desempenho do novo operador ao longo da semana,
+    a partir de hoje.\nAvaliaremos o desempenho do novo operador ao longo da semana,
     permane\xE7am em contato."
   tiposDeCifra: 
   frequencia: 100.2
   chave: 0
+  ehRebelde: 0

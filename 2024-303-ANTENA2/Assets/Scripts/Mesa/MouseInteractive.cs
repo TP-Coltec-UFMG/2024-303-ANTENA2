@@ -22,7 +22,7 @@ public class MouseInteractive : MonoBehaviour
     public bool MouseOver()
     {
         // mouse world position
-        Vector2 mwp = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mwp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Bounds imgB = imgToHighlight.bounds;
 
         return mwp.x <= imgB.max.x && mwp.x >= imgB.min.x && mwp.y <= imgB.max.y && mwp.y >= imgB.min.y;

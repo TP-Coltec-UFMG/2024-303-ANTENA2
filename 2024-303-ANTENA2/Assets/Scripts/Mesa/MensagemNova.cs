@@ -41,7 +41,7 @@ public class MensagemNova : MouseInteractive
     public void SetMensagem(MensagemSO mensagem)
     {
         Mensagem = mensagem;
-        text.text = mensagem.mensagem;
+        // text.text = mensagem.mensagem;
     }
 }
     
