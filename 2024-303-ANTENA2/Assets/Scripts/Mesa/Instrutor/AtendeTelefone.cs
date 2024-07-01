@@ -11,7 +11,7 @@ public class AtendeTelefone : MonoBehaviour {
     }
 
     void Update() {
-        if(Input.GetButtonDown("Fire1")) {
+        if(Input.GetKeyDown(KeyCode.Return)) {
             dialogueSystem.Next();   
         }
     }
