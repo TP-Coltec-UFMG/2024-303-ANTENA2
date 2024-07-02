@@ -614,7 +614,7 @@ MonoBehaviour:
   - {fileID: 2047918465}
   - {fileID: 1575967151}
   - {fileID: 1304670320}
-  stayLit: 0.5
+  stayLit: 0.75
   waitBetweenLights: 0.25
   activeSequence: 
 --- !u!1 &249405681
