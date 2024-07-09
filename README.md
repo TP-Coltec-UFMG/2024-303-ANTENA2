@@ -35,3 +35,7 @@
 ### Fios Desconectados
 <img src="fios.jpg">
 <div><p>Neste joguinho, o jogador deve conectar os fios de cores/símbolos iguais para que a mesa continue a funcionar e tudo siga normalmente. A utilização dos símbolos (quadrado, círculo, etc.) visa a inclusão daqueles que não conseguem distinguir as cores.</p></div>
+
+### Jogo da Memória
+<img src="memoria.jpg">
+<div><p>Use e abuse dos botões da mesa! Quando esse minijogo se inicia, a tela superior à direita brilhará uma tecla, o jogador deve clicar no botão da mesa que foi indicado na miniatura da mesa de transmissão presente na telinha. O processo se repete, fazendo com que o jogador tenha que lembrar a sequência de botões que devem ser apertados.</p></div>
