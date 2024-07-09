@@ -24,8 +24,13 @@ Antena 2 é um jogo que consiste em.
 ## Cenas
 ### Mesa de Trabalho
 <img src="mesatrans1.png">
-<div><p>Essa é a mesa de transmissão, a cena principal de nosso jogo, o local que o personagem passará mais tempo, onde ele trabalha.</p></div>
+<div><p>Essa é a mesa de transmissão, a cena principal de nosso jogo, o local que o personagem passará mais tempo, onde ele trabalha. Nela haverá a leitura e análise das mensagens, junto à decisão de aprová-las, apagá-las ou denunciá-las. Além disso, na mesa acontecerão os minijogos de fios elétricos, memória e ritmo.</p></div>
 
 ### Cabana
 <img src="cabana.png">
 <div><p>Essa é a casa que abriga o novo trabalhador da Antena 2, possui uma sala integrada a cozinha, um armazém, sala de transmissão e, ao subir as escadas, se acessa o dormitório e banheiro, entretanto ao subí-la, infere-se que o personagem foi dormir e o dia acaba para que outro se inicie. </p></div>
+
+## Minijogos
+### Fios Desconectados
+<img src="fios.jpg">
+<div><p>Neste joguinho, o jogador deve conectar os fios de cores/símbolos iguais para que a mesa continue a funcionar e tudo siga normalmente. A utilização dos símbolos (quadrado, círculo, etc.) visa a inclusão daqueles que não conseguem distinguir as cores.</p></div>
