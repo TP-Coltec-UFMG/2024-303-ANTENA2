@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class CameraFollow : MonoBehaviour
@@ -20,7 +21,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Awake()
     {
-        Instance ??= this;
+        Instance = this;
     }
 
     private void Start()

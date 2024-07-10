@@ -10,7 +10,7 @@ public class MenuPrincipal : MonoBehaviour
     [SerializeField] private GameObject painelConfig;
     [SerializeField] private GameObject painelCreditos;
     public void Jogar(){
-        //SceneManager.LoadScene(diaDoJogo); *não tem jogo ainda
+        SceneManager.LoadScene("Mesa");
         Debug.Log("Abrir Jogo");
     }
 
