@@ -63,7 +63,8 @@ public class EditorCentral : MouseInteractive
             _frases.Add(f);
         }
 
-        mensagemText.text = _frases[0].Text;
+        // mensagemText.text = _frases[0].Text;
+        mensagemText.text = _mensagemSO.mensagem;
         mensagemText.color = TipoCifraToColor(_frases[0].TipoCifra);
     }
 
