@@ -22,6 +22,7 @@ public class GameManagerMemoria : MonoBehaviour {
 
     private bool gameActive;
     private int inputInSequence;
+    private GameObject mesaVerde;
 
     void Update() {
         if(shouldBeLit) {
@@ -97,6 +98,9 @@ public class GameManagerMemoria : MonoBehaviour {
             } else {
                 Debug.Log("Wrong");
                 gameActive = false;
+                mesaVerde = GameObject.Find("Mesa_Verdinha");
+                mesaVerde.SetActive(false);
+
             }
         }
     }

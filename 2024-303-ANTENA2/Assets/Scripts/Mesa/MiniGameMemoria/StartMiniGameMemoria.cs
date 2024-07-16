@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StartMiniGameMemoria : MonoBehaviour {
-    [SerializeField] private GameManagerMemoria GM;
+
+    private GameObject telinha_minigame;
+    private GameManagerMemoria GM;
+    [SerializeField] private GameObject mesaVerdinha;
     void Awake() {
-        GM = FindObjectOfType<GameManagerMemoria>();  
+        //GM = FindObjectOfType<GameManagerMemoria>();  
     }
     void Update() {
         if(Input.GetKeyDown(KeyCode.M)) {
-            GM.StartGame();   
+            mesaVerdinha.SetActive(true);
+            if(mesaVerdinha.activeInHierarchy == true) {
+                telinha_minigame = GameObject.Find("BotoesTelinha_MiniGame");
+                GM = telinha_minigame.GetComponent<GameManagerMemoria>(); 
+                GM.StartGame();   
+            }
+            
         }
     }
 }
