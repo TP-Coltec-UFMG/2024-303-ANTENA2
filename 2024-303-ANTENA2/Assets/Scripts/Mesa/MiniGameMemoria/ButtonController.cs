@@ -16,15 +16,21 @@ public class ButtonController : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        gameManagerMemoria.botoes_telinha[buttonNumber].color = new Color(255, 255, 255, 1f);
         animator.enabled = true;
+
+        if(gameManagerMemoria.mesaVerde.activeInHierarchy == true) {
+            gameManagerMemoria.botoes_telinha[buttonNumber].color = new Color(255, 255, 255, 1f);
+        }
     }
 
     void OnMouseUp() {
-        gameManagerMemoria.botoes_telinha[buttonNumber].color = new Color(255, 255, 255, 0f);
         animator.enabled = false;
 
-        gameManagerMemoria.ButtonPressed(buttonNumber);
+        if(gameManagerMemoria.mesaVerde.activeInHierarchy == true) {
+            gameManagerMemoria.botoes_telinha[buttonNumber].color = new Color(255, 255, 255, 0f);
+
+            gameManagerMemoria.ButtonPressed(buttonNumber);
+        }
     }
 
 }

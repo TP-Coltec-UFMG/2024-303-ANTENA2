@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManagerMemoria : MonoBehaviour {
     
@@ -22,42 +23,54 @@ public class GameManagerMemoria : MonoBehaviour {
 
     private bool gameActive;
     private int inputInSequence;
-    private GameObject mesaVerde;
+    public GameObject mesaVerde;
+    public GameObject telaErro;
+
+    private int score;
+    [SerializeField] private int maxScore;
+
+    private float erroLit = 0.5F;
+    private float erroLitCounter;
 
     void Update() {
-        if(shouldBeLit) {
-            stayLitCounter -= Time.deltaTime;
+        if (score < maxScore) {
+            if(shouldBeLit) {
+                stayLitCounter -= Time.deltaTime;
 
-         if (stayLitCounter < 0) {
-            botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
-            shouldBeLit = false;
+                if (stayLitCounter < 0) {
+                    botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
+                    shouldBeLit = false;
 
-            shouldBeDark = true;
+                    shouldBeDark = true;
 
-            positionInSequence++;
-            }
-        }
-        if(shouldBeDark) {
-            waitBetweenCounter -= Time.deltaTime;
-
-            if(positionInSequence >= activeSequence.Count) {
-                shouldBeDark = false;
-                gameActive = true;
-            } else {
-                if(waitBetweenCounter < 0) {
-
-                    botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
-
-                    stayLitCounter = stayLit;
-                    shouldBeLit = true;
-                    shouldBeDark = false;
+                    positionInSequence++;
                 }
             }
+            if(shouldBeDark) {
+                waitBetweenCounter -= Time.deltaTime;
+
+                if(positionInSequence >= activeSequence.Count) {
+                    shouldBeDark = false;
+                    gameActive = true;
+                } else {
+                    if(waitBetweenCounter < 0) {
+
+                        botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
+
+                        stayLitCounter = stayLit;
+                        shouldBeLit = true;
+                        shouldBeDark = false;
+                    }
+                }
+            }
+        }
+        else {
+            GameEnd();
         }
     }
 
     public void StartGame() {
-
+        score = 0;
         activeSequence.Clear();
 
         positionInSequence = 0;
@@ -71,6 +84,9 @@ public class GameManagerMemoria : MonoBehaviour {
 
         stayLitCounter = stayLit;
         shouldBeLit = true;
+        erroLitCounter = erroLit;
+
+        telaErro.SetActive(false);
     }
 
     public void ButtonPressed(int whichButton) {
@@ -81,6 +97,9 @@ public class GameManagerMemoria : MonoBehaviour {
                 inputInSequence++;
 
                 if(inputInSequence >= activeSequence.Count) {
+
+                    score = activeSequence.Count;
+
                     positionInSequence = 0;
                     inputInSequence = 0;
 
@@ -97,11 +116,22 @@ public class GameManagerMemoria : MonoBehaviour {
                 }
             } else {
                 Debug.Log("Wrong");
-                gameActive = false;
-                mesaVerde = GameObject.Find("Mesa_Verdinha");
-                mesaVerde.SetActive(false);
+                GameEnd();
+                telaErro.SetActive(true);
 
+
+                if(telaErro.activeInHierarchy == true) {
+                    erroLitCounter -= Time.deltaTime;
+                    if (erroLitCounter < 0) {
+                        telaErro.SetActive(false);
+                    }
+                }
             }
         }
     }
+    private void GameEnd() {
+        gameActive = false;
+        mesaVerde.SetActive(false);
+    }
 }
+
