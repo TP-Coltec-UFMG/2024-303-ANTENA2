@@ -8,12 +8,21 @@ using Random = UnityEngine.Random;
 
 public class EditorCentral : MouseInteractive
 {
+    public event EventHandler<OnNewMessageEventArguments> OnNewMessage;
+    public class OnNewMessageEventArguments : EventArgs
+    {
+        public string Message;
+        public int Mode;
+    }
+
+    public event EventHandler OnRemoveMessage;
+    
+    
     public bool HasMensagem { get; private set; }
     private MensagemSO _mensagemSO;
     private List<Frase> _frases = new();
     [SerializeField] private TextMeshPro frequenciaText;
     [SerializeField] private TextMeshPro chaveText;
-    [SerializeField] private TextMeshPro mensagemText;
 
     private MensagensChegando _mensagensChegando;
 
@@ -31,7 +40,7 @@ public class EditorCentral : MouseInteractive
         {
             Highlight();
 
-            if (!MouseOver() || !Input.GetMouseButtonDown(0)) return; // Botao esquerdo apertado
+            if (!(MouseOver() && Input.GetMouseButtonDown(0))) return; // Botao esquerdo apertado
             AddMensagem(gh.mensagemSelecionada.Mensagem);
             _mensagensChegando.RemoveMensagem(gh.mensagemSelecionada.Mensagem);
 
@@ -63,9 +72,10 @@ public class EditorCentral : MouseInteractive
             _frases.Add(f);
         }
 
+        OnNewMessage?.Invoke(this, new OnNewMessageEventArguments() { Message = mensagemSO.mensagem, Mode = 1 });
         // mensagemText.text = _frases[0].Text;
-        mensagemText.text = _mensagemSO.mensagem;
-        mensagemText.color = TipoCifraToColor(_frases[0].TipoCifra);
+        // mensagemText.text = _mensagemSO.mensagem;
+        // mensagemText.color = TipoCifraToColor(_frases[0].TipoCifra);
     }
 
     public void RemoveMensagem()
@@ -74,7 +84,8 @@ public class EditorCentral : MouseInteractive
 
         HasMensagem = false;
         _mensagemSO = null;
-        frequenciaText.text = chaveText.text = mensagemText.text = "";
+        frequenciaText.text = chaveText.text = "";
+        OnRemoveMessage?.Invoke(this, null);
         _frases.Clear();
     }
 
@@ -82,7 +93,7 @@ public class EditorCentral : MouseInteractive
     {
         if (!HasMensagem) return;
 
-        mensagemText.color = _frases[0].TipoCifra == tipoCifra ? Color.black : Color.gray;
+        // mensagemText.color = _frases[0].TipoCifra == tipoCifra ? Color.black : Color.gray;
     }
     
     private static Color TipoCifraToColor(TipoCifra tipoCifra)
