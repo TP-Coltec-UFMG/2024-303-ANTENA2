@@ -72,7 +72,7 @@ public class EditorCentral : MouseInteractive
             _frases.Add(f);
         }
 
-        OnNewMessage?.Invoke(this, new OnNewMessageEventArguments() { Message = mensagemSO.mensagem, Mode = 1 });
+        OnNewMessage?.Invoke(this, new OnNewMessageEventArguments() { Message = mensagemSO.mensagem, Mode = 5 });
         // mensagemText.text = _frases[0].Text;
         // mensagemText.text = _mensagemSO.mensagem;
         // mensagemText.color = TipoCifraToColor(_frases[0].TipoCifra);

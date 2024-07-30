@@ -66,8 +66,19 @@ public class CifraLogic : MonoBehaviour
         {
             foreach (char c in text.ToLower())
             {
-                char _c = c is ' ' or '\n' ? '_' : c;
-                Sprite sprite = spriteArr.FirstOrDefault(sprite => sprite.name.EndsWith(_c));
+                string ch = c switch
+                {
+                    ' ' or '\n' => "_",
+                    ':' => "(2 pontos)",
+                    '?' => "(interrogacao)",
+                    '"' => "'",
+                    _ => c.ToString()
+                };
+
+                Sprite sprite = "abcdefghijklmnopqrstuvwxyzçáãâàéêíóõôú_".Contains(ch)
+                    ? spriteArr.FirstOrDefault(spr => spr.name == ch)
+                    : alfabetoNormal.FirstOrDefault(spr => spr.name == ch);
+                
                 if (sprite is null) continue;
 
                 Transform charTransform = Instantiate(charTemplate, transform);
