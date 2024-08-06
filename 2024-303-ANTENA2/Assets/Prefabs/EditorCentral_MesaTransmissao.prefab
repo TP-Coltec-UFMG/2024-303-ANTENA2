@@ -1275,6 +1275,7 @@ MonoBehaviour:
   editorCentral: {fileID: 8899409477686508582}
   charTemplate: {fileID: 424239311112921934}
   gridLayout: {fileID: 7593686964893006097}
+  numColsRows: {x: 16, y: 7}
   alfabetoNormal:
   - {fileID: 879766040, guid: 7758367f26b492c48b8fca1c6ac522a6, type: 3}
   - {fileID: 91519417, guid: 7758367f26b492c48b8fca1c6ac522a6, type: 3}
@@ -1532,7 +1533,6 @@ MonoBehaviour:
   - {fileID: -1348212427, guid: cf5c99782ca2e104287d7041e80a0cdd, type: 3}
   - {fileID: 64632410, guid: cf5c99782ca2e104287d7041e80a0cdd, type: 3}
   - {fileID: -24104609, guid: cf5c99782ca2e104287d7041e80a0cdd, type: 3}
-  NumColsRows: {x: 16, y: 7}
 --- !u!1 &5226937639726417659
 GameObject:
   m_ObjectHideFlags: 0

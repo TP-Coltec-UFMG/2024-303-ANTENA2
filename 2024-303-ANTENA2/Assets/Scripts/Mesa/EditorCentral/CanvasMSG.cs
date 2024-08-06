@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class CanvasMSG : MonoBehaviour
@@ -12,7 +13,7 @@ public class CanvasMSG : MonoBehaviour
     [SerializeField] private EditorCentral editorCentral;
     [SerializeField] private Transform charTemplate;
     [SerializeField] private GridLayoutGroup gridLayout;
-    [SerializeField] private Vector2Int NumColsRows;
+    [SerializeField] private Vector2Int numColsRows;
     
     [SerializeField] private Sprite[] alfabetoNormal;
     [SerializeField] private Sprite[] cifra1;
@@ -24,7 +25,7 @@ public class CanvasMSG : MonoBehaviour
     private List<Sprite>[] _pages;
     
     
-    public Vector2Int GetNumColsRows() => NumColsRows;
+    public Vector2Int GetNumColsRows() => numColsRows;
 
     private void Awake()
     {
