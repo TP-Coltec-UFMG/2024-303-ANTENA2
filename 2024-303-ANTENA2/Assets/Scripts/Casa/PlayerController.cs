@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Controla as animações de andar do personagem
+
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D player;

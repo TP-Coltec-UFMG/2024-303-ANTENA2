@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Posiciona a câmera de acordo com onde está o personagem dentro dos limites da casa
+
 public class CameraController : MonoBehaviour
 {
     public Transform target; //para colocarmos nosso personagem como alvo
@@ -23,9 +25,6 @@ public class CameraController : MonoBehaviour
 
     //gradualmente move o objeto: posição original, posição alvo, velocidade
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+        }
     }
-
-
-    }
-
 }
