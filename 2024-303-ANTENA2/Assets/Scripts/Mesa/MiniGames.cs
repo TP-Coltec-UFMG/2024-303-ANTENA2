@@ -11,6 +11,7 @@ public class MiniGames : MonoBehaviour
     [SerializeField] private Transform telinha;
     [SerializeField] private Transform telinhaToTheSide;
     [SerializeField] private GameObject fios;
+    public bool fiosOn;
 
     
     private void Awake()
@@ -35,6 +36,7 @@ public class MiniGames : MonoBehaviour
         CameraFollow.Instance.Follow(CameraFollow.Locais.TVminigames, CameraFollow.TvMinigamesOrthoSize);
         StartCoroutine(MoveTelinha(telinhaToTheSide.position.x));
         fios.SetActive(true);
+        fiosOn = true;
     }
 
     private void EndFios()
@@ -42,6 +44,7 @@ public class MiniGames : MonoBehaviour
         CameraFollow.Instance.Follow(CameraFollow.Locais.Transmissao, null);
         StartCoroutine(MoveTelinha(_telinhaInitalXPos));
         fios.SetActive(false);
+        fiosOn = false;
     }
 
     private IEnumerator MoveTelinha(float finalXPos)

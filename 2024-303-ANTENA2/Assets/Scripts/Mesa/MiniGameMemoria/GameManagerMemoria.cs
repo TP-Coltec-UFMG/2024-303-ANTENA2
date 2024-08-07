@@ -32,6 +32,8 @@ public class GameManagerMemoria : MonoBehaviour {
     private float erroLit = 0.5F;
     private float erroLitCounter;
 
+    public bool gameOn;
+
     void Update() {
         if (score < maxScore) {
             if(shouldBeLit) {
@@ -70,23 +72,30 @@ public class GameManagerMemoria : MonoBehaviour {
     }
 
     public void StartGame() {
-        score = 0;
-        activeSequence.Clear();
-
-        positionInSequence = 0;
-        inputInSequence = 0;
-
-        buttonSelect = Random.Range(0, botoes_telinha.Length);
-        
-        activeSequence.Add(buttonSelect);
-
-        botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
-
-        stayLitCounter = stayLit;
-        shouldBeLit = true;
-        erroLitCounter = erroLit;
 
         telaErro.SetActive(false);
+        if(telaErro.activeInHierarchy == false) {
+            mesaVerde.SetActive(true);
+            if(mesaVerde.activeInHierarchy == true) {
+                gameOn = true;
+                score = 0;
+                activeSequence.Clear();
+
+                positionInSequence = 0;
+                inputInSequence = 0;
+
+                buttonSelect = Random.Range(0, botoes_telinha.Length);
+                
+                activeSequence.Add(buttonSelect);
+
+                botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
+
+                stayLitCounter = stayLit;
+                shouldBeLit = true;
+                erroLitCounter = erroLit;
+                
+            }
+        }
     }
 
     public void ButtonPressed(int whichButton) {
@@ -114,24 +123,24 @@ public class GameManagerMemoria : MonoBehaviour {
 
                     gameActive = false;
                 }
-            } else {
+            }
+            else {
                 Debug.Log("Wrong");
-                GameEnd();
+                mesaVerde.SetActive(false);
                 telaErro.SetActive(true);
-
-
-                if(telaErro.activeInHierarchy == true) {
-                    erroLitCounter -= Time.deltaTime;
-                    if (erroLitCounter < 0) {
-                        telaErro.SetActive(false);
-                    }
-                }
+                StartCoroutine(WaitFor(1));
             }
         }
     }
     private void GameEnd() {
         gameActive = false;
         mesaVerde.SetActive(false);
+        gameOn = false;
+    }
+
+    private IEnumerator WaitFor(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        StartGame();
     }
 }
 
