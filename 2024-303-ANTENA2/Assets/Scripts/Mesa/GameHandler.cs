@@ -8,7 +8,9 @@ public class GameHandler : MonoBehaviour
 {
     public static GameHandler Instance { get; private set; }
     
-    [SerializeField] private int dia;
+    // PRECISA DOS DOIS DIAS POR FAVOR NAO TIRA
+    public int dia;
+    public static int Dia;
     [SerializeField] private List<DiaSO> dias;
 
     private List<MensagemSO> _mensagensDisponiveisDia = new();
@@ -24,11 +26,14 @@ public class GameHandler : MonoBehaviour
 
     private void Awake()
     {
+        Dia = Dia == 0 ? dia : Dia;
         Instance ??= this;
     }
 
     private void Start()
     {
+        dia = Dia;
+        
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
         _editorCentral = FindObjectOfType<EditorCentral>();
 

@@ -10,5 +10,6 @@ public class PassaDia : MonoBehaviour {
     void Update(){}
     void OnTriggerEnter2D (Collider2D collider) {
         SceneManager.LoadScene(cena);
+        GameHandler.Dia ++;
     }
 }
