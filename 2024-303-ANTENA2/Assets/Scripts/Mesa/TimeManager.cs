@@ -25,7 +25,9 @@ public class TimeManager : MonoBehaviour {
 
         // Às 18h acaba o turno de trabalho e troca para a cena da casa
         if (elapseTime >= (18 * 3600)){
+            //fadeIn "cabou trabaio"
             ChangeScene(1);
+            //fadeOut 'cabou trabaio"
         }
     }
 
