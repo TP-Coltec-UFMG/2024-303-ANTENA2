@@ -9,6 +9,9 @@ public class PassaDia : MonoBehaviour {
 
     void Update(){}
     void OnTriggerEnter2D (Collider2D collider) {
+        //meter fadeIn do dia
         SceneManager.LoadScene(cena);
+        //meter fadeOut do dia
+        GameHandler.Dia ++;
     }
 }
