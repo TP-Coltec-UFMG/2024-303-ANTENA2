@@ -10239,7 +10239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockText: {fileID: 2091721352}
   timeInADay: 86400
-  timeScale: 2000
+  timeScale: 0
 --- !u!1 &1982784435
 GameObject:
   m_ObjectHideFlags: 0
