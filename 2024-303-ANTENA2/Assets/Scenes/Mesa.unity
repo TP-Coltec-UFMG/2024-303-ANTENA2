@@ -10150,6 +10150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980838743}
   - component: {fileID: 1980838744}
+  - component: {fileID: 1980838745}
   m_Layer: 0
   m_Name: Relogio_MesaTransmissao
   m_TagString: Untagged
@@ -10224,6 +10225,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1980838745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980838742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a894e2d6e71e741aae12ed107e63b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clockText: {fileID: 2091721352}
+  timeInADay: 86400
+  timeScale: 120
 --- !u!1 &1982784435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11079,7 +11095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 09:30
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
   m_sharedMaterial: {fileID: 139267526837997542, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
