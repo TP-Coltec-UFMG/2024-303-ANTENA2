@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: Cifra4
+  m_Name: Cifra5
   m_EditorClassIdentifier: 
-  mensagem: "O Ex\xE9rcito come\xE7ou a fazer, desde o m\xEAs passado, incurs\xF5es
-    n\xE3o autorizadas em nossos territ\xF3rios.\nIsso \xE9 inaceit\xE1vel!\nA Suprema
-    C\xFApula n\xE3o aprovou essas opera\xE7\xF5es e mesmo assim elas est\xE3o acontecendo.\nAinda
-    vivemos e somos parte da democracia dessa Rep\xFAblica.\nPedimos respeito!"
+  mensagem: "Os encoura\xE7ados de a\xE7\xE3o m\xF3vel est\xE3o quase prontos para
+    entrar em batalha. Est\xE3o passando por uma revis\xE3o final de seguran\xE7a
+    no D.I.G., eles entrar\xE3o em contato quando estiver tudo aprovado. N\xE3o largue
+    do p\xE9 deles, insista se eles demorarem, precisamos dessas unidades o quanto
+    antes."
   tiposDeCifra: 
-  frequencia: 115.7
+  frequencia: 124.2
   chave: 0
   ehRebelde: 0

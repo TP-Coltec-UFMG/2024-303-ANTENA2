@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: Cifra4
+  m_Name: Cifra7
   m_EditorClassIdentifier: 
-  mensagem: "O Ex\xE9rcito come\xE7ou a fazer, desde o m\xEAs passado, incurs\xF5es
-    n\xE3o autorizadas em nossos territ\xF3rios.\nIsso \xE9 inaceit\xE1vel!\nA Suprema
-    C\xFApula n\xE3o aprovou essas opera\xE7\xF5es e mesmo assim elas est\xE3o acontecendo.\nAinda
-    vivemos e somos parte da democracia dessa Rep\xFAblica.\nPedimos respeito!"
+  mensagem: "Confirmando o recebimento de remessas enviadas pela Reparti\xE7\xE3o
+    de Transportes. Enviaremos a papelada adicional junto com nosso representante
+    na pr\xF3xima semana."
   tiposDeCifra: 
-  frequencia: 115.7
+  frequencia: 13.2
   chave: 0
   ehRebelde: 0
