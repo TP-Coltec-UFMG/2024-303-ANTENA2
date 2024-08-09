@@ -22,7 +22,7 @@ public class CanvasMSG : MonoBehaviour
     [SerializeField] private Sprite[] cifra4;
     [SerializeField] private Sprite[] cifra5;
 
-    private List<Sprite>[] _pages;
+    private List<MSGcharStruct>[] _pages;
     
     
     public Vector2Int GetNumColsRows() => numColsRows;
@@ -34,34 +34,71 @@ public class CanvasMSG : MonoBehaviour
 
     private void Start()
     {
-        editorCentral.OnNewMessage += (_, e) => CreatePages(e.Frases);
+        editorCentral.OnNewMessage += (_, e) =>
+        {
+            CreatePages(e.Frases); 
+            DisplayMessage();
+        };
         editorCentral.OnRemoveMessage += (_, _) =>
         {
             ClearMessage();
-            _pages = Array.Empty<List<Sprite>>();
+            _pages = Array.Empty<List<MSGcharStruct>>();
         };
         editorCentral.OnPageChange += (_, _) => DisplayMessage();
+
+        CanvasMSGChar.OnPointerAnything += (_, e) =>
+        {
+            List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
+
+            if (e.Selecting)
+            {
+                for (int i = 0; i < page.Count; i++)
+                {
+                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                    canvasMsgChar.ChangeColors(null, null);
+                    canvasMsgChar.Selected(false);
+                }
+            }
+            
+            for (int i = e.MSGcharStruct.Index; i >= 0; i--)
+            {
+                if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
+                {                                          /*+1 por causa do template*/
+                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                    canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
+                    canvasMsgChar.Selected(e.Selecting);
+                }
+                else break;
+            }
+            for (int i = e.MSGcharStruct.Index + 1; i < page.Count; i++)
+            {
+                if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
+                {                                          /*+1 por causa do template*/
+                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                    canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
+                    canvasMsgChar.Selected(e.Selecting);
+                }
+                else break;
+            }
+        };
     }
 
-    /* mode:
-     0 - alfabeto normal
-     1 - cifra1
-     2 - cifra2
-     ...
-     */
     private void CreatePages(List<Frase> frases)
     {
         int currPage = 0;
-        _pages = new List<Sprite>[editorCentral.NumOfPages];
-        _pages[0] = new List<Sprite>();
-        
+        _pages = new List<MSGcharStruct>[editorCentral.NumOfPages];
+        _pages[0] = new List<MSGcharStruct>();
+
+        int charIndexOnFrases = 0;
         foreach (Frase frase in frases)
         {
-            foreach (char c in frase.Text.ToLower())
+            for (int i = 0; i < frase.Text.Length; i++)
+            // foreach (char c in frase.Text.ToLower())
             {
+                char c = frase.Text.ToLower()[i];
                 string ch = c switch
                 {
-                    ' ' or '\n' => "_",
+                    ' ' => "_",
                     ':' => "(2 pontos)",
                     '?' => "(interrogacao)",
                     '"' => "'",
@@ -84,20 +121,23 @@ public class CanvasMSG : MonoBehaviour
                 
                 if (sprite is null) continue;
 
-                if (_pages[currPage].Count() >= GetNumColsRows().x * GetNumColsRows().y)
+                if (_pages[currPage].Count >= GetNumColsRows().x * GetNumColsRows().y)
                 {
                     currPage++;
-                    _pages[currPage] = new List<Sprite>();
+                    charIndexOnFrases = 0;
+                    _pages[currPage] = new List<MSGcharStruct>();
                 }
 
-                _pages[currPage].Add(sprite);
+                MSGcharStruct msgChar = new()
+                    { Sprite = sprite, TipoCifra = frase.TipoCifra, Index = charIndexOnFrases };
+                _pages[currPage].Add(msgChar);
+
+                charIndexOnFrases++;
                 // Transform charTransform = Instantiate(charTemplate, transform);
                 // charTransform.GetComponent<Image>().sprite = sprite;
                 // charTransform.gameObject.SetActive(true);
             }
         }
-
-        DisplayMessage();
     }
 
     private void ClearMessage()
@@ -112,10 +152,10 @@ public class CanvasMSG : MonoBehaviour
     {
         ClearMessage();
         
-        foreach (Sprite sprite in _pages[editorCentral.CurrPage - 1])
+        foreach (MSGcharStruct msgChar in _pages[editorCentral.CurrPage - 1])
         {
             Transform charTransform = Instantiate(charTemplate, transform);
-            charTransform.GetComponent<Image>().sprite = sprite;
+            charTransform.gameObject.GetComponent<CanvasMSGChar>().Setup(msgChar);
             charTransform.gameObject.SetActive(true);
         }
     }

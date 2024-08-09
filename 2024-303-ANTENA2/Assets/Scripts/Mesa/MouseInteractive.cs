@@ -19,7 +19,7 @@ public class MouseInteractive : MonoBehaviour
         _imgOriginalColor = imgToHighlight.color;
     }
 
-    public bool MouseOver()
+    protected bool MouseOver()
     {
         // mouse world position
         Vector2 mwp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -29,13 +29,13 @@ public class MouseInteractive : MonoBehaviour
     }
 
 
-    public void Highlight()
+    protected void Highlight()
     {
         imgToHighlight.color = IsSelected ? selectedHighlightColor : mouseOverHighlightColor;
         IsHighlighted = true;
     }
 
-    public void DesHighlight()
+    protected void DesHighlight()
     {
         imgToHighlight.color = _imgOriginalColor;
         IsHighlighted = false;

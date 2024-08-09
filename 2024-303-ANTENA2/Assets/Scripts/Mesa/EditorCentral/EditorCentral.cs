@@ -86,13 +86,23 @@ public class EditorCentral : MouseInteractive
         frequenciaText.text = "F: " + mensagemSO.frequencia;
         chaveText.text = "C: " + mensagemSO.chave;
 
+        string newMensagem = "";
+        foreach (char c in mensagemSO.mensagem)
+        {
+            newMensagem += c;
+            if (".!?,:;'\"".Contains(c))
+            {
+                newMensagem += '\n';
+            }
+        }
+        
         CurrPage = 1;
-        NumOfPages = 1 + mensagemSO.mensagem.Length /
+        NumOfPages = 1 + newMensagem.Length /
                      (CanvasMSG.Instance.GetNumColsRows().x * CanvasMSG.Instance.GetNumColsRows().y);
         
         paginasText.text = $"P. {CurrPage}/{NumOfPages}";
 
-        foreach (string frase in mensagemSO.mensagem.Split('\n'))
+        foreach (string frase in newMensagem.Split('\n'))
         {
             Array tiposCifra = Enum.GetValues(typeof(TipoCifra));
             Frase f = new()
@@ -102,7 +112,7 @@ public class EditorCentral : MouseInteractive
             };
             _frases.Add(f);
         }
-        
+
         OnNewMessage?.Invoke(this, new OnNewMessageEventArguments() { Frases = _frases });
         // mensagemText.text = _frases[0].Text;
         // mensagemText.text = _mensagemSO.mensagem;
@@ -126,20 +136,6 @@ public class EditorCentral : MouseInteractive
 
         // mensagemText.color = _frases[0].TipoCifra == tipoCifra ? Color.black : Color.gray;
     }
-    
-    // private static Color TipoCifraToColor(TipoCifra tipoCifra)
-    // {
-    //     return tipoCifra switch
-    //     {
-    //         TipoCifra.Azul => new Color(40 / 255f, 57 / 255f, 103 / 255f),
-    //         TipoCifra.Amarelo => new Color(151 / 255f, 109 / 255f, 62 / 255f),
-    //         TipoCifra.Vermelho => new Color(129 / 255f, 48 / 255f, 57 / 255f),
-    //         TipoCifra.Roxo => new Color(104 / 255f, 56 / 255f, 138 / 255f),
-    //         TipoCifra.Verde => new Color(52 / 255f, 116 / 255f, 82 / 255f),
-    //         _ => Color.black
-    //     };
-    // }
-    
 }
 
 public struct Frase

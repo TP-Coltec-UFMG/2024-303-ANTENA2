@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432185e22bf4d934cbcd4c7b4fdc2b6e, type: 3}
-  m_Name: Dia2
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: Cifra1 1
   m_EditorClassIdentifier: 
-  dia: 2
-  mensagens:
-  - {fileID: 11400000, guid: 542fa4b0d2f637a4d9ecfd6323eb07e6, type: 2}
-  - {fileID: 11400000, guid: 86afaded58203e24694adb85af3e0053, type: 2}
+  mensagem: 'Teste.
+
+    Aloga.
+
+    PAPAPA.'
+  tiposDeCifra: 
+  frequencia: 100.2
+  chave: 0
+  ehRebelde: 0
