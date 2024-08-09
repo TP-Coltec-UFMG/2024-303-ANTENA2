@@ -13,6 +13,7 @@ public class TimeManager : MonoBehaviour {
     [SerializeField] private float timeScale = 2.0f;
     private float elapseTime;
     private string nomeCena = "Casa";
+    private int idCena = 1;
 
     private void Start() {
         elapseTime = 9 * 3600f; //9h horário que começa o turno
@@ -26,7 +27,7 @@ public class TimeManager : MonoBehaviour {
         // Às 18h acaba o turno de trabalho e troca para a cena da casa
         if (elapseTime >= (18 * 3600)){
             //fadeIn "cabou trabaio"
-            ChangeScene(1);
+            ChangeScene(idCena);
             //fadeOut 'cabou trabaio"
         }
     }
