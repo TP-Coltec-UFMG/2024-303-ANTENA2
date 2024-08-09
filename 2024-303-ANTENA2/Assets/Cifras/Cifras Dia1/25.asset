@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 25
+  m_EditorClassIdentifier: 
+  mensagem: "Mandamos as crian\xE7as para os \\n Acampamentos mais a Oeste. \\n Estamos
+    com muito medo de uma incurs\xE3o \\n do Ex\xE9rcito agora. \\n Eles t\xEAm se
+    aproximado cada vez mais, e n\xE3o \xE9 mais \\n seguro enviar batedores furtivos.
+    \\n Nos Acampamentos Irm\xE3os, \\n todos juntos e \\n mais longe da fronteira,
+    os meninos \\n estar\xE3o seguros. Eu queria ir com eles. \\n Abandonar minha
+    menina \xE9 doloroso. \\n Quero voltar a \\n v\xEA-la um dia."
+  tiposDeCifra: 
+  frequencia: 119.6
+  chave: 0
+  ehRebelde: 1
+  ordem: 25

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 33
+  m_EditorClassIdentifier: 
+  mensagem: "Decolagem \\n autorizada \xE0s 17h02. \\n Eles partiram h\xE1 10 minutos
+    e \\n dever\xE3o estar no ponto de bombardeio \\n em no m\xE1ximo uma hora. Mantenha
+    \\n controle da posi\xE7\xE3o relativa da esquadrilha. \\n Assim que estiverem
+    sobrevoando os acampamentos, \\n cheque novamente a posi\xE7\xE3o \\n e, se estiver
+    tudo certo, \\n autorize a libera\xE7\xE3o \\n das cargas."
+  tiposDeCifra: 
+  frequencia: 136
+  chave: 0
+  ehRebelde: 0
+  ordem: 33

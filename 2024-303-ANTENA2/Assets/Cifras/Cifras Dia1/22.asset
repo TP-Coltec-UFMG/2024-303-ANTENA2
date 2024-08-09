@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 22
+  m_EditorClassIdentifier: 
+  mensagem: "Fui designado pra minha \\n primeira miss\xE3o essa noite, pai. \\n
+    Vamos bombardear acampamentos \\n dos rebeldes, v\xE1rios de n\xF3s. Nem posso
+    acreditar que vou \\n voar com o Ex\xE9rcito! \xC9 como o senhor sonhou, pai.
+    \\n Vou encher o senhor de orgulho, \\n voc\xEA vai ver! Quando voltarmos, \\n
+    mandarei outra mensagem contando como foi."
+  tiposDeCifra: 
+  frequencia: 172.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 22

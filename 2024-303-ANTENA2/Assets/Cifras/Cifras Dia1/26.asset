@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 26
+  m_EditorClassIdentifier: 
+  mensagem: "Aviso ao \\n Acampamento 17, do Norte, \\n e aos seus bravos \\n combatentes:
+    pedimos que abandonem \\n seus postos. \\n Com as novas incurs\xF5es do Ex\xE9rcito
+    \\n passando por dentro das nossas trilhas, \\n fornecer suprimentos se tornou
+    \\n arriscado demais. \\n Fujam da\xED o quanto antes, busquem abrigo no Acampamento
+    14, \\n ao Oeste. Viva a Resist\xEAncia!"
+  tiposDeCifra: 
+  frequencia: 130.4
+  chave: 0
+  ehRebelde: 1
+  ordem: 26

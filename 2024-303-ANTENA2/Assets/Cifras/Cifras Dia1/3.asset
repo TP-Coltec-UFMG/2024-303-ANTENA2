@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  mensagem: "Gazeta de Invicta - edi\xE7\xE3o do dia 12a/ff7 \\n\r\nNa noite de ontem,
+    foram condenadas as duas comitivas de rebeldes \\n capturadas nas investidas
+    da semana passada. Ap\xF3s a decis\xE3o \\n do juiz respons\xE1vel, os criminosos
+    ser\xE3o mandados para \\n \u201CO Topo do Monte\u201D, pris\xE3o de seguran\xE7a
+    m\xE1xima localizada ao Norte. \\n Alguns l\xEDderes humanit\xE1rios protestaram:
+    \u201CTodos sabem o que acontece \\n no Topo do Monte\u201D - afirmou uma aliada
+    dos terroristas - \u201CQuem vai para l\xE1 nunca mais volta!\u201D. \\n N\xE3o
+    existem evid\xEAncias de viola\xE7\xF5es \\n dos direitos humanos em quaisquer
+    instala\xE7\xF5es governamentais. Gl\xF3ria a Invicta!\r"
+  tiposDeCifra: 
+  frequencia: 112.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 3

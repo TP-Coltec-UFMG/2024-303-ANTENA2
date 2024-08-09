@@ -11,6 +11,7 @@ public class MensagemSO : ScriptableObject
     public float frequencia;
     public float chave;
     public bool ehRebelde;
+    public int ordem;
 }
 
 [Serializable]

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 21
+  m_EditorClassIdentifier: 
+  mensagem: "Mensagem motivacional do dia: \\n se hoje voc\xEA estiver se sentindo
+    para baixo, \\n lembre-se de que sempre h\xE1 \\n o amanh\xE3 para se sentir
+    para baixo tamb\xE9m. \\n N\xE3o se esque\xE7a: \\n nunca fa\xE7a hoje \\n o
+    que voc\xEA pode fazer amanh\xE3!"
+  tiposDeCifra: 
+  frequencia: 119.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 21

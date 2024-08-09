@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 23
+  m_EditorClassIdentifier: 
+  mensagem: "Fiquei sabendo \\n que o Ministro da Fazenda tem pedido por \\n uma
+    retrata\xE7\xE3o por causa dos gastos do \\n \xFAltimo m\xEAs. \\n Porque as
+    opera\xE7\xF5es t\xEAm or\xE7amento pr\xF3prio, \\n ele anda reclamando. Maldito
+    \\n empecilho numa hora como essas. \\n Precisamos coloc\xE1-lo de volta no seu
+    lugar. \\n Um qualquer, \xE9 o que ele \xE9, abertamente cr\xEDtico das For\xE7as
+    Armadas, \\n n\xE3o tem que dar opini\xE3o \\n sobre merda nenhuma. \\n Pode
+    dizer isso pra ele."
+  tiposDeCifra: 
+  frequencia: 132.4
+  chave: 0
+  ehRebelde: 0
+  ordem: 23

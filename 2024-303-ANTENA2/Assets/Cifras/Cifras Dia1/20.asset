@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 20
+  m_EditorClassIdentifier: 
+  mensagem: "O DIG entrou em contato conosco na noite passada. \\n Disseram que a
+    revis\xE3o \\n ainda vai demorar alguns dias, \\n mas provavelmente eles est\xE3o
+    \\n pedindo mais tempo do que \\n precisam. Eu \\n tenho o contato de pessoas
+    \\n l\xE1 dentro, vou tentar pression\xE1-los \\n pra ver se conseguimos adiantar
+    as coisas."
+  tiposDeCifra: 
+  frequencia: 114.6
+  chave: 0
+  ehRebelde: 0
+  ordem: 20

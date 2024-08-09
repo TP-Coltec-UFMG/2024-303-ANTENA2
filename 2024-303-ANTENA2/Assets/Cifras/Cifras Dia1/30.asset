@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 30
+  m_EditorClassIdentifier: 
+  mensagem: "Confirmando o recebimento do carregamento de \\n ogivas. Chegaram bem
+    \\n e j\xE1 est\xE3o sendo colocadas nos avi\xF5es. \\n Assim que os preparativos
+    \\n finais acabarem, mandaremos o relat\xF3rio ao \\n Comit\xEA de Guerra e \\n
+    estar\xE1 tudo pronto \\n para o in\xEDcio \\n da Opera\xE7\xE3o."
+  tiposDeCifra: 
+  frequencia: 131.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 30
