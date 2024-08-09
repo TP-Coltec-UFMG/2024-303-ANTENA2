@@ -63,7 +63,7 @@ public class CanvasMSG : MonoBehaviour
             for (int i = e.MSGcharStruct.Index; i >= 0; i--)
             {
                 if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
-                {                                          /*+1 por causa do template*/
+                {                                         /*+1 por causa do template*/
                     CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
                     canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
                     canvasMsgChar.Selected(e.Selecting);
@@ -73,7 +73,7 @@ public class CanvasMSG : MonoBehaviour
             for (int i = e.MSGcharStruct.Index + 1; i < page.Count; i++)
             {
                 if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
-                {                                          /*+1 por causa do template*/
+                {                                         /*+1 por causa do template*/
                     CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
                     canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
                     canvasMsgChar.Selected(e.Selecting);
@@ -81,8 +81,69 @@ public class CanvasMSG : MonoBehaviour
                 else break;
             }
         };
+
+        CifrasMesa.OnClick += tipoCifra =>
+        {
+            List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
+            for (int i = 0; i < page.Count; i++)
+            {
+                CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                if (!(canvasMsgChar.IsSelected && page[i].TipoCifra == tipoCifra)) continue;
+                MSGcharStruct msgCharStruct = new()
+                {
+                    Index = i,
+                    Sprite = GetSprite(page[i].Sprite.name, TipoCifra.AlfabetoNormal),
+                    TipoCifra = TipoCifra.AlfabetoNormal
+                };
+                canvasMsgChar.Setup(msgCharStruct);
+                page[i] = msgCharStruct;
+            }
+        };
     }
 
+    private Sprite GetSprite(char c, TipoCifra tipoCifra)
+    {
+        string ch = c switch
+        {
+            ' ' => "_",
+            ':' => "(2 pontos)",
+            '?' => "(interrogacao)",
+            '"' => "'",
+            _ => c.ToString()
+        };
+
+        Sprite[] spriteArr = tipoCifra switch
+        {
+            TipoCifra.Cifra1 => cifra1,
+            TipoCifra.Cifra2 => cifra2,
+            TipoCifra.Cifra3 => cifra3,
+            TipoCifra.Cifra4 => cifra4,
+            TipoCifra.Cifra5 => cifra5,
+            TipoCifra.AlfabetoNormal => alfabetoNormal
+        };
+                
+        return "abcdefghijklmnopqrstuvwxyzçáãâàéêíóõôú_".Contains(ch)
+            ? spriteArr.FirstOrDefault(spr => spr.name == ch)
+            : alfabetoNormal.FirstOrDefault(spr => spr.name == ch);
+    }
+
+    private Sprite GetSprite(string ch, TipoCifra tipoCifra)
+    {
+        Sprite[] spriteArr = tipoCifra switch
+        {
+            TipoCifra.Cifra1 => cifra1,
+            TipoCifra.Cifra2 => cifra2,
+            TipoCifra.Cifra3 => cifra3,
+            TipoCifra.Cifra4 => cifra4,
+            TipoCifra.Cifra5 => cifra5,
+            TipoCifra.AlfabetoNormal => alfabetoNormal
+        };
+                
+        return "abcdefghijklmnopqrstuvwxyzçáãâàéêíóõôú_".Contains(ch)
+            ? spriteArr.FirstOrDefault(spr => spr.name == ch)
+            : alfabetoNormal.FirstOrDefault(spr => spr.name == ch);
+    }
+    
     private void CreatePages(List<Frase> frases)
     {
         int currPage = 0;
@@ -96,28 +157,7 @@ public class CanvasMSG : MonoBehaviour
             // foreach (char c in frase.Text.ToLower())
             {
                 char c = frase.Text.ToLower()[i];
-                string ch = c switch
-                {
-                    ' ' => "_",
-                    ':' => "(2 pontos)",
-                    '?' => "(interrogacao)",
-                    '"' => "'",
-                    _ => c.ToString()
-                };
-
-                Sprite[] spriteArr = frase.TipoCifra switch
-                {
-                    TipoCifra.Cifra1 => cifra1,
-                    TipoCifra.Cifra2 => cifra2,
-                    TipoCifra.Cifra3 => cifra3,
-                    TipoCifra.Cifra4 => cifra4,
-                    TipoCifra.Cifra5 => cifra5,
-                    // _ => alfabetoNormal
-                };
-                
-                Sprite sprite = "abcdefghijklmnopqrstuvwxyzçáãâàéêíóõôú_".Contains(ch)
-                    ? spriteArr.FirstOrDefault(spr => spr.name == ch)
-                    : alfabetoNormal.FirstOrDefault(spr => spr.name == ch);
+                Sprite sprite = GetSprite(c, frase.TipoCifra);
                 
                 if (sprite is null) continue;
 

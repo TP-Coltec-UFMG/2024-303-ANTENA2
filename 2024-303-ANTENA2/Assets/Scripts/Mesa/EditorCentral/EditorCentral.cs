@@ -134,7 +134,7 @@ public class EditorCentral : MouseInteractive
     {
         if (!HasMensagem) return;
 
-        // mensagemText.color = _frases[0].TipoCifra == tipoCifra ? Color.black : Color.gray;
+        
     }
 }
 

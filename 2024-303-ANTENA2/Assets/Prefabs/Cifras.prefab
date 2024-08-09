@@ -438,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8885328539807714207, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
       propertyPath: tipoCifra
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -501,6 +501,10 @@ PrefabInstance:
     - target: {fileID: 3634641882271727423, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
       propertyPath: m_Name
       value: Cifra1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885328539807714207, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
+      propertyPath: tipoCifra
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -574,7 +578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8885328539807714207, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
       propertyPath: tipoCifra
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -648,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8885328539807714207, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
       propertyPath: tipoCifra
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -722,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8885328539807714207, guid: f4ff85e4911d5f84383eddeb07f00def, type: 3}
       propertyPath: tipoCifra
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

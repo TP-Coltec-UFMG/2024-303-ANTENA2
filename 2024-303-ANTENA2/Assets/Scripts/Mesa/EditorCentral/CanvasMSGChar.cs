@@ -13,7 +13,7 @@ public class CanvasMSGChar : MonoBehaviour
     
     private MSGcharStruct _msgChar;
     private bool _isPointerInside;
-    private bool _isSelected;
+    public bool IsSelected { get; private set; }
 
 
     public static event EventHandler<OnPointerAnythingEventArgs> OnPointerAnything;
@@ -51,7 +51,7 @@ public class CanvasMSGChar : MonoBehaviour
     {
         _isPointerInside = true;
 
-        if (_isSelected) return;
+        if (IsSelected) return;
         
         OnPointerAnything?.Invoke(this, new OnPointerAnythingEventArgs()
         {
@@ -67,7 +67,7 @@ public class CanvasMSGChar : MonoBehaviour
     {
         _isPointerInside = false;
 
-        if (_isSelected) return;
+        if (IsSelected) return;
         
         OnPointerAnything?.Invoke(this, new OnPointerAnythingEventArgs()
         {
@@ -109,11 +109,11 @@ public class CanvasMSGChar : MonoBehaviour
             TipoCifra.Cifra3 => new Color(129 * 1.8f / 255f, 048 * 1.8f / 255f, 057 * 1.8f / 255f),
             TipoCifra.Cifra4 => new Color(104 * 1.8f / 255f, 056 * 1.8f / 255f, 138 * 1.8f / 255f),
             TipoCifra.Cifra5 => new Color(052 * 1.8f / 255f, 116 * 1.8f / 255f, 082 * 1.8f / 255f),
-            // _ => new Color(040 * 1.8f / 255f, 057 * 1.8f / 255f, 103 * 1.8f / 255f)
+            TipoCifra.AlfabetoNormal => new Color(185 / 255f, 199 / 255f, 237 / 255f)
         };
     }
 
-    public void Selected(bool value) => _isSelected = value;
+    public void Selected(bool value) => IsSelected = value;
 }
 
 public struct MSGcharStruct
