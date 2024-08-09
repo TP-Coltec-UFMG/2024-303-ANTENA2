@@ -35,7 +35,6 @@ public class EditorCentral : MouseInteractive
     {
         base.Start();
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
-        CifrasMesa.OnClick += ClicouCifra;
         
         OnPageChange += (_, _) => paginasText.text = $"P. {CurrPage}/{NumOfPages}";
     }
@@ -128,13 +127,6 @@ public class EditorCentral : MouseInteractive
         frequenciaText.text = chaveText.text = paginasText.text = "";
         OnRemoveMessage?.Invoke(this, null);
         _frases.Clear();
-    }
-
-    private void ClicouCifra(TipoCifra tipoCifra)
-    {
-        if (!HasMensagem) return;
-
-        
     }
 }
 

@@ -51,7 +51,7 @@ public class CanvasMSGChar : MonoBehaviour
     {
         _isPointerInside = true;
 
-        if (IsSelected) return;
+        if (IsSelected || _msgChar.TipoCifra == TipoCifra.AlfabetoNormal) return;
         
         OnPointerAnything?.Invoke(this, new OnPointerAnythingEventArgs()
         {
@@ -67,7 +67,7 @@ public class CanvasMSGChar : MonoBehaviour
     {
         _isPointerInside = false;
 
-        if (IsSelected) return;
+        if (IsSelected || _msgChar.TipoCifra == TipoCifra.AlfabetoNormal) return;
         
         OnPointerAnything?.Invoke(this, new OnPointerAnythingEventArgs()
         {
@@ -81,6 +81,8 @@ public class CanvasMSGChar : MonoBehaviour
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (_msgChar.TipoCifra == TipoCifra.AlfabetoNormal) return;
+        
         OnPointerAnything?.Invoke(this, new OnPointerAnythingEventArgs()
         {
             MSGcharStruct = _msgChar,
