@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  mensagem: "Solicitamos novamente o envio de todos os diagramas e documenta\xE7\xE3o
+    acerca do novo prot\xF3tipo de fuzil de precis\xE3o. Se preciso, usaremos todos
+    os recursos para obt\xEA-lo j\xE1 pronto em nossas m\xE3os. "
+  tiposDeCifra: 
+  frequencia: 112.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 4

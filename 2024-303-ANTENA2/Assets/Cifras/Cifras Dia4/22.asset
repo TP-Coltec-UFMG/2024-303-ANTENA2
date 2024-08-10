@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 22
+  m_EditorClassIdentifier: 
+  mensagem: "Estamos chegando ao fim do dia, recomendo que tomem cuidado \xE0 noite
+    com rebeldes feridos. E lembrem que QUALQUER abertura para qualquer indiv\xEDduo
+    contra o ex\xE9rcito , ser\xE1 considerado trai\xE7\xE3o e teremos que tomar
+    devida provid\xEAncia."
+  tiposDeCifra: 
+  frequencia: 108.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 22

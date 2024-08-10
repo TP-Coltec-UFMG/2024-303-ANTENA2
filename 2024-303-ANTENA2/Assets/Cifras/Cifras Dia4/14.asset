@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 14
+  m_EditorClassIdentifier: 
+  mensagem: "M\xE3e, n\xE3o sei se esta mensagem chegar\xE1 at\xE9 voc\xEA. Os soldados
+    do ex\xE9rcito est\xE3o cada vez mais perto de nosso acampamento. Quero dizer
+    que a senhora sempre foi a pessoa mais importante na minha vida, e que eu sempre
+    te respeitei muito. Se eu n\xE3o mandar mais nada em alguns dias\u2026 espere
+    pelo pior. Enfim\u2026 adeus. Te amo."
+  tiposDeCifra: 
+  frequencia: 126.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 14

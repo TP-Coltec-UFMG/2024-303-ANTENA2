@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 16
+  m_EditorClassIdentifier: 
+  mensagem: "Tivemos que recuar da opera\xE7\xE3o de reconhecimento por nos deparar
+    com muitas crian\xE7as mortas na trilha. Nunca vou esquecer a vis\xE3o. Era o
+    inferno, um pesadelo. \xC9 indescrit\xEDvel\u2026 Acreditamos que tenham sido
+    mortas pelo fogo espalhado na floresta ontem a noite pelo ataque de infiltrados.
+    Encontramos uma ainda respirando, levaremos para o acampamento mais perto para
+    trat\xE1-la."
+  tiposDeCifra: 
+  frequencia: 109.9
+  chave: 0
+  ehRebelde: 0
+  ordem: 16

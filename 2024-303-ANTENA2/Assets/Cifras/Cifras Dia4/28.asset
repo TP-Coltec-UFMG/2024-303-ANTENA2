@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 28
+  m_EditorClassIdentifier: 
+  mensagem: "Por favor algu\xE9m me ajude, estou preso em uma caverna, perto do posto
+    N7O9. N\xE3o sei a minha localiza\xE7\xE3o exata, apenas corri e me escondi,
+    estou com muitas queimaduras de terceiro grau. Algu\xE9m me ajude , n\xE3o vou
+    dura\u2026\u2026. ajud.."
+  tiposDeCifra: 
+  frequencia: 106.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 28
