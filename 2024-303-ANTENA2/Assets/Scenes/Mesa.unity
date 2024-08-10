@@ -5407,8 +5407,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 88:88
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
-  m_sharedMaterial: {fileID: 139267526837997542, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8256,6 +8256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 0f8406f92945a084989dc1bdaad67405, type: 2}
+  typeText: {fileID: 1605516013}
+  dialogueUI: {fileID: 1692315139}
 --- !u!1 &1607044809
 GameObject:
   m_ObjectHideFlags: 0
@@ -8271,7 +8273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1607044810
 Transform:
   m_ObjectHideFlags: 0
@@ -8616,6 +8618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8be3589be66f0e4bb5d2c96f1e06cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 1064653431}
+  legendas: {fileID: 1839372947}
   speed: 10
 --- !u!1 &1701476055 stripped
 GameObject:
@@ -11250,8 +11254,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
-  m_sharedMaterial: {fileID: 139267526837997542, guid: 89718f74ec00ce24cbf6f74e19ebbcc6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11414,7 +11418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2129314402
 RectTransform:
   m_ObjectHideFlags: 0
