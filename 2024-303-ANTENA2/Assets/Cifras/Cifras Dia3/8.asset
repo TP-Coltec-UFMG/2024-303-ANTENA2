@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  mensagem: "Precisamos de mais m\xE9dicos para a base F12-MH9S, imediatamente. Os
+    feridos foram em n\xFAmero maior do que est\xE1vamos esperando, e os ferimentos
+    s\xE3o muito piores do que os que conseguimos tratar. Era para sermos s\xF3 um
+    hospital de campanha\u2026"
+  tiposDeCifra: 
+  frequencia: 1125.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 8

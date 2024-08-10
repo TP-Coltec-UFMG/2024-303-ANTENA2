@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: XX
+  m_EditorClassIdentifier: 
+  mensagem: "Mensagem motivacional do dia: se o seu caf\xE9 acabar, lembre-se que
+    voc\xEA j\xE1 est\xE1 ficando sedent\xE1rio e levante a merda da bunda da cadeira
+    para ir passar mais. Ele est\xE1 literalmente ali do lado, \xE9 s\xF3 botar a
+    \xE1gua pra ferver e passar, sinceramente que m\xE1 vontade. Nunca se esque\xE7a:
+    caf\xE9 \xE9 bom mas viciar seu corpo em cafe\xEDna tomando duas garrafas inteiras
+    por dia e ter uma puta dor de cabe\xE7a sempre que voc\xEA ficar sem \xE9 melhor
+    ainda!"
+  tiposDeCifra: 
+  frequencia: 119.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 0

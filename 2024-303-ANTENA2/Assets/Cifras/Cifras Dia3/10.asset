@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 10
+  m_EditorClassIdentifier: 
+  mensagem: "Nossos soldados est\xE3o exaustos, Capit\xE3o. As investidas foram bem
+    sucedidas, mas n\xF3s n\xE3o t\xEDnhamos tropas experientes, ent\xE3o os soldados
+    que enviamos eram\u2026 bem\u2026 garotos, alguns menores de idade. Eles est\xE3o
+    com medo, traumatizados alguns, viram do que se trata uma guerra. Por isso nossa
+    recomenda\xE7\xE3o de envi\xE1-los para outras bases, para trabalhos secund\xE1rios.
+    Considere, Capit\xE3o, por favor."
+  tiposDeCifra: 
+  frequencia: 107.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 10

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 12
+  m_EditorClassIdentifier: 
+  mensagem: "Posso sim, Varez, vamos nos encontrar no restaurante de sempre? Agora,
+    por favor, tenha certeza do que estamos fazendo. Se esses caras n\xE3o forem
+    confi\xE1veis, estamos ferrados. De verdade, muito ferrados. Temos que garantir
+    que isso fique em sigilo absoluto. Se vamos mesmo fazer essa campanha de contra-propaganda
+    secreta, vamos fazer direito."
+  tiposDeCifra: 
+  frequencia: 108.7
+  chave: 0
+  ehRebelde: 0
+  ordem: 12

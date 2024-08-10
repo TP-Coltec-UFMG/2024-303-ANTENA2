@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 9
+  m_EditorClassIdentifier: 
+  mensagem: "O Comit\xEA de Guerra felicita as tropas aliadas pelo sucesso nas Opera\xE7\xF5es
+    dos \xFAltimos dias. As for\xE7as terroristas rebeldes perecer\xE3o todas sob
+    o poder de Invicta. N\xE3o sobrar\xE3o testemunhas inimigas para contar as hist\xF3rias
+    de seus med\xEDocres l\xEDderes abatidos por nossa incompar\xE1vel for\xE7a.
+    Avan\xE7aremos sem piedade. Gl\xF3ria ao ex\xE9rcito, Gl\xF3ria \xE0s nossas
+    armas, Gl\xF3ria a Invicta!"
+  tiposDeCifra: 
+  frequencia: 139.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 9
