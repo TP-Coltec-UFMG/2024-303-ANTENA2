@@ -19,4 +19,10 @@ public class WiresLogic : MonoBehaviour
             Ganhou = true;
         }
     }
+
+    public void ResetScore()
+    {
+        onCount = 0;
+        Ganhou = false;
+    }
 }
