@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 30
+  m_EditorClassIdentifier: 
+  mensagem: "Vamos nessa, Varez. Os caras me pareceram bem determinados tamb\xE9m.
+    E com certeza s\xE3o simpatizantes da causa, isso importa at\xE9 mais. Vamos
+    tocar esse projeto, n\xE3o duvido nada que fique tudo pronto at\xE9 amanh\xE3
+    mesmo, com o tamanho da equipe que eles t\xEAm. J\xE1 podemos come\xE7ar a colagem
+    pela noite mesmo. Jornais e cartazes pela cidade toda! Vai ser uma manh\xE3 memor\xE1vel
+    na Capital, isso vai!"
+  tiposDeCifra: 
+  frequencia: 101.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 30

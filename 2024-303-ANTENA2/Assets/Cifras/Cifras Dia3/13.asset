@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 13
+  m_EditorClassIdentifier: 
+  mensagem: "Camaradas do Acampamento Oeste, fiquem atentos para a comitiva de suprimentos,
+    que deve chegar hoje ainda, pela tarde. Esses insumos s\xE3o essenciais para
+    n\xF3s, se quisermos sobreviver a este massacre que chamam de guerra. Cuidado
+    com poss\xEDveis armadilhas, vai dar tudo certo. Dependemos de voc\xEAs, camaradas."
+  tiposDeCifra: 
+  frequencia: 128.5
+  chave: 0
+  ehRebelde: 1
+  ordem: 13

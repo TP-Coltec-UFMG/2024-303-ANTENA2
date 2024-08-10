@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 7
+  m_EditorClassIdentifier: 
+  mensagem: "Perdemos contato com os outros acampamentos, estamos no escuro. O ataque
+    de ontem nos deixou completamente perdidos. Estamos at\xE9 agora procurando o
+    rio, mas n\xE3o sabemos onde estamos. Por favor, camaradas, se voc\xEAs estiverem
+    recebendo essa mensagem, precisamos de ajuda\u2026"
+  tiposDeCifra: 
+  frequencia: 101.1
+  chave: 0
+  ehRebelde: 1
+  ordem: 7

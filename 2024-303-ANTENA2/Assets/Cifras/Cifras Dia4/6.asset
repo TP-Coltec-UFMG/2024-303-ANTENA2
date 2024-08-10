@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  mensagem: "Ei voc\xEA! \xC9, voc\xEA mesmo! S\xF3 hoje na mercearia do ribeiro
+    voc\xEA encontra produtos com 50% de desconto! Venha e n\xE3o perca esta chance
+    insubstitu\xEDvel de promo\xE7\xE3o. Por\xE9m corra porque \xE9 s\xF3 hoje na
+    mercearia do Ribeiro, o lugar certo para o cliente esperto!"
+  tiposDeCifra: 
+  frequencia: 103.6
+  chave: 0
+  ehRebelde: 0
+  ordem: 6

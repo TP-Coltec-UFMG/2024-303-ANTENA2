@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 9
+  m_EditorClassIdentifier: 
+  mensagem: "Ganhamos o apoio por parte do Ministro da Ambienta\xE7\xE3o. Ap\xF3s
+    uma longa reuni\xE3o, conseguimos com que ele visse nosso lado. Ele nos ajudar\xE1
+    com  financiamento de armas e mantimentos para ganharmos a guerra contra o ex\xE9rcito.
+    N\xE3o desanime somente por causa de uma batalha. Viva a resist\xEAncia!"
+  tiposDeCifra: 
+  frequencia: 134.5
+  chave: 0
+  ehRebelde: 0
+  ordem: 9

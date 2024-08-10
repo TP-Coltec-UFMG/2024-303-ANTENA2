@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 20
+  m_EditorClassIdentifier: 
+  mensagem: "Pedimos que todos os cidad\xE3os permane\xE7am calmos e evitem confrontos.
+    Somente atrav\xE9s do di\xE1logo podemos encontrar uma solu\xE7\xE3o pac\xEDfica.
+    A situa\xE7\xE3o j\xE1 est\xE1 sendo analisada, e levada ao tribunal daqui a
+    algumas horas."
+  tiposDeCifra: 
+  frequencia: 103.1
+  chave: 0
+  ehRebelde: 0
+  ordem: 20

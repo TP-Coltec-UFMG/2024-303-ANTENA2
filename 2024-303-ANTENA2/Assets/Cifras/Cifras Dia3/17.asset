@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 17
+  m_EditorClassIdentifier: 
+  mensagem: "Os projetos das modifica\xE7\xF5es nos motores HL-200 j\xE1 foram enviados
+    para revis\xE3o e estamos aguardando a resposta dos engenheiros-chefe. Quando
+    tudo estiver aprovado, enviaremos o quanto antes uma c\xF3pia para o Ministro."
+  tiposDeCifra: 
+  frequencia: 197.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 17

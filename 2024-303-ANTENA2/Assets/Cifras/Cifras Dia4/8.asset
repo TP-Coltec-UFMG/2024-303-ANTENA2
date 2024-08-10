@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  mensagem: "Por ordens do general tivemos que abandonar as defesas do posto. Eu
+    n\xE3o acredito que o Marcos morreu bem na minha frente. Ele foi o \xFAnico que
+    me ajudou nesse lugar infernal. Eu n\xE3o aguento mais, por favor, eu n\xE3o
+    quero morrer, algu\xE9m me ajuda."
+  tiposDeCifra: 
+  frequencia: 106.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 8

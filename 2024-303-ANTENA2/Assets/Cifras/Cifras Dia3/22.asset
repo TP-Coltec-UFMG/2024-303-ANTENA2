@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 22
+  m_EditorClassIdentifier: 
+  mensagem: "O Presidente do DIG deve estar sob uma press\xE3o imensa. Se as coisas
+    derem errado na Opera\xE7\xE3o desta noite, s\xE3o meses de trabalho jogados
+    fora. Temos que ficar atentos e fazer nossa parte direito, se respingar na gente,
+    n\xF3s tamo ferrado. "
+  tiposDeCifra: 
+  frequencia: 129.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 22

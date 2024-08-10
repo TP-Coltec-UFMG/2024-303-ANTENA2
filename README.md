@@ -28,8 +28,8 @@
 <div><p>Essa é a mesa de transmissão, a cena principal de nosso jogo, o local que o personagem passará mais tempo, onde ele trabalha. Nela haverá a leitura e análise das mensagens, junto à decisão de aprova-las, apagá-las ou denuncia-las. Além disso, na mesa acontecerão os minijogos de fios elétricos, memória e ritmo.</p></div>
 
 ### Cabana
-<img src="cabana.png">
-<div><p>Essa é a casa que abriga o novo trabalhador da Antena 2, possui uma sala integrada a cozinha, um armazém, sala de transmissão e, ao subir as escadas, se acessa o dormitório e banheiro, entretanto ao subí-la, infere-se que o personagem foi dormir e o dia acaba para que outro se inicie. </p></div>
+<img src="casaAntena2.png">
+<div><p>Essa é a casa que abriga o novo trabalhador da Antena 2, possui uma sala integrada a cozinha, um armazém, sala de transmissão, banheiro e, ao subir as escadas, se acessa o dormitório, entretanto ao subí-la, infere-se que o personagem foi dormir e o dia acaba para que outro se inicie. </p></div>
 
 ## Minijogos
 ### Fios Desconectados

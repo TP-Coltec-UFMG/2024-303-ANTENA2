@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 16
+  m_EditorClassIdentifier: 
+  mensagem: "Pedimos para aqueles que n\xE3o est\xE3o a favor da grande rebeli\xE3o,
+    que fiquem em casa, pois as ruas est\xE3o uma loucura. Portanto, n\xE3o se arrisque,
+    fique em um lugar de seguran\xE7a."
+  tiposDeCifra: 
+  frequencia: 136.1
+  chave: 0
+  ehRebelde: 0
+  ordem: 16

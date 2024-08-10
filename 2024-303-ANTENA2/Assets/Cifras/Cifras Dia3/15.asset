@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 15
+  m_EditorClassIdentifier: 
+  mensagem: "Precisamos de engenheiros aqui na Base F3-12MK, as redes de comunica\xE7\xE3o
+    foram pras cucuias. Com as chuvas desse dia suspeitamos que tenha sido uma \xE1rvore
+    ca\xEDda a causa do problema, mas precisamos investigar. De toda forma, os engenheiros
+    que temos aqui mal sabem trocar uma l\xE2mpada, ent\xE3o por favor enviem pessoal
+    competente."
+  tiposDeCifra: 
+  frequencia: 129.6
+  chave: 0
+  ehRebelde: 0
+  ordem: 15
