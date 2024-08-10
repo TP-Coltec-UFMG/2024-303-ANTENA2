@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  mensagem: "Eu tenho certeza de que o Ministro n\xE3o est\xE1 doente porcaria nenhuma.
+    Ele est\xE1 querendo adiar as nossas negocia\xE7\xF5es isso sim. Eu acho que
+    essa frente que n\xF3s montamos n\xE3o vai dar em nada, a Rede da Verdade \xE9
+    muito poderosa para deixar espa\xE7o pra qualquer outra empresa de m\xEDdia.
+    Malditos monopolistas."
+  tiposDeCifra: 
+  frequencia: 112
+  chave: 0
+  ehRebelde: 0
+  ordem: 0

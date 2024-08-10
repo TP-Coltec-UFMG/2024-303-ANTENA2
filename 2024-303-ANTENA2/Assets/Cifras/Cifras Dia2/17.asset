@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: Cifra1 1
+  m_Name: 17
   m_EditorClassIdentifier: 
-  mensagem: 'Teste.
-
-    Aloga.
-
-    PAPAPA.'
+  mensagem: "Vai ser uma prova de fogo pra esses soldados. Lutar no meio da selva
+    \xE9 um pesadelo, me lembro da guerra de XX37. Voc\xEA tem que andar pulando
+    ra\xEDzes, valas, plantas. E quando os corpos come\xE7am a cair e o fogo se espalha\u2026
+    a\xED vira um pesadelo. Deus proteja esses jovens."
   tiposDeCifra: 
-  frequencia: 100.2
+  frequencia: 99.3
   chave: 0
   ehRebelde: 0
+  ordem: 0
