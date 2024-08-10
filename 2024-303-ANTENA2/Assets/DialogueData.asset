@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: "Iniciando conex\xE3o com a Esta\xE7\xE3o de Transmiss\xE3o N\xB02, protocolo
+    text: "Iniciando conex\xE3o com a Antena de Retransmiss\xE3o N\xB02, protocolo
       0981568-002.\r\nAntena 2, na escuta?\r\n"
   - name: Jogador
     text: "\u2014 sim! "
@@ -27,8 +27,8 @@ MonoBehaviour:
       certeza que voc\xEA vai se acostumar rapidinho. "
   - name: 
     text: "Deve ter algumas comidas na geladeira que v\xE3o durar a semana inteira,
-      nos fins de semana eu sempre fa\xE7o uma visitinha para trazer mais, ent\xE3o
-      por favor, pelo menos tome um banho!\r\n"
+      nos fins de semana eu sempre fa\xE7o uma visitinha para repor seu estoque,
+      ent\xE3o por favor, pelo menos tome um banho!\r\n"
   - name: 
     text: "Mas chega de papo furado, vamos falar sobre o que voc\xEA vai fazer a\xED:
       \r\n"
@@ -96,4 +96,4 @@ MonoBehaviour:
   - name: 
     text: "Boa sorte novato! Gl\xF3ria a Invicta!\r\n"
   - name: 
-    text: "Encerrando conex\xE3o com a Esta\xE7\xE3o de Transmiss\xE3o N\xB0 2.\r\n"
+    text: "Encerrando conex\xE3o com a Antena de Retransmiss\xE3o N\xB0 2.\r\n"
