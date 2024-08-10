@@ -1034,8 +1034,8 @@ GameObject:
   - component: {fileID: 2006046809}
   - component: {fileID: 2006046813}
   - component: {fileID: 2006046817}
+  - component: {fileID: 2006046818}
   - component: {fileID: 2006046814}
-  - component: {fileID: 2006046816}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1159,21 +1159,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 1862909225}
   fullText: 
---- !u!114 &2006046816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006046808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3bd53d039bab1449376a2519d528a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 2006046817}
-  Skip: {fileID: 1640567823}
-  Next: {fileID: 1156902424}
 --- !u!114 &2006046817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,6 +1174,21 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 944b1ffca397f2c4eb15e1c4616fd607, type: 2}
   typeText: {fileID: 2006046814}
   dialogueUI: {fileID: 2006046813}
+--- !u!114 &2006046818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006046808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3bd53d039bab1449376a2519d528a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 2006046817}
+  Skip: {fileID: 1640567823}
+  Next: {fileID: 1156902424}
 --- !u!1 &2044829659
 GameObject:
   m_ObjectHideFlags: 0

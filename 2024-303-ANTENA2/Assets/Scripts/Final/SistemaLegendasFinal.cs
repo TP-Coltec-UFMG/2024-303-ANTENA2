@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SistemaLegendas : MonoBehaviour {
+public class SistemaLegendasFinal : MonoBehaviour {
     
     [SerializeField] private DialogueData dialogueData;
     int textoAtual = 0;
@@ -12,6 +12,8 @@ public class SistemaLegendas : MonoBehaviour {
     [SerializeField] private TypeTextAnimation typeText;
     [SerializeField] private DialogueUI dialogueUI;
     ESTADO estado;
+
+    [SerializeField] private GameObject creditos;
 
     void Awake() {
         typeText = FindObjectOfType<TypeTextAnimation>();
@@ -64,8 +66,8 @@ public class SistemaLegendas : MonoBehaviour {
             estado = ESTADO.DESATIVADO;
             textoAtual = 0;
             finalizado = true;
-            SceneManager.LoadScene("Casa");
-            Debug.Log("Abrir Jogo");
+            creditos.SetActive(true);
+            Debug.Log("Creditos");
         }
         
     }
@@ -82,7 +84,7 @@ public class SistemaLegendas : MonoBehaviour {
     estado = ESTADO.DESATIVADO;
     textoAtual = 0;
     finalizado = true;
-    SceneManager.LoadScene("Casa");
-    Debug.Log("Abrir Jogo");
+    creditos.SetActive(true);
+    Debug.Log("Creditos");
     }
 }
