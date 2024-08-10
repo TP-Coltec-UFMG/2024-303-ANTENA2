@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  mensagem: "Sei que \xE9 um ato suicida e sei que n\xE3o ir\xE1 me restar muito
+    tempo depois dessa mensagem, mas eu tenho que falar. Sou um trabalhador da Antena
+    3, e n\xE3o estou aguentando toda essa situa\xE7\xE3o."
+  tiposDeCifra: 
+  frequencia: 104.3
+  chave: 0
+  ehRebelde: 0
+  ordem: 1
