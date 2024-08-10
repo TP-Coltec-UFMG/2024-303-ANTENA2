@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 32
   m_EditorClassIdentifier: 
-  mensagem: "Autorizado \\n o in\xEDcio da Opera\xE7\xE3o Despertador \\n pelo Comit\xEA
+  mensagem: "Autorizado o in\xEDcio da Opera\xE7\xE3o Despertador pelo Comit\xEA
     de Guerra."
   tiposDeCifra: 
   frequencia: 134.8

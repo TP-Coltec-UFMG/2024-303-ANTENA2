@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  mensagem: "Os encoura\xE7ados de a\xE7\xE3o m\xF3vel est\xE3o \\n quase prontos
-    para entrar em batalha. \\n Est\xE3o passando por uma revis\xE3o final de seguran\xE7a
-    no D.I.G., \\n eles entrar\xE3o em contato quando estiver tudo aprovado. \\n
-    N\xE3o largue do p\xE9 deles, \\n insista se eles \\n demorarem, precisamos dessas
-    unidades o quanto antes."
+  mensagem: "Os encoura\xE7ados de a\xE7\xE3o m\xF3vel est\xE3o quase prontos para
+    entrar em batalha. Est\xE3o passando por uma revis\xE3o final de seguran\xE7a
+    no D.I.G., eles entrar\xE3o em contato quando estiver tudo aprovado. N\xE3o largue
+    do p\xE9 deles, insista se eles demorarem, precisamos dessas unidades o quanto
+    antes."
   tiposDeCifra: 
   frequencia: 124.2
   chave: 0

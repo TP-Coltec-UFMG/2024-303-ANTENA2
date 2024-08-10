@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  mensagem: "Funcionamento do aeroporto provis\xF3rio da \\n Regi\xE3o Norte provisoriamente
-    interrompido devido a instabilidades \\n no fornecimento de energia. \\n Quedas
-    constantes est\xE3o ocorrendo, \\n solicitamos o envio de pessoal de manuten\xE7\xE3o
-    o quanto antes."
+  mensagem: "Funcionamento do aeroporto provis\xF3rio da Regi\xE3o Norte provisoriamente
+    interrompido devido a instabilidades no fornecimento de energia. Quedas constantes
+    est\xE3o ocorrendo, solicitamos o envio de pessoal de manuten\xE7\xE3o o quanto
+    antes."
   tiposDeCifra: 
   frequencia: 142.7
   chave: 0

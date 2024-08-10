@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
-  mensagem: "O S\xE1tiro - Sua mensagem \\n di\xE1ria com trocadilhos e piadas! \\n\r\nE
-    a piada dessa \\n semana \xE9: \\n Voc\xEA sabe por que a \xE1gua foi presa?
-    \\n Porque ela matou a sede! \\n \"risadas e aplausos!\" \\n Lembre-se: continue
-    sorrindo \\n sempre e at\xE9 amanh\xE3!."
+  mensagem: "LaBroma - Sua mensagem di\xE1ria com trocadilhos e piadas!\r\nE a piada
+    dessa semana \xE9: Voc\xEA sabe por que a \xE1gua foi presa? Porque ela matou
+    a sede! \"risadas e aplausos!\" Lembre-se: continue sorrindo sempre e at\xE9
+    amanh\xE3!."
   tiposDeCifra: 
   frequencia: 101.3
   chave: 0

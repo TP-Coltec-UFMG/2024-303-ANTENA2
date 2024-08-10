@@ -12,6 +12,7 @@ public class Wire : MonoBehaviour
     public GameObject lightOn;
     Vector3 startPoint;
     Vector3 startPosition;
+    private bool _canDrag = true;
     
     private void Start()
     {
@@ -21,6 +22,8 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (!_canDrag) return;
+        
         //posição do mouse
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         newPosition.x = wholeWireTransform.localScale.x > 0
@@ -56,11 +59,11 @@ public class Wire : MonoBehaviour
         //ligar as luzinhas
         lightOn.SetActive(true);
 
-        //destruir o script
-        Destroy(this);
+        _canDrag = false;
     }
     private void OnMouseUp(){
         //reset wire position
+        if (lightOn.activeSelf) return;
         UpdateWire(startPosition);
     }
 
@@ -75,5 +78,12 @@ public class Wire : MonoBehaviour
         //update scale
         float distance = Vector2.Distance(startPoint, newPosition) / parentTransform.localScale.x;
         wireEnd.size = new Vector2(distance, wireEnd.size.y);
+    }
+
+    public void Reset()
+    {
+        UpdateWire(startPosition);
+        lightOn.SetActive(false);
+        _canDrag = true;
     }
 }

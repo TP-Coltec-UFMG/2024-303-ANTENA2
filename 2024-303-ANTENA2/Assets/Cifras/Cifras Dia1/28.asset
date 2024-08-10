@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 28
   m_EditorClassIdentifier: 
-  mensagem: "O Comit\xEA de Guerra determinou \\n o adiamento do hor\xE1rio da \\n
-    Opera\xE7\xE3o Despertador para \xE0s 17h, \\n por causa dos atrasos \\n sofridos
-    pelo comboio que transportava \\n as ogivas ofensivas. O carregamento \\n chegar\xE1
-    em aproximadamente meia hora \\n e ser\xE1 imediatamente preparado \\n nos avi\xF5es.
-    \\n Aguarde novas ordens."
+  mensagem: "O Comit\xEA de Guerra determinou o adiamento do hor\xE1rio da Opera\xE7\xE3o
+    Despertador para \xE0s 17h, por causa dos atrasos sofridos pelo comboio que transportava
+    as ogivas ofensivas. O carregamento chegar\xE1 em aproximadamente meia hora e
+    ser\xE1 imediatamente preparado nos avi\xF5es. Aguarde novas ordens."
   tiposDeCifra: 
   frequencia: 137.9
   chave: 0

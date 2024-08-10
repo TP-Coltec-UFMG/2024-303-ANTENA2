@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 18
   m_EditorClassIdentifier: 
-  mensagem: "Os avi\xF5es foram separados em 5 equipes de 6, \\n v\xE3o voar em posi\xE7\xE3o
-    triangular \\n e liberar as ogivas em intervalos \\n de mais ou menos 2 segundos,
-    \\n partindo da \\n equipe de retaguarda. \\n Os bombardeios v\xE3o ser no que
-    a gente acha ser \\n uma \u201Clinha\u201D de \\n acampamentos rebeldes. Eles
-    v\xE3o \\n ver o que \xE9 bom pra tosse. \\n V\xE3o virar churrasquinho, eles
-    e aquela maldita floresta."
+  mensagem: "Os avi\xF5es foram separados em 5 equipes de 6, v\xE3o voar em posi\xE7\xE3o
+    triangular e liberar as ogivas em intervalos de mais ou menos 2 segundos, partindo
+    da equipe de retaguarda. Os bombardeios v\xE3o ser no que a gente acha ser uma
+    \u201Clinha\u201D de acampamentos rebeldes. Eles v\xE3o ver o que \xE9 bom pra
+    tosse. V\xE3o virar churrasquinho, eles e aquela maldita floresta."
   tiposDeCifra: 
   frequencia: 197.4
   chave: 0

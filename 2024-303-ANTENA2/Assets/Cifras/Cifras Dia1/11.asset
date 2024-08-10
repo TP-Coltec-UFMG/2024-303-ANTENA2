@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 11
   m_EditorClassIdentifier: 
-  mensagem: "Confirmando \\n o recebimento de remessas enviadas pela Reparti\xE7\xE3o
-    de Transportes. \\n Enviaremos a papelada adicional \\n junto com nosso \\n representante
+  mensagem: "Confirmando o recebimento de remessas enviadas pela Reparti\xE7\xE3o
+    de Transportes. Enviaremos a papelada adicional junto com nosso representante
     na pr\xF3xima semana."
   tiposDeCifra: 
   frequencia: 13.2

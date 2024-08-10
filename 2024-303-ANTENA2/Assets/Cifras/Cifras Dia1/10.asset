@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  mensagem: "Dois modelos monomotores destacados para a \\n Opera\xE7\xE3o Despertador
-    apresentaram problemas leves na \\n inspe\xE7\xE3o final. \\n Foram rapidamente
-    corrigidos e j\xE1 est\xE3o \\n aguardando as ordens no Galp\xE3o 3B. \\n Enviaremos
-    o relat\xF3rio \\n de inspe\xE7\xE3o ao final do dia."
+  mensagem: "Dois modelos monomotores destacados para a Opera\xE7\xE3o Despertador
+    apresentaram problemas leves na inspe\xE7\xE3o final. Foram rapidamente corrigidos
+    e j\xE1 est\xE3o aguardando as ordens no Galp\xE3o 3B. Enviaremos o relat\xF3rio
+    de inspe\xE7\xE3o ao final do dia."
   tiposDeCifra: 
   frequencia: 133.2
   chave: 0

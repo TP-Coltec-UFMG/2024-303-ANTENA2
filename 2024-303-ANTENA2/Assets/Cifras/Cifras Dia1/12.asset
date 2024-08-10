@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 12
   m_EditorClassIdentifier: 
-  mensagem: "\xC0 Divis\xE3o de Muni\xE7\xE3o e Ogivas, \\n o carregamento da \\n
-    Opera\xE7\xE3o Despertador j\xE1 est\xE1 1 hora atrasado. \\n N\xF3s precisamos
-    de informa\xE7\xF5es sobre da posi\xE7\xE3o deles e sobre quando chegar\xE3o.
-    \\n Vamos aguardar por mais \\n 1 hora alguma resposta. Se nada \\n for informado,
-    vamos reportar uma emerg\xEAncia ao \\n Comando, pois ser\xE1 uma poss\xEDvel
-    \\n situa\xE7\xE3o de roubo de carga ultra-sens\xEDvel."
+  mensagem: "\xC0 Divis\xE3o de Muni\xE7\xE3o e Ogivas, o carregamento da Opera\xE7\xE3o
+    Despertador j\xE1 est\xE1 1 hora atrasado. N\xF3s precisamos de informa\xE7\xF5es
+    sobre da posi\xE7\xE3o deles e sobre quando chegar\xE3o. Vamos aguardar por mais
+    1 hora alguma resposta. Se nada for informado, vamos reportar uma emerg\xEAncia
+    ao Comando, pois ser\xE1 uma poss\xEDvel situa\xE7\xE3o de roubo de carga ultra-sens\xEDvel."
   tiposDeCifra: 
   frequencia: 131.3
   chave: 0

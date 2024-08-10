@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 26
   m_EditorClassIdentifier: 
-  mensagem: "Aviso ao \\n Acampamento 17, do Norte, \\n e aos seus bravos \\n combatentes:
-    pedimos que abandonem \\n seus postos. \\n Com as novas incurs\xF5es do Ex\xE9rcito
-    \\n passando por dentro das nossas trilhas, \\n fornecer suprimentos se tornou
-    \\n arriscado demais. \\n Fujam da\xED o quanto antes, busquem abrigo no Acampamento
-    14, \\n ao Oeste. Viva a Resist\xEAncia!"
+  mensagem: "Aviso ao Acampamento 17, do Norte, e aos seus bravos combatentes: pedimos
+    que abandonem seus postos. Com as novas incurs\xF5es do Ex\xE9rcito passando
+    por dentro das nossas trilhas, fornecer suprimentos se tornou arriscado demais.
+    Fujam da\xED o quanto antes, busquem abrigo no Acampamento 14, ao Oeste. Viva
+    a Resist\xEAncia!"
   tiposDeCifra: 
   frequencia: 130.4
   chave: 0

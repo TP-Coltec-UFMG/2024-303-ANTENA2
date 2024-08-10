@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  mensagem: "O Ex\xE9rcito come\xE7ou a fazer, desde o m\xEAs passado, \\n incurs\xF5es
-    n\xE3o autorizadas em nossos territ\xF3rios. \\n Isso \xE9 inaceit\xE1vel!\nA
-    Suprema C\xFApula n\xE3o aprovou essas opera\xE7\xF5es e \\n mesmo assim elas
-    est\xE3o acontecendo. \\n Ainda vivemos e somos parte da democracia dessa Rep\xFAblica.\nPedimos
-    respeito!"
+  mensagem: "O Ex\xE9rcito come\xE7ou a fazer, desde o m\xEAs passado, incurs\xF5es
+    n\xE3o autorizadas em nossos territ\xF3rios.  Isso \xE9 inaceit\xE1vel!\nA Suprema
+    C\xFApula n\xE3o aprovou essas opera\xE7\xF5es e mesmo assim elas est\xE3o acontecendo.
+    Ainda vivemos e somos parte da democracia dessa Rep\xFAblica.\nPedimos respeito!"
   tiposDeCifra: 
   frequencia: 115.7
   chave: 0
