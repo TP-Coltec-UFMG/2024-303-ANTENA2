@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 33
   m_EditorClassIdentifier: 
-  mensagem: "Decolagem \\n autorizada \xE0s 17h02. \\n Eles partiram h\xE1 10 minutos
-    e \\n dever\xE3o estar no ponto de bombardeio \\n em no m\xE1ximo uma hora. Mantenha
-    \\n controle da posi\xE7\xE3o relativa da esquadrilha. \\n Assim que estiverem
-    sobrevoando os acampamentos, \\n cheque novamente a posi\xE7\xE3o \\n e, se estiver
-    tudo certo, \\n autorize a libera\xE7\xE3o \\n das cargas."
+  mensagem: "Decolagem autorizada \xE0s 17h02. Eles partiram h\xE1 10 minutos e dever\xE3o
+    estar no ponto de bombardeio em no m\xE1ximo uma hora. Mantenha controle da posi\xE7\xE3o
+    relativa da esquadrilha. Assim que estiverem sobrevoando os acampamentos, cheque
+    novamente a posi\xE7\xE3o e, se estiver tudo certo, autorize a libera\xE7\xE3o
+    das cargas."
   tiposDeCifra: 
   frequencia: 136
   chave: 0

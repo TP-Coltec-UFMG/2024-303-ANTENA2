@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  mensagem: "O operador da Antena 3 solicitou \\n o envio de equipamento reserva,
-    enquanto \\n seus sistemas de recebimento de mensagens n\xE3o s\xE3o consertados.
-    \\n Ele havia reportado \\n o mal-funcionamento do equipamento anteontem. \\n
-    De acordo com seu relat\xF3rio, suas mensagens est\xE3o chegando \\n com conte\xFAdo
-    corrompido e \xE9, portanto, imposs\xEDvel retransmiti-las. \\n Assim, solicitamos
-    o envio do equipamento reserva o quanto antes."
+  mensagem: "O operador da Antena 3 solicitou o envio de equipamento reserva, enquanto
+    seus sistemas de recebimento de mensagens n\xE3o s\xE3o consertados. Ele havia
+    reportado \\n o mal-funcionamento do equipamento anteontem. De acordo com seu
+    relat\xF3rio, suas mensagens est\xE3o chegando com conte\xFAdo corrompido e \xE9,
+    portanto, imposs\xEDvel retransmiti-las. Assim, solicitamos o envio do equipamento
+    reserva o quanto antes."
   tiposDeCifra: 
   frequencia: 105.9
   chave: 0

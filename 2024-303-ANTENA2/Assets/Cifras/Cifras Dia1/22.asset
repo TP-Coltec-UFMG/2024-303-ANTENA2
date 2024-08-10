@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 22
   m_EditorClassIdentifier: 
-  mensagem: "Fui designado pra minha \\n primeira miss\xE3o essa noite, pai. \\n
-    Vamos bombardear acampamentos \\n dos rebeldes, v\xE1rios de n\xF3s. Nem posso
-    acreditar que vou \\n voar com o Ex\xE9rcito! \xC9 como o senhor sonhou, pai.
-    \\n Vou encher o senhor de orgulho, \\n voc\xEA vai ver! Quando voltarmos, \\n
-    mandarei outra mensagem contando como foi."
+  mensagem: "Fui designado pra minha primeira miss\xE3o essa noite, pai. Vamos bombardear
+    acampamentos dos rebeldes, v\xE1rios de n\xF3s. Nem posso acreditar que vou voar
+    com o Ex\xE9rcito! \xC9 como o senhor sonhou, pai. Vou encher o senhor de orgulho,
+    voc\xEA vai ver! Quando voltarmos, mandarei outra mensagem contando como foi."
   tiposDeCifra: 
   frequencia: 172.2
   chave: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  mensagem: "Solicitando novamente \\n o envio de documenta\xE7\xE3o referente \\n
-    aos novos modelos b\xE9licos adquiridos no final do semestre passado. \\n Estas
-    informa\xE7\xF5es deveriam ter sido entregues \\n j\xE1 h\xE1 uma semana. Aguardamos
-    resposta \\n o quanto antes."
+  mensagem: "Solicitando novamente o envio de documenta\xE7\xE3o referente aos novos
+    modelos b\xE9licos adquiridos no final do semestre passado. Estas informa\xE7\xF5es
+    deveriam ter sido entregues j\xE1 h\xE1 uma semana. Aguardamos resposta o quanto
+    antes."
   tiposDeCifra: 
   frequencia: 122.7
   chave: 0

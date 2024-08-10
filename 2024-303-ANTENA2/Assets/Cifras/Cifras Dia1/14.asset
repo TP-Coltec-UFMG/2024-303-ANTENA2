@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 14
   m_EditorClassIdentifier: 
-  mensagem: "Providenciaremos equipamento \\n reserva para a Antena 3 o quanto antes.
-    \\n Os transmissores a nossa disposi\xE7\xE3o \\n no momento s\xE3o de modelos
-    um tanto ultrapassados \\n mas servir\xE3o como reserva, \\n enquanto o problema
-    n\xE3o for resolvido. \\n Mandaremos as instru\xE7\xF5es junto com o equipamento,
-    \\n mas pedimos para que \\n reitere ao \\n operador que quaisquer danos ao equipamento
-    ser\xE3o de \\n responsabilidade exclusiva dele."
+  mensagem: "Providenciaremos equipamento reserva para a Antena 3 o quanto antes.
+    Os transmissores a nossa disposi\xE7\xE3o no momento s\xE3o de modelos um tanto
+    ultrapassados mas servir\xE3o como reserva, enquanto o problema n\xE3o for resolvido.
+    Mandaremos as instru\xE7\xF5es junto com o equipamento, mas pedimos para que
+    reitere ao operador que quaisquer danos ao equipamento ser\xE3o de responsabilidade
+    exclusiva dele."
   tiposDeCifra: 
   frequencia: 105.9
   chave: 0

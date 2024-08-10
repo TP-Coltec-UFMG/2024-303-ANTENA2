@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 16
   m_EditorClassIdentifier: 
-  mensagem: "Reservas de combust\xEDvel do \\n Posto A212 est\xE3o bem baixas. N\xF3s
-    solicitamos \\n envio de mais suprimentos, \\n e se poss\xEDvel tamb\xE9m de
-    mais homens. \\n Estamos demorando \\n um bocado mais do que o esperado para
-    terminar \\n as obras do Posto por \\n causa dessas chuvas repentinas."
+  mensagem: "Reservas de combust\xEDvel do Posto A212 est\xE3o bem baixas. N\xF3s
+    solicitamos envio de mais suprimentos, e se poss\xEDvel tamb\xE9m de mais homens.
+    Estamos demorando um bocado mais do que o esperado para terminar as obras do
+    Posto por causa dessas chuvas repentinas."
   tiposDeCifra: 
   frequencia: 144
   chave: 0

@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 13
   m_EditorClassIdentifier: 
-  mensagem: "Dados de sat\xE9lite \\n capturados da \xE1rea dos assentamentos dos
-    rebeldes \\n est\xE3o sendo processados \\n no Departamento de Intelig\xEAncia
-    Governamental e logo estar\xE3o dispon\xEDveis \\n para o Comit\xEA de Guerra.
-    \\n Pedimos aten\xE7\xE3o especial com estas \\n informa\xE7\xF5es, uma vez que
-    s\xE3o \\n de crucial sensibilidade."
+  mensagem: "Dados de sat\xE9lite capturados da \xE1rea dos assentamentos dos rebeldes
+    est\xE3o sendo processados no Departamento de Intelig\xEAncia Governamental e
+    logo estar\xE3o dispon\xEDveis para o Comit\xEA de Guerra. Pedimos aten\xE7\xE3o
+    especial com estas informa\xE7\xF5es, uma vez que s\xE3o de crucial sensibilidade."
   tiposDeCifra: 
   frequencia: 115.6
   chave: 0

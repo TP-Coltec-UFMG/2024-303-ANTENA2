@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 24
   m_EditorClassIdentifier: 
-  mensagem: "Verificamos, \\n sim, que o carregamento \\n de ogivas est\xE1 atrasado.
-    \\n Conseguimos nos comunicar e eles \\n tiveram problemas por causa da condi\xE7\xE3o
-    \\n das estradas. \\n Recomendamos o adiamento do \\n hor\xE1rio da Opera\xE7\xE3o.
-    Eles n\xE3o \\n v\xE3o demorar muito mais."
+  mensagem: "Verificamos,  sim, que o carregamento de ogivas est\xE1 atrasado. Conseguimos
+    nos comunicar e eles tiveram problemas por causa da condi\xE7\xE3o das estradas.
+    Recomendamos o adiamento do hor\xE1rio da Opera\xE7\xE3o. Eles n\xE3o v\xE3o
+    demorar muito mais."
   tiposDeCifra: 
   frequencia: 131.3
   chave: 0

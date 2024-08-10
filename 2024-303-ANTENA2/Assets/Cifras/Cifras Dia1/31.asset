@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 31
   m_EditorClassIdentifier: 
-  mensagem: "P\xEClotos j\xE1 est\xE3o \\n em posi\xE7\xE3o de embarque.  \\n Avi\xF5es
-    est\xE3o prontos \\n para o in\xEDcio da opera\xE7\xE3o. O controle \\n de voo
-    reporta \\n velocidade do vento em 7,7 m/s, \\n c\xE9u limpo, com poucas nuvens.
-    \\n A lua minguante deve ajudar \\n na baixa visibilidade dos avi\xF5es."
+  mensagem: "P\xEClotos j\xE1 est\xE3o em posi\xE7\xE3o de embarque. Avi\xF5es est\xE3o
+    prontos para o in\xEDcio da opera\xE7\xE3o. O controle de voo reporta velocidade
+    do vento em 7,7 m/s, c\xE9u limpo, com poucas nuvens. A lua minguante deve ajudar
+    na baixa visibilidade dos avi\xF5es."
   tiposDeCifra: 
   frequencia: 135.1
   chave: 0
