@@ -14,12 +14,15 @@ public class TimeManager : MonoBehaviour {
     [SerializeField] private float timeScale = 2.0f;
     [Header("Dia no relógio")]
     [SerializeField] private TMP_Text textoDia;
+    [SerializeField] private TMP_Text textoDiaTrans;
     private float elapseTime;
     private string nomeCena = "Casa";
     private int idCena = 1;
     private int dia = GameHandler.Dia; //não funciona
 
     private void Start() {
+        textoDiaTrans.text = dia.ToString();
+        //fade out do dia?
         elapseTime = 9 * 3600f; //9h horário que começa o turno
         string dayString = string.Format("0ia {00}", dia);
         textoDia.text = dayString; //Definindo o dia no relógio
@@ -34,7 +37,6 @@ public class TimeManager : MonoBehaviour {
         if (elapseTime >= (18 * 3600)){
             //fadeIn "cabou trabaio"
             ChangeScene(idCena);
-            //fadeOut 'cabou trabaio"
         }
     }
 
