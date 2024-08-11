@@ -1,14 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public enum ESTADO {
-   DESATIVADO,
-   ESPERANDO,
-   DIGITANDO
-}
-
-public class DialogueSystem : MonoBehaviour {
+public class SistemaLegendasFinal : MonoBehaviour {
     
     [SerializeField] private DialogueData dialogueData;
     int textoAtual = 0;
@@ -17,6 +12,8 @@ public class DialogueSystem : MonoBehaviour {
     [SerializeField] private TypeTextAnimation typeText;
     [SerializeField] private DialogueUI dialogueUI;
     ESTADO estado;
+
+    [SerializeField] private GameObject creditos;
 
     void Awake() {
         typeText = FindObjectOfType<TypeTextAnimation>();
@@ -28,7 +25,7 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    void Update() {
+    /*void Update() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
@@ -39,7 +36,7 @@ public class DialogueSystem : MonoBehaviour {
                 Digitando();
                 break;
         }
-    }
+    }*/
 
     public void Next() {
         if(textoAtual == 0) {
@@ -59,18 +56,20 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.ESPERANDO;
     }
 
-    void Esperando() {
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            if(!finalizado) {
-                Next();
-            }
-            else {
-                dialogueUI.Disable();
-                estado = ESTADO.DESATIVADO;
-                textoAtual = 0;
-                finalizado = false;
-            }
+    public void Esperando() {
+        
+        if(!finalizado) {
+            Next();
         }
+        else {
+            dialogueUI.Disable();
+            estado = ESTADO.DESATIVADO;
+            textoAtual = 0;
+            finalizado = true;
+            creditos.SetActive(true);
+            Debug.Log("Creditos");
+        }
+        
     }
 
    void Digitando() {
@@ -79,4 +78,13 @@ public class DialogueSystem : MonoBehaviour {
            estado = ESTADO.ESPERANDO;
        }
    }
+
+   public void Skip() {
+    dialogueUI.Disable();
+    estado = ESTADO.DESATIVADO;
+    textoAtual = 0;
+    finalizado = true;
+    creditos.SetActive(true);
+    Debug.Log("Creditos");
+    }
 }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class DialogueUI : MonoBehaviour {
-    Image background;
-    TextMeshProUGUI legendas;
+    [SerializeField] private Image background;
+    [SerializeField] private TextMeshProUGUI legendas;
 
     public float speed = 10f;
     bool open = false;
