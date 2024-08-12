@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Carta2
+  m_EditorClassIdentifier: 
+  escrito: "A Ic\xE1rio, engenheiro de comunica\xE7\xE3o rebelde.\n\r\nIc\xE1rio,\r\n\tConsegui
+    montar uma conex\xE3o segura! A partir de agora, podemos nos comunicar sem problemas.
+    Fiz alguns testes preliminares e tudo parece certo, podemos fazer mais alguns
+    para ter certeza. A Antena vai funcionar como um canal de comunica\xE7\xE3o entre
+    n\xF3s.\r\n\tPrecisaremos, por\xE9m, - ao menos a meu julgamento - continuar
+    utilizando cifras e c\xF3digos. De nada custa, todo cuidado \xE9 pouco. Assim
+    nos mantemos seguros. Mantenhamos contato, logo mais estaremos retransmitindo
+    a mensagem da causa para toda a regi\xE3o. Estou animado! Sinto que meu pai ficaria
+    orgulhoso. \r\n\tSempre qui para o que precisarem,\r\n\tIllor.\r\n\nPS: sinto
+    saudades suas, Ic\xE1rio. Desde o dia em que voc\xEA esteve aqui para trabalharmos
+    na linha de conex\xE3o, quase n\xE3o conversei com ningu\xE9m. Quando nos veremos
+    novamente?\r"
