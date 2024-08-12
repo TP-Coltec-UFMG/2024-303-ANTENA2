@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Carta1
+  m_EditorClassIdentifier: 
+  escrito: "Querido pai,\r\n\tas coisas v\xE3o bem por aqui. A vida na cidade \xE9
+    muito mais exigente, o ritmo \xE9 diferente. As pessoas aqui nunca param, mesmo
+    \xE0 noite as ruas fervem de gente. O sil\xEAncio \xE9 o que mais me faz falta.
+    Aqui os sons das f\xE1bricas, dos autom\xF3veis, dos mercados e da multid\xE3o
+    enchem meu apartamento e minha cabe\xE7a. Para al\xE9m disso, a vida vai mon\xF3tona.
+    A faculdade \xE9 interessante, mas tamb\xE9m n\xE3o tem me animado como animava
+    antes, acho que a realidade \xE9 sempre um pouco diferente do que se espera.
+    Mas \xE9 uma oportunidade como eu nunca tive de conversar com pessoas novas,
+    viver novos ares, andar por novos lugares. Tem muitas pessoas inteligentes na
+    universidade, e eu gosto dos professores. Tenho conversado com outros alunos,
+    todos sempre t\xEAm viv\xEAncias t\xE3o diferentes! Eu evito falar que eu vim
+    dos Campos, costuma afastar as pessoas, mas acho que o meu passado an\xF4nimo
+    n\xE3o vai resistir por muito, algu\xE9m h\xE1 de descobrir eventualmente.\r\n\tMande
+    not\xEDcias suas e de Carlita! Tenho saudades suas, e da velha Carlita tamb\xE9m,
+    claro. \xC9 ainda ela que pastoreia os rebanhos? Essas mem\xF3rias parecem agora
+    t\xE3o distantes. Fique bem, pai, espero que esta carta te encontre em bom momento.\r\n\tDo
+    seu filho que te quer muito, \r\n\tIllor.\r\t\n"

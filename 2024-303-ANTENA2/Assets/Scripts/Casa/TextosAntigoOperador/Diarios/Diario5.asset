@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario5
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 02f//13yP\r\n\tHoje vi avi\xF5es seguindo rumo ao territ\xF3rio
+    inimigo. Inimigo. Inimigo\u2026 Essas pessoas, os rebeldes, eu deveria cham\xE1-los
+    assim? S\xE3o como eu afinal de contas, ou bem, foram um dia. Oper\xE1rios, lavradores,
+    trabalhadores. \xC0s vezes me d\xF3i ter de barrar as mensagens deles, quando
+    vejo que \xE9 uma m\xE3e tentando falar com o filho, ou dois amigos que precisam
+    se encontrar. Como ser\xE1 a vida em Cknah//rost? A vida rebelde, numa cidade
+    tomada por rebeldes. Eu adoeceria. Mesmo aqui a paranoia \xE0s vezes me assombra.\r"

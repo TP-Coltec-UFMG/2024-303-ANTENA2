@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario4
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 16f//49Hz\r\n\tHoje, enquanto retransmitia mensagens, n\xE3o pude
+    deixar de pensar na solid\xE3o aqui na cabana. \xC9 t\xE3o diferente da cidade.
+    Os sons da natureza me cercam, mas a falta de companhia \xE9 pesada. O pai dizia
+    que sempre h\xE1 um pre\xE7o a se pagar pela liberdade, e eu vim pra c\xE1 com
+    isso na cabe\xE7a. Esse afastamento \xE9 o pre\xE7o, eu acho. Mas talvez\u2026
+    n\xE3o seja bem o que eu imaginei. Aqui, entre os equipamentos, sinto que a liberdade
+    \xE9 uma miragem. Que curioso\u2026 justo nesse lugar, eu me sinto preso.\r"

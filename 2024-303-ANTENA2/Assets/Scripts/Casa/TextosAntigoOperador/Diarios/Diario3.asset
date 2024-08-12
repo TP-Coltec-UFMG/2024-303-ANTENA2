@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario3
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 15f//01Hz\r\n\tHoje foi um dia tranquilo na Antena. As mensagens
+    eram sempre as mesmas, o sil\xEAncio estava pesado. O dia amanheceu nublado,
+    e observei os p\xE1ssaros na floresta, pensando como a vida deles parece mais
+    simples. A \xE1gua da goteira no banheiro pingava de forma irregular, e eu me
+    peguei distra\xEDdo, contando os pingos como um passatempo. Essas pequenas coisas\u2026
+    essas pequenas coisas.\r"
