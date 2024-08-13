@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Estamos firmes em nossa decis\xE3o, senhor. Manteremos os regimentos
+    em lugar at\xE9 que a situa\xE7\xE3o se estabilize mais. Como o senhor disse,
+    temos de ficar atentos a retalia\xE7\xF5es por parte dos rebeldes. Os soldados
+    desejam voltar para casa, mas colocaremos eles na linha."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 131.9
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 5

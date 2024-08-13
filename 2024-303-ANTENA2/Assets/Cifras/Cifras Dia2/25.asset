@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 25
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "A base do noroeste solicita o envio imediato de mais 100 baionetas,
+    com muni\xE7\xE3o correspondente. Nossas reservas eram menores do que esper\xE1vamos
+    e estamos sem estoque para a Opera\xE7\xE3o de hoje. Por favor, sejam r\xE1pidos."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 1391.9
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 28

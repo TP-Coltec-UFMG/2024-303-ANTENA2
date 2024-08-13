@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 14
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Por isso viemos a voc\xEA, porque talvez voc\xEA seja um dos \xFAnicos
+    que pode nos ajudar. Como Operador de uma Antena, voc\xEA tem acesso exclusivo
+    \xE0s frequ\xEAncias e \xE0s mensagens do Governo e, por isso, pode nos fornecer
+    informa\xE7\xF5es. Se chegar \xE0s suas m\xE3os qualquer informa\xE7\xE3o que
+    voc\xEA julgue que pode nos ajudar, n\xF3s imploramos, transmita-a a n\xF3s."
   tiposDeCifra: 
   frequencia: 0
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 16

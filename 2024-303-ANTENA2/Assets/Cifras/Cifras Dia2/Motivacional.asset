@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: YY
+  m_Name: Motivacional
   m_EditorClassIdentifier: 
-  mensagem: "El S\xE1tiro - Sua mensagem di\xE1ria com trocadilhos e piadas!\r\nE
-    a piada dessa semana \xE9: Por que os coalas n\xE3o contam como ursos? Eles n\xE3o
-    t\xEAm as coalifica\xE7\xF5es certas! [risadas e aplausos!] Lembre-se: continue
-    sorrindo sempre e at\xE9 amanh\xE3!"
+  mensagem: "Mensagem motivacional do dia: Cada dia traz uma nova oportunidade de
+    n\xE3o fazer nada. A procrastina\xE7\xE3o \xE9 a sa\xEDda (tempor\xE1ria) para
+    todos os seus problemas. Nunca se esque\xE7a: fodam-se metas e prazos, o bom
+    mesmo \xE9 jogar Super Flavio Kart."
   tiposDeCifra: 
-  frequencia: 101.3
+  frequencia: 119.8
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 26

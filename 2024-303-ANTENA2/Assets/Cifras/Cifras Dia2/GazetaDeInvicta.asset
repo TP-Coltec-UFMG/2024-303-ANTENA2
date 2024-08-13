@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: GazetaDeInvicta
+  m_EditorClassIdentifier: 
+  mensagem: "Gazeta de Invicta - edi\xE7\xE3o do dia 12a/ff8\r\nOntem, foi realizada
+    a Opera\xE7\xE3o Despertador, com sucesso absoluto. Avi\xF5es aliados bombardearam
+    acampamentos rebeldes escondidos em meio \xE0 densa floresta. \u2018A Opera\xE7\xE3o
+    foi uma demonstra\xE7\xE3o do poder b\xE9lico e da superioridade tecnol\xF3gica
+    de Invicta, n\xE3o apenas para os rebeldes, mas tamb\xE9m para as outras na\xE7\xF5es\u2019,
+    afirmou o Comandante l\xEDder da Opera\xE7\xE3o de ontem. Ele tamb\xE9m afirmou
+    que o fim da guerra pode estar pr\xF3ximo, frente aos avan\xE7os feitos na Floresta
+    de K/cezdya. A na\xE7\xE3o avan\xE7a para o progresso.\r\nGl\xF3ria a Invicta!\r"
+  tiposDeCifra: 
+  frequencia: 112.2
+  chave: 0
+  ehRebelde: 0
+  ordem: 3

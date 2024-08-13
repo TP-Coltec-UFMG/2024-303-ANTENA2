@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 35-2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Tamb\xE9m fomos atacados. N\xE3o h\xE1 o que fazer. Alguns conseguiram
+    fugir eu acho, mas logo nosso Acampamento vai cair. Para n\xF3s, \xE9 o fim."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 100.1
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 43

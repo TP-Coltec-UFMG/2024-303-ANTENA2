@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 19
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Que \xE9 isso, Pietro? Com medo de perder cargos? Pelo amor de Deus,
+    \xE9 a vida das pessoas! Ora, e n\xE3o ser\xE1 nada demais, n\xF3s podemos mexer
+    nossos pauzinhos sem sermos descobertos. A propaganda \xE9 importante, se conseguirmos
+    garantir algum apoio popular ao cessar-fogo, podemos for\xE7ar a\xE7\xF5es do
+    governo. E outra, ia ser s\xF3 uma \xFAnica vez\u2026"
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 102.2
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 21

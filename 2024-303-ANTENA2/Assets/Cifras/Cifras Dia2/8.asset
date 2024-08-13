@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "A situa\xE7\xE3o nas nossas frentes est\xE1 chegando a ponto cr\xEDtico,
+    Pietro. Precisamos fazer alguma coisa, mesmo que o chefe n\xE3o deixe. Eles est\xE3o
+    enviando esses jovens para a morte, isso n\xE3o pode continuar. Vamos nos encontrar
+    hoje, durante o almo\xE7o."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 102.2
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 9

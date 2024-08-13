@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 20
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "As nossas for\xE7as est\xE3o acabando\u2026 O bombardeio da noite passada
+    destruiu os Acampamentos Irm\xE3os completamente. N\xF3s fugimos como pudemos,
+    mas estamos completamente desprotegidos. N\xE3o sabemos se o caminho at\xE9 o
+    pr\xF3ximo acampamento \xE9 seguro e, se n\xE3o for\u2026 estamos perdidos, camaradas."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 120
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 22

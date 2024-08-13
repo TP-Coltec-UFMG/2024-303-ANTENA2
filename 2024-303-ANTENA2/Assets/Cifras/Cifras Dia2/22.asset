@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 22
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Precisamos revisar as trilhas dos nossos batalh\xF5es. Os caminhos por
+    dentro da floresta s\xE3o trai\xE7oeiros, eu ainda acho este um movimento muito...
+    arriscado, digamos assim, dos nossos superiores. N\xE3o quero mandar nossos soldados
+    para a morte. Temos que revisar as trilhas pra terminar essa Opera\xE7\xE3o o
+    quanto antes, fazer as coisas do jeito certo."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 133.1
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 24

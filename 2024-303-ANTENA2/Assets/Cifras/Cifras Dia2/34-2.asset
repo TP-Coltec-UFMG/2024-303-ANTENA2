@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 34-2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Conseguimos fugir com alguns outros camaradas, estamos correndo at\xE9
+    agora. N\xE3o sabemos direito onde estamos, mas tentaremos chegar at\xE9 o rio.
+    De l\xE1, podemos tentar chegar ao Acampamento, talvez l\xE1 ainda seja seguro.
+    Rezem por n\xF3s."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 102.1
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 42

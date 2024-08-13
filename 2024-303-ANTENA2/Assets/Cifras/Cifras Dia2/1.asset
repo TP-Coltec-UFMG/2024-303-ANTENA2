@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Mais um dia come\xE7a, camaradas! N\xE3o deixemos as derrotas e as mortes
+    nos abalarem. Lembrem-se sempre: n\xE3o temos outra escolha. Lutamos por nossa
+    sobreviv\xEAncia, pelas nossas terras, pela nossa hist\xF3ria. \xC0 luta, amigos,
+    ela nos encontrar\xE1 cedo ou tarde."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 136.8
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 1

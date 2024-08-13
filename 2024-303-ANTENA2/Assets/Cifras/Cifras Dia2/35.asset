@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 35
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Ficou decidido o que faremos. N\xE3o conseguimos persuadir o Acampamento
+    do Rh/intc//hal acerca deles pr\xF3prios, mas conseguimos acerca do resto. Os
+    outros acampamentos v\xE3o bater em retirada. O Acampamento do Rio vai ficar
+    e lutar. Sozinhos. Foi uma decis\xE3o de todos eles, n\xE3o h\xE1 quem culpar.
+    Eles todos decidiram assim, pediram por isso aos l\xEDderes. Que Rh/int Ulh/ar
+    proteja-lhes em batalha e guarde-lhes as almas em suas sagradas \xE1guas."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 100.1
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 38

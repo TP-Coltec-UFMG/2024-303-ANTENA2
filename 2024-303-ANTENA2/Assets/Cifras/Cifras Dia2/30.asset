@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 30
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Vamos esperar a movimenta\xE7\xE3o das tropas da base Norte para sairmos.
+    Eles se colocaram \xE0 disposi\xE7\xE3o para iniciarem a frente. Deixe que eles
+    morram antes de n\xF3s, se eles querem tanto. Usemos o tempo extra a nosso favor."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 111.3
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 33

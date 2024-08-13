@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 23
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Vou atrasar a chegar no nosso local de encontro, Varez. O tr\xE2nsito
+    nesta cidade est\xE1 inacredit\xE1vel, ainda mais com essas chuvas. Mas n\xE3o
+    vou atrasar muito, j\xE1 vai pedindo um caf\xE9 por mim."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 12.2
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 25

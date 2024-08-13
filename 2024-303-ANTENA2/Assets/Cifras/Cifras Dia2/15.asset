@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 15
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Voc\xEA estar\xE1 salvando nossas vidas, das nossas m\xE3es, irm\xE3os
+    e crian\xE7as. \r\nExiste, em algum lugar do seu painel de transmiss\xE3o, um
+    mecanismo que permite a comunica\xE7\xE3o direta e sigilosa da sua Antena conosco.
+    Utilize a frequ\xEAncia de 158.5 MHz. Contamos com voc\xEA."
   tiposDeCifra: 
   frequencia: 0
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 17

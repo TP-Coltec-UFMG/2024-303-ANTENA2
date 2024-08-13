@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 33-2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "N\xE3o poderemos contar com o operador da Antena 2\u2026 Ele n\xE3o
+    nos avisou sobre esse ataque. N\xE3o sei o que faremos, era a \xFAltima esperan\xE7a
+    de estabelecermos comunica\xE7\xE3o segura entre n\xF3s."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 134.2
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 41

@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 34
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Os do Acampamento do Rio Rh/intc//hal est\xE3o loucos. Dizem que precisamos
+    \"defender nosso Rio, nosso protetor, nossa fonte de vida e da floresta\". E\u2026
+    claro, precisamos\u2026 Mas n\xE3o podemos. \xC9 suic\xEDdio. N\xE3o podemos
+    lan\xE7ar nossos jovens para a morte certa. Ou eu n\xE3o posso. N\xE3o consigo.
+    Se deliberarem que vamos lutar, eu irei me insubordinar. N\xE3o vou deixar meus
+    camaradas morrerem. N\xE3o consigo mand\xE1-los para a morte."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 102.1
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 37

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 33
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Temos que analisar as rotas de fuga poss\xEDveis dos Acampamentos do
+    Norte. O ataque parece que vai ser de propor\xE7\xF5es grandes, ent\xE3o \xE9
+    prov\xE1vel que tamb\xE9m seja r\xE1pido. Precisamos come\xE7ar nossas movimenta\xE7\xF5es
+    desde j\xE1."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 134.2
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 36

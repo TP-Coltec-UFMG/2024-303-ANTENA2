@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 11
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Sim, ele foi na miss\xE3o de bombardeio de ontem. At\xE9 me mandou mensagem
+    contando, estava t\xE3o animado\u2026 Eu preciso saber onde ele est\xE1! Se est\xE1
+    bem, se voltou \xE0 salvo\u2026 Mas ele n\xE3o me respondeu at\xE9 agora, estou
+    cada vez mais preocupada. Por favor, ajude-me, preciso saber onde est\xE1 meu
+    menino."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 189.3
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 13

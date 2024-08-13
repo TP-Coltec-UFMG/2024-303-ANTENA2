@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 9
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Bombas! Bombas vindas do c\xE9u! N\xE3o resta quase ningu\xE9m, tudo
+    est\xE1 queimando. Nossas crian\xE7as, nossos filhos, nossas m\xE3es, irm\xE3os
+    e irm\xE3s. N\xE3o resta ningu\xE9m. O cheiro de carne queimada \xE9 insuport\xE1vel,
+    tem peda\xE7os de gente nos galhos das \xE1rvores, nas crateras t\xEAm corpos
+    ainda. Ajudem-nos, por favor, ajudem-nos, de qualquer maneira que puderem, ajudem-nos."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 130.4
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 10

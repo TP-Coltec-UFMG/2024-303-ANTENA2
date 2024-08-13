@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
-  m_Name: XX
+  m_Name: LaBroma
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "LaBroma - Sua mensagem di\xE1ria com trocadilhos e piadas!\r\nE a piada
+    dessa semana \xE9: Por que o m\xE9dico est\xE1 sempre calmo? Porque ele tem muitos
+    pacientes! [risadas e aplausos!] Lembre-se: continue sorrindo sempre e at\xE9
+    amanh\xE3!."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 101.3
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 12

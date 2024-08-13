@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 29
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Autorizado o in\xEDcio da Opera\xE7\xE3o Constri\xE7\xE3o pelo Comit\xEA
+    de Guerra."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 138
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 32

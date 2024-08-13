@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "O Ministro da Propaganda amanheceu doente esta manh\xE3. Por causa disso,
+    todas as reuni\xF5es do dia est\xE3o canceladas. Quaisquer entidades afetadas
+    devem entrar em contato para remarcar os encontros o quanto antes."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 122.6
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 4

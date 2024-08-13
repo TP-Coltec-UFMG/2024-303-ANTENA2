@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 18
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Os reparos nas unidades A-56S, A-57S, A-63S, V-887, V-891 e V-898, utilizadas
+    na Opera\xE7\xE3o Despertador de ontem \xE0 noite, j\xE1 est\xE3o em processo
+    de conclus\xE3o. Estar\xE3o boas para voar novamente dentro de uma semana no
+    m\xE1ximo. A maioria dos danos n\xE3o foi grave e, tirando as aeronaves que foram
+    abatidas, apenas 2 outras sofreram perda total."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 119.6
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 20
