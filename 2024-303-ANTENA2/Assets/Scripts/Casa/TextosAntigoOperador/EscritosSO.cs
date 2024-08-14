@@ -7,4 +7,5 @@ using UnityEngine;
 public class EscritosSO : ScriptableObject
 {
     [TextArea(1, int.MaxValue)] public string escrito;
+    public int Dia;
 }
