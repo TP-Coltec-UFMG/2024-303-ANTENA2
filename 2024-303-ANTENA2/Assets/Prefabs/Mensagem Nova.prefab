@@ -215,10 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698f24a2577548747810fb545bbbfa93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseOverHighlightColor: {r: 185, g: 199, b: 173, a: 1}
-  selectedHighlightColor: {r: 171, g: 96, b: 172, a: 1}
   imgToHighlight: {fileID: 6859678789861228740}
   text: {fileID: 8606908610631468775}
+  outline: {fileID: 6859678789861228740}
 --- !u!1 &9206477087202854504
 GameObject:
   m_ObjectHideFlags: 0

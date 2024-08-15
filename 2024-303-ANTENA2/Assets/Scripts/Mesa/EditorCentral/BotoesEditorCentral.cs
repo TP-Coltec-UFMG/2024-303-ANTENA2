@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,10 +8,14 @@ public class BotoesEditorCentral : MouseInteractive
 {
     [SerializeField] private TextMeshPro text;
     [SerializeField] private TipoBotao tipoBotao;
-    
-    
     private EditorCentral _editorCentral;
 
+    public static event EventHandler<OnBotaoECPressEventArgs> OnBotaoECPress;
+
+    public class OnBotaoECPressEventArgs : EventArgs
+    {
+        public TipoBotao tipoBotao;
+    }
 
     private new void Start()
     {
@@ -30,7 +35,7 @@ public class BotoesEditorCentral : MouseInteractive
             
             if (Input.GetMouseButtonDown(0))
             {
-                _editorCentral.RemoveMensagem();
+                OnBotaoECPress?.Invoke(this, new OnBotaoECPressEventArgs { tipoBotao =  tipoBotao });
             }
         }
         else
@@ -39,8 +44,7 @@ public class BotoesEditorCentral : MouseInteractive
         }
     }
     
-    
-    private enum TipoBotao
+    public enum TipoBotao
     {
         Aprova,
         Desaprova,
