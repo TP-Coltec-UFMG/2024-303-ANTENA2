@@ -10,33 +10,28 @@ public class PassaDia : MonoBehaviour {
     public int idCena = 2;
     public string cena = "Mesa";
     [SerializeField] private TMP_Text textoDiaTrans;
-
-    [SerializeField] private GameObject fadeInDia;
-    [SerializeField] private Animator fadeIntrabaioa;
-    //textoDiaTrans.text = dia.ToString();
-
-    private bool _isAnimationPlaying = false;
+    [SerializeField] private Animator FadeOutTrab;
+    [SerializeField] private Animator FadeDia;
+    private int dia = 0;
     
     private void Start() {
-        //fade out do fim trabaio?
-        fadeIntrabaioa.Play("wdiopawjdoian");
+        dia = GameHandler.Dia;
+        if(dia > 0) {
+            FadeOutTrab.Play("FadeOutTrab"); //fade out do fim trabaio
+        }
     }
 
     private void Update()
     {
-        if (_isAnimationPlaying)
-        {
-            fadeInDia.GetComponent<Animator>();//.IsEnded();
+        if (FadeDia.GetCurrentAnimatorStateInfo(0).IsName("FadeInDia") && !(FadeDia.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
             SceneManager.LoadScene(cena);
-            GameHandler.Dia ++;
         }
     }
     
     void OnTriggerEnter2D (Collider2D collider) {
-        //meter fadeIn do dia
-        fadeInDia.GetComponent<Animator>().Play("WUDHBAWUIODB");
-        _isAnimationPlaying = true;
-        // SceneManager.LoadScene(cena);
-        // GameHandler.Dia ++;
+        GameHandler.Dia ++;
+        textoDiaTrans.text = GameHandler.Dia.ToString();
+
+        FadeDia.Play("FadeInDia"); //fade in dia x
     }
 }

@@ -15,14 +15,16 @@ public class TimeManager : MonoBehaviour {
     [Header("Dia no relógio")]
     [SerializeField] private TMP_Text textoDia;
     [SerializeField] private TMP_Text textoDiaTrans;
-    private float elapseTime;
+    private float elapseTime = 0;
     private string nomeCena = "Casa";
-    private int idCena = 1;
-    private int dia = GameHandler.Dia; //não funciona
+    private int dia = 0;
+    [SerializeField] private Animator FadeOutDia;
+    [SerializeField] private Animator FadeInTrab;
 
     private void Start() {
+        dia = GameHandler.Dia;
         textoDiaTrans.text = dia.ToString();
-        //fade out do dia?
+        FadeOutDia.Play("FadeOutDia 0");
         elapseTime = 9 * 3600f; //9h horário que começa o turno
         string dayString = string.Format("0ia {00}", dia);
         textoDia.text = dayString; //Definindo o dia no relógio
@@ -34,9 +36,13 @@ public class TimeManager : MonoBehaviour {
         UpdateClockUI();
 
         // Às 18h acaba o turno de trabalho e troca para a cena da casa
-        if (elapseTime >= (18 * 3600)){
-            //fadeIn "cabou trabaio"
-            ChangeScene(idCena);
+        if (elapseTime > (18 * 3600)){
+            FadeInTrab.Play("FadeInTrab"); //fade in 'cabou trabaio'
+        }
+
+        //Se tiver passado a transição vai para a próxima cena
+        if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
+            SceneManager.LoadScene(nomeCena);
         }
     }
 
