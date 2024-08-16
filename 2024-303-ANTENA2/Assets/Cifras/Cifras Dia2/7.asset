@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Irm\xE3o, isso aqui \xE9 o inferno. Essa floresta tenta de toda forma
+    nos matar: mosquitos com doen\xE7as, aranhas, cobras, insetos venenosos malditos.
+    Toda noite tem algu\xE9m doente, noite passada um morreu de disenteria, depois
+    de dias vomitando sem parar. Dias! Isso sem falar nos feridos, n\xE3o tem um
+    que n\xE3o tenha sido infectado. A enfermaria serve mais para esperar a morte
+    do que pra evit\xE1-la."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 140.5
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 8

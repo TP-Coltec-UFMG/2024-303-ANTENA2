@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario8
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 04f//43yP\r\n\tUm dos rebeldes veio at\xE9 a cabana esta semana.
+    Foi a primeira conversa que eu tive com algu\xE9m em dias. Me senti ansioso,
+    me senti estranho. Conversamos sobre como podemos nos conectar sem sermos descobertos.
+    Senti um frio na barriga, e n\xE3o foi s\xF3 porque eu achei ele\u2026 bonito.
+    \xC9 mais que\u2026 eu nunca pensei que me tornaria parte de algo assim, mas
+    a causa deles ressoa em mim. Me sinto como nas hist\xF3rias de guerrilha do pai.
+    O que ele diria se me visse agora? Estou come\xE7ando a entender que, assim como
+    ele lutou por uma vida melhor, eu tamb\xE9m posso lutar. Eu vou ajud\xE1-los.\r"
+  Dia: 4

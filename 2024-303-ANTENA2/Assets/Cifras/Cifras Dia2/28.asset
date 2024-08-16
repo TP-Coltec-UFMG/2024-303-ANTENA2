@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 28
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "A qualidade das estradas e do solo da selva me preocupa bastante. Esses
+    caminh\xF5es n\xE3o foram feitos para esse tipo de terreno. Mas bem, \xE9 o que
+    n\xF3s temos n\xE9? Garantam que os motores n\xE3o sejam for\xE7ados demais e,
+    pelo amor de Deus, n\xE3o atolem. Todos sabem que mandar esses meninos pra mata
+    \xE9 loucura, vamos tentar minimizar as baixas."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 128.7
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 31

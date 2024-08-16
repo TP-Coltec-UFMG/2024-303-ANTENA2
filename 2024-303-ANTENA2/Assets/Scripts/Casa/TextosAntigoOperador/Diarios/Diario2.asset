@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario2
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 14f//37Hz\r\n\tHoje choveu; me vieram lembran\xE7as. Lembrei de
+    quando chovia nos Campos de Trabalho, a \xE1gua lavando o trigo das planta\xE7\xF5es.
+    Nas noites de tempestade, quando eu era crian\xE7a, o pai me cantava as cantigas
+    de fam\xEDlia, da \xE9poca antes do trabalho for\xE7ado. Sinto saudades dele,
+    da cabana. Escrever me ajuda a manter viva a mem\xF3ria dele.\r"
+  Dia: 1

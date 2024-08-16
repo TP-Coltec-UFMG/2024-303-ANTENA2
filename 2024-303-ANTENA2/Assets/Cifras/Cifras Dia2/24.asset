@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 24
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "E o que vamos fazer se decidirem nos atacar de novo esta noite? Estamos
+    perdidos! Camaradas, esta \xE9 uma quest\xE3o de vida ou morte, devemos recuar
+    para Cknah//rost, ou para Iltch//niep, ou para qualqer cidade do Leste sob nosso
+    comando. Esta \xE9 a minha opini\xE3o e a de todo o meu Acampamento."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 118.4
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 27

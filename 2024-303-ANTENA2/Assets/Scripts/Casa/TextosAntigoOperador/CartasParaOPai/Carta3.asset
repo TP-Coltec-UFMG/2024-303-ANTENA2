@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Carta3
+  m_EditorClassIdentifier: 
+  escrito: "Querido pai,\r\n\tenvio esta carta provavelmente como a \xFAltima em
+    algum tempo. Lembra-te que lhe falei do concurso para participar de um programa
+    do governo? Pois bem, passei! Vou come\xE7ar no programa de Antenas agora na
+    virada do m\xEAs. O sal\xE1rio n\xE3o \xE9 o ideal, mas o resto dos benef\xEDcios
+    compensam: n\xE3o terei de me preocupar com aluguel, alimenta\xE7\xE3o ou transporte,
+    irei morar justamente na esta\xE7\xE3o de transmiss\xE3o, mantida pelo pr\xF3prio
+    estado e com insumos entregues a mim regularmente. \xC9 uma oportunidade muito
+    boa, eu penso! Tristemente, \xE9 por causa dessa mudan\xE7a de moradia que eu
+    n\xE3o poderei enviar-te ou receber cartas, pelo menos por um per\xEDodo. A Antena
+    2 (onde irei trabalhar) fica em local muito isolado, longe de qualquer cidade.
+    \r\n\tEncaro isso, por\xE9m, de forma positiva. Comparada com o ambiente cinzento
+    e taciturno do Porto, a Antena, calma, isolada, perto da natureza, me parece
+    muito agrad\xE1vel. \xC9, pelo menos, mais pr\xF3xima do que eram os Campos.
+    Todavia, tentarei manter algum contato, talvez eu possa enviar as cartas quando
+    vierem me trazer suprimentos. Estou bastante animado com toda essa mudan\xE7a,
+    acho que me vai fazer muito bem. \r\n\tMas e voc\xEA, como vai? Mande not\xEDcias
+    logo, quero saber como tudo anda indo antes de partir para a Antena.\r\n\tDo
+    seu filho, feliz e ansioso,\r\n\tIllor.\r\n"
+  Dia: 4

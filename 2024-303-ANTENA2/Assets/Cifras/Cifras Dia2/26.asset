@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 26
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "O Comit\xEA de Guerra determinou que a Opera\xE7\xE3o Constri\xE7\xE3o
+    dever\xE1 come\xE7ar dentro de 1 hora. Aguardando confirma\xE7\xE3o de todas
+    as bases operacionais para decretar o in\xEDcio da opera\xE7\xE3o."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 133.7
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 29

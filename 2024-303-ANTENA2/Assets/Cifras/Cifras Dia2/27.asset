@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 27
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Nossos soldados j\xE1 est\xE3o a postos nos caminh\xF5es e tanques,
+    apenas esperando o sinal do Comit\xEA de Guerra para iniciar a investida. As
+    tropas est\xE3o motivadas. Acho que n\xE3o sabem direito ainda do inferno que
+    os aguarda. Ser\xE1 um choque para muitos deles."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 11.9
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 30

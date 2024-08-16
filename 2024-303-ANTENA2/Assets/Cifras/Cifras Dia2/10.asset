@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "72 soldados dos batalh\xF5es 1298/7A-F2 e 1280/9A-F2 foram abatidos
+    na Opera\xE7\xE3o de ontem a noite. Suas fam\xEDlias devem ser notificadas acerca
+    dos falecimentos. Diga que eles morreram como her\xF3is. Quaisquer tentativas
+    de contato posterior por parte das fam\xEDlias devem ser ignoradas. Se perguntarem
+    acerca de pens\xF5es ou qualquer informa\xE7\xE3o acerca das mortes, desconverse."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 152.9
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 11

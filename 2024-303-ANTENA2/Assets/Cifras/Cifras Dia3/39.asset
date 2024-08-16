@@ -20,5 +20,5 @@ MonoBehaviour:
   tiposDeCifra: 
   frequencia: 100.5
   chave: 0
-  ehRebelde: 0
+  ehRebelde: 1
   ordem: 39

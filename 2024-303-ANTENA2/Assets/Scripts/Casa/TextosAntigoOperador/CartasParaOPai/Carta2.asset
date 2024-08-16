@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Carta2
+  m_EditorClassIdentifier: 
+  escrito: "Querido pai,\r\n\tsinto ouvir pela partida de Kristoff, era homem caloroso
+    e trabalhador, deixar\xE1 muitas saudades. A filha e a mulher dele como est\xE3o?
+    Tente dar-lhes algum apoio se puder, pai, imagino que elas v\xE3o precisar. \r\n\tPor
+    aqui, tudo vai relativamente bem. O litoral \xE9 muito mais \xFAmido que o interior,
+    agora chove faz 2 dias, e dizem que o tempo s\xF3 fica mais est\xE1vel durante
+    o inverno (\xE9poca que substitui o tormento das chuvas pelo do frio, entretanto).
+    O trabalho \xE9 tranquilo, apenas mensagens indo e vindo, a maioria ordens r\xE1pidas
+    que eu envio e recebo. O Porto \xE9 bastante opressor, uma quantidade imensa
+    de ferro e a\xE7o e metal por todos os lados, navios gigantescos que chegam e
+    partem a todo momento. H\xE1 uma n\xE9voa que se mant\xE9m durante toda a manh\xE3,
+    o sol aqui \xE9 t\xEDmido.\r\n\tH\xE1 grande diferen\xE7a entre as pessoas daqui
+    e as da faculdade: aqui os rostos s\xE3o mais cansados, mais velhos, mais soturnos.
+    N\xE3o h\xE1 muitas pessoas com quem eu possa conversar, e as com quem converso
+    s\xE3o sempre muito fechadas, sempre inacess\xEDveis. Tenho feito amizade com
+    o padeiro da minha rua, um dos poucos sujeitos sorridentes que encontrei por
+    aqui. Muito bem humorado, e muito bom profissional tamb\xE9m; a padaria apesar
+    de modesta \xE9 muito agrad\xE1vel, sempre com p\xE3es frescos e bolos e biscoitos
+    muito bem feitos. N\xE3o \xE9 \xE0 toa que borbulha de clientes todas as manh\xE3s.\r\n\tEnfim,
+    n\xE3o tenho muito mais a contar, a vida anda a passo lento. Minhas saudades
+    apenas aumentam, pai, preciso ir te visitar nos Campos o quanto antes. Deixa-me
+    juntar algum dinheiro que fa\xE7o as malas e vou, apare\xE7o a\xED e passamos
+    uma temporada juntos.\r\n\tDo seu filho, com saudades e carinho,\r\n\tIllor.\r\t\n"
+  Dia: 3

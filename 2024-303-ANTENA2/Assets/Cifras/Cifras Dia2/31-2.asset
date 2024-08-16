@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 31-2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Os batedores retornaram agora, desesperados, dizendo que viram tropas
+    e mais tropas do Governo vindo na nossa dire\xE7\xE3o. Mal escaparam. Estamos
+    prestes a ser emboscados. Est\xE1 tudo uma loucura, todos correm de um lado para
+    o outro, eu vi alguns fugindo\u2026 n\xE3o sei o que vamos fazer."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 128.1
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 39

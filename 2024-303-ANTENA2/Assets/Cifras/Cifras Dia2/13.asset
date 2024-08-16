@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 13
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Ol\xE1, Operador. Somos da resist\xEAncia rebelde. Queremos falar com
+    voc\xEA diretamente: ap\xF3s terminar de ler essas mensagens, descarte-as. Por
+    favor, n\xE3o nos denuncie. Queremos apenas fazer um pedido. A verdade \xE9 que
+    estamos desesperados. Na nossa situa\xE7\xE3o, a batalha \xE9 a \xFAnica forma
+    de sobreviver. Foram aqueles que agora est\xE3o no Governo quem primeiro invadiu
+    nossas terras, gera\xE7\xF5es atr\xE1s. N\xF3s apenas queremos reaver o que \xE9
+    nosso, o que \xE9 de todos n\xF3s. O poder do povo sobre ele mesmo. Mas, sozinhos,
+    n\xE3o podemos."
   tiposDeCifra: 
   frequencia: 0
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 15

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 32
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Organizamos uma reuni\xE3o geral com os Acampamentos do Norte para deliberarmos
+    sobre esse ataque. Temos opini\xF5es que diferem. Os membros do Acampamento do
+    Rio dizem que devemos lutar."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 123.7
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 35

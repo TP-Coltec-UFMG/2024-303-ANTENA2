@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Carta1
+  m_EditorClassIdentifier: 
+  escrito: "Aos rebeldes que a mim mandaram as mensagens.\r\n\tEu ouvi voc\xEAs.
+    As mensagens de resist\xEAncia que chegam at\xE9 mim me fazem sentir que posso
+    fazer algo. O governo n\xE3o cair\xE1 facilmente, mas eu quero ajudar.\r\n\tPodemos
+    usar a r\xE1dio para nos comunicarmos sem que eles descubram, mas talvez precisemos
+    de um canal privado. Acredito que juntos podemos encontrar uma maneira de fazer
+    isso. Precisamos nos encontrar pessoalmente, talvez mesmo aqui na Antena. Aguardo
+    as instru\xE7\xF5es de voc\xEAs.\r\n\tEsperan\xE7osamente, \r\n\tIllor, operador
+    da Antena de Retransmiss\xE3o N\xBA 2.\r\n\nPS: T\xEAm certeza de que o local
+    escolhido para que eu deixe as cartas escondidas \xE9 mesmo seguro? Tenho receio
+    que outros, que n\xE3o voc\xEAs, as encontrem.\r"
+  Dia: 1

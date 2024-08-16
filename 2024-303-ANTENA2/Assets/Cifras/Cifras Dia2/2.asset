@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "O ataque de ontem a noite foi bem sucedido. Conseguimos atingir os acampamentos
+    dos rebeldes com a maioria dos proj\xE9teis. O fogo tomou conta de tudo! Voc\xEA
+    tinha que ver, foi impressionante. Dava pra ouvir os gritos mesmo l\xE1 do c\xE9u
+    haha! Tivemos dois aeroplanos abatidos, mas quem liga, foi um puta sucesso!"
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 117.5
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 2

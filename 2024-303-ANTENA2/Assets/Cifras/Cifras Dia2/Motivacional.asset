@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
+  m_Name: Motivacional
+  m_EditorClassIdentifier: 
+  mensagem: "Mensagem motivacional do dia: Cada dia traz uma nova oportunidade de
+    n\xE3o fazer nada. A procrastina\xE7\xE3o \xE9 a sa\xEDda (tempor\xE1ria) para
+    todos os seus problemas. Nunca se esque\xE7a: fodam-se metas e prazos, o bom
+    mesmo \xE9 jogar Super Flavio Kart."
+  tiposDeCifra: 
+  frequencia: 119.8
+  chave: 0
+  ehRebelde: 0
+  ordem: 26

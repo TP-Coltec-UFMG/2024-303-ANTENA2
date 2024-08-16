@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: Diario1
+  m_EditorClassIdentifier: 
+  escrito: "Dia: 12f//55Hz\r\n\tRecebi suprimentos hoje! O padeiro me enviou um p\xE3o
+    fresco como cortesia. Foi bom uma palavra amiga nessa quietude toda da cabana,
+    ainda que ela seja relaxante. Fiz torradas e o cheiro me lembrou de casa. Depois,
+    passei a tarde organizando as mensagens e limpando os equipamentos de r\xE1dio.
+    Estou meio solit\xE1rio por agora, mas estou lendo um romance que meu pai adorava.
+    Ajuda a passar o tempo. \xC9 verdade que hist\xF3rias t\xEAm o poder de nos transportar
+    pra outros lugares.\r"
+  Dia: 1

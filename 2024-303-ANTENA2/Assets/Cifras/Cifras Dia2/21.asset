@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 21
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "Nossos regimentos j\xE1 est\xE3o se preparando. Novos soldados devem
+    chegar daqui a pouco e j\xE1 receber\xE3o equipamento e prote\xE7\xE3o. Nos informaram
+    que n\xE3o os enviariam com armas e disseram que era para gastarmos as nossas
+    pr\xF3prias. Sinceramente, isso \xE9 uma vergonha. O l\xEDder da Base XF-42 \xE9
+    um folgado, isso sim."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 139.9
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 23

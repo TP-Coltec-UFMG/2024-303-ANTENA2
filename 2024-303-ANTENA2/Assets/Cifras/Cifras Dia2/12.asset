@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 12
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "N\xE3o sei n\xE3o, Varez. Claro, podemos encontrar, mas o que poder\xEDamos
+    fazer? N\xE3o quero arriscar meu cargo, e a minha seguran\xE7a e a da minha fam\xEDlia,
+    principalmente por uma causa perdida. A guerra \xE9 tr\xE1gica, mas n\xE3o podemos
+    fazer nada\u2026"
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 102.2
   chave: 0
   ehRebelde: 0
-  ordem: 0
+  ordem: 14

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 32-2
   m_EditorClassIdentifier: 
-  mensagem: 
+  mensagem: "\xC9 uma investida por terra! Estamos perdidos, acabou! Por favor, enviem
+    refor\xE7os, n\xE3o nos deixem aqui para morrer. N\xE3o podemos cont\xEA-los
+    sozinhos, eles s\xE3o muitos. H\xE1 tanques, h\xE1 g\xE1s mostarda pela floresta.
+    Vamos morrer, vamos todos morrer."
   tiposDeCifra: 
-  frequencia: 0
+  frequencia: 123.7
   chave: 0
-  ehRebelde: 0
-  ordem: 0
+  ehRebelde: 1
+  ordem: 40

@@ -72,7 +72,6 @@ public class GameManagerMemoria : MonoBehaviour {
     }
 
     public void StartGame() {
-
         telaErro.SetActive(false);
         if(telaErro.activeInHierarchy == false) {
             mesaVerde.SetActive(true);
@@ -128,7 +127,7 @@ public class GameManagerMemoria : MonoBehaviour {
                 Debug.Log("Wrong");
                 mesaVerde.SetActive(false);
                 telaErro.SetActive(true);
-                StartCoroutine(WaitFor(1));
+                StartCoroutine(RestartGame());
             }
         }
     }
@@ -138,7 +137,9 @@ public class GameManagerMemoria : MonoBehaviour {
         gameOn = false;
     }
 
-    private IEnumerator WaitFor(float seconds) {
+    private IEnumerator RestartGame()
+    {
+        const float seconds = 1;
         yield return new WaitForSeconds(seconds);
         StartGame();
     }

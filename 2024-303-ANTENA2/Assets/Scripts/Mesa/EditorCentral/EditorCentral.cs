@@ -31,12 +31,55 @@ public class EditorCentral : MouseInteractive
     public int NumOfPages { get; private set; }
     public int CurrPage { get; private set; }
 
+    public static int NumMensagensRebeldes;
+    public static int NumMensagensRebeldesDenunciadas;
+    public static int NumMensagensLegais; // Legais de legalidade
+    
+    public static int NumErros;
+    private const int ToleranciaErros = 3;
+
+    
     private new void Start()
     {
         base.Start();
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
         
         OnPageChange += (_, _) => paginasText.text = $"P. {CurrPage}/{NumOfPages}";
+        BotoesEditorCentral.OnBotaoECPress += (botao, e) =>
+        {
+            if (_mensagemSO.ehRebelde)
+            {
+                NumMensagensRebeldes++;
+                switch (e.tipoBotao)
+                {
+                    case BotoesEditorCentral.TipoBotao.Aprova:
+                        NumErros++;
+                        break;
+                    case BotoesEditorCentral.TipoBotao.Desaprova:
+                        break;
+                    case BotoesEditorCentral.TipoBotao.Denuncia:
+                        NumMensagensRebeldesDenunciadas++;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+            else
+            {
+                NumMensagensLegais++;
+                switch (e.tipoBotao)
+                {
+                    case BotoesEditorCentral.TipoBotao.Aprova:
+                        break;
+                    case BotoesEditorCentral.TipoBotao.Desaprova: case BotoesEditorCentral.TipoBotao.Denuncia:
+                        NumErros++;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+            RemoveMensagem();
+        };
     }
     
     private void Update()
@@ -76,6 +119,11 @@ public class EditorCentral : MouseInteractive
                 }
             }
         }
+
+        if (NumErros >= ToleranciaErros)
+        {
+            Debug.Log("PERDEU MANE, PERDEU");
+        }
     }
 
     public void AddMensagem(MensagemSO mensagemSO)
@@ -83,7 +131,7 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
-        chaveText.text = "C: " + mensagemSO.chave;
+        // chaveText.text = "C: " + mensagemSO.chave;
 
         string newMensagem = "";
         foreach (char c in mensagemSO.mensagem)
@@ -96,7 +144,7 @@ public class EditorCentral : MouseInteractive
         }
         
         CurrPage = 1;
-        NumOfPages = 1 + newMensagem.Length /
+        NumOfPages = 1 + mensagemSO.mensagem.Length /
                      (CanvasMSG.Instance.GetNumColsRows().x * CanvasMSG.Instance.GetNumColsRows().y);
         
         paginasText.text = $"P. {CurrPage}/{NumOfPages}";
