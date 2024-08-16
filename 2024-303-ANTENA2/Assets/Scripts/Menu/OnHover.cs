@@ -7,18 +7,15 @@ using UnityEngine.UI;
 
 public class OnHover : MonoBehaviour
 {
-    private SpriteRenderer rend;
-    private Sprite protSprite, tritSprite, deutSprite, nadaSprite;
-    public Botao botoes;
-    public int filtro;
+    [SerializeField] private GameObject rend;
+    //private Sprite protSprite, tritSprite, deutSprite, nadaSprite;
+    //public Botao botoes;
+    //public int filtro;
 
     void Start()
     {
-        rend = GetComponent<SpriteRenderer>();
-        if (rend == null)
-        {
-            Debug.LogError("SpriteRenderer component not found on " + gameObject.name);
-        }
+        //rend = GetComponent<SpriteRenderer>();
+        //Debug.LogError("SpriteRenderer component not found");
         
         /*protSprite = Resources.Load<Sprite>("Images/Configuracoes/hover0");
         tritSprite = Resources.Load<Sprite>("Images/Configuracoes/hover0"); // Provide correct path
@@ -33,9 +30,7 @@ public class OnHover : MonoBehaviour
 
     void OnMouseEnter() 
     {
-        if (rend != null)
-        {
-            rend.enabled = true;
+        rend.SetActive(true);
             
             /*switch (filtro) 
             {
@@ -54,16 +49,12 @@ public class OnHover : MonoBehaviour
                 default:
                     break;
             }*/
-        }
     }
 
     void OnMouseExit() 
     {
-        if (rend != null)
-        {
-            rend.enabled = false;
-            Debug.Log("SpriteRenderer disabled.");
-        }
+        rend.SetActive(false);
+        Debug.Log("SpriteRenderer disabled.");
     }
 
     public enum Botao

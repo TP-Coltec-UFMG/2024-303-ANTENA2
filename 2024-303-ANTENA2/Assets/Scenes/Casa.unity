@@ -467,6 +467,51 @@ Transform:
   - {fileID: 687962255}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &104737014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104737016}
+  - component: {fileID: 104737015}
+  m_Layer: 0
+  m_Name: Dalton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &104737015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104737014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088e5b28b797149b08f89df4dcbf40ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filtroAtual: 0
+--- !u!4 &104737016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104737014}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.19781, y: 14.751425, z: 2.1831927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116369048
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,12 +656,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 116369052}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &116369052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -949,12 +994,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 168441788}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &168441788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1822,6 +1867,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4444447, y: 5.3974895}
   m_EdgeRadius: 0
+--- !u!1 &326603386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5903677852167856645, guid: abbd0e327cfec0b44b2406c740092f8c, type: 3}
+  m_PrefabInstance: {fileID: 2102791240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329446796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configuracoes: {fileID: 1627574023}
   botao: {fileID: 603040593}
+  casa: {fileID: 326603386}
+  boneco: {fileID: 382824548}
 --- !u!1 &456112240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,12 +4372,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 687962260}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &687962260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4697,12 +4749,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 721815490}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &721815490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9329,6 +9381,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 335479830718001429, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 104737015}
+    - target: {fileID: 335479830718001429, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: tritanopia
+      objectReference: {fileID: 0}
     - target: {fileID: 431904251697858107, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -9421,6 +9481,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -781.69
       objectReference: {fileID: 0}
+    - target: {fileID: 3197389492780204921, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 104737015}
+    - target: {fileID: 3197389492780204921, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: semFiltro
+      objectReference: {fileID: 0}
     - target: {fileID: 3215924601623475898, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -9428,6 +9496,14 @@ PrefabInstance:
     - target: {fileID: 3630684208734522245, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687347699766303090, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 104737015}
+    - target: {fileID: 3687347699766303090, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: protanopia
       objectReference: {fileID: 0}
     - target: {fileID: 3863942393982212119, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_Layer
@@ -9460,6 +9536,14 @@ PrefabInstance:
     - target: {fileID: 4833387964651623543, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069778776391302278, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 104737015}
+    - target: {fileID: 5069778776391302278, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: deuteranopia
       objectReference: {fileID: 0}
     - target: {fileID: 5175198060845158671, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11355,3 +11439,4 @@ SceneRoots:
   - {fileID: 329446798}
   - {fileID: 60071943}
   - {fileID: 450253174}
+  - {fileID: 104737016}
