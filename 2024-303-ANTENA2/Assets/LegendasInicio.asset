@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: num 1
+    text: "Os resultados de contrata\xE7\xE3o sa\xEDram. Voc\xEA foi selecionado
+      como operador substituto tempor\xE1rio da Antena de Retransmiss\xE3o N\xBA
+      2. Parab\xE9ns!\n"
   - name: 
-    text: num 2
+    text: "Durante cinco dias, voc\xEA ser\xE1 respons\xE1vel por manter a Antena
+      em funcionamento, retransmitindo mensagens e fazendo a manuten\xE7\xE3o de
+      equipamentos, caso seja necess\xE1rio. \n"
   - name: 
-    text: num 3
+    text: "No sexto dia, ser\xE1 enviado um novo operador para assumir o cargo efetivamente,
+      e seu trabalho estar\xE1 terminado.\n"
   - name: 
-    text: num 4
-  - name: 
-    text: num 5
+    text: "Boa sorte, operador. Gl\xF3ria\_a\_Invicta!"
