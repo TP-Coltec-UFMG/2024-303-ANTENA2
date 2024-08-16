@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3414c85b8b6fb194b85c0bf9d0d4bb07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: 944b1ffca397f2c4eb15e1c4616fd607, type: 2}
+  dialogueData: {fileID: 11400000, guid: 069c9a854f91bd74c87c77d325a2b760, type: 2}
   typeText: {fileID: 2006046814}
   dialogueUI: {fileID: 2006046813}
 --- !u!114 &2006046818
