@@ -500,9 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5fc1a107f0ba34282211ca02d8f695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeGeral: 0
-  volumeMusica: 0
-  volumeEfeito: 0
 --- !u!1 &2155925373823833897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,6 +3420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4704475144837835235}
+  - component: {fileID: 7555114716071912286}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -3452,6 +3450,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7555114716071912286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6030032342486245690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f144aaf985e650243b05a826f45e81d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ger: {fileID: 6795439029539509196}
+  mus: {fileID: 3256320082861834387}
+  efeitos: {fileID: 7390088390283491192}
 --- !u!1 &6140747049196397256
 GameObject:
   m_ObjectHideFlags: 0
