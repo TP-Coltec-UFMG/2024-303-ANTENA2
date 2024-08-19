@@ -9738,6 +9738,7 @@ RectTransform:
   - {fileID: 1692315138}
   - {fileID: 1723160147}
   - {fileID: 1470057768}
+  - {fileID: 2129314402}
   m_Father: {fileID: 1607044810}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10437,7 +10438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockText: {fileID: 2091721352}
   timeInADay: 86400
-  timeScale: 4000
+  timeScale: 8000
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
@@ -11470,8 +11471,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1060160211}
+  m_Children: []
   m_Father: {fileID: 1897745239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
