@@ -10,15 +10,15 @@ public class AbreConfig : MonoBehaviour
     [SerializeField] private GameObject boneco;
     // Start is called before the first frame update
     public void Configurar(){
-        casa.SetActive(false);
-        botao.SetActive(false);
-        boneco.SetActive(false);
+        //casa.SetActive(false);
+        //botao.SetActive(false);
+        //boneco.SetActive(false);
         configuracoes.SetActive(true);
     }
     public void Voltar(){
         configuracoes.SetActive(false);
-        boneco.SetActive(true);
-        casa.SetActive(true);
-        botao.SetActive(true);
+        //boneco.SetActive(true);
+        //casa.SetActive(true);
+        //botao.SetActive(true);
     }
 }

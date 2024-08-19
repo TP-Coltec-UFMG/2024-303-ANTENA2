@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControleVolume : MonoBehaviour
 {
-    public float volumeGeral, volumeMusica, volumeEfeito;
+    public static float volumeGeral, volumeMusica, volumeEfeito;
     public void VolumeGeral(float volume){
         volumeGeral = volume;
         AudioListener.volume = volumeGeral;

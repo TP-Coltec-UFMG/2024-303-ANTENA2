@@ -12,6 +12,7 @@ public class PassaDia : MonoBehaviour {
     [SerializeField] private TMP_Text textoDiaTrans;
     [SerializeField] private Animator FadeOutTrab;
     [SerializeField] private Animator FadeDia;
+    [SerializeField] private GameObject botao;
     private int dia = 0;
     
     private void Start() {
@@ -31,6 +32,7 @@ public class PassaDia : MonoBehaviour {
     void OnTriggerEnter2D (Collider2D collider) {
         GameHandler.Dia ++;
         textoDiaTrans.text = GameHandler.Dia.ToString();
+        botao.SetActive(false);
 
         FadeDia.Play("FadeInDia"); //fade in dia x
     }

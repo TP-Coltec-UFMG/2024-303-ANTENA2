@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
-    [SerializeField] private string diaDoJogo;
     [SerializeField] private GameObject painelInicial;
     [SerializeField] private GameObject painelConfig;
     [SerializeField] private GameObject painelCreditos;
