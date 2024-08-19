@@ -19,35 +19,21 @@ public class Frequencias : MonoBehaviour
         aumentaFrequencia.onClick.AddListener(() =>
         {
             frequencia += .1f;
-            slider.value += .1f;
+            slider.value += 1f;
         });
         diminuiFrequencia.onClick.AddListener(() =>
         {
             frequencia -= .1f;
-            slider.value -= .1f;
+            slider.value -= 1f;
         });
     }
     
     void Update()
     {
-        frequencia = slider.value + 100.0f;
+        frequencia = slider.value / 10 + 100.0f;
         
-        // int aux = (int)(frequencia * 10);
-        int remainder = Mathf.RoundToInt(frequencia % 1 * 10);
-        int aux = Mathf.FloorToInt(frequencia);
-        string aux2 = aux.ToString();
-        // string aux3 = aux2[3].ToString();
-        string aux3 = remainder.ToString();
-        // aux2 = aux2.Remove(3);
-    
-        Debug.Log($"frequencia {frequencia}");
-        Debug.Log($"remainder {remainder}");
-        Debug.Log($"aux {aux}");
-        Debug.Log($"aux2 {aux2}");
-        Debug.Log($"aux3 {aux3}");
-        
-        textoFrequencia.text = aux2;
-        textoFrequencia2.text = aux3;
+        textoFrequencia.text = Mathf.FloorToInt(frequencia).ToString();
+        textoFrequencia2.text = Mathf.RoundToInt(frequencia % 1 * 10).ToString();
     }
 
     public bool checaFrequencia(float frequenciaExterna)
