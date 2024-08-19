@@ -6914,6 +6914,7 @@ GameObject:
   - component: {fileID: 1247907799}
   - component: {fileID: 1247907800}
   - component: {fileID: 1247907801}
+  - component: {fileID: 1247907802}
   m_Layer: 0
   m_Name: "VasoSanit\xE1rio"
   m_TagString: Untagged
@@ -7033,6 +7034,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5155444, y: 3.9061146}
   m_EdgeRadius: 0
+--- !u!114 &1247907802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247907798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302f915a7f7077643861188d055ddcc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  efeito: {fileID: 1755632081}
 --- !u!1 &1299595662
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,7 +8898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1755632081
 AudioSource:
   m_ObjectHideFlags: 0
