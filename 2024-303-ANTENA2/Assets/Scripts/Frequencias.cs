@@ -10,24 +10,42 @@ public class Frequencias : MonoBehaviour
     [SerializeField] public Slider slider;
     [SerializeField] public TextMeshProUGUI textoFrequencia;
     [SerializeField] public TextMeshProUGUI textoFrequencia2;
+    [SerializeField] private Button aumentaFrequencia;
+    [SerializeField] private Button diminuiFrequencia;
     private float frequencia;
 
-    // Start is called before the first frame update
-    void Start() 
+    private void Start()
     {
-        
+        aumentaFrequencia.onClick.AddListener(() =>
+        {
+            frequencia += .1f;
+            slider.value += .1f;
+        });
+        diminuiFrequencia.onClick.AddListener(() =>
+        {
+            frequencia -= .1f;
+            slider.value -= .1f;
+        });
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         frequencia = slider.value + 100.0f;
-
-        int aux = (int)(frequencia * 10);
+        
+        // int aux = (int)(frequencia * 10);
+        int remainder = Mathf.RoundToInt(frequencia % 1 * 10);
+        int aux = Mathf.FloorToInt(frequencia);
         string aux2 = aux.ToString();
-        string aux3 = aux2[3].ToString();
-        aux2 = aux2.Remove(3);
-
+        // string aux3 = aux2[3].ToString();
+        string aux3 = remainder.ToString();
+        // aux2 = aux2.Remove(3);
+    
+        Debug.Log($"frequencia {frequencia}");
+        Debug.Log($"remainder {remainder}");
+        Debug.Log($"aux {aux}");
+        Debug.Log($"aux2 {aux2}");
+        Debug.Log($"aux3 {aux3}");
+        
         textoFrequencia.text = aux2;
         textoFrequencia2.text = aux3;
     }
