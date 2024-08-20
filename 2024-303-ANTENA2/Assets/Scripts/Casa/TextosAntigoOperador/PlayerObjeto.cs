@@ -14,7 +14,7 @@ public class PlayerObjeto : MonoBehaviour {
     void Update() {
         if(Mathf.Abs(transform.position.x - player.position.x) < 2.0f) {
             if(Input.GetKeyDown(KeyCode.E)) {
-                fundoPreto.setActive(true);
+                fundoPreto.SetActive(true);
             }
         }
     }
