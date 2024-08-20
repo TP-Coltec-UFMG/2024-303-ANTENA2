@@ -23,19 +23,6 @@ public class SistemaLegendasInicio : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    /*void Update() {
-        if (estado == ESTADO.DESATIVADO) return;
-
-        switch(estado) {
-            case ESTADO.ESPERANDO:
-                Esperando();
-                break;
-            case ESTADO.DIGITANDO:
-                Digitando();
-                break;
-        }
-    }*/
-
     public void Next() {
         if(textoAtual == 0) {
             dialogueUI.Enable();

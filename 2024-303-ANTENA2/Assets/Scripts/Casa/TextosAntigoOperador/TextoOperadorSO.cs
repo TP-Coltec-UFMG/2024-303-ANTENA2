@@ -10,6 +10,7 @@ public class TextoOperadorSO : MonoBehaviour
     public List<EscritosSO> escritos;
     public TextMeshPro texto;
     public string textoOnCollision;
+    public int teste;
 
     private int lastPosition = 0;
 
