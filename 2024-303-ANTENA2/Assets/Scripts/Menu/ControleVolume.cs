@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ControleVolume : MonoBehaviour
 {
-    public static float volumeGeral, volumeMusica, volumeEfeito;
+    public static float volumeGeral = 0.5f;
+    public static float volumeMusica = 0.25f;
+    public static float  volumeEfeito = 1f;
     public void Update(){
         SaveSliderValue();
     }
