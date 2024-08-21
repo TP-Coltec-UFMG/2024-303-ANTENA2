@@ -5,17 +5,15 @@ using UnityEngine;
 public class AbreConfig : MonoBehaviour
 {
     [SerializeField] private GameObject configuracoes;
+    [SerializeField] private GameObject botao;
     
     public void Configurar(){
-        //casa.SetActive(false);
-        //botao.SetActive(false);
-        //boneco.SetActive(false);
+        botao.SetActive(false);
         configuracoes.SetActive(true);
+
     }
     public void Voltar(){
         configuracoes.SetActive(false);
-        //boneco.SetActive(true);
-        //casa.SetActive(true);
-        //botao.SetActive(true);
+        botao.SetActive(true);
     }
 }
