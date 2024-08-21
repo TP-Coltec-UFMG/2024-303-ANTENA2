@@ -585,7 +585,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7597736113657673175}
   - component: {fileID: 8295272504655825170}
-  - component: {fileID: 7398272557660354302}
   - component: {fileID: 42487169706390274}
   m_Layer: 5
   m_Name: Deut_hover
@@ -651,8 +650,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -686436093
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5f52d2515a1a39644b0f94e74dc8781b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -665,19 +664,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7398272557660354302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2195858231202799645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7052c317f6b0894a9b1060d006460ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rend: {fileID: 0}
 --- !u!65 &42487169706390274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1246,7 +1232,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8425459590452942631}
   - component: {fileID: 4025819751148516382}
-  - component: {fileID: 8787531939718317963}
   - component: {fileID: 7277656006013071505}
   m_Layer: 5
   m_Name: Nada_hover
@@ -1312,8 +1297,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -686436093
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c8590dc2ba1e7684ebca96c7aacfc8d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1326,19 +1311,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8787531939718317963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2901214200854615873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7052c317f6b0894a9b1060d006460ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rend: {fileID: 0}
 --- !u!65 &7277656006013071505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3014,7 +2986,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2107779052791301206}
   - component: {fileID: 3349532494996974518}
-  - component: {fileID: 2349910300284829318}
   - component: {fileID: 5726534487225376516}
   m_Layer: 5
   m_Name: Trit_hover
@@ -3080,8 +3051,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -686436093
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 04b165c3e4014e446946275b5cef10cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3094,19 +3065,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2349910300284829318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5678289306325831345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7052c317f6b0894a9b1060d006460ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rend: {fileID: 0}
 --- !u!65 &5726534487225376516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3138,7 +3096,6 @@ GameObject:
   m_Component:
   - component: {fileID: 899804397529982835}
   - component: {fileID: 3516880178618919291}
-  - component: {fileID: 5575153696375552536}
   - component: {fileID: 6564479698499041064}
   m_Layer: 5
   m_Name: Prot_hover
@@ -3204,8 +3161,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -686436093
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a84f03ea8ba6c0d428ca8e4100a1150e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3218,19 +3175,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5575153696375552536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5683144902279492450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7052c317f6b0894a9b1060d006460ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rend: {fileID: 0}
 --- !u!65 &6564479698499041064
 BoxCollider:
   m_ObjectHideFlags: 0
