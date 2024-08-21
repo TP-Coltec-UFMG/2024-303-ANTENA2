@@ -427,7 +427,11 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2349910300284829318, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+    - {fileID: 5575153696375552536, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+    - {fileID: 8787531939718317963, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
+    - {fileID: 7398272557660354302, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11464,6 +11468,7 @@ MonoBehaviour:
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
   FadeInTrab: {fileID: 1723160148}
+  painelOpcoes: {fileID: 122801201}
 --- !u!1 &1982784435
 GameObject:
   m_ObjectHideFlags: 0
