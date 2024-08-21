@@ -6,7 +6,6 @@ public class AbreConfig : MonoBehaviour
 {
     [SerializeField] private GameObject configuracoes;
     [SerializeField] private GameObject botao;
-    private float tempo = TimeManager.elapseTime;
     
     public void Configurar(){
         botao.SetActive(false);
