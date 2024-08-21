@@ -9,7 +9,8 @@ public class AtualizaSom : MonoBehaviour {
     [SerializeField] private Slider efeitos;
     private float defaultVol = 0.25f;
     void Start () {
-        AudioListener.volume = PlayerPrefs.GetFloat("Slider_Geral", AudioListener.volume); //definindo como está o volume geral
+
+        AudioListener.volume = PlayerPrefs.GetFloat("Slider_Geral", defaultVol); //definindo como está o volume geral
         ger.value = AudioListener.volume;
 
         // como está o volume da música

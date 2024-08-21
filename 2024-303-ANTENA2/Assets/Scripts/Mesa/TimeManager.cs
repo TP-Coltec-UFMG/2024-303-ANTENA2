@@ -15,11 +15,12 @@ public class TimeManager : MonoBehaviour {
     [Header("Dia no relógio")]
     [SerializeField] private TMP_Text textoDia;
     [SerializeField] private TMP_Text textoDiaTrans;
-    private float elapseTime = 0;
-    private string nomeCena = "Casa";
-    private int dia = 0;
     [SerializeField] private Animator FadeOutDia;
     [SerializeField] private Animator FadeInTrab;
+    [SerializeField] private GameObject painelOpcoes;
+    public static float elapseTime = 0;
+    private string nomeCena = "Casa";
+    private int dia = 0;
 
     private void Start() {
         dia = GameHandler.Dia;
@@ -31,18 +32,23 @@ public class TimeManager : MonoBehaviour {
     }
 
     private void Update() {
-        elapseTime += Time.deltaTime * timeScale;
-        elapseTime %= timeInADay;
-        UpdateClockUI();
+        //se as configurações estiverem abertas o tempo não passa
+        if (!painelOpcoes.activeSelf) {
 
-        // Às 18h acaba o turno de trabalho e troca para a cena da casa
-        if (elapseTime > (18 * 3600)){
-            FadeInTrab.Play("FadeInTrab"); //fade in 'cabou trabaio'
-        }
+            elapseTime += Time.deltaTime * timeScale;
+            elapseTime %= timeInADay;
+            UpdateClockUI();
+            
 
-        //Se tiver passado a transição vai para a próxima cena
-        if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
-            SceneManager.LoadScene(nomeCena);
+            // Às 18h acaba o turno de trabalho e troca para a cena da casa
+            if (elapseTime > (18 * 3600)){
+                FadeInTrab.Play("FadeInTrab"); //fade in 'cabou trabaio'
+            }
+
+            //Se tiver passado a transição vai para a próxima cena
+            if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
+                SceneManager.LoadScene(nomeCena);
+            }
         }
     }
 
