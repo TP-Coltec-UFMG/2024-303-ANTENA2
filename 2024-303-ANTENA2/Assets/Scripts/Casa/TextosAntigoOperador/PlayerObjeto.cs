@@ -30,4 +30,8 @@ public class ProximityDetector : MonoBehaviour
             // add your code here to handle the proximity detection
         }
     }
+    
+    public void fecha() {
+        fundoPreto.SetActive(false);
+    }
 }

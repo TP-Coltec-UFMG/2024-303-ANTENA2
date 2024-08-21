@@ -2981,7 +2981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalRange: 2
-  verticalRange: 1.5
+  verticalRange: 1.8
   fundoPreto: {fileID: 1386863776}
 --- !u!1 &520119897
 GameObject:
@@ -5510,7 +5510,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 817684871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1124078697}
+        m_TargetAssemblyTypeName: ProximityDetector, Assembly-CSharp
+        m_MethodName: fecha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &817684871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6702,7 +6714,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -518219962, guid: f77cefd1a6a786b4d82be53018cd9b17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8592,7 +8604,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -281731139, guid: f77cefd1a6a786b4d82be53018cd9b17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
