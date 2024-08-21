@@ -16,13 +16,13 @@ public class ProximityDetector : MonoBehaviour
         float horizontalDistance = Mathf.Abs(transform.position.x - boneco.transform.position.x);
         float verticalDistance = Mathf.Abs(transform.position.y - boneco.transform.position.y);
 
-        /*Debug.Log("Horizontal Distance: " + horizontalDistance);
-        Debug.Log("Vertical Distance: " + verticalDistance);*/
+        //Debug.Log("Horizontal Distance: " + horizontalDistance);
+        //Debug.Log("Vertical Distance: " + verticalDistance);
 
 
         if (horizontalDistance <= horizontalRange && verticalDistance <= verticalRange) {
             // object is near the target object
-            //Debug.Log("Object is near!");
+            Debug.Log("Object is near!");
             if(Input.GetKeyDown(KeyCode.E)) {
                 Debug.Log("E key was released.");
                 fundoPreto.SetActive(true);
