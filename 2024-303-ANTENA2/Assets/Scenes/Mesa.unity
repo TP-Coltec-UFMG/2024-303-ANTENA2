@@ -3524,9 +3524,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1866073033}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 400
+  m_MaxValue: 1500
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10686,7 +10686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10.026, y: 9.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866073034
@@ -11463,7 +11463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockText: {fileID: 2091721352}
   timeInADay: 86400
-  timeScale: 4000
+  timeScale: 120
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
