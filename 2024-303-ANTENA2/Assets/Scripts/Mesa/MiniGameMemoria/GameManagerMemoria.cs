@@ -33,24 +33,24 @@ public class GameManagerMemoria : MonoBehaviour {
     private float erroLitCounter;
 
     public bool gameOn;
+    private float timeLeft;
 
     void Update() {
         if (score < maxScore) {
             if(shouldBeLit) {
                 stayLitCounter -= Time.deltaTime;
+                    if (stayLitCounter < 0) {
+                        botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
+                        shouldBeLit = false;
 
-                if (stayLitCounter < 0) {
-                    botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
-                    shouldBeLit = false;
+                        shouldBeDark = true;
 
-                    shouldBeDark = true;
-
-                    positionInSequence++;
-                }
+                        positionInSequence++;
+                    }
+                //}
             }
             if(shouldBeDark) {
-                waitBetweenCounter -= Time.deltaTime;
-
+                waitBetweenCounter -= Time.deltaTime;               
                 if(positionInSequence >= activeSequence.Count) {
                     shouldBeDark = false;
                     gameActive = true;
@@ -64,6 +64,7 @@ public class GameManagerMemoria : MonoBehaviour {
                         shouldBeDark = false;
                     }
                 }
+                
             }
         }
         else {
@@ -135,6 +136,10 @@ public class GameManagerMemoria : MonoBehaviour {
         gameActive = false;
         mesaVerde.SetActive(false);
         gameOn = false;
+        //for(int i = 0; i < activeSequence.Length; i++) {
+        //    botoes_telinha.[activeSequence[i]].color = new Color(255, 255, 255, 0f);
+        //}
+        
     }
 
     private IEnumerator RestartGame()
