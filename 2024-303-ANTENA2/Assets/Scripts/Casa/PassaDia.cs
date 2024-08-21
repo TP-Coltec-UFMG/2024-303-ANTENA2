@@ -13,12 +13,19 @@ public class PassaDia : MonoBehaviour {
     [SerializeField] private Animator FadeOutTrab;
     [SerializeField] private Animator FadeDia;
     [SerializeField] private GameObject botao;
+    [SerializeField] private AudioSource musiquinhaDia1;
+    [SerializeField] private AudioSource musiquinhaCasa;
+    
     private int dia = 0;
     
     private void Start() {
         dia = GameHandler.Dia;
         if(dia > 0) {
             FadeOutTrab.Play("FadeOutTrab"); //fade out do fim trabaio
+            musiquinhaCasa.Play();
+        }
+        if(dia == 0){
+            musiquinhaDia1.Play();
         }
     }
 
