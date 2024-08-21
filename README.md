@@ -15,7 +15,7 @@
 <div>- Buscando alcançar maior acessibilidade auditiva implementamos três opções de mudanças de volume:
     <div>* Volume geral (volume da música e efeitos sonoros juntos);</div>
     <div>* Volume da música;</div>
-    <div>* Volume dos efeitos sonoros;</div>
+    <div>* Volume dos efeitos sonoros.</div>
     <p></p>
     </div>
 <p>- Área de dificuldade que controla a quantidade de tarefas durante o jogo.</p>
