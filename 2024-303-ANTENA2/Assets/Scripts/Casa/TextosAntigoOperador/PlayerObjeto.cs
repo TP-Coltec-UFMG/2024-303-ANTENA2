@@ -1,21 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerObjeto : MonoBehaviour {
-    [SerializeField] private Transform player;
-    [SerializeField] private GameObject fundoPreto;
-    SpriteRenderer spriteRenderer;
+public class ProximityDetector : MonoBehaviour
+{
+    public float horizontalRange; // adjust this value to change the horizontal detection range
+    public float verticalRange; // adjust this value to change the vertical detection range
+    private GameObject boneco; // the object to detect proximity to
+    private GameObject fundoPreto;
 
     void Awake() {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        boneco = GameObject.Find("boneco");
+        fundoPreto = GameObject.Find("Fundo_Cartas");
     }
 
-    void Update() {
-        if(Mathf.Abs(transform.position.x - player.position.x) < 2.0f) {
-            if(Input.GetKeyDown(KeyCode.E)) {
+    private void Update()
+    {
+        float horizontalDistance = Mathf.Abs(transform.position.x - boneco.transform.position.x);
+        float verticalDistance = Mathf.Abs(transform.position.y - boneco.transform.position.y);
+
+        /*Debug.Log("Horizontal Distance: " + horizontalDistance);
+        Debug.Log("Vertical Distance: " + verticalDistance);*/
+
+
+        if (horizontalDistance <= horizontalRange && verticalDistance <= verticalRange)
+        {
+            // object is near the target object
+            Debug.Log("Object is near!");
+             if(Input.GetKeyDown(KeyCode.E)) {
                 fundoPreto.SetActive(true);
             }
+            // add your code here to handle the proximity detection
         }
     }
 }

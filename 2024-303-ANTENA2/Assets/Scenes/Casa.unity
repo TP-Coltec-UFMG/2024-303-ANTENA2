@@ -570,6 +570,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c76ac0f057dd55e4ea66255816314e1d, type: 2}
   texto: {fileID: 116369051}
   textoOnCollision: "Voc\xEA encontra uma carta velha e abarrotada. Ler?"
+  teste: 0
 --- !u!114 &116369051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,12 +657,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 116369052}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 116369052}
+  m_maskType: 0
 --- !u!23 &116369052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -908,6 +909,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a9c08e850c109441adaf3419bd01153, type: 2}
   texto: {fileID: 168441787}
   textoOnCollision: "Voc\xEA encontra uma p\xE1gina de di\xE1rio velha. Ler?"
+  teste: 0
 --- !u!114 &168441787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -994,12 +996,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 168441788}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 168441788}
+  m_maskType: 0
 --- !u!23 &168441788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2744,6 +2746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487387214}
   - component: {fileID: 487387215}
+  - component: {fileID: 487387217}
   - component: {fileID: 487387216}
   m_Layer: 0
   m_Name: Caixas2
@@ -2864,6 +2867,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.987677, y: 1.1316805}
   m_EdgeRadius: 0
+--- !u!114 &487387217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487387213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d8333a6e4ecea59bae172642e82eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalRange: 2
+  verticalRange: 1.5
 --- !u!1 &520119897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,8 +3054,8 @@ PolygonCollider2D:
       - {x: -21.999886, y: -37.21681}
       - {x: -22.000923, y: -36.984203}
       - {x: -22.20142, y: -36.991383}
-      - {x: -22.225496, y: -20.326603}
-      - {x: 10.668568, y: -20.332647}
+      - {x: -22.282515, y: -21.552528}
+      - {x: 10.668568, y: -21.587088}
       - {x: 10.660934, y: -20.202843}
       - {x: 10.674701, y: -8.316971}
       - {x: -9.310516, y: -8.317818}
@@ -3049,14 +3066,15 @@ PolygonCollider2D:
       - {x: -37.294636, y: 6.2938886}
       - {x: -17.716076, y: 6.313137}
       - {x: -13.150833, y: 6.3838205}
-      - {x: -13.181381, y: 3.8673058}
-      - {x: -13.180534, y: 3.4809227}
-      - {x: -13.176346, y: 3.2857475}
-      - {x: -13.105278, y: 3.3605537}
-      - {x: -13.123459, y: 3.3983727}
+      - {x: -13.164787, y: 4.3983}
+      - {x: -13.130753, y: 4.410164}
+      - {x: -13.155643, y: 4.410164}
+      - {x: -13.118271, y: 4.414112}
+      - {x: -13.047199, y: 4.4225464}
+      - {x: -13.032192, y: 4.4188766}
       - {x: -13.075592, y: 5.304146}
       - {x: -9.360592, y: 5.2335434}
-      - {x: -9.338844, y: 3.4371872}
+      - {x: -9.355438, y: 4.41621}
       - {x: -9.366428, y: 6.990967}
       - {x: -6.644497, y: 7.017237}
       - {x: -6.6673055, y: 19.010592}
@@ -3086,8 +3104,8 @@ PolygonCollider2D:
       - {x: 34.63514, y: -8.260548}
       - {x: 17.31843, y: -8.348599}
       - {x: 17.312973, y: -20.321157}
-      - {x: 17.337946, y: -20.332132}
-      - {x: 34.660385, y: -20.323807}
+      - {x: 17.29518, y: -21.287212}
+      - {x: 34.660385, y: -21.278893}
       - {x: 34.659103, y: -51.186413}
       - {x: 32.86392, y: -51.23188}
       - {x: -22.22089, y: -51.21401}
@@ -4226,6 +4244,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 506a6cabd5cd06e46971ff04c5f1a1c9, type: 2}
   texto: {fileID: 687962259}
   textoOnCollision: "Voc\xEA encontra um pequeno peda\xE7o de papel rasgado. Ler?"
+  teste: 0
 --- !u!61 &687962257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4365,12 +4384,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 687962260}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 687962260}
+  m_maskType: 0
 --- !u!23 &687962260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4617,6 +4636,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 30011e1b0e16457479dc9e7d222d506e, type: 2}
   texto: {fileID: 721815489}
   textoOnCollision: "Voc\xEA encontra uma carta velha e abarrotada. Ler?"
+  teste: 0
 --- !u!61 &721815487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4756,12 +4776,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 721815490}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 721815490}
+  m_maskType: 0
 --- !u!23 &721815490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6154,7 +6174,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.374867}
+  m_Offset: {x: 0, y: 3.243638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6165,7 +6185,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6666665, y: 10.361377}
+  m_Size: {x: 6.6666665, y: 8.623835}
   m_EdgeRadius: 0
 --- !u!1 &1012958698
 GameObject:
@@ -6753,6 +6773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d8333a6e4ecea59bae172642e82eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalRange: 10
+  verticalRange: 5
 --- !u!1 &1140012242
 GameObject:
   m_ObjectHideFlags: 0
@@ -7442,7 +7464,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 3.653959}
+  m_Offset: {x: 0, y: 3.098047}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7453,7 +7475,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.222222, y: 0.4698596}
+  m_Size: {x: 14.222222, y: 1.5816836}
   m_EdgeRadius: 0
 --- !u!1 &1319651268
 GameObject:
