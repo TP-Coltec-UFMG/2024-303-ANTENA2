@@ -5,11 +5,10 @@ public class ProximityDetector : MonoBehaviour
     public float horizontalRange; // adjust this value to change the horizontal detection range
     public float verticalRange; // adjust this value to change the vertical detection range
     private GameObject boneco; // the object to detect proximity to
-    private GameObject fundoPreto;
+    [SerializeField] private GameObject fundoPreto;
 
     void Awake() {
         boneco = GameObject.Find("boneco");
-        fundoPreto = GameObject.Find("Fundo_Cartas");
     }
 
     private void Update()
@@ -21,11 +20,11 @@ public class ProximityDetector : MonoBehaviour
         Debug.Log("Vertical Distance: " + verticalDistance);*/
 
 
-        if (horizontalDistance <= horizontalRange && verticalDistance <= verticalRange)
-        {
+        if (horizontalDistance <= horizontalRange && verticalDistance <= verticalRange) {
             // object is near the target object
-            Debug.Log("Object is near!");
-             if(Input.GetKeyDown(KeyCode.E)) {
+            //Debug.Log("Object is near!");
+            if(Input.GetKeyDown(KeyCode.E)) {
+                Debug.Log("E key was released.");
                 fundoPreto.SetActive(true);
             }
             // add your code here to handle the proximity detection
