@@ -11463,7 +11463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockText: {fileID: 2091721352}
   timeInADay: 86400
-  timeScale: 120
+  timeScale: 2000
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
@@ -12480,12 +12480,12 @@ GameObject:
   - component: {fileID: 2129314404}
   - component: {fileID: 2129314403}
   m_Layer: 0
-  m_Name: Imagem_transHorario
+  m_Name: fundo_preto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2129314402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12518,7 +12518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

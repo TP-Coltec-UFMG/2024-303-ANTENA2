@@ -8,11 +8,19 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D player;
     [SerializeField] private float speed;
+    [SerializeField] private Transform bonecoPorta;
+    [SerializeField] private Transform bonecoMesa;
     private Animator myAnimation;
 
     void Start(){
         player = GetComponent<Rigidbody2D>();
         myAnimation = GetComponent<Animator>();
+
+        if (GameHandler.Dia == 0) {
+            transform.position = bonecoPorta.position;
+        } else {
+            transform.position = bonecoMesa.position;
+        }
     }
     void Update(){
         player.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;

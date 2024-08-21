@@ -23,6 +23,7 @@ public class PassaDia : MonoBehaviour {
         if(dia > 0) {
             FadeOutTrab.Play("FadeOutTrab"); //fade out do fim trabaio
             musiquinhaCasa.Play();
+
         }
         if(dia == 0){
             musiquinhaDia1.Play();

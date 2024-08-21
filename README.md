@@ -1,5 +1,7 @@
 # ANTENA2
-<div><p>Antena 2 é um jogo de decisões. Ajudar rebeldes ou seguir o governo? É o que deve se pensar no jogo, pois ao jogar você se encontra na pele de um trabalhador cuja função é retransmitir mensagens vindas de várias origens. Ao ler uma mensagem, decida retransmiti-la, apagá-la ou denuncia-la. Siga seu trabalho retransmitindo mensagens governamentais ou colabore com a comunicação dos rebeldes. Devido a esse trabalho, o jogo se passa em uma cabana com as bugingangas necessárias para controlar a Antena 2, dentre elas a grande mesa de transmissão. Aproveite sua acomodação nada usual e explore-a! </p></div>
+<div><p>Antena 2 é um jogo de decisões. Ajudar rebeldes ou seguir o governo? É o que deve se pensar no jogo, pois ao jogar você se encontra na pele de um trabalhador cuja função é retransmitir mensagens vindas de várias origens. Ao ler uma mensagem, decida retransmiti-la, apagá-la ou denuncia-la. Siga seu trabalho retransmitindo mensagens governamentais ou colabore com a comunicação dos rebeldes. Devido a esse trabalho, o jogo se passa em uma cabana com as bugingangas necessárias para controlar a Antena 2, dentre elas a grande mesa de transmissão. Aproveite sua acomodação nada usual e explore-a! </p>
+<p>Feito por: Nana, Renna, Hiago, Gabi, Mario e 14 <3</p></div>
+
 
 ## Menu Inicial
 <img src="inicioprint.png">
