@@ -9,6 +9,7 @@ using UnityEngine.Serialization;
 public class CameraFollow : MonoBehaviour
 {
     public static CameraFollow Instance { get; private set; }
+    public static bool CoroutineRunning;
     
     private CinemachineVirtualCamera _cvc;
     private float _cvcOrthoSizeDefault;
@@ -37,8 +38,9 @@ public class CameraFollow : MonoBehaviour
 
     private IEnumerator ChangeOrthoSize(float orthoSize)
     {
+        CoroutineRunning = true;
         float curOrthoSize = _cvc.m_Lens.OrthographicSize;
-        const float duration = .5f;
+        const float duration = 1f;
         float elapsed = 0f;
         while (elapsed < duration)
         {
@@ -46,6 +48,8 @@ public class CameraFollow : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
+
+        CoroutineRunning = false;
 
         _cvc.m_Lens.OrthographicSize = orthoSize;
     }
@@ -78,6 +82,10 @@ public class CameraFollow : MonoBehaviour
                     Follow(Locais.Transmissao, null);
                 break;
         }
+    }
+
+    public bool IsOnZoom() {
+        return _cvc.m_Lens.OrthographicSize != _cvcOrthoSizeDefault;
     }
 
     public enum Locais
