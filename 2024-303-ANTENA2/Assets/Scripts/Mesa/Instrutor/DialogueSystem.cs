@@ -28,7 +28,7 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    void Update() {
+    public void btnNext() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
@@ -59,25 +59,22 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.ESPERANDO;
     }
 
-    void Esperando() {
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            if(!finalizado) {
-                Next();
-            }
-            else {
-                dialogueUI.Disable();
-                estado = ESTADO.DESATIVADO;
-                textoAtual = 0;
-                finalizado = false;
-            }
+    public void Esperando() {
+        if(!finalizado) {
+            Next();
         }
+        else {
+            dialogueUI.Disable();
+            estado = ESTADO.DESATIVADO;
+            textoAtual = 0;
+            finalizado = false;
+        }
+        
     }
 
    void Digitando() {
-    if(Input.GetKeyDown(KeyCode.Return)) {
-           typeText.Skip();
-           estado = ESTADO.ESPERANDO;
-       }
+        typeText.Skip();
+        estado = ESTADO.ESPERANDO;
    }
 
    public void SkipInstrutor() {
