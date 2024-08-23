@@ -65,11 +65,11 @@ public class SistemaLegendasInicio : MonoBehaviour {
    }
 
    public void Skip() {
-    dialogueUI.Disable();
-    estado = ESTADO.DESATIVADO;
-    textoAtual = 0;
-    finalizado = true;
-    SceneManager.LoadScene("Casa");
-    Debug.Log("Abrir Jogo");
+        dialogueUI.Disable();
+        estado = ESTADO.DESATIVADO;
+        textoAtual = 0;
+        finalizado = true;
+        SceneManager.LoadScene("Casa");
+        Debug.Log("Abrir Jogo");
     }
 }

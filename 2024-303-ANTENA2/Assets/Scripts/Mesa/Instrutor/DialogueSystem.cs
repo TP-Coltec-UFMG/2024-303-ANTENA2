@@ -79,4 +79,11 @@ public class DialogueSystem : MonoBehaviour {
            estado = ESTADO.ESPERANDO;
        }
    }
+
+   public void SkipInstrutor() {
+        dialogueUI.Disable();
+        estado = ESTADO.DESATIVADO;
+        textoAtual = 0;
+        finalizado = true;
+    }
 }
