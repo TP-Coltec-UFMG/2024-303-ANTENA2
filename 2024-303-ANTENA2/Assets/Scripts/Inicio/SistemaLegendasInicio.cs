@@ -37,6 +37,19 @@ public class SistemaLegendasInicio : MonoBehaviour {
         estado = ESTADO.DIGITANDO;
     }
 
+    public void NextBtn() {
+        if (estado == ESTADO.DESATIVADO) return;
+
+        switch(estado) {
+            case ESTADO.ESPERANDO:
+                Esperando();
+                break;
+            case ESTADO.DIGITANDO:
+                Digitando();
+                break;
+        }
+    }
+
     void OnTypeFinish() {
         estado = ESTADO.ESPERANDO;
     }

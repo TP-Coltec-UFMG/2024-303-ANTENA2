@@ -25,7 +25,7 @@ public class SistemaLegendasFinal : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    /*void Update() {
+    public void NextBtn() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
@@ -36,7 +36,7 @@ public class SistemaLegendasFinal : MonoBehaviour {
                 Digitando();
                 break;
         }
-    }*/
+    }
 
     public void Next() {
         if(textoAtual == 0) {
@@ -56,8 +56,7 @@ public class SistemaLegendasFinal : MonoBehaviour {
         estado = ESTADO.ESPERANDO;
     }
 
-    public void Esperando() {
-        
+    void Esperando() {
         if(!finalizado) {
             Next();
         }
@@ -73,18 +72,16 @@ public class SistemaLegendasFinal : MonoBehaviour {
     }
 
    void Digitando() {
-    if(Input.GetKeyDown(KeyCode.Return)) {
-           typeText.Skip();
-           estado = ESTADO.ESPERANDO;
-       }
+        typeText.Skip();
+        estado = ESTADO.ESPERANDO;
    }
 
    public void Skip() {
-    dialogueUI.Disable();
-    estado = ESTADO.DESATIVADO;
-    textoAtual = 0;
-    finalizado = true;
-    creditos.SetActive(true);
-    Debug.Log("Creditos");
+        dialogueUI.Disable();
+        estado = ESTADO.DESATIVADO;
+        textoAtual = 0;
+        finalizado = true;
+        creditos.SetActive(true);
+        Debug.Log("Creditos");
     }
 }

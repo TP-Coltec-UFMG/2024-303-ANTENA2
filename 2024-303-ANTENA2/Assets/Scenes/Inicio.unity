@@ -636,8 +636,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2006046817}
-        m_TargetAssemblyTypeName: SistemaLegendas, Assembly-CSharp
-        m_MethodName: Esperando
+        m_TargetAssemblyTypeName: SistemaLegendasInicio, Assembly-CSharp
+        m_MethodName: NextBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
