@@ -15,7 +15,7 @@ public class GameHandler : MonoBehaviour
 
     private List<MensagemSO> _mensagensDisponiveisDia = new();
     
-    private const float TimerNovaMensagemMax = 2f;
+    private const float TimerNovaMensagemMax = 10f;
     private float _timerNovaMensagemCounter;
 
     private MensagensChegando _mensagensChegando;

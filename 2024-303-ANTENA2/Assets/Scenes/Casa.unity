@@ -2336,6 +2336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450253174}
   - component: {fileID: 450253175}
+  - component: {fileID: 450253176}
   m_Layer: 0
   m_Name: AbreOpcoes
   m_TagString: Untagged
@@ -2372,6 +2373,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configuracoes: {fileID: 1569222264}
   botao: {fileID: 603040593}
+--- !u!114 &450253176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450253172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f144aaf985e650243b05a826f45e81d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ger: {fileID: 903723130}
+  mus: {fileID: 903723129}
+  efeitos: {fileID: 903723128}
 --- !u!1 &456112240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,7 +3585,7 @@ RectTransform:
   m_GameObject: {fileID: 603040593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 3.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1886676317}
@@ -3577,7 +3593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -834, y: -478}
+  m_AnchoredPosition: {x: -834, y: -455}
   m_SizeDelta: {x: 162.357, y: 46.972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603040595
@@ -3656,8 +3672,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 46f62feef21bd5a478b168cc411c3e43, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6065,7 +6081,8 @@ PrefabInstance:
       propertyPath: efeitos
       value: 
       objectReference: {fileID: 903723128}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7555114716071912286, guid: 6c384c123c1e5814db3b3e42388d2446, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9798,7 +9815,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6e16c97e1218280429876790dd287b53, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.408
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10265,7 +10282,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886676316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 

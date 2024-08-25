@@ -33,7 +33,7 @@ public class TimeManager : MonoBehaviour {
 
     private void Update() {
         //se as configurações estiverem abertas o tempo não passa
-        if (!painelOpcoes.activeSelf) {
+        //if (!painelOpcoes.activeSelf) {
 
             elapseTime += Time.deltaTime * timeScale;
             elapseTime %= timeInADay;
@@ -49,7 +49,7 @@ public class TimeManager : MonoBehaviour {
             if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
                 SceneManager.LoadScene(nomeCena);
             }
-        }
+        //}
     }
 
     void UpdateClockUI(){
