@@ -25,7 +25,7 @@ public class SistemaLegendasFinal : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    public void NextBtn() {
+    public void BtnNext() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {

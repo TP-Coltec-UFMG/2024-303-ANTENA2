@@ -37,7 +37,7 @@ public class SistemaLegendasInicio : MonoBehaviour {
         estado = ESTADO.DIGITANDO;
     }
 
-    public void NextBtn() {
+    public void BtnNext() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
@@ -55,7 +55,6 @@ public class SistemaLegendasInicio : MonoBehaviour {
     }
 
     public void Esperando() {
-        
         if(!finalizado) {
             Next();
         }
@@ -71,10 +70,8 @@ public class SistemaLegendasInicio : MonoBehaviour {
     }
 
    void Digitando() {
-    if(Input.GetKeyDown(KeyCode.Return)) {
-           typeText.Skip();
-           estado = ESTADO.ESPERANDO;
-       }
+        typeText.Skip();
+        estado = ESTADO.ESPERANDO;
    }
 
    public void Skip() {

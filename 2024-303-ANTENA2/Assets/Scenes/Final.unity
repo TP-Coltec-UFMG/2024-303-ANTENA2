@@ -331,7 +331,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3921569, g: 0.0627451, b: 0.13725491, a: 1}
+  m_Color: {r: 0.19215687, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1428,7 +1428,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1225605376}
         m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
-        m_MethodName: NextBtn
+        m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1829,7 +1829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1875103669}
         m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
-        m_MethodName: NextBtn
+        m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
