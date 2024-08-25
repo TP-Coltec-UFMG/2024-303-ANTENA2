@@ -12,10 +12,10 @@ public class DialogueUI : MonoBehaviour {
     public float speed = 10f;
     bool open = false;
 
-    void Awake() {
+    /*void Awake() {
         background = transform.GetChild(0).GetComponent<Image>();
         legendas = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-    }
+    }*/
 
     void Start() {
 
