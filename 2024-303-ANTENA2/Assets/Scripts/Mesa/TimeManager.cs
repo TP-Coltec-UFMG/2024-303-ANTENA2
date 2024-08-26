@@ -17,7 +17,7 @@ public class TimeManager : MonoBehaviour {
     [SerializeField] private TMP_Text textoDiaTrans;
     [SerializeField] private Animator FadeOutDia;
     [SerializeField] private Animator FadeInTrab;
-    [SerializeField] private GameObject painelOpcoes;
+    [SerializeField] private GameObject tuto;
     public static float elapseTime = 0;
     private string nomeCena = "Casa";
     private int dia = 0;
@@ -32,8 +32,8 @@ public class TimeManager : MonoBehaviour {
     }
 
     private void Update() {
-        //se as configurações estiverem abertas o tempo não passa
-        //if (!painelOpcoes.activeSelf) {
+        //se o tutorial estiver aberto o tempo não passa
+        if (!tuto.activeSelf) {
 
             elapseTime += Time.deltaTime * timeScale;
             elapseTime %= timeInADay;
@@ -49,7 +49,7 @@ public class TimeManager : MonoBehaviour {
             if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
                 SceneManager.LoadScene(nomeCena);
             }
-        //}
+        }
     }
 
     void UpdateClockUI(){

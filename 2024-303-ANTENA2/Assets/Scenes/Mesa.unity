@@ -8986,7 +8986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555151359}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 769f06c96ea5e567ea9d7bcb183f7285, type: 3}
   m_Name: 
@@ -12478,7 +12478,7 @@ MonoBehaviour:
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
   FadeInTrab: {fileID: 1723160148}
-  painelOpcoes: {fileID: 122801201}
+  tuto: {fileID: 251381715}
 --- !u!114 &1980838746
 MonoBehaviour:
   m_ObjectHideFlags: 0

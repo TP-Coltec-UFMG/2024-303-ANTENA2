@@ -8,7 +8,7 @@ public class PausaTempo : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(configs.activeSelf == true || tutorial.activeSelf == true){
+        if(configs.activeSelf == true /*|| tutorial.activeSelf == true*/){
             Time.timeScale = 0;
         } else {
             Time.timeScale = 1;
