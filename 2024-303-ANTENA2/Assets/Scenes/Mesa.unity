@@ -531,7 +531,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1605516014}
         m_TargetAssemblyTypeName: DialogueSystem, Assembly-CSharp
-        m_MethodName: btnNext
+        m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8986,13 +8986,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555151359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 769f06c96ea5e567ea9d7bcb183f7285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   randomNumber: 0
-  max_number: 3
+  max_number: 10
   time: 10
   telinha: {fileID: 237877920}
   mesa: {fileID: 1555151359}
