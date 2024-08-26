@@ -28,7 +28,7 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
     }
 
-    public void btnNext() {
+    public void BtnNext() {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
