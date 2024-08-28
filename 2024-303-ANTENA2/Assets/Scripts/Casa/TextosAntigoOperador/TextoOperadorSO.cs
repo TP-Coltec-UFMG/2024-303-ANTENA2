@@ -4,7 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TextoOperadorSO : MonoBehaviour
+/*public class TextoOperadorSO : MonoBehaviour
 {
     public int dia = GameHandler.Dia;
     public List<EscritosSO> escritos;
@@ -41,4 +41,4 @@ public class TextoOperadorSO : MonoBehaviour
     {
         lastPosition = defineTexto(lastPosition);
     }
-}
+}*/

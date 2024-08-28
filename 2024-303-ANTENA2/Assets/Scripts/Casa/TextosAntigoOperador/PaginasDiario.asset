@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: PaginasDiario
+  m_EditorClassIdentifier: 
+  tipoDeDocumento: 0
+  escritosDocs:
+  - dia: 1
+    escrito: "Esse lugar parece que est\xE1 de cabe\xE7a pra baixo. Tudo parece fora
+      do lugar, sem tirar esse cheiro horr\xEDvel de madeira podre\u2026 tamb\xE9m
+      vou ter que fazer uma bela limpeza na geladeira. O cara que veio antes de mim
+      deve ter vivido num chiqueiro."
+  - dia: 2
+    escrito: "O trabalho \xE9 bem f\xE1cil, mas cansativo, al\xE9m de n\xE3o ter
+      nada pra fazer nessa cabana. Mas pelo menos tenho a encana\xE7\xE3o do banheiro
+      pra me preocupar, aparentemente esses canos est\xE3o ali faz um bom tempo\u2026"
+  - dia: 3
+    escrito: "Por que nesse lugar faz tanto frio \xE0 noite? Parece que a lareira
+      nem funciona! Pelo menos meu sobretudo coube na mala, com o pre\xE7o que paguei
+      nele seria um pecado deix\xE1-lo para tr\xE1s, al\xE9m da cor verde dele me
+      lembrar os olhos da minha filha\u2026 sinto falta dela\u2026 sinto falta de
+      todo mundo\u2026 espero que n\xE3o demore muito at\xE9 eu conseguir uns dias
+      de folga."
+  - dia: 4
+    escrito: "Eu acho que a cada dia que passo nesse lugar estou ficando mais maluco!
+      Eu estava olhando a paisagem l\xE1 fora e eu JURO que vi alguma coisa passando.
+      N\xE3o tenho a menor ideia do que era, mas com certeza era BEM grande. Melhor
+      eu manter tudo trancado, n\xE3o pretendo virar comida de seja l\xE1 o que for
+      aquilo t\xE3o cedo."
+  - dia: 5
+    escrito: "Eu consegui perder a merda da chave do dep\xF3sito! Onde ela pode ter
+      parado? N\xE3o tenho a m\xEDnima ideia. Pelo menos a caixa de ferramentas ficou
+      pra fora, o problema vai ser as cifras que eu deixei l\xE1 dentro\u2026 mas
+      acho que n\xE3o tem problema, o m\xE1ximo que pode acontecer \xE9 eu ser demitido.
+      E sinceramente, seria um al\xEDvio!"
