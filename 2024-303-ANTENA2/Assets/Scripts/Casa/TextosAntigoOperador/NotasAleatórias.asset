@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: "NotasAleat\xF3rias"
   m_EditorClassIdentifier: 
   tipoDeDocumento: 3
-  escritosDocs: []
+  nomeDocumento: notas
+  escritosDocs:
+  - dia: 1
+    escrito: "Lembrar de pedir pro cara do r\xE1dio mais comida na pr\xF3xima semana."

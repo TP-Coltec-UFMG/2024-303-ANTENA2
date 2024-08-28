@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CartasParaOsRebeldes
   m_EditorClassIdentifier: 
   tipoDeDocumento: 1
+  nomeDocumento: Cartas
   escritosDocs: []

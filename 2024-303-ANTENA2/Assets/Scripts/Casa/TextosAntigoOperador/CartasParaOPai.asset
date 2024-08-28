@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CartasParaOPai
   m_EditorClassIdentifier: 
   tipoDeDocumento: 2
+  nomeDocumento: Cartas
   escritosDocs: []

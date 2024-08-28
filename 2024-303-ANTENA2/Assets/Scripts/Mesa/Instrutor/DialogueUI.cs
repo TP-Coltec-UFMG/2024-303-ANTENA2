@@ -12,15 +12,9 @@ public class DialogueUI : MonoBehaviour {
     public float speed = 10f;
     bool open = false;
 
-    /*void Awake() {
-        background = transform.GetChild(0).GetComponent<Image>();
-        legendas = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-    }*/
-
     void Start() {
 
     }
-
     void Update() {
         if(open) {
             background.fillAmount = Mathf.Lerp(background.fillAmount, 1, speed * Time.deltaTime);

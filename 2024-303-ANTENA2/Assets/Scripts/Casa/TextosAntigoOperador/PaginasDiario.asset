@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PaginasDiario
   m_EditorClassIdentifier: 
   tipoDeDocumento: 0
+  nomeDocumento: "p\xE1ginas do di\xE1rio"
   escritosDocs:
   - dia: 1
     escrito: "Esse lugar parece que est\xE1 de cabe\xE7a pra baixo. Tudo parece fora
