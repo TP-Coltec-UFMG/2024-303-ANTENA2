@@ -3726,9 +3726,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1777773447}
-        m_TargetAssemblyTypeName: BotaoSimNao, Assembly-CSharp
-        m_MethodName: Sim
+      - m_Target: {fileID: 1124078699}
+        m_TargetAssemblyTypeName: DocumentosEncontrados, Assembly-CSharp
+        m_MethodName: AbreDoc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8124,6 +8124,7 @@ MonoBehaviour:
   documentos: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
   textObject: {fileID: 1427014785}
   fundoDoc: {fileID: 717985995}
+  fundoPreto: {fileID: 1386863776}
 --- !u!1 &1128833271
 GameObject:
   m_ObjectHideFlags: 0
