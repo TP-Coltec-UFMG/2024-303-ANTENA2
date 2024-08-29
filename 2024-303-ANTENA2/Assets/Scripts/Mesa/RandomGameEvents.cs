@@ -23,8 +23,10 @@ public class RandomGameEvents : MonoBehaviour {
         miniGameFios = mesa.GetComponent<MiniGames>();
     }
     void Start() {
-        if(gameManagerMemoria.gameOn == false && miniGameFios.fiosOn == false) {
-            InvokeRepeating("RandomizeGames", 0f, time);
+        if (GameHandler.Dia != 1){
+            if(gameManagerMemoria.gameOn == false && miniGameFios.fiosOn == false) {
+                InvokeRepeating("RandomizeGames", 0f, time);
+            }
         }
     }
     void RandomizeGames() {
