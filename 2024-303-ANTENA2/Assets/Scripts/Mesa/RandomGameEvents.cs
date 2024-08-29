@@ -29,6 +29,17 @@ public class RandomGameEvents : MonoBehaviour {
             }
         }
     }
+    void Update(){
+        if (Dificuldade.dificuldade == "facil") {
+            time = 90f;
+            max_number = 35;
+        } else if(Dificuldade.dificuldade == "medio") {
+            time = 50f;
+            max_number = 20;
+        } else {
+            max_number = 10;
+        }
+    }
     void RandomizeGames() {
         randomNumber = Random.Range(0, max_number);
         if(randomNumber == 1) {
