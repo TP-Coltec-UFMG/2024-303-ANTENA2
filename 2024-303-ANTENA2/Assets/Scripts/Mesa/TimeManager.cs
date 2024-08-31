@@ -6,9 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour {
-    [Header("Clock UI")]
     [SerializeField] private GameObject textoRelogio;
-    [Header("Time in a day")]
     [SerializeField] private float timeInADay = 86400f; //um dia = 86400 segundos
     [Header("How fast Time Should Pass")]
     [SerializeField] private float timeScale = 2.0f;
