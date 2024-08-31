@@ -4,38 +4,34 @@ using UnityEngine;
 using TMPro;
 
 public class DocumentosEncontrados : MonoBehaviour {
-    [SerializeField] EscritosSO documentos;
-    [SerializeField] TextMeshProUGUI textObject;
-    [SerializeField] GameObject fundoDoc;
-    [SerializeField] GameObject fundoPreto;
+    [SerializeField] private EscritosSO documentos;
+    [SerializeField] private TextMeshProUGUI textObject;
+    [SerializeField] private GameObject fundoDoc;
+    [SerializeField] private GameObject fundoPreto;
+    [SerializeField] private GameObject textBox;
 
     private int i;
 
     public void AbreDoc() { 
         i = 0;
-        fundoPreto.SetActive(false);
+        textBox.SetActive(false);
+        fundoPreto.SetActive(true);
         fundoDoc.SetActive(true);
         Debug.Log(i);
 
-        while(documentos.escritosDocs[i].dia != 1 && i < documentos.escritosDocs.Count) {
-            Debug.Log(i);
-            i++;
+        foreach (var doc in documentos.escritosDocs) {
+            if (doc.dia == GameHandler.Dia) {
+                textObject.text = doc.escrito;
+                Debug.Log(i);
+                Debug.Log(doc.escrito);
+                break; // exit the loop once a matching document is found
+            }
         }
-        if(documentos.escritosDocs[i].dia == 1) {
-            textObject.text = documentos.escritosDocs[i].escrito;
-            Debug.Log(i);
-            Debug.Log(documentos.escritosDocs[i].escrito);
+
+        // if no matching document is found, handle the case accordingly
+        if (textObject.text == "") {
+            // you can add your own logic here to handle the case where no matching document is found
+            Debug.Log("No matching document found");
         }
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

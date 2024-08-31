@@ -711,12 +711,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 116369052}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 116369052}
+  m_maskType: 0
 --- !u!23 &116369052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1296,12 +1296,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 168441788}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 168441788}
+  m_maskType: 0
 --- !u!23 &168441788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1400,6 +1400,7 @@ GameObject:
   - component: {fileID: 184244355}
   - component: {fileID: 184244357}
   - component: {fileID: 184244356}
+  - component: {fileID: 184244360}
   - component: {fileID: 184244358}
   - component: {fileID: 184244359}
   m_Layer: 0
@@ -1537,6 +1538,10 @@ MonoBehaviour:
   verticalRange: 3
   textBox: {fileID: 1602701375}
   textBoxAnimation: {fileID: 184244359}
+  textoInteracao: {fileID: 1410900304}
+  escritoNoMovel: {fileID: 11400000, guid: 97eddf0538ed8154b8027186d38d4942, type: 2}
+  documentosEncontrados: {fileID: 184244360}
+  btnSim: {fileID: 580885539}
 --- !u!114 &184244359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1559,23 @@ MonoBehaviour:
   inicioFrase: "Voc\xEA encontrou"
   finalFrase: do antigo operador. Gostaria de ler?
   escritosDocs: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
+--- !u!114 &184244360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184244354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  documentos: {fileID: 11400000, guid: 21ac02c8f4b6b804abef0a3bfa5b77a9, type: 2}
+  textObject: {fileID: 1384110722}
+  fundoDoc: {fileID: 2094249}
+  fundoPreto: {fileID: 1386863776}
+  textBox: {fileID: 1602701375}
 --- !u!1001 &234025595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3175,6 +3197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487387214}
   - component: {fileID: 487387215}
+  - component: {fileID: 487387219}
   - component: {fileID: 487387217}
   - component: {fileID: 487387218}
   - component: {fileID: 487387216}
@@ -3313,6 +3336,10 @@ MonoBehaviour:
   verticalRange: 1.8
   textBox: {fileID: 1602701375}
   textBoxAnimation: {fileID: 487387218}
+  textoInteracao: {fileID: 1410900304}
+  escritoNoMovel: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
+  documentosEncontrados: {fileID: 0}
+  btnSim: {fileID: 580885539}
 --- !u!114 &487387218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3329,7 +3356,24 @@ MonoBehaviour:
   textObject: {fileID: 767301928}
   inicioFrase: "Voc\xEA encontrou"
   finalFrase: do antigo operador. Gostaria de ler?
-  escritosDocs: {fileID: 11400000, guid: 21ac02c8f4b6b804abef0a3bfa5b77a9, type: 2}
+  escritosDocs: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
+--- !u!114 &487387219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487387213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  documentos: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
+  textObject: {fileID: 1384110722}
+  fundoDoc: {fileID: 2094249}
+  fundoPreto: {fileID: 1386863776}
+  textBox: {fileID: 1602701375}
 --- !u!1 &520119897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,19 +3769,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 580885540}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1124078699}
-        m_TargetAssemblyTypeName: DocumentosEncontrados, Assembly-CSharp
-        m_MethodName: AbreDoc
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &580885540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4957,12 +4989,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 687962260}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 687962260}
+  m_maskType: 0
 --- !u!23 &687962260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5551,12 +5583,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 721815490}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 721815490}
+  m_maskType: 0
 --- !u!23 &721815490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7978,8 +8010,8 @@ GameObject:
   - component: {fileID: 1124078694}
   - component: {fileID: 1124078695}
   - component: {fileID: 1124078696}
-  - component: {fileID: 1124078699}
   - component: {fileID: 1124078697}
+  - component: {fileID: 1124078699}
   - component: {fileID: 1124078698}
   m_Layer: 0
   m_Name: EstantedeLivros
@@ -8092,6 +8124,10 @@ MonoBehaviour:
   verticalRange: 5
   textBox: {fileID: 1602701375}
   textBoxAnimation: {fileID: 1124078698}
+  textoInteracao: {fileID: 1410900304}
+  escritoNoMovel: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
+  documentosEncontrados: {fileID: 1124078699}
+  btnSim: {fileID: 580885539}
 --- !u!114 &1124078698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8125,6 +8161,7 @@ MonoBehaviour:
   textObject: {fileID: 1427014785}
   fundoDoc: {fileID: 717985995}
   fundoPreto: {fileID: 1386863776}
+  textBox: {fileID: 1602701375}
 --- !u!1 &1128833271
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,6 +10087,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407717206}
   m_CullTransparentMesh: 1
+--- !u!1 &1410900304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410900305}
+  - component: {fileID: 1410900307}
+  - component: {fileID: 1410900306}
+  m_Layer: 5
+  m_Name: TextoInteracao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1410900305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410900304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1777773446}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 644, y: 402}
+  m_SizeDelta: {x: 490.92, y: 145.56}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1410900306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410900304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Pressione <E> para interagir com o objeto
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ce154335a4d8c7440b7e2d5c1094e4f5, type: 2}
+  m_sharedMaterial: {fileID: -4573895640939826071, guid: ce154335a4d8c7440b7e2d5c1094e4f5, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 55
+  m_fontSizeBase: 55
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1410900307
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410900304}
+  m_CullTransparentMesh: 1
 --- !u!1 &1427014783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,6 +11978,7 @@ RectTransform:
   m_Children:
   - {fileID: 1386863777}
   - {fileID: 1602701376}
+  - {fileID: 1410900305}
   m_Father: {fileID: 270780446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
