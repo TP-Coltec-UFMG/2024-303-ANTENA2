@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     void Update(){
-        player.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;
+        player.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
         myAnimation.SetFloat("moveX", player.velocity.x);
         myAnimation.SetFloat("moveY", player.velocity.y);
 

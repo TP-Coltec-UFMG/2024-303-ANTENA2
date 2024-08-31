@@ -29,6 +29,20 @@ public class CameraFollow : MonoBehaviour
     {
         _cvc = GetComponent<CinemachineVirtualCamera>();
         _cvcOrthoSizeDefault = _cvc.m_Lens.OrthographicSize;
+
+        switch (GameHandler.Dia)
+        {
+            case 1:
+                currentFollow = Locais.Maleta;
+                _cvc.Follow = maletaTransform;
+                _cvc.transform.position = maletaTransform.position;
+                break;
+            default:
+                currentFollow = Locais.Transmissao;
+                _cvc.Follow = transmissaoTransform;
+                _cvc.transform.position = transmissaoTransform.position;
+                break;
+        }
     }
 
     private void Update()
