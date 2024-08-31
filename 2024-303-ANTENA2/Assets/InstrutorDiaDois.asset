@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2eaeab75de99a449d574f0832f6a0d, type: 3}
+  m_Name: InstrutorDiaDois
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: 
+    text: "Iniciando conex\xE3o com a Antena de Retransmiss\xE3o N\xB02, protocolo
+      1000976-176.\r\nAntena 2, na escuta?\r\n"
+  - name: 
+    text: "\u2014 sim! \r\n"
+  - name: 
+    text: "Que bom ouvir sua voz de novo! Pelo relat\xF3rio, sua efici\xEAncia foi
+      surpreendente para um primeiro dia de trabalho, que orgulho!"
+  - name: 
+    text: "N\xE3o podia esperar menos de algu\xE9m treinado por mim, \xE9 claro -risada-!"
+  - name: 
+    text: "Enfim, n\xE3o quero tomar muito do seu tempo hoje, ent\xE3o serei breve:
+      estamos recebendo muitas den\xFAncias acerca de transmiss\xF5es rebeldes tentando
+      se comunicar com os nossos operadores\u2026"
+  - name: 
+    text: "Se alguma dessas mensagens chegar a voc\xEA, denuncie-a imediatamente."
+  - name: 
+    text: "Caso n\xE3o o fa\xE7a, com sorte seu pr\xF3ximo destino ser\xE1 o olho
+      da rua\u2026"
+  - name: 
+    text: "-risada- T\xF4 s\xF3 brincando! Ou ser\xE1 que n\xE3o estou? Eu n\xE3o
+      tentaria a sorte\u2026"
+  - name: 
+    text: "de qualquer maneira, voc\xEA s\xF3 precisa denunci\xE1-las que a gente
+      aqui faz o resto por aqui, ok? "
+  - name: 
+    text: "\u2014 Entendido! \r\n"
+  - name: 
+    text: "Perfeito, ent\xE3o por hoje \xE9 isso. Tenha um bom dia de trabalho e
+      lembre-se: Gl\xF3ria a Invicta!\r\n"
+  - name: 
+    text: "Encerrando conex\xE3o com a Antena de Retransmiss\xE3o N\xB0 2.\r\n"

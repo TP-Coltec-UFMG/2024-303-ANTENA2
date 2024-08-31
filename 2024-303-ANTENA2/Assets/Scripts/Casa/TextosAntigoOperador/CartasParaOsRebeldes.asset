@@ -14,4 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipoDeDocumento: 1
   nomeDocumento: Cartas
-  escritosDocs: []
+  escritosDocs:
+  - dia: 1
+    escrito: "Aos rebeldes que a mim mandaram as mensagens.\r\nEu ouvi voc\xEAs.
+      As mensagens de resist\xEAncia que chegam at\xE9 mim me fazem sentir que posso
+      fazer algo. O governo n\xE3o cair\xE1 facilmente, mas eu quero ajudar.\r\nPodemos
+      usar a r\xE1dio para nos comunicarmos sem que eles descubram, mas talvez precisemos
+      de um canal privado. Acredito que juntos podemos encontrar uma maneira de fazer
+      isso. Precisamos nos encontrar pessoalmente, talvez mesmo aqui na Antena. Aguardo
+      as instru\xE7\xF5es de voc\xEAs.\r\nEsperan\xE7osamente, \r\nIllor, operador
+      da Antena de Retransmiss\xE3o N\xBA 2.\r\nPS: T\xEAm certeza de que o local
+      escolhido para que eu deixe as cartas escondidas \xE9 mesmo seguro? Tenho receio
+      que outros, que n\xE3o voc\xEAs, as encontrem.\r\n"
+  - dia: 2
+    escrito: "A Ic\xE1rio, engenheiro de comunica\xE7\xE3o rebelde.\r\nIc\xE1rio,\r\nConsegui
+      montar uma conex\xE3o segura! A partir de agora, podemos nos comunicar sem
+      problemas. Fiz alguns testes preliminares e tudo parece certo, podemos fazer
+      mais alguns para ter certeza. A Antena vai funcionar como um canal de comunica\xE7\xE3o
+      entre n\xF3s.\r\nPrecisaremos, por\xE9m, - ao menos a meu julgamento - continuar
+      utilizando cifras e c\xF3digos. De nada custa, todo cuidado \xE9 pouco. Assim
+      nos mantemos seguros. Mantenhamos contato, logo mais estaremos retransmitindo
+      a mensagem da causa para toda a regi\xE3o. Estou animado! Sinto que meu pai
+      ficaria orgulhoso. \r\nSempre qui para o que precisarem,\r\nIllor.\r\nPS: sinto
+      saudades suas, Ic\xE1rio. Desde o dia em que voc\xEA esteve aqui para trabalharmos
+      na linha de conex\xE3o, quase n\xE3o conversei com ningu\xE9m. Quando nos veremos
+      novamente?\r\n"
+  - dia: 3
+    escrito: "Ic\xE1rio\r\nMeu medo cresce. Vejo e principalmente ou\xE7o mais e
+      mais tropas avan\xE7ando pela floresta. Me sinto exposto, se qualquer destacamento
+      decidir parar na minha cabana, tudo pode estar perdido. N\xE3o apenas, mas
+      a cada dia cresce minha paranoia com a pr\xF3pria cabana. E se\u2026 eu estiver
+      sendo observado? N\xE3o sei por quanto tempo mais poderei atuar de dentro da
+      Antena. Como eu disse, tenho medo. Penso que talvez seja melhor eu me juntar
+      a voc\xEAs, nos acampamentos ou mesmo em Cknah//rost. O Oeste, sob nosso comando,
+      me atrai muito. Considere isso, por mim.\r\nMe conecto profundamente com a
+      causa. Sinto-me amparado em meu pai, sinto que ele est\xE1 comigo. Ele, antes
+      de ir para os Campos de Trabalho For\xE7ado, antes de eu nascer, antes de a
+      m\xE3e morrer, foi parte das guerrilhas lestenses. Sinto que ele estaria orgulhoso.
+      Estou comprometido, vamos at\xE9 o fim.\r\nContinuem mandando as instru\xE7\xF5es.
+      Vou ficar atento.\r\nSempre seu,\r\nIllor.\r\nPS: quem sabe em //rost n\xE3o
+      podemos ter um lugar s\xF3 nosso, Ic\xE1rio? Imagine! Um lugar para depois
+      da guerra, para envelhecermos juntos. Penso em voc\xEA todo dia.\r\n"

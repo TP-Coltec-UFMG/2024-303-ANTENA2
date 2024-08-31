@@ -38,6 +38,8 @@ public class GameHandler : MonoBehaviour
         _editorCentral = FindObjectOfType<EditorCentral>();
 
         _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
+        
+        GeraNovaMensagem();
     }
 
     private void Update()

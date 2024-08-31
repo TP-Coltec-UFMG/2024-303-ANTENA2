@@ -21,7 +21,6 @@ public class AtendeTelefone : MonoBehaviour {
 
     private void OnMouseDown() {
         if(dialogueSystem != null) {
-            Debug.Log("clicou");
             gameObject.SetActive(false);
             telefoneFora.SetActive(true);
             Next.gameObject.SetActive(true);

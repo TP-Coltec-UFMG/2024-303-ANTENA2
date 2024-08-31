@@ -14,4 +14,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipoDeDocumento: 2
   nomeDocumento: Cartas
-  escritosDocs: []
+  escritosDocs:
+  - dia: 1
+    escrito: "Querido pai,\r\nas coisas v\xE3o bem por aqui. A vida na cidade \xE9
+      muito mais exigente, o ritmo \xE9 diferente. As pessoas aqui nunca param, mesmo
+      \xE0 noite as ruas fervem de gente. O sil\xEAncio \xE9 o que mais me faz falta.
+      Aqui os sons das f\xE1bricas, dos autom\xF3veis, dos mercados e da multid\xE3o
+      enchem meu apartamento e minha cabe\xE7a. Para al\xE9m disso, a vida vai mon\xF3tona.
+      A faculdade \xE9 interessante, mas tamb\xE9m n\xE3o tem me animado como animava
+      antes, acho que a realidade \xE9 sempre um pouco diferente do que se espera.
+      Mas \xE9 uma oportunidade como eu nunca tive de conversar com pessoas novas,
+      viver novos ares, andar por novos lugares. Tem muitas pessoas inteligentes
+      na universidade, e eu gosto dos professores. Tenho conversado com outros alunos,
+      todos sempre t\xEAm viv\xEAncias t\xE3o diferentes! Eu evito falar que eu vim
+      dos Campos, costuma afastar as pessoas, mas acho que o meu passado an\xF4nimo
+      n\xE3o vai resistir por muito, algu\xE9m h\xE1 de descobrir eventualmente.\r\nMande
+      not\xEDcias suas e de Carlita! Tenho saudades suas, e da velha Carlita tamb\xE9m,
+      claro. \xC9 ainda ela que pastoreia os rebanhos? Essas mem\xF3rias parecem
+      agora t\xE3o distantes. Fique bem, pai, espero que esta carta te encontre em
+      bom momento.\r\nDo seu filho que te quer muito, \r\nIllor.\r\n"
+  - dia: 2
+    escrito: "Querido pai,\r\nsinto ouvir pela partida de Kristoff, era homem caloroso
+      e trabalhador, deixar\xE1 muitas saudades. A filha e a mulher dele como est\xE3o?
+      Tente dar-lhes algum apoio se puder, pai, imagino que elas v\xE3o precisar.
+      \r\nPor aqui, tudo vai relativamente bem. O litoral \xE9 muito mais \xFAmido
+      que o interior, agora chove faz 2 dias, e dizem que o tempo s\xF3 fica mais
+      est\xE1vel durante o inverno (\xE9poca que substitui o tormento das chuvas
+      pelo do frio, entretanto). O trabalho \xE9 tranquilo, apenas mensagens indo
+      e vindo, a maioria ordens r\xE1pidas que eu envio e recebo. O Porto \xE9 bastante
+      opressor, uma quantidade imensa de ferro e a\xE7o e metal por todos os lados,
+      navios gigantescos que chegam e partem a todo momento. H\xE1 uma n\xE9voa que
+      se mant\xE9m durante toda a manh\xE3, o sol aqui \xE9 t\xEDmido.\r\nH\xE1 grande
+      diferen\xE7a entre as pessoas daqui e as da faculdade: aqui os rostos s\xE3o
+      mais cansados, mais velhos, mais soturnos. N\xE3o h\xE1 muitas pessoas com
+      quem eu possa conversar, e as com quem converso s\xE3o sempre muito fechadas,
+      sempre inacess\xEDveis. Tenho feito amizade com o padeiro da minha rua, um
+      dos poucos sujeitos sorridentes que encontrei por aqui. Muito bem humorado,
+      e muito bom profissional tamb\xE9m; a padaria apesar de modesta \xE9 muito
+      agrad\xE1vel, sempre com p\xE3es frescos e bolos e biscoitos muito bem feitos.
+      N\xE3o \xE9 \xE0 toa que borbulha de clientes todas as manh\xE3s.\r\nEnfim,
+      n\xE3o tenho muito mais a contar, a vida anda a passo lento. Minhas saudades
+      apenas aumentam, pai, preciso ir te visitar nos Campos o quanto antes. Deixa-me
+      juntar algum dinheiro que fa\xE7o as malas e vou, apare\xE7o a\xED e passamos
+      uma temporada juntos.\r\nDo seu filho, com saudades e carinho,\r\nIllor.\r\n"
+  - dia: 3
+    escrito: "Querido pai,\r\nenvio esta carta provavelmente como a \xFAltima em
+      algum tempo. Lembra-te que lhe falei do concurso para participar de um programa
+      do governo? Pois bem, passei! Vou come\xE7ar no programa de Antenas agora na
+      virada do m\xEAs. O sal\xE1rio n\xE3o \xE9 o ideal, mas o resto dos benef\xEDcios
+      compensam: n\xE3o terei de me preocupar com aluguel, alimenta\xE7\xE3o ou transporte,
+      irei morar justamente na esta\xE7\xE3o de transmiss\xE3o, mantida pelo pr\xF3prio
+      estado e com insumos entregues a mim regularmente. \xC9 uma oportunidade muito
+      boa, eu penso! Tristemente, \xE9 por causa dessa mudan\xE7a de moradia que
+      eu n\xE3o poderei enviar-te ou receber cartas, pelo menos por um per\xEDodo.
+      A Antena 2 (onde irei trabalhar) fica em local muito isolado, longe de qualquer
+      cidade. \r\nEncaro isso, por\xE9m, de forma positiva. Comparada com o ambiente
+      cinzento e taciturno do Porto, a Antena, calma, isolada, perto da natureza,
+      me parece muito agrad\xE1vel. \xC9, pelo menos, mais pr\xF3xima do que eram
+      os Campos. Todavia, tentarei manter algum contato, talvez eu possa enviar as
+      cartas quando vierem me trazer suprimentos. Estou bastante animado com toda
+      essa mudan\xE7a, acho que me vai fazer muito bem. \r\nMas e voc\xEA, como vai?
+      Mande not\xEDcias logo, quero saber como tudo anda indo antes de partir para
+      a Antena.\r\nDo seu filho, feliz e ansioso,\r\nIllor.\r\n"

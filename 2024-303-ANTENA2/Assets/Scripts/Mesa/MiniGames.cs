@@ -9,7 +9,7 @@ public class MiniGames : MonoBehaviour
 
     private float _telinhaInitalXPos;
     [SerializeField] private Transform telinha;
-    [SerializeField] private Transform telinhaToTheSide;
+    [SerializeField] private float telinhaToTheSidePosX;
     [SerializeField] private GameObject fiosGO;
     [SerializeField] private List<Wire> fios;
     public bool fiosOn;
@@ -17,7 +17,7 @@ public class MiniGames : MonoBehaviour
     
     private void Awake()
     {
-        Instance ??= this;
+        Instance = this;
     }
 
     private void Start()
@@ -34,7 +34,7 @@ public class MiniGames : MonoBehaviour
 
     public void StartFios()
     {
-        StartCoroutine(MoveTelinha(telinhaToTheSide.position.x));
+        StartCoroutine(MoveTelinha(telinhaToTheSidePosX));
         fiosGO.SetActive(true);
         CameraFollow.Instance.Follow(CameraFollow.Locais.TVminigames, CameraFollow.TvMinigamesOrthoSize);
         fiosOn = true;
@@ -43,7 +43,7 @@ public class MiniGames : MonoBehaviour
     private void EndFios()
     {
         CameraFollow.Instance.Follow(CameraFollow.Locais.Transmissao, null);
-        StartCoroutine(MoveTelinha(_telinhaInitalXPos));
+        StartCoroutine(MoveTelinha(-telinhaToTheSidePosX));
         ResetFios();
         fiosGO.SetActive(false);
         fiosOn = false;
@@ -59,9 +59,10 @@ public class MiniGames : MonoBehaviour
         }
     }
     
-    private IEnumerator MoveTelinha(float finalXPos)
+    private IEnumerator MoveTelinha(float change)
     {
         float curXPos = telinha.position.x;
+        float finalXPos = curXPos + change;
         const float duration = .5f;
         float elapsed = 0f;
         Vector3 pos = telinha.position;

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a9017175a86395a47bffa57512d94ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   telinha: {fileID: 2250581261087543470}
-  telinhaToTheSide: {fileID: 5141681920690943506}
+  telinhaToTheSidePosX: -0.69
   fiosGO: {fileID: 7591491630402601009}
   fios:
   - {fileID: 2238622425059104910}
