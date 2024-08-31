@@ -10,19 +10,15 @@ public class DocumentosEncontrados : MonoBehaviour {
     [SerializeField] private GameObject fundoPreto;
     [SerializeField] private GameObject textBox;
 
-    private int i;
-
     public void AbreDoc() { 
-        i = 0;
         textBox.SetActive(false);
+
         fundoPreto.SetActive(true);
         fundoDoc.SetActive(true);
-        Debug.Log(i);
 
         foreach (var doc in documentos.escritosDocs) {
             if (doc.dia == GameHandler.Dia) {
                 textObject.text = doc.escrito;
-                Debug.Log(i);
                 Debug.Log(doc.escrito);
                 break; // exit the loop once a matching document is found
             }
@@ -33,5 +29,10 @@ public class DocumentosEncontrados : MonoBehaviour {
             // you can add your own logic here to handle the case where no matching document is found
             Debug.Log("No matching document found");
         }
+    }
+    public void FechaDoc() {
+        fundoPreto.SetActive(false);
+        fundoDoc.SetActive(false);
+        textObject.text = "";
     }
 }

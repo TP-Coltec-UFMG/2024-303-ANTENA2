@@ -13,9 +13,9 @@ public class ProximityDetector : MonoBehaviour
     public EscritosSO escritoNoMovel;
     [SerializeField] private DocumentosEncontrados documentosEncontrados;
     [SerializeField] private Button btnSim;
+    [SerializeField] private Button btnFecha;
     bool existeDoc;
     private bool isInteracting = false;
-
 
     void Awake() {
         boneco = GameObject.Find("boneco");
@@ -57,6 +57,7 @@ public class ProximityDetector : MonoBehaviour
 
                     if (btnSim != null && documentosEncontrados != null) {
                         btnSim.onClick.AddListener(() => documentosEncontrados.AbreDoc());
+                        btnFecha.onClick.AddListener(() => documentosEncontrados.FechaDoc());
                     }
                     else {
                         Debug.LogError("One or both of btnSim and documentosEncontrados are null!");
@@ -69,12 +70,9 @@ public class ProximityDetector : MonoBehaviour
                 isInteracting = false;
                 if (btnSim != null) {
                     btnSim.onClick.RemoveListener(() => documentosEncontrados.AbreDoc());
+                    btnFecha.onClick.RemoveListener(() => documentosEncontrados.FechaDoc());
                 }
             }
         }
-        else {
-            Debug.Log("Nenhum documento encontrado");
-        }
-        
     }
 }

@@ -13,7 +13,15 @@ public class BotaoSimNao : MonoBehaviour {
         textBox.SetActive(false);
     }
     public void fechaFundo() {
+        DeactivateImmediateChildrenOnly(fundoPreto);
         fundoPreto.SetActive(false);
+    }
+    public void DeactivateImmediateChildrenOnly(GameObject parentObject)
+    {
+        foreach (Transform child in parentObject.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
     }
 }
 

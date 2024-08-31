@@ -686,9 +686,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 116369052}
   m_maskType: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 116369052}
-  m_maskType: 0
 --- !u!23 &116369052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1274,9 +1271,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 168441788}
   m_maskType: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 168441788}
-  m_maskType: 0
 --- !u!23 &168441788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1517,6 +1511,7 @@ MonoBehaviour:
   escritoNoMovel: {fileID: 11400000, guid: 97eddf0538ed8154b8027186d38d4942, type: 2}
   documentosEncontrados: {fileID: 184244360}
   btnSim: {fileID: 580885539}
+  btnFecha: {fileID: 817684870}
 --- !u!114 &184244359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,7 +2132,6 @@ RectTransform:
   - {fileID: 1777773446}
   - {fileID: 1603926862}
   - {fileID: 1608116518}
-  - {fileID: 1423464070}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3395,6 +3389,7 @@ MonoBehaviour:
   escritoNoMovel: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
   documentosEncontrados: {fileID: 0}
   btnSim: {fileID: 580885539}
+  btnFecha: {fileID: 817684870}
 --- !u!114 &487387218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6404,19 +6399,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 817684871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1777773447}
-        m_TargetAssemblyTypeName: BotaoSimNao, Assembly-CSharp
-        m_MethodName: fechaFundo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &817684871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8185,6 +8168,7 @@ MonoBehaviour:
   escritoNoMovel: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
   documentosEncontrados: {fileID: 1124078699}
   btnSim: {fileID: 580885539}
+  btnFecha: {fileID: 817684870}
 --- !u!114 &1124078698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8253,8 +8237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00963}
-  m_SizeDelta: {x: 2936.1602, y: 3948.9478}
+  m_AnchoredPosition: {x: 0.003016, y: -0.00588}
+  m_SizeDelta: {x: 3127.187, y: 4057.7476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128833273
 MonoBehaviour:
@@ -8285,8 +8269,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281808952
-  m_fontColor: {r: 0.22147012, g: 0.21816796, b: 0.21731184, a: 1}
+    rgba: 4278323478
+  m_fontColor: {r: 0.08627451, g: 0.03529412, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8303,8 +8287,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8471,8 +8455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2936.1602, y: 1341.145}
+  m_AnchoredPosition: {x: 0, y: -0.009}
+  m_SizeDelta: {x: 3112.851, y: 1341.145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179695247
 MonoBehaviour:
@@ -8494,7 +8478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lembrar de pedir pro cara do r\xE1dio mais comida na pr\xF3xima semana."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e753dc1eaba25e84583b3522e23a49cc, type: 2}
   m_sharedMaterial: {fileID: 5117498299490061713, guid: e753dc1eaba25e84583b3522e23a49cc, type: 2}
@@ -8503,8 +8487,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281808952
-  m_fontColor: {r: 0.22147012, g: 0.21816796, b: 0.21731184, a: 1}
+    rgba: 4278323478
+  m_fontColor: {r: 0.08627451, g: 0.03529412, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8528,7 +8512,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9662,8 +9646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00963}
-  m_SizeDelta: {x: 2936.1602, y: 3948.9478}
+  m_AnchoredPosition: {x: 0, y: -0.014}
+  m_SizeDelta: {x: 2975.5635, y: 3989.108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384110722
 MonoBehaviour:
@@ -9695,7 +9679,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281808952
-  m_fontColor: {r: 0.22147012, g: 0.21816796, b: 0.21731184, a: 1}
+  m_fontColor: {r: 0.08627451, g: 0.03529412, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9712,8 +9696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 105
+  m_fontSizeBase: 105
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10405,8 +10389,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00963}
-  m_SizeDelta: {x: 2936.1602, y: 3948.9478}
+  m_AnchoredPosition: {x: 0.003696, y: -0.00975}
+  m_SizeDelta: {x: 3128.9512, y: 4053.0552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427014785
 MonoBehaviour:
@@ -10437,8 +10421,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281808952
-  m_fontColor: {r: 0.22147012, g: 0.21816796, b: 0.21731184, a: 1}
+    rgba: 4278323478
+  m_fontColor: {r: 0.08627451, g: 0.03529412, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10455,8 +10439,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

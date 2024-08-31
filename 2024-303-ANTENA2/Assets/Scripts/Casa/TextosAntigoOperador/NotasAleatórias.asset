@@ -16,4 +16,18 @@ MonoBehaviour:
   nomeDocumento: notas
   escritosDocs:
   - dia: 1
-    escrito: 
+    escrito: "Hoje vi um grupo de p\xE1ssaros se empoleirando na \xE1rvore perto
+      da torre. Pareciam t\xE3o felizes! Fiquei pensando se eles t\xEAm no\xE7\xE3o
+      da liberdade que t\xEAm, ou se tamb\xE9m se preocupam com algo."
+  - dia: 2
+    escrito: "N\xE3o parou de chover o dia todo. O barulho das gotas no telhado \xE9
+      quase relaxante. S\xF3 aquela goteira \xE0s vezes me incomoda, mas eu quase
+      n\xE3o a noto. Fiquei pensando se vou conseguir secar as roupas antes que elas
+      mofem. Isso acontece sempre por aqui."
+  - dia: 3
+    escrito: "Encontrei uma velha caneca de cer\xE2mica na despensa. Agora \xE9 minha
+      caneca favorita para o caf\xE9. N\xE3o sei como n\xE3o a vi antes. "
+  - dia: 4
+    escrito: "O que vai acontecer quando isso tudo passar? Penso na nossa vida nos
+      Campos de Trabalho. Penso nos rebeldes mortos. Penso no pai, e em Ic\xE1rio.
+      O que vai acontecer quando tudo isso passar?"
