@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ESTADO {
    DESATIVADO,
@@ -16,6 +17,9 @@ public class DialogueSystem : MonoBehaviour {
 
     [SerializeField] private TypeTextAnimation typeText;
     [SerializeField] private DialogueUI dialogueUI;
+    [SerializeField] private GameObject telefoneFora;
+    [SerializeField] private GameObject telefoneGancho;
+    [SerializeField] private Button NextBtn;
     ESTADO estado;
 
     void Awake() {
@@ -32,10 +36,10 @@ public class DialogueSystem : MonoBehaviour {
         if (estado == ESTADO.DESATIVADO) return;
 
         switch(estado) {
-            case ESTADO.ESPERANDO:
+            case ESTADO.ESPERANDO:           
                 Esperando();
                 break;
-            case ESTADO.DIGITANDO:
+            case ESTADO.DIGITANDO:           
                 Digitando();
                 break;
         }
@@ -59,17 +63,19 @@ public class DialogueSystem : MonoBehaviour {
         estado = ESTADO.ESPERANDO;
     }
 
-    public void Esperando() {
+    public void Esperando() {   
         if(!finalizado) {
             Next();
         }
         else {
+            telefoneFora.SetActive(false);
+            NextBtn.gameObject.SetActive(false);
+            telefoneGancho.SetActive(true);
             dialogueUI.Disable();
             estado = ESTADO.DESATIVADO;
             textoAtual = 0;
             finalizado = false;
         }
-        
     }
 
    void Digitando() {
@@ -78,9 +84,12 @@ public class DialogueSystem : MonoBehaviour {
    }
 
    public void SkipInstrutor() {
+        telefoneFora.SetActive(false);
+        NextBtn.gameObject.SetActive(false);
+        telefoneGancho.SetActive(true);
         dialogueUI.Disable();
         estado = ESTADO.DESATIVADO;
         textoAtual = 0;
-        finalizado = true;
+        finalizado = false;
     }
 }
