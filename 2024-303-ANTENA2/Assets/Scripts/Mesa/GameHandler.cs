@@ -14,6 +14,7 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private List<DiaSO> dias;
 
     private List<MensagemSO> _mensagensDisponiveisDia = new();
+    private List<MensagemSO> _mensagensDispoDiaFacil = new();
     
     private const float TimerNovaMensagemMax = 10f;
     private float _timerNovaMensagemCounter;
@@ -38,7 +39,7 @@ public class GameHandler : MonoBehaviour
         _editorCentral = FindObjectOfType<EditorCentral>();
 
         _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
-        
+        //_mensagensDispoDiaFacil = new List<MensagemSO>(dias[dia-1].mensagens);
         GeraNovaMensagem();
     }
 
