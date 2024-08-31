@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348289f57250f942b16952a62d02dec, type: 3}
+  m_Name: PaginasDiario2
+  m_EditorClassIdentifier: 
+  tipoDeDocumento: 0
+  nomeDocumento: 
+  escritosDocs:
+  - dia: 2
+    escrito: "Dia: 02f//fh13\r\nHoje vi avi\xF5es seguindo rumo ao territ\xF3rio
+      inimigo. Inimigo. Inimigo\u2026 Essas pessoas, os rebeldes, eu deveria cham\xE1-los
+      assim? S\xE3o como eu afinal de contas, ou bem, foram um dia. Oper\xE1rios,
+      lavradores, trabalhadores. \xC0s vezes me d\xF3i ter de barrar as mensagens
+      deles, quando vejo que \xE9 uma m\xE3e tentando falar com o filho, ou dois
+      amigos que precisam se encontrar. Como ser\xE1 a vida em Cknah//rost? A vida
+      rebelde, numa cidade tomada por rebeldes. Eu adoeceria. Mesmo aqui a paranoia
+      \xE0s vezes me assombra."
+  - dia: 2
+    escrito: "Dia: 03f//fh28\r\nEst\xE1 chovendo de novo. A goteira no banheiro come\xE7ou
+      a me deixar desconfort\xE1vel. Esse ritmo. Me deixa apreensivo. N\xE3o consigo
+      achar a rachadura de onde ela vem, \xE9 quase como se ela viesse do nada. Que
+      merda. Acho que eu preciso dormir um pouco.\n\n\n\n\nDia: 03f//fh50\r\nHoje,
+      eu recebi uma mensagem dos rebeldes. Digo, eu, eu recebi, ela era pra mim.
+      Eles querem minha ajuda. Pensei de novo no pai. Ele falava sobre como Invicta
+      um dia foi um pa\xEDs do povo, criado por n\xF3s e mantido por n\xF3s. Isso
+      at\xE9\u2026 Eu acho que vou aceitar. As coisas que eu leio nessas mensagens\u2026
+      isso \xE9 um genoc\xEDdio, isso sim. O governo n\xE3o vai parar at\xE9 que
+      estejam todos\u2026 Eu acho que vou aceitar.\r\n"
+  - dia: 3
+    escrito: "Dia: 04f//fh43\r\nUm dos rebeldes veio at\xE9 a cabana esta semana.
+      Foi a primeira conversa que eu tive com algu\xE9m em dias. Me senti ansioso,
+      me senti estranho. Conversamos sobre como podemos nos conectar sem sermos descobertos.
+      Senti um frio na barriga, e n\xE3o foi s\xF3 porque eu achei ele\u2026 bonito.
+      \xC9 mais que\u2026 eu nunca pensei que me tornaria parte de algo assim, mas
+      a causa deles ressoa em mim. Me sinto como nas hist\xF3rias de guerrilha do
+      pai. O que ele diria se me visse agora? Estou come\xE7ando a entender que,
+      assim como ele lutou por uma vida melhor, eu tamb\xE9m posso lutar. Eu vou
+      ajud\xE1-los.\r\n"
+  - dia: 4
+    escrito: "Dia: 11f//fh76\r\nEu acho que eles sabem. Eles devem ter c\xE2meras
+      por aqui, ou microfones, ou monitorar minha frequ\xEAncia. Eles sabem, eles
+      sabem. O instrutor tem me tratado estranho, eu acho que ele sabe. Eu me sinto
+      trancafiado numa solit\xE1ria, s\xF3 essa voz rob\xF3tica fala comigo todos
+      os dias. Os rebeldes me disseram que era seguro, mas eles n\xE3o podem ter
+      certeza. E se eles estiverem me vendo bem agora? Eu preciso garantir que eles
+      n\xE3o achem provas, eu n\xE3o quero ir pro Monte. Eles sabem, mas eu n\xE3o
+      vou parar. Eu n\xE3o vou parar de ajudar essas pessoas, n\xE3o enquanto eu
+      puder.\r\n"
+  - dia: 5
+    escrito: "Dia: - -\r\nEles est\xE3o aqui. Eu sabia, eu sempre soube. N\xE3o \xE9
+      culpa de ningu\xE9m, quando eu aceitei me juntar \xE0 eles, eu aceitei esse
+      risco. Mas eu n\xE3o vou abaixar a cabe\xE7a. Eles saio desse inferno, ao menos,
+      com honra. Eu fiz o que eu pude, e isso j\xE1 basta. Essa p\xE1gina vai ficar
+      para qualquer um que venha depois de mim \xE0 essa Antena. Sempre h\xE1 um
+      pre\xE7o a se pagar pela liberdade. Meu pai dizia isso. Hoje eu pago meu pre\xE7o.
+      Se eles te pedirem ajuda, operador, ajude-os. Eles n\xE3o t\xEAm ningu\xE9m,
+      assim como voc\xEA. Por isso n\xF3s temos que ficar juntos. Por isso temos
+      que lutar, e pagar nosso pre\xE7o, seja ele qual for. Hoje, hoje eu pago meu
+      pre\xE7o.\r\n"

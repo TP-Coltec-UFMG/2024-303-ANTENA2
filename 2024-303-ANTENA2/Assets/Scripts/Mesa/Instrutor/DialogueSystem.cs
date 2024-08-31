@@ -11,7 +11,7 @@ public enum ESTADO {
 
 public class DialogueSystem : MonoBehaviour {
     
-    [SerializeField] private DialogueData dialogueData;
+    [SerializeField] private List<DialogueData> dialogueData;
     int textoAtual = 0;
     bool finalizado = false;
 
@@ -50,9 +50,9 @@ public class DialogueSystem : MonoBehaviour {
             dialogueUI.Enable();
         }
         
-        typeText.fullText = dialogueData.talkScript[textoAtual++].text;
+        typeText.fullText = dialogueData[1].talkScript[textoAtual++].text;
         
-        if (textoAtual == dialogueData.talkScript.Count) {
+        if (textoAtual == dialogueData[1].talkScript.Count) {
             finalizado = true;
         }
         typeText.StartTyping();

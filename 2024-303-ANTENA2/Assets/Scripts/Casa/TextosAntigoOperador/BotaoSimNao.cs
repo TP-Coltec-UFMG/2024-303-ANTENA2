@@ -16,3 +16,4 @@ public class BotaoSimNao : MonoBehaviour {
         fundoPreto.SetActive(false);
     }
 }
+
