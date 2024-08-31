@@ -47,6 +47,7 @@ public class TimeManager : MonoBehaviour {
             elapseTime %= timeInADay;
             UpdateClockUI();
 
+            //quando for 17h o horário começa a piscar para indicar que o turno está acabando
             if (elapseTime >= (17 * 3600) && elapseTime < (18 * 3600)) {
                 if (Time.time > nextActionTime ) {
                     nextActionTime += period;

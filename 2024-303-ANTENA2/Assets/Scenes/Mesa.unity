@@ -9602,9 +9602,9 @@ MonoBehaviour:
   dialogueData: {fileID: 11400000, guid: 0f8406f92945a084989dc1bdaad67405, type: 2}
   typeText: {fileID: 1605516013}
   dialogueUI: {fileID: 1692315139}
-  telefoneFora: {fileID: 0}
-  telefoneGancho: {fileID: 0}
-  NextBtn: {fileID: 0}
+  telefoneFora: {fileID: 251381715}
+  telefoneGancho: {fileID: 1795491175}
+  NextBtn: {fileID: 150341947}
 --- !u!1 &1607044809
 GameObject:
   m_ObjectHideFlags: 0
