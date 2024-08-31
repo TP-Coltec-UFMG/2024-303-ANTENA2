@@ -8,13 +8,15 @@ public class Janelas : MonoBehaviour {
     //[SerializeField] private Collider2D janelas;
     [SerializeField] private GameObject textoFechar;
     public bool foiFechada = false;
+    public int numApertancias = 0;
     public bool stay = false; //fazendo a função do OnCollisionStays
     void Update(){
-        if(stay == true){
+        if(stay == true && numApertancias == 0){
             if(Input.GetKeyDown(KeyCode.F)){
                 Debug.Log("pertou");
                 JanelasManager.janelasFechadas++;
                 foiFechada = true;
+                numApertancias++;
             }
         }
     }
