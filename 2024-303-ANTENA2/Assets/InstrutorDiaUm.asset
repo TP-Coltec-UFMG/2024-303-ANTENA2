@@ -37,6 +37,8 @@ MonoBehaviour:
       a sua torre e retransmiti-las, com o aux\xEDlio da sua melhor amiga daqui pra
       frente: a mesa de transmiss\xE3o!"
   - name: 
+    text: "V\xE1 para o lado (<--) para acess\xE1-la."
+  - name: 
     text: "Ela pode causar uma m\xE1 impress\xE3o no come\xE7o mas n\xE3o se preocupe,
       todos gostam dela com o tempo! Ou pelo menos a maioria.\r\n"
   - name: 
@@ -82,8 +84,8 @@ MonoBehaviour:
   - name: 
     text: "\xC9 isso! Nada muito complicado, n\xE3o \xE9?\n"
   - name: 
-    text: "Al\xE9m disso, voc\xEA deve t\xE1 reparando que a Mesa \xE9 tipo cheia
-      de bot\xF5es, eles t\xE3o por todo lado."
+    text: "Al\xE9m disso, voc\xEA deve t\xE1 reparando que a Mesa \xE9 cheia de bot\xF5es,
+      eles est\xE3o por todo lado."
   - name: 
     text: "Esses bot\xF5es servem para configurar partes muito espec\xEDficas do
       funcionamento da Antena e da pr\xF3pria Mesa tamb\xE9m."
@@ -95,9 +97,9 @@ MonoBehaviour:
     text: "Caso d\xEA algum biziu nos sistemas internos da Torre, ele vai mostrar
       os bot\xF5es que voc\xEA precisa apertar, voc\xEA aperta e tudo resolvido. "
   - name: 
-    text: "Talvez voc\xEA tenha que consertar um fiozinho ou outro tamb\xE9m, aqui
-      e ali (essas cabanas de transmiss\xE3o de r\xE1dio j\xE1 est\xE3o em um estado
-      de decomposi\xE7\xE3o meio avan\xE7ado)..."
+    text: "Talvez voc\xEA tenha que consertar um fiozinho ou outro tamb\xE9m, conectando
+      aqueles com s\xEDmbolos iguais (essas cabanas de transmiss\xE3o de r\xE1dio
+      j\xE1 est\xE3o em um estado de decomposi\xE7\xE3o meio avan\xE7ado)..."
   - name: 
     text: " mas nada demais, voc\xEA d\xE1 conta do recado! (Se alguma coisa estragar
       \xE9 voc\xEA quem vai pagar *risos risos).\r\n"
@@ -121,11 +123,16 @@ MonoBehaviour:
 
 '
   - name: 
-    text: "Antes de encerrar seu turno, lembre-se de desligar o maquin\xE1rio e as
-      luzes da cabana, voc\xEA n\xE3o vai querer receber uma visitinha dos animais
-      que est\xE3o passeando por a\xED.\r\n"
+    text: "\xC0s 18h acaba seu turno e a mesa \xE9 automatizada para desligar nesse
+      hor\xE1rio por quest\xF5es de seguran\xE7a, mas caso voc\xEA termine antes
+      basta apertar o maior bot\xE3o e ela desliga.\r\n"
+  - name: 
+    text: Lembre-se de blablabla antes de dormir, *insira piada*.
   - name: 
     text: "Bom, por hoje \xE9 isso! Em breve voc\xEA deve come\xE7ar a receber as
       mensagens."
+  - name: 
+    text: "Se precisar de minhas instru\xE7\xF5es novamente essa conversa foi gravada,
+      use o telefone para me ouvir de novo. "
   - name: 
     text: "Boa sorte novato! Gl\xF3ria a Invicta!\r\n"
