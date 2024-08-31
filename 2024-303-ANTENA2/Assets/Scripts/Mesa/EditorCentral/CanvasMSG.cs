@@ -34,71 +34,93 @@ public class CanvasMSG : MonoBehaviour
 
     private void Start()
     {
-        editorCentral.OnNewMessage += (_, e) =>
-        {
-            CreatePages(e.Frases); 
-            DisplayMessage();
-        };
-        editorCentral.OnRemoveMessage += (_, _) =>
-        {
-            ClearMessage();
-            _pages = Array.Empty<List<MSGcharStruct>>();
-        };
-        editorCentral.OnPageChange += (_, _) => DisplayMessage();
+        editorCentral.OnNewMessage += EditorCentralOnNewMessage;
+        editorCentral.OnRemoveMessage += EditorCentralOnRemoveMessage;
+        editorCentral.OnPageChange += EditorCentralOnPageChange;
 
-        CanvasMSGChar.OnPointerAnything += (_, e) =>
-        {
-            List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
+        CanvasMSGChar.OnPointerAnything += CanvasMSGCharOnPointerAnything;
+        CifrasMesa.OnClick += CifrasMesaOnClick;
+    }
 
-            if (e.Selecting)
-            {
-                for (int i = 0; i < page.Count; i++)
-                {
-                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
-                    canvasMsgChar.ChangeColors(null, null);
-                    canvasMsgChar.Selected(false);
-                }
-            }
-            
-            for (int i = e.MSGcharStruct.Index; i >= 0; i--)
-            {
-                if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
-                {                                         /*+1 por causa do template*/
-                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
-                    canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
-                    canvasMsgChar.Selected(e.Selecting);
-                }
-                else break;
-            }
-            for (int i = e.MSGcharStruct.Index + 1; i < page.Count; i++)
-            {
-                if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
-                {                                         /*+1 por causa do template*/
-                    CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
-                    canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
-                    canvasMsgChar.Selected(e.Selecting);
-                }
-                else break;
-            }
-        };
+    private void EditorCentralOnNewMessage(object o, EditorCentral.OnNewMessageEventArguments e)
+    {
+        CreatePages(e.Frases); 
+        DisplayMessage();
+    }
 
-        CifrasMesa.OnClick += tipoCifra =>
+    private void EditorCentralOnRemoveMessage(object o, EventArgs e)
+    {
+        ClearMessage();
+        _pages = Array.Empty<List<MSGcharStruct>>();
+    }
+
+    private void EditorCentralOnPageChange(object o, EventArgs e)
+    {
+        DisplayMessage();
+    }
+
+    private void CanvasMSGCharOnPointerAnything(object o, CanvasMSGChar.OnPointerAnythingEventArgs e)
+    {
+        List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
+
+        if (e.Selecting)
         {
-            List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
             for (int i = 0; i < page.Count; i++)
             {
                 CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
-                if (!(canvasMsgChar.IsSelected && page[i].TipoCifra == tipoCifra)) continue;
-                MSGcharStruct msgCharStruct = new()
-                {
-                    Index = i,
-                    Sprite = GetSprite(page[i].Sprite.name, TipoCifra.AlfabetoNormal),
-                    TipoCifra = TipoCifra.AlfabetoNormal
-                };
-                canvasMsgChar.Setup(msgCharStruct);
-                page[i] = msgCharStruct;
+                canvasMsgChar.ChangeColors(null, null);
+                canvasMsgChar.Selected(false);
             }
-        };
+        }
+            
+        for (int i = e.MSGcharStruct.Index; i >= 0; i--)
+        {
+            if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
+            {                                         /*+1 por causa do template*/
+                CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
+                canvasMsgChar.Selected(e.Selecting);
+            }
+            else break;
+        }
+        for (int i = e.MSGcharStruct.Index + 1; i < page.Count; i++)
+        {
+            if (page[i].TipoCifra == e.MSGcharStruct.TipoCifra)
+            {                                         /*+1 por causa do template*/
+                CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+                canvasMsgChar.ChangeColors(e.NewCharColor, e.NewBgColor);
+                canvasMsgChar.Selected(e.Selecting);
+            }
+            else break;
+        }
+    }
+
+    private void CifrasMesaOnClick(TipoCifra tipoCifra)
+    {
+        List<MSGcharStruct> page = _pages[editorCentral.CurrPage - 1];
+        for (int i = 0; i < page.Count; i++)
+        {
+            CanvasMSGChar canvasMsgChar = transform.GetChild(i + 1).GetComponent<CanvasMSGChar>();
+            if (!(canvasMsgChar.IsSelected && page[i].TipoCifra == tipoCifra)) continue;
+            MSGcharStruct msgCharStruct = new()
+            {
+                Index = i,
+                Sprite = GetSprite(page[i].Sprite.name, TipoCifra.AlfabetoNormal),
+                TipoCifra = TipoCifra.AlfabetoNormal
+            };
+            canvasMsgChar.Setup(msgCharStruct);
+            page[i] = msgCharStruct;
+        }
+    }
+    
+    private void OnDestroy()
+    {
+        editorCentral.OnNewMessage -= EditorCentralOnNewMessage;
+        editorCentral.OnRemoveMessage -= EditorCentralOnRemoveMessage;
+        editorCentral.OnPageChange -= EditorCentralOnPageChange;
+
+        CanvasMSGChar.OnPointerAnything -= CanvasMSGCharOnPointerAnything;
+        CifrasMesa.OnClick -= CifrasMesaOnClick;
     }
 
     private Sprite GetSprite(char c, TipoCifra tipoCifra)
