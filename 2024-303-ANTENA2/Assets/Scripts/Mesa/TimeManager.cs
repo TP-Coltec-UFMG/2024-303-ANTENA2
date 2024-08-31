@@ -32,13 +32,13 @@ public class TimeManager : MonoBehaviour {
     }
 
     private void Update() {
-        //colocando dificuldade
+        //colocando dificuldade: difícil = mais rápido; fácil = mais lento.
         if (Dificuldade.dificuldade == "facil") {
-            timeScale = 120f;
+            timeScale = 75f;
         } else if (Dificuldade.dificuldade == "dificil") {
             timeScale = 90f;
         } else {
-            timeScale = 105f;
+            timeScale = 80f;
         }
         //se o tutorial estiver aberto o tempo não passa
         if (!tuto.activeSelf) {
@@ -58,6 +58,7 @@ public class TimeManager : MonoBehaviour {
                 }
             }
             
+            //Acrescentar aqui o caso do player apertar o botão para terminar o turno
 
             // Às 18h acaba o turno de trabalho e troca para a cena da casa
             if (elapseTime > (18 * 3600)){
