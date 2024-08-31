@@ -7,7 +7,6 @@ using TMPro;
 
 
 public class PassaDia : MonoBehaviour {
-    public int idCena = 2;
     public string cena = "Mesa";
     [SerializeField] private TMP_Text textoDiaTrans;
     [SerializeField] private Animator FadeOutTrab;
@@ -15,18 +14,24 @@ public class PassaDia : MonoBehaviour {
     [SerializeField] private GameObject botao;
     [SerializeField] private AudioSource musiquinhaDia1;
     [SerializeField] private AudioSource musiquinhaCasa;
+    [SerializeField] private GameObject tutoAndar;
     
-    private int dia = 0;
+    public int dia;
     
     private void Start() {
         dia = GameHandler.Dia;
-        if(dia > 0) {
+        if(dia != 0) {
             FadeOutTrab.Play("FadeOutTrab"); //fade out do fim trabaio
             musiquinhaCasa.Play();
 
         }
         if(dia == 0){
-            musiquinhaDia1.Play();
+            musiquinhaDia1.Play(); //musiquinha com chuvinha
+
+            //"ande com awsd ou setinhas"
+            tutoAndar.SetActive(true);
+            //depois de 7 segundos some 
+            Destroy(tutoAndar, 7);
         }
     }
 

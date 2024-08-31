@@ -12476,14 +12476,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a894e2d6e71e741aae12ed107e63b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clockText: {fileID: 2091721352}
+  textoRelogio: {fileID: 2091721350}
   timeInADay: 86400
+<<<<<<< HEAD
   timeScale: 3000
+=======
+  timeScale: 1500
+>>>>>>> 46f73576e03602c101eeac12c5fbe7e1a22bdbce
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
   FadeInTrab: {fileID: 1723160148}
   tuto: {fileID: 251381715}
+  period: 0.5
 --- !u!114 &1980838746
 MonoBehaviour:
   m_ObjectHideFlags: 0
