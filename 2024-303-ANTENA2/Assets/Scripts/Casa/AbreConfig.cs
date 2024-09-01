@@ -10,10 +10,11 @@ public class AbreConfig : MonoBehaviour
     public void Configurar(){
         botao.SetActive(false);
         configuracoes.SetActive(true);
-
+        CursorController.instance.ActivateCursorDefault();
     }
     public void Voltar(){
         configuracoes.SetActive(false);
         botao.SetActive(true);
+        CursorController.instance.ActivateCursorDefault();
     }
 }

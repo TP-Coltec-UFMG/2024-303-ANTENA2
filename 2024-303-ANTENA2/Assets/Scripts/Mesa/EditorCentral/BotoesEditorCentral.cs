@@ -36,11 +36,21 @@ public class BotoesEditorCentral : MouseInteractive
             if (Input.GetMouseButtonDown(0))
             {
                 OnBotaoECPress?.Invoke(this, new OnBotaoECPressEventArgs { tipoBotao =  tipoBotao });
+                CursorController.instance.ActivateCursorSelectTap();
+            }
+            else if(Input.GetMouseButtonUp(0))
+            {
+                CursorController.instance.ActivateCursorSelect();
             }
         }
         else
         {
             DesHighlight();
+        }
+
+        if (MouseOver() && !_editorCentral.HasMensagem)
+        {
+            CursorController.instance.ActivateCursorDefault();
         }
     }
     
@@ -49,5 +59,15 @@ public class BotoesEditorCentral : MouseInteractive
         Aprova,
         Desaprova,
         Denuncia
+    }
+
+    private void OnMouseExit()
+    {
+        CursorController.instance.ActivateCursorDefault();
+    }
+
+    private void OnMouseEnter()
+    {
+        CursorController.instance.ActivateCursorSelect();
     }
 }

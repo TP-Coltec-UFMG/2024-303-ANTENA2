@@ -706,6 +706,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1734111603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734111605}
+  - component: {fileID: 1734111604}
+  m_Layer: 0
+  m_Name: CursorHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1734111604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734111603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901f14e3d23b9384d90a3ec3a40e02f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorDefault: {fileID: 2800000, guid: cfd57e66f3cbcf84ca3adfef4f4dcd72, type: 3}
+  cursorGrab: {fileID: 2800000, guid: 926242f9888edcc44957912b4843360d, type: 3}
+  cursorGrabbing: {fileID: 2800000, guid: cd75f63b94ff96a4ea14c285d96c1c88, type: 3}
+  cursorSelect: {fileID: 2800000, guid: dbc722323036e1c4880e0e735e709d28, type: 3}
+  cursorSelectTap: {fileID: 2800000, guid: eedce435ea641c64fa6f4654e97c3dc2, type: 3}
+  cursorUnavailable: {fileID: 2800000, guid: 184180b5f05c08c488055023fec05ee3, type: 3}
+  cursorReVertical: {fileID: 2800000, guid: 43cba3a76e64ae04cadd6fec26c9cf0b, type: 3}
+--- !u!4 &1734111605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734111603}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.833364, y: 18.607769, z: -0.12969702}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770386580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,5 +1203,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2052157232}
+  - {fileID: 1734111605}
   - {fileID: 1702712401}
   - {fileID: 934144804}
