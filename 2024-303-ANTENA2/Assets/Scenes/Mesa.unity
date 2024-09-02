@@ -6353,7 +6353,7 @@ GameObject:
   - component: {fileID: 811171621}
   m_Layer: 5
   m_Name: ChavesDeSeguranca
-  m_TagString: ChavesSegurana
+  m_TagString: ChavesDeSeguranca
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6397,6 +6397,7 @@ MonoBehaviour:
   textMesh1: {fileID: 1100316930}
   textMesh2: {fileID: 1018893592}
   textMesh3: {fileID: 465423962}
+  chaveSegurancaInstance: {fileID: 811171621}
   chavesArray:
   - 
   - 
@@ -10891,6 +10892,7 @@ MonoBehaviour:
   textMesh1: {fileID: 0}
   textMesh2: {fileID: 0}
   textMesh3: {fileID: 0}
+  chaveSegurancaInstance: {fileID: 0}
   chavesArray:
   - 
   - 
@@ -15228,6 +15230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8899409477686508582, guid: 8a7664d886c8a654582f9ed22d2bc0cc, type: 3}
+      propertyPath: chaveSegurancaInstance
+      value: 
+      objectReference: {fileID: 811171621}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

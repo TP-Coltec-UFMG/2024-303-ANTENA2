@@ -8,14 +8,12 @@ using System.Linq;
 public class ChavesDeSeguranca : MonoBehaviour
 {
     public TextMeshProUGUI textMesh0, textMesh1, textMesh2, textMesh3;
-    public static ChavesDeSeguranca instance;
+    [SerializeField] private ChavesDeSeguranca chaveSegurancaInstance;
     private int[] chaveString = new int[4];
     public string[] chavesArray = new string[4];
 
     private void Awake()
     {
-        //instance = this;
-
         for (int i = 0; i < chavesArray.Length; i++)
         {
             chaveString = GeraChave();
@@ -26,13 +24,13 @@ public class ChavesDeSeguranca : MonoBehaviour
                 sb.Append(n);
             }
 
-            instance.chavesArray[i] = sb.ToString();
+            chavesArray[i] = sb.ToString();
         }
 
-        textMesh0.text = instance.chavesArray[0];
-        textMesh1.text = instance.chavesArray[1];
-        textMesh2.text = instance.chavesArray[2];
-        textMesh3.text = instance.chavesArray[3];
+        textMesh0.text = chavesArray[0];
+        textMesh1.text = chavesArray[1];
+        textMesh2.text = chavesArray[2];
+        textMesh3.text = chavesArray[3];
     }
 
     // Start is called before the first frame update
@@ -58,9 +56,22 @@ public class ChavesDeSeguranca : MonoBehaviour
         return numeros;
     }
 
-    /*public static string retornaChave()
+    public string retornaChave()
     {
-        return chavesArray[0];
+        var i = Random.Range(0,20);
+        var n = Random.Range(0,4);
+
+        if(i == 0)
+        {
+            var aux = Random.Range(0, 10000).ToString();
+            Debug.Log("Chave: " + aux);
+            return aux;
+        }
+        else
+        {
+            Debug.Log("Chave: " + chavesArray[n]);
+            return chavesArray[n];
+        }
     }
-    */
+    
 }

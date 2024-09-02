@@ -15,7 +15,6 @@ public class EditorCentral : MouseInteractive
     }
 
     public event EventHandler OnRemoveMessage;
-
     public event EventHandler OnPageChange;
     
     
@@ -25,6 +24,7 @@ public class EditorCentral : MouseInteractive
     [SerializeField] private TextMeshPro frequenciaText;
     [SerializeField] private TextMeshPro chaveText;
     [SerializeField] private TextMeshPro paginasText;
+    [SerializeField] private ChavesDeSeguranca chaveSegurancaInstance;
 
     private MensagensChegando _mensagensChegando;
 
@@ -131,7 +131,7 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
-        //chaveText.text = "C: " + ChavesDeSeguranca.instance.chavesArray[0];
+        chaveText.text = "C: " + chaveSegurancaInstance.retornaChave();
 
         string newMensagem = "";
         foreach (char c in mensagemSO.mensagem)

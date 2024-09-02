@@ -19,7 +19,6 @@ public class MensagemSO : ScriptableObject
 
     private void OnEnable()
     {
-        //chave = ChavesDeSeguranca.retornaChave();
     }
 }
 

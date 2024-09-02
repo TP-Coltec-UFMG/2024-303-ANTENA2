@@ -8,7 +8,7 @@ TagManager:
   - Musica
   - Efeitos
   - TextoFrequencia
-  - ChavesSegurana
+  - ChavesDeSeguranca
   layers:
   - Default
   - TransparentFX
