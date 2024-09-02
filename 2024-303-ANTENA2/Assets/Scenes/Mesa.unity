@@ -3951,10 +3951,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 249405682}
   m_HandleRect: {fileID: 1866073033}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1500
+  m_MinValue: 500
+  m_MaxValue: 2500
   m_WholeNumbers: 1
-  m_Value: 1
+  m_Value: 500
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5233,6 +5233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 692511995}
   - component: {fileID: 692511996}
+  - component: {fileID: 692511997}
   m_Layer: 0
   m_Name: BotaoRebelde_MesaTransmissao
   m_TagString: Untagged
@@ -5307,6 +5308,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &692511997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692511994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631eb424e9d7d1b459300a3b39131f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgToHighlight: {fileID: 0}
+  text: {fileID: 0}
+  tipoBotaoSm: 3
 --- !u!1 &706257058
 GameObject:
   m_ObjectHideFlags: 0
@@ -6509,6 +6525,7 @@ MonoBehaviour:
   textoFrequencia2: {fileID: 526208473}
   aumentaFrequencia: {fileID: 1572166068}
   diminuiFrequencia: {fileID: 191968974}
+  frequencia: 0
 --- !u!4 &893012679
 Transform:
   m_ObjectHideFlags: 0
@@ -13623,7 +13640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoRelogio: {fileID: 2091721350}
   timeInADay: 86400
-  timeScale: 1500
+  timeScale: 80
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}

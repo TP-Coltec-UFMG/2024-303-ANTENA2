@@ -12,8 +12,12 @@ public class ChavesDeSeguranca : MonoBehaviour
     private int[] chaveString = new int[4];
     public string[] chavesArray = new string[4];
 
+    public static ChavesDeSeguranca Instance { get; private set; }
+    
     private void Awake()
     {
+        Instance = this;
+        
         for (int i = 0; i < chavesArray.Length; i++)
         {
             chaveString = GeraChave();
@@ -27,22 +31,13 @@ public class ChavesDeSeguranca : MonoBehaviour
             chavesArray[i] = sb.ToString();
         }
 
-        textMesh0.text = chavesArray[0];
-        textMesh1.text = chavesArray[1];
-        textMesh2.text = chavesArray[2];
-        textMesh3.text = chavesArray[3];
+        textMesh0.text = GameHandler.Dia == 1 ? "" : chavesArray[0];
+        textMesh1.text = GameHandler.Dia == 1 ? "" : chavesArray[1];
+        textMesh2.text = GameHandler.Dia == 1 ? "" : chavesArray[2];
+        textMesh3.text = GameHandler.Dia == 1 ? "" : chavesArray[3];
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public int[] GeraChave()
     {
@@ -73,5 +68,9 @@ public class ChavesDeSeguranca : MonoBehaviour
             return chavesArray[n];
         }
     }
-    
+
+    public bool ChecaChave(string chave)
+    {
+        return chavesArray.Contains(chave);
+    }
 }

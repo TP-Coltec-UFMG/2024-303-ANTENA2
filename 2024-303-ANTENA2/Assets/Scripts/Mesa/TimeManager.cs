@@ -67,7 +67,14 @@ public class TimeManager : MonoBehaviour {
             }
 
             //Se tiver passado a transição vai para a próxima cena
-            if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f)){
+            if (FadeInTrab.GetCurrentAnimatorStateInfo(0).IsName("FadeInTrab") && !(FadeInTrab.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1f))
+            {
+                if (GameHandler.Dia == 5)
+                {
+                    GameHandler.UltimoDia();
+                    return;
+                }
+                
                 SceneManager.LoadScene(nomeCena);
             }
         }

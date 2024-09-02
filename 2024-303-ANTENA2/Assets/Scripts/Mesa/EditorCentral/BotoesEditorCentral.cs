@@ -1,33 +1,30 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BotoesEditorCentral : MouseInteractive
 {
-    [SerializeField] private TextMeshPro text;
-    [SerializeField] private TipoBotao tipoBotao;
+    [SerializeField] [CanBeNull] private TextMeshPro text;
+    [FormerlySerializedAs("tipoBotao")] [SerializeField] private TipoBotaoSM tipoBotaoSm;
     private EditorCentral _editorCentral;
 
-    public static event EventHandler<OnBotaoECPressEventArgs> OnBotaoECPress;
-
-    public class OnBotaoECPressEventArgs : EventArgs
-    {
-        public TipoBotao tipoBotao;
-    }
-
+    public static event Action<TipoBotaoSM> OnSendMessage;
+    
     private new void Start()
     {
         base.Start();
         
         _editorCentral = GetComponentInParent<EditorCentral>();
-        text.gameObject.SetActive(false);
+        text?.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        text.gameObject.SetActive(/* if */ _editorCentral.HasMensagem);
+        text?.gameObject.SetActive(/* if */ _editorCentral.HasMensagem);
 
         if (MouseOver() && _editorCentral.HasMensagem)
         {
@@ -35,7 +32,7 @@ public class BotoesEditorCentral : MouseInteractive
             
             if (Input.GetMouseButtonDown(0))
             {
-                OnBotaoECPress?.Invoke(this, new OnBotaoECPressEventArgs { tipoBotao =  tipoBotao });
+                OnSendMessage?.Invoke(tipoBotaoSm);
                 CursorController.instance.ActivateCursorSelectTap();
             }
             else if(Input.GetMouseButtonUp(0))
@@ -54,13 +51,6 @@ public class BotoesEditorCentral : MouseInteractive
         }
     }
     
-    public enum TipoBotao
-    {
-        Aprova,
-        Desaprova,
-        Denuncia
-    }
-
     private void OnMouseExit()
     {
         CursorController.instance.ActivateCursorDefault();
@@ -70,4 +60,13 @@ public class BotoesEditorCentral : MouseInteractive
     {
         CursorController.instance.ActivateCursorSelect();
     }
+}
+
+
+public enum TipoBotaoSM
+{
+    Aprova,
+    Desaprova,
+    Denuncia,
+    Rebelde
 }

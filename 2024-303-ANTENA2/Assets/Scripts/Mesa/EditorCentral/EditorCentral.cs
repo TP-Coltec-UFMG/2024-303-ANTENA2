@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -33,57 +34,35 @@ public class EditorCentral : MouseInteractive
 
     public static int NumMensagensRebeldes;
     public static int NumMensagensRebeldesDenunciadas;
+    public static int NumMensagensRebeldesEncaminhadas; // Pelo botao dos rebeldes
     public static int NumMensagensLegais; // Legais de legalidade
+    public static int NumMensagensLegaisAprovadas; // Legais de legalidade
     
     public static int NumErros;
-    private const int ToleranciaErros = 3;
+    private int _toleranciaErros;
 
     
     private new void Start()
     {
         base.Start();
+
+        NumErros = 0;
+        
         _mensagensChegando = FindObjectOfType<MensagensChegando>();
         
         OnPageChange += (_, _) => paginasText.text = $"P. {CurrPage}/{NumOfPages}";
-        BotoesEditorCentral.OnBotaoECPress += (botao, e) =>
-        {
-            if (_mensagemSO.ehRebelde)
-            {
-                NumMensagensRebeldes++;
-                switch (e.tipoBotao)
-                {
-                    case BotoesEditorCentral.TipoBotao.Aprova:
-                        NumErros++;
-                        break;
-                    case BotoesEditorCentral.TipoBotao.Desaprova:
-                        break;
-                    case BotoesEditorCentral.TipoBotao.Denuncia:
-                        NumMensagensRebeldesDenunciadas++;
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
-            else
-            {
-                NumMensagensLegais++;
-                switch (e.tipoBotao)
-                {
-                    case BotoesEditorCentral.TipoBotao.Aprova:
-                        break;
-                    case BotoesEditorCentral.TipoBotao.Desaprova: case BotoesEditorCentral.TipoBotao.Denuncia:
-                        NumErros++;
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
-            RemoveMensagem();
-        };
+        BotoesEditorCentral.OnSendMessage += OnSendMessage;
     }
     
     private void Update()
     {
+        _toleranciaErros = Dificuldade.dificuldade switch
+        {
+            "facil" => 7,
+            "dificil" => 3,
+            _ => 5
+        };
+        
         GameHandler gh = GameHandler.Instance;
         if (gh.mensagemSelecionada is not null && gh.mensagemSelecionada.IsSelected && !HasMensagem)
         {
@@ -120,9 +99,10 @@ public class EditorCentral : MouseInteractive
             }
         }
 
-        if (NumErros >= ToleranciaErros)
+        if (NumErros >= _toleranciaErros)
         {
             Debug.Log("PERDEU MANE, PERDEU");
+            SceneManager.LoadScene("Mesa");
         }
     }
 
@@ -142,11 +122,11 @@ public class EditorCentral : MouseInteractive
                 newMensagem += '\n';
             }
         }
-        
+
         CurrPage = 1;
         NumOfPages = 1 + mensagemSO.mensagem.Length /
-                     (CanvasMSG.Instance.GetNumColsRows().x * CanvasMSG.Instance.GetNumColsRows().y);
-        
+            (CanvasMSG.Instance.GetNumColsRows().x * CanvasMSG.Instance.GetNumColsRows().y);
+
         paginasText.text = $"P. {CurrPage}/{NumOfPages}";
 
         foreach (string frase in newMensagem.Split('\n'))
@@ -164,6 +144,66 @@ public class EditorCentral : MouseInteractive
         // mensagemText.text = _frases[0].Text;
         // mensagemText.text = _mensagemSO.mensagem;
         // mensagemText.color = TipoCifraToColor(_frases[0].TipoCifra);
+    }
+
+    private void OnSendMessage(TipoBotaoSM tipoBotaoSm)
+    {
+        if (tipoBotaoSm == TipoBotaoSM.Rebelde && _mensagemSO.ehRebelde)
+        {
+            NumMensagensRebeldes++;
+            NumMensagensRebeldesEncaminhadas++;
+            
+            RemoveMensagem();
+            return;
+        }
+        
+        bool rangeFrequencia = _mensagemSO.frequencia is > 100f and < 140f;
+        bool frequenciaCorreta = _mensagemSO.frequencia == Frequencias.Instance.frequencia;
+        bool ehGoverno = !_mensagemSO.ehRebelde;
+        bool chaveCorreta = GameHandler.Dia == 1 || ChavesDeSeguranca.Instance.ChecaChave(_mensagemSO.chave);
+        
+        // casos que tem que aprovar
+        bool aprovar = rangeFrequencia && frequenciaCorreta && ehGoverno && chaveCorreta;
+        
+        // casos que tem que negar
+        bool negar = (!rangeFrequencia || !frequenciaCorreta || !chaveCorreta) && ehGoverno;
+        
+        // casos que tem que denunciar
+        bool denunciar = !ehGoverno;
+
+
+        if (!ehGoverno)
+        {
+            NumMensagensRebeldes++;
+        }
+        
+        if (aprovar)
+        {
+            NumMensagensLegais++;
+            if (tipoBotaoSm == TipoBotaoSM.Aprova)
+            {
+                NumMensagensLegaisAprovadas++;
+            }
+            else
+            {
+                NumErros++;
+            }
+        } 
+        else if (negar)
+        {
+            if (tipoBotaoSm != TipoBotaoSM.Desaprova)
+                NumErros++;
+        }
+        else if (denunciar)
+        {
+            if (tipoBotaoSm != TipoBotaoSM.Denuncia)
+                NumErros++;
+            else
+                NumMensagensRebeldesDenunciadas++;
+        }
+        
+        
+        RemoveMensagem();
     }
 
     public void RemoveMensagem()

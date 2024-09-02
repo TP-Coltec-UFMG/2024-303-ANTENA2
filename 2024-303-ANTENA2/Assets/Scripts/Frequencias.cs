@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,7 +13,15 @@ public class Frequencias : MonoBehaviour
     [SerializeField] public TextMeshProUGUI textoFrequencia2;
     [SerializeField] private Button aumentaFrequencia;
     [SerializeField] private Button diminuiFrequencia;
-    private float frequencia;
+    public float frequencia;
+
+    public static Frequencias Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
 
     private void Start()
     {
@@ -30,9 +39,9 @@ public class Frequencias : MonoBehaviour
     
     void Update()
     {
-        frequencia = slider.value / 10 + 100.0f;
+        frequencia = slider.value / 10;
         
-        textoFrequencia.text = Mathf.FloorToInt(frequencia).ToString();
+        textoFrequencia.text = Mathf.FloorToInt(frequencia).ToString("D3");
         textoFrequencia2.text = Mathf.RoundToInt(frequencia % 1 * 10).ToString();
     }
 

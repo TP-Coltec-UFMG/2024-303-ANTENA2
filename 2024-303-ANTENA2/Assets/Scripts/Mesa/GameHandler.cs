@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GameHandler : MonoBehaviour
@@ -77,5 +78,15 @@ public class GameHandler : MonoBehaviour
         MensagemSO mensagem = _mensagensDisponiveisDia[Random.Range(0, numMensagensDisponiveis)];
         _mensagensChegando.AddMensagem(mensagem);
         _mensagensDisponiveisDia.Remove(mensagem);
+    }
+
+    public static void UltimoDia()
+    {
+        float msgRebeldes = EditorCentral.NumMensagensRebeldes;
+        float msgRebeldesEnc = EditorCentral.NumMensagensRebeldesEncaminhadas;
+
+        const float ratioPermitido = .3f;
+        AtivaFinais.QualFinal = msgRebeldesEnc / msgRebeldes <= ratioPermitido ? 1 : 2;
+        SceneManager.LoadScene("Final");
     }
 }
