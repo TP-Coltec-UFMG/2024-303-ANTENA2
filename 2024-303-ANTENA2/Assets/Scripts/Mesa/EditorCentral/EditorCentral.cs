@@ -131,7 +131,7 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
-        // chaveText.text = "C: " + mensagemSO.chave;
+        //chaveText.text = "C: " + ChavesDeSeguranca.instance.chavesArray[0];
 
         string newMensagem = "";
         foreach (char c in mensagemSO.mensagem)

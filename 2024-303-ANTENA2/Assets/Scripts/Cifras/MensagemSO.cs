@@ -9,9 +9,18 @@ public class MensagemSO : ScriptableObject
     [TextArea(1, int.MaxValue)] public string mensagem;
     [SerializeField] private TipoCifra[] tiposDeCifra;
     public float frequencia;
-    public float chave;
+    public string chave;
     public bool ehRebelde;
     public int ordem;
+
+    private void Awake()
+    {
+    }
+
+    private void OnEnable()
+    {
+        //chave = ChavesDeSeguranca.retornaChave();
+    }
 }
 
 [Serializable]
