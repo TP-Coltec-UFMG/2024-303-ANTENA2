@@ -53,14 +53,20 @@ public class EditorCentral : MouseInteractive
         OnPageChange += (_, _) => paginasText.text = $"P. {CurrPage}/{NumOfPages}";
         BotoesEditorCentral.OnSendMessage += OnSendMessage;
     }
-    
+
+    private void OnDestroy()
+    {
+        OnPageChange = null;
+        BotoesEditorCentral.OnSendMessage -= OnSendMessage;
+    }
+
     private void Update()
     {
         _toleranciaErros = Dificuldade.dificuldade switch
         {
-            "facil" => 7,
-            "dificil" => 3,
-            _ => 5
+            "facil" => 15,
+            "dificil" => 5,
+            _ => 10 // "medio" e padrão
         };
         
         GameHandler gh = GameHandler.Instance;
@@ -101,8 +107,10 @@ public class EditorCentral : MouseInteractive
 
         if (NumErros >= _toleranciaErros)
         {
-            Debug.Log("PERDEU MANE, PERDEU");
-            SceneManager.LoadScene("Mesa");
+            // Debug.Log("PERDEU MANE, PERDEU");
+            // SceneManager.LoadScene("Mesa");
+            AtivaFinais.QualFinal = 3;
+            SceneManager.LoadScene("Final");
         }
     }
 
@@ -111,8 +119,15 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
-        chaveText.text = "C: " + chaveSegurancaInstance.retornaChave();
 
+        if (GameHandler.Dia != 1)
+        {
+            chaveText.text = "C: " + chaveSegurancaInstance.retornaChave();
+        }
+        else
+        {
+            chaveText.text = "C: ";
+        }
         string newMensagem = "";
         foreach (char c in mensagemSO.mensagem)
         {

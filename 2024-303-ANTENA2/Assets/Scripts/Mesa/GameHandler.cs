@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class GameHandler : MonoBehaviour
@@ -17,7 +18,7 @@ public class GameHandler : MonoBehaviour
     private List<MensagemSO> _mensagensDisponiveisDia = new();
     private List<MensagemSO> _mensagensDispoDiaFacil = new();
     
-    private const float TimerNovaMensagemMax = 10f;
+    public float timerNovaMensagemMax = 10f;
     private float _timerNovaMensagemCounter;
 
     private MensagensChegando _mensagensChegando;
@@ -25,7 +26,10 @@ public class GameHandler : MonoBehaviour
 
     public MensagemNova mensagemSelecionada;
 
+    private bool _pausado;
 
+    public bool todasMensagensTransmitidas;
+    
     private void Awake()
     {
         Dia = Dia == 0 ? dia : Dia;
@@ -40,34 +44,37 @@ public class GameHandler : MonoBehaviour
         _editorCentral = FindObjectOfType<EditorCentral>();
 
         _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
+        todasMensagensTransmitidas = false;
         //_mensagensDispoDiaFacil = new List<MensagemSO>(dias[dia-1].mensagens);
         GeraNovaMensagem();
     }
 
     private void Update()
     {
-        #region Teste Fios
+        // // #region Teste Fios
+        // //
+        // // if (Input.GetKeyDown(KeyCode.Alpha1))
+        // // {
+        // //     MiniGames.Instance.StartFios();
+        // // }
+        // //
+        // #endregion
+        todasMensagensTransmitidas = !_editorCentral.HasMensagem && _mensagensDisponiveisDia.Count == 0;
         
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            MiniGames.Instance.StartFios();
-        }
-        
-        #endregion
         NovaMensagemUpdate();
     }
 
 
     private void NovaMensagemUpdate()
     {
-        if (_timerNovaMensagemCounter >= TimerNovaMensagemMax)
+        if (_timerNovaMensagemCounter >= timerNovaMensagemMax)
         {
             _timerNovaMensagemCounter = 0;
             
             GeraNovaMensagem();
         }
 
-        _timerNovaMensagemCounter += Time.deltaTime;
+        if (!_pausado) _timerNovaMensagemCounter += Time.deltaTime;
     }
     
     private void GeraNovaMensagem()
@@ -88,5 +95,10 @@ public class GameHandler : MonoBehaviour
         const float ratioPermitido = .3f;
         AtivaFinais.QualFinal = msgRebeldesEnc / msgRebeldes <= ratioPermitido ? 1 : 2;
         SceneManager.LoadScene("Final");
+    }
+
+    public void PausarMensagens(bool state)
+    {
+        _pausado = state;
     }
 }

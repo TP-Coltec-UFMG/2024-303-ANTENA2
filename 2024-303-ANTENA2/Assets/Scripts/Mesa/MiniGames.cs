@@ -35,6 +35,8 @@ public class MiniGames : MonoBehaviour
 
     public void StartFios()
     {
+        if (fiosOn) return;
+        
         StartCoroutine(MoveTelinha(telinhaToTheSidePosX));
         fiosGO.SetActive(true);
         CameraFollow.Instance.Follow(CameraFollow.Locais.TVminigames, CameraFollow.TvMinigamesOrthoSize);
@@ -43,6 +45,8 @@ public class MiniGames : MonoBehaviour
 
     private void EndFios()
     {
+        if (!fiosOn) return;
+        
         CameraFollow.Instance.Follow(CameraFollow.Locais.Transmissao, null);
         StartCoroutine(MoveTelinha(-telinhaToTheSidePosX));
         ResetFios();
