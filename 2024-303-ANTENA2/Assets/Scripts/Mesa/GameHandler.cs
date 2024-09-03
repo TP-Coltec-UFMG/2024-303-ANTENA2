@@ -92,7 +92,7 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Final");
     }
 
-    public void Pausar(bool state)
+    public void PausarMensagens(bool state)
     {
         _pausado = state;
     }
