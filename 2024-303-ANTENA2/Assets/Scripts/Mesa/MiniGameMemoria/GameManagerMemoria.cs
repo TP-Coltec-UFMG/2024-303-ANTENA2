@@ -34,6 +34,7 @@ public class GameManagerMemoria : MonoBehaviour {
 
     public bool gameOn;
     private float timeLeft;
+    [SerializeField] private PaneNaMesa paneNaMesa;
 
     void Update() {
         if (score < maxScore) {
@@ -136,10 +137,10 @@ public class GameManagerMemoria : MonoBehaviour {
         gameActive = false;
         mesaVerde.SetActive(false);
         gameOn = false;
+        paneNaMesa.ligaMesa();
         //for(int i = 0; i < activeSequence.Length; i++) {
         //    botoes_telinha.[activeSequence[i]].color = new Color(255, 255, 255, 0f);
         //}
-        
     }
 
     private IEnumerator RestartGame()
