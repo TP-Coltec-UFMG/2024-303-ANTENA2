@@ -9,7 +9,7 @@ public class Janelas : MonoBehaviour {
     [SerializeField] private GameObject textoFechar;
     public bool foiFechada = false;
     public int numApertancias = 0;
-    public bool stay = false; //fazendo a função do OnCollisionStays
+    public bool stay = false; //fazendo a função do OnCollisionStay
     void Update(){
         if(stay == true && numApertancias == 0){
             if(Input.GetKeyDown(KeyCode.F)){

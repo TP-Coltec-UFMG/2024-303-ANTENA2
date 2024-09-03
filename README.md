@@ -20,7 +20,7 @@
     <div>* Volume dos efeitos sonoros.</div>
     <p></p>
     </div>
-<p>- Área de dificuldade que controla a quantidade de tarefas durante o jogo.</p>
+<p>- Área de dificuldade que controla a quantidade de tarefas durante o jogo, o tempo disposto para fazê-las e a quantidade de erros que podem ser cometidos.</p>
 <div>- Para acessibilidade visual:</div>
     <div>* Opções de filtros de daltonismo:  protanopia, deuteranopia, tritanopia e sem filtro.</div>
 

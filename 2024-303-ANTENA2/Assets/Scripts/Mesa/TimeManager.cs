@@ -35,11 +35,11 @@ public class TimeManager : MonoBehaviour {
     private void Update() {
         //colocando dificuldade: difícil = mais rápido; fácil = mais lento.
         if (Dificuldade.dificuldade == "facil") {
-            timeScale = 75f;
+            timeScale = 60f;
         } else if (Dificuldade.dificuldade == "dificil") {
             timeScale = 90f;
         } else if (Dificuldade.dificuldade == "medio"){
-            timeScale = 80f;
+            timeScale = 75f;
         }
         //se o tutorial estiver aberto o tempo não passa
         if (!tuto.activeSelf) {
