@@ -111,8 +111,15 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
-        chaveText.text = "C: " + chaveSegurancaInstance.retornaChave();
 
+        if (GameHandler.Dia != 1)
+        {
+            chaveText.text = "C: " + chaveSegurancaInstance.retornaChave();
+        }
+        else
+        {
+            chaveText.text = "C: ";
+        }
         string newMensagem = "";
         foreach (char c in mensagemSO.mensagem)
         {
