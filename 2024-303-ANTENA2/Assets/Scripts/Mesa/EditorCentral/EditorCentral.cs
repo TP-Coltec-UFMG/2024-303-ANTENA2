@@ -101,8 +101,10 @@ public class EditorCentral : MouseInteractive
 
         if (NumErros >= _toleranciaErros)
         {
-            Debug.Log("PERDEU MANE, PERDEU");
-            SceneManager.LoadScene("Mesa");
+            // Debug.Log("PERDEU MANE, PERDEU");
+            // SceneManager.LoadScene("Mesa");
+            AtivaFinais.QualFinal = 3;
+            SceneManager.LoadScene("Final");
         }
     }
 

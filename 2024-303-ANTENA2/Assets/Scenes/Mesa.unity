@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad33f972d900a124292451e72af129a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dia: 1
+  dia: 5
   dias:
   - {fileID: 11400000, guid: b37696d003bd1d849a16853f912e7e02, type: 2}
   - {fileID: 11400000, guid: 83cf17bd090f5a141a6859be414415f5, type: 2}
@@ -742,6 +742,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cd50a39369857234194f720a2f273e4f, type: 2}
   - {fileID: 11400000, guid: b11508d9c694bd943838137106b5dc04, type: 2}
   mensagemSelecionada: {fileID: 0}
+  todasMensagensTransmitidas: 0
 --- !u!4 &175116985
 Transform:
   m_ObjectHideFlags: 0

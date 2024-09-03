@@ -65,8 +65,14 @@ public class SistemaLegendasFinal : MonoBehaviour {
             estado = ESTADO.DESATIVADO;
             textoAtual = 0;
             finalizado = true;
-            creditos.SetActive(true);
-            Debug.Log("Creditos");
+            
+            if (AtivaFinais.QualFinal != 3)
+            {
+                creditos.SetActive(true);
+                Debug.Log("Creditos");
+            }
+            else
+                SceneManager.LoadScene("Mesa");
         }
         
     }
@@ -81,7 +87,13 @@ public class SistemaLegendasFinal : MonoBehaviour {
         estado = ESTADO.DESATIVADO;
         textoAtual = 0;
         finalizado = true;
-        creditos.SetActive(true);
-        Debug.Log("Creditos");
+        
+        if (AtivaFinais.QualFinal != 3)
+        {
+            creditos.SetActive(true);
+            Debug.Log("Creditos");
+        }
+        else
+            SceneManager.LoadScene("Mesa");
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class GameHandler : MonoBehaviour
@@ -17,7 +18,7 @@ public class GameHandler : MonoBehaviour
     private List<MensagemSO> _mensagensDisponiveisDia = new();
     private List<MensagemSO> _mensagensDispoDiaFacil = new();
     
-    private const float TimerNovaMensagemMax = 10f;
+    public float timerNovaMensagemMax = 10f;
     private float _timerNovaMensagemCounter;
 
     private MensagensChegando _mensagensChegando;
@@ -66,7 +67,7 @@ public class GameHandler : MonoBehaviour
 
     private void NovaMensagemUpdate()
     {
-        if (_timerNovaMensagemCounter >= TimerNovaMensagemMax)
+        if (_timerNovaMensagemCounter >= timerNovaMensagemMax)
         {
             _timerNovaMensagemCounter = 0;
             
