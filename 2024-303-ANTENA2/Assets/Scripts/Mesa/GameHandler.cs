@@ -25,6 +25,8 @@ public class GameHandler : MonoBehaviour
 
     public MensagemNova mensagemSelecionada;
 
+    private bool _pausado;
+    
 
     private void Awake()
     {
@@ -67,7 +69,7 @@ public class GameHandler : MonoBehaviour
             GeraNovaMensagem();
         }
 
-        _timerNovaMensagemCounter += Time.deltaTime;
+        if (!_pausado) _timerNovaMensagemCounter += Time.deltaTime;
     }
     
     private void GeraNovaMensagem()
@@ -88,5 +90,10 @@ public class GameHandler : MonoBehaviour
         const float ratioPermitido = .3f;
         AtivaFinais.QualFinal = msgRebeldesEnc / msgRebeldes <= ratioPermitido ? 1 : 2;
         SceneManager.LoadScene("Final");
+    }
+
+    public void Pausar(bool state)
+    {
+        _pausado = state;
     }
 }
