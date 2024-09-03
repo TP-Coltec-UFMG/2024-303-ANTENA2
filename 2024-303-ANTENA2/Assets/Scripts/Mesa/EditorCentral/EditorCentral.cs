@@ -66,7 +66,7 @@ public class EditorCentral : MouseInteractive
         {
             "facil" => 7,
             "dificil" => 3,
-            _ => 5
+            _ => 5 // "medio" e padrão
         };
         
         GameHandler gh = GameHandler.Instance;
