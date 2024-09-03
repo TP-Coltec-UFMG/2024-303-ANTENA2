@@ -90,8 +90,8 @@ public class TimeManager : MonoBehaviour {
         textoRelogio.GetComponent<TextMeshProUGUI>().text = clockString;
     }
     public void DesligadorDesliga(){
-        /*if(terminoudetransmitirtudo){
+        if(GameHandler.Instance.todasMensagensTransmitidas){
             desligadorApertado = true;
-        }*/
+        }
     }
 }
