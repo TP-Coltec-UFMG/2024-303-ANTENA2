@@ -1264,6 +1264,7 @@ MonoBehaviour:
   telaErro: {fileID: 93899526}
   maxScore: 5
   gameOn: 0
+  paneNaMesa: {fileID: 1555151362}
 --- !u!1 &249405681
 GameObject:
   m_ObjectHideFlags: 0
@@ -10091,10 +10092,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomNumber: 0
-  max_number: 10
-  time: 50
+  max_number: 50
+  time: 10
   telinha: {fileID: 237877920}
   mesa: {fileID: 1555151359}
+  paneNaMesa: {fileID: 1555151362}
+--- !u!114 &1555151362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555151359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3037b7856d28c4cbc8c3f696d02904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Relogio: {fileID: 1980838742}
 --- !u!1 &1572166066
 GameObject:
   m_ObjectHideFlags: 0
@@ -15791,6 +15806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniGames_MesaTransmissao
       objectReference: {fileID: 0}
+    - target: {fileID: 1436170120250092335, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
+      propertyPath: paneNaMesa
+      value: 
+      objectReference: {fileID: 1555151362}
     - target: {fileID: 1700090162447774874, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.359
@@ -15909,6 +15928,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1217459268982449777, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1555151360}
+    - targetCorrespondingSourceObject: {fileID: 1217459268982449777, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555151362}
     - targetCorrespondingSourceObject: {fileID: 221163640553413181, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2065777434}

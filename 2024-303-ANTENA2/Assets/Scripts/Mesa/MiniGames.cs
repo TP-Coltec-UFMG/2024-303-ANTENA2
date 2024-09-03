@@ -12,6 +12,7 @@ public class MiniGames : MonoBehaviour
     [SerializeField] private float telinhaToTheSidePosX;
     [SerializeField] private GameObject fiosGO;
     [SerializeField] private List<Wire> fios;
+    [SerializeField] private PaneNaMesa paneNaMesa;
     public bool fiosOn;
 
     
@@ -51,6 +52,7 @@ public class MiniGames : MonoBehaviour
         ResetFios();
         fiosGO.SetActive(false);
         fiosOn = false;
+        paneNaMesa.ligaMesa();
     }
 
     private void ResetFios()

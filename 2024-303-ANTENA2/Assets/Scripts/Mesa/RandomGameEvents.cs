@@ -16,6 +16,8 @@ public class RandomGameEvents : MonoBehaviour {
     [SerializeField] GameObject mesa;
     private MiniGames miniGameFios;
 
+    [SerializeField] PaneNaMesa paneNaMesa;
+
     /*Guitar Hero*/
 
     void Awake() {
@@ -37,15 +39,18 @@ public class RandomGameEvents : MonoBehaviour {
             time = 50f;
             max_number = 20;
         } else {
+            time = 20f;
             max_number = 10;
         }
     }
     void RandomizeGames() {
         randomNumber = Random.Range(0, max_number);
         if(randomNumber == 1) {
+            paneNaMesa.desligaMesa();
             gameManagerMemoria.StartGame();
         }
         if(randomNumber == 2) {
+            paneNaMesa.desligaMesa();
             miniGameFios.StartFios();
         }
     }

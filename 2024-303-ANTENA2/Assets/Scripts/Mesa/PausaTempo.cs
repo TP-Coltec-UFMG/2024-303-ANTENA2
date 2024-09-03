@@ -14,11 +14,11 @@ public class PausaTempo : MonoBehaviour {
         }
         
     }
-    /*void PausarJogo() {
+    public void PausarJogo() {
         if (Time.timeScale == 0) {
             Time.timeScale = 1;
         } else if (Time.timeScale == 1) {
             Time.timeScale = 0;
         }
-    }*/
+    }
 }
