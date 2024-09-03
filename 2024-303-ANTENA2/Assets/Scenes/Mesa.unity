@@ -13659,7 +13659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982570d3668fe4942afca17c9f717735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 251381715}
   configs: {fileID: 122801201}
 --- !u!1 &1982784435
 GameObject:
@@ -15606,7 +15605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2434638929731128115, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2590240779959875313, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15650,7 +15649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3842184759886189352, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5314669437296211780, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15658,7 +15657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5420927693346455782, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5602073075567553863, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_LocalScale.x
@@ -15706,7 +15705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9146908518257875217, guid: 320ba26c8fedab54fa1e146ebf405f41, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
