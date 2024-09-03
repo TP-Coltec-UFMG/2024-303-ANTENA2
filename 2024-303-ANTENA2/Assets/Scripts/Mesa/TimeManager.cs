@@ -88,4 +88,7 @@ public class TimeManager : MonoBehaviour {
         string clockString = string.Format("{00:00}:00", hours);
         textoRelogio.GetComponent<TextMeshProUGUI>().text = clockString;
     }
+    public void DesligadorDesliga(){
+        elapseTime = 18 * 3600;
+    }
 }
