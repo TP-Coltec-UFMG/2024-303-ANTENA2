@@ -64,9 +64,9 @@ public class EditorCentral : MouseInteractive
     {
         _toleranciaErros = Dificuldade.dificuldade switch
         {
-            "facil" => 7,
-            "dificil" => 3,
-            _ => 5
+            "facil" => 15,
+            "dificil" => 5,
+            _ => 10 // "medio" e padrão
         };
         
         GameHandler gh = GameHandler.Instance;
