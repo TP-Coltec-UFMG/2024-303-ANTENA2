@@ -26,8 +26,9 @@ public class GameHandler : MonoBehaviour
     public MensagemNova mensagemSelecionada;
 
     private bool _pausado;
-    
 
+    public bool todasMensagensTransmitidas;
+    
     private void Awake()
     {
         Dia = Dia == 0 ? dia : Dia;
@@ -42,20 +43,23 @@ public class GameHandler : MonoBehaviour
         _editorCentral = FindObjectOfType<EditorCentral>();
 
         _mensagensDisponiveisDia = new List<MensagemSO>(dias[dia - 1].mensagens);
+        todasMensagensTransmitidas = false;
         //_mensagensDispoDiaFacil = new List<MensagemSO>(dias[dia-1].mensagens);
         GeraNovaMensagem();
     }
 
     private void Update()
     {
-        #region Teste Fios
+        // // #region Teste Fios
+        // //
+        // // if (Input.GetKeyDown(KeyCode.Alpha1))
+        // // {
+        // //     MiniGames.Instance.StartFios();
+        // // }
+        // //
+        // #endregion
+        todasMensagensTransmitidas = !_editorCentral.HasMensagem && _mensagensDisponiveisDia.Count == 0;
         
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            MiniGames.Instance.StartFios();
-        }
-        
-        #endregion
         NovaMensagemUpdate();
     }
 
