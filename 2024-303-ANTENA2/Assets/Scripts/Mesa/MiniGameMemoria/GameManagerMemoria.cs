@@ -35,41 +35,45 @@ public class GameManagerMemoria : MonoBehaviour {
     public bool gameOn;
     private float timeLeft;
     [SerializeField] private PaneNaMesa paneNaMesa;
+    bool GameOver = false;
 
     void Update() {
-        if (score < maxScore) {
-            if(shouldBeLit) {
-                stayLitCounter -= Time.deltaTime;
-                    if (stayLitCounter < 0) {
-                        botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
-                        shouldBeLit = false;
+        if (!GameOver) {
+            if (score < maxScore) {
+                if(shouldBeLit) {
+                    stayLitCounter -= Time.deltaTime;
+                        if (stayLitCounter < 0) {
+                            botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 0f);
+                            shouldBeLit = false;
 
-                        shouldBeDark = true;
+                            shouldBeDark = true;
 
-                        positionInSequence++;
-                    }
-                //}
-            }
-            if(shouldBeDark) {
-                waitBetweenCounter -= Time.deltaTime;               
-                if(positionInSequence >= activeSequence.Count) {
-                    shouldBeDark = false;
-                    gameActive = true;
-                } else {
-                    if(waitBetweenCounter < 0) {
-
-                        botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
-
-                        stayLitCounter = stayLit;
-                        shouldBeLit = true;
-                        shouldBeDark = false;
-                    }
+                            positionInSequence++;
+                        }
+                    //}
                 }
-                
+                if(shouldBeDark) {
+                    waitBetweenCounter -= Time.deltaTime;               
+                    if(positionInSequence >= activeSequence.Count) {
+                        shouldBeDark = false;
+                        gameActive = true;
+                    } else {
+                        if(waitBetweenCounter < 0) {
+
+                            botoes_telinha[activeSequence[positionInSequence]].color = new Color(255, 255, 255, 1f);
+
+                            stayLitCounter = stayLit;
+                            shouldBeLit = true;
+                            shouldBeDark = false;
+                        }
+                    }
+                    
+                }
             }
-        }
-        else {
-            GameEnd();
+            else {
+                GameOver = true;
+                GameEnd();
+            }
         }
     }
 
@@ -138,9 +142,11 @@ public class GameManagerMemoria : MonoBehaviour {
         mesaVerde.SetActive(false);
         gameOn = false;
         paneNaMesa.ligaMesa();
-        //for(int i = 0; i < activeSequence.Length; i++) {
-        //    botoes_telinha.[activeSequence[i]].color = new Color(255, 255, 255, 0f);
-        //}
+        score = 0;
+
+        foreach (SpriteRenderer button in botoes_telinha) {
+            button.color = new Color(255, 255, 255, 0f);
+        }
     }
 
     private IEnumerator RestartGame()

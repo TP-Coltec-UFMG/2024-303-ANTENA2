@@ -11,9 +11,13 @@ public class PaneNaMesa : MonoBehaviour {
     }
     public void desligaMesa() {
         pausaTempo.PausarJogo();
+        GameHandler.Instance.PausarMensagens(true);
+        Debug.Log("pausou");
     }
     public void ligaMesa() {
         pausaTempo.PausarJogo();
+        GameHandler.Instance.PausarMensagens(false);
+        Debug.Log("Despausou");
     }
 
 }
