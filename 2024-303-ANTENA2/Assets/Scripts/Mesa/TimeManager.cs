@@ -16,6 +16,7 @@ public class TimeManager : MonoBehaviour {
     [SerializeField] private Animator FadeOutDia;
     [SerializeField] private Animator FadeInTrab;
     [SerializeField] private GameObject tuto;
+    private bool desligadorApertado = false;
     public static float elapseTime = 0;
     private string nomeCena = "Casa";
     private int dia = 0;
@@ -61,8 +62,8 @@ public class TimeManager : MonoBehaviour {
             
             //Acrescentar aqui o caso do player apertar o botão para terminar o turno
 
-            // Às 18h acaba o turno de trabalho e troca para a cena da casa
-            if (elapseTime > (18 * 3600)){
+            // Às 18h acaba o turno de trabalho e troca para a cena da casa, ou o jogador terminou as msgs e apertou o botao de desligar
+            if (elapseTime > (18 * 3600) || desligadorApertado){
                 FadeInTrab.Play("FadeInTrab"); //fade in 'cabou trabaio'
             }
 
@@ -89,6 +90,8 @@ public class TimeManager : MonoBehaviour {
         textoRelogio.GetComponent<TextMeshProUGUI>().text = clockString;
     }
     public void DesligadorDesliga(){
-        elapseTime = 18 * 3600;
+        /*if(terminoudetransmitirtudo){
+            desligadorApertado = true;
+        }*/
     }
 }
