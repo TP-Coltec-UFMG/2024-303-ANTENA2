@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PausaTempo : MonoBehaviour {
-    [SerializeField] GameObject tutorial;
     [SerializeField] GameObject configs;
     // Update is called once per frame
     void Update()
     {
-        if(configs.activeSelf == true /*|| tutorial.activeSelf == true*/){
+        if(configs.activeSelf == true){
             Time.timeScale = 0;
         } else {
             Time.timeScale = 1;
