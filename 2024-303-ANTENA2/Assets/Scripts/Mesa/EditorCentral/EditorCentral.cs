@@ -53,7 +53,13 @@ public class EditorCentral : MouseInteractive
         OnPageChange += (_, _) => paginasText.text = $"P. {CurrPage}/{NumOfPages}";
         BotoesEditorCentral.OnSendMessage += OnSendMessage;
     }
-    
+
+    private void OnDestroy()
+    {
+        OnPageChange = null;
+        BotoesEditorCentral.OnSendMessage -= OnSendMessage;
+    }
+
     private void Update()
     {
         _toleranciaErros = Dificuldade.dificuldade switch

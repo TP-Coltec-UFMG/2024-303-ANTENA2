@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: final 3
+    text: Erros demais foram cometidos.
   - name: 
-    text: 'final 3 legenda 2
-
-'
+    text: "As Antenas precisam de operadores profissionais, sua desatenta\xE7\xE3o
+      \xE9 inaceit\xE1vel."
+  - name: 
+    text: "Voc\xEA est\xE1 DEMITIDO."
