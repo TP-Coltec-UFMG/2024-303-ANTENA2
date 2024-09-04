@@ -28,4 +28,23 @@ MonoBehaviour:
       amanhecer. Adeus, Operador. E de novo, obrigado pela ajuda. Salvou minha vida,
       sabia disso n\xE9? At\xE9 uma pr\xF3xima\u2026"
   - name: 5
-    text: '* Dreyfus se levanta da mesa com dificuldade, ajeitando a roupa'
+    text: '* Dreyfus se levanta da mesa com dificuldade, ajeitando a roupa e tentando
+      se mostrar positivo.'
+  - name: 6
+    text: "[Dreyfus] Mais pronto imposs\xEDvel. Vamos tentar chegar l\xE1 antes do
+      amanhecer. Adeus, Operador. E de novo, obrigado pela ajuda. Voc\xEA sabe que
+      salvou minha vida, n\xE9? Vou ser eternamente grato, Operador, de verdade.
+      At\xE9 uma pr\xF3xima!\u2026"
+  - name: 7
+    text: "[Dreyfus] Mais pronto imposs\xEDvel. Vamos tentar chegar l\xE1 antes do
+      amanhecer. Adeus, Operador. E de novo, obrigado pela ajuda. Voc\xEA sabe que
+      salvou minha vida, n\xE9? Vou ser eternamente grato, Operador, de verdade.
+      At\xE9 uma pr\xF3xima!\u2026"
+  - name: 8
+    text: "[Jaques] At\xE9 mais ver, Operador. Sua gentileza n\xE3o ser\xE1 esquecida,
+      pode ter certeza. Obrigado por tudo e adeus! Por hora\u2026"
+  - name: 9
+    text: "* Voc\xEA observa da porta da cabana enquanto os dois rebeldes seguem
+      para longe da estrada e rumo, novamente, \xE0 floresta."
+  - name: 10
+    text: "* Voc\xEA se pergunta se um dia vai voltar a v\xEA-los."

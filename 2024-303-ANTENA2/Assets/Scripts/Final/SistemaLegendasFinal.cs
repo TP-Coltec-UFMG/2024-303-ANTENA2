@@ -7,7 +7,7 @@ public class SistemaLegendasFinal : MonoBehaviour {
     
     [SerializeField] private DialogueData dialogueData;
     int textoAtual = 0;
-    bool finalizado = false;
+    public bool finalizado = false;
 
     [SerializeField] private TypeTextAnimation typeText;
     [SerializeField] private DialogueUI dialogueUI;
