@@ -6,6 +6,7 @@ public class ButtonController : MonoBehaviour {
     private SpriteRenderer theSprite;
     private GameManagerMemoria gameManagerMemoria;
     private Animator animator;
+    public AudioSource somBotao;
 
     [SerializeField] private int buttonNumber;
     void Start() {
@@ -17,6 +18,7 @@ public class ButtonController : MonoBehaviour {
 
     void OnMouseDown() {
         animator.enabled = true;
+        somBotao.Play();
 
         if(gameManagerMemoria.mesaVerde.activeInHierarchy == true) {
             gameManagerMemoria.botoes_telinha[buttonNumber].color = new Color(255, 255, 255, 1f);

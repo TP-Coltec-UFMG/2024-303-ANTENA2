@@ -6,9 +6,10 @@ public class TelefoneToca : MonoBehaviour {
     public AudioSource gancho;
     void Start(){
         if(GameHandler.Dia == 1){
-            toque.Play();
+            toque.Play(88200);
         }
     }
+
     public void OnMouseDown(){
         toque.Stop();
         gancho.Play();

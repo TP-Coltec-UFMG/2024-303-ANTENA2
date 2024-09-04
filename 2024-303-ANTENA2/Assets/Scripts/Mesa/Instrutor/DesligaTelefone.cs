@@ -18,7 +18,6 @@ public class DesligaTelefone : MonoBehaviour {
             dialogueSystem.SkipInstrutor();
             gameObject.SetActive(false);
             telefoneGancho.SetActive(true);
-            
         }
     }
 }
