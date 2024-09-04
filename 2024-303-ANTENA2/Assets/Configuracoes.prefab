@@ -2495,6 +2495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afee2a49be4ecca4eae788b7539c7baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facil: {fileID: 9149171698624914331}
+  medio: {fileID: 1638388698966123867}
+  dificil: {fileID: 6841644010884744287}
 --- !u!1 &4841154292058824704
 GameObject:
   m_ObjectHideFlags: 0
