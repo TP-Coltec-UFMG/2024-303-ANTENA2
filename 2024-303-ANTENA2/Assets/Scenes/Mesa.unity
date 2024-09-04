@@ -759,6 +759,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &188485810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3017917747161936845, guid: 8a7664d886c8a654582f9ed22d2bc0cc, type: 3}
+  m_PrefabInstance: {fileID: 2349951388096770534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191010159
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,6 +10115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Relogio: {fileID: 1980838742}
+  Slots: {fileID: 1769828223}
+  editorCentral: {fileID: 188485810}
 --- !u!1 &1572166066
 GameObject:
   m_ObjectHideFlags: 0
@@ -11536,6 +11543,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1964541008}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: b2c12d53c7156f1498eb3f73df5d4a31, type: 3}
+--- !u!1 &1769828223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2490940224743855830, guid: 3294fea14c0b1314c966cc8b8d720edd, type: 3}
+  m_PrefabInstance: {fileID: 3166164410745231235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1795491175
 GameObject:
   m_ObjectHideFlags: 0
@@ -15381,6 +15393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1492523140}
     m_Modifications:
+    - target: {fileID: 2717797935082072436, guid: 8a7664d886c8a654582f9ed22d2bc0cc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3017917747161936845, guid: 8a7664d886c8a654582f9ed22d2bc0cc, type: 3}
       propertyPath: m_Name
       value: EditorCentral_MesaTransmissao
