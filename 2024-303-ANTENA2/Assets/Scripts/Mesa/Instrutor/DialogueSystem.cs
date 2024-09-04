@@ -51,9 +51,9 @@ public class DialogueSystem : MonoBehaviour {
             dialogueUI.Enable();
         }
         
-        typeText.fullText = dialogueData[1].talkScript[textoAtual++].text;
+        typeText.fullText = dialogueData[0].talkScript[textoAtual++].text;
         
-        if (textoAtual == dialogueData[1].talkScript.Count) {
+        if (textoAtual == dialogueData[0].talkScript.Count) {
             finalizado = true;
         }
         typeText.StartTyping();

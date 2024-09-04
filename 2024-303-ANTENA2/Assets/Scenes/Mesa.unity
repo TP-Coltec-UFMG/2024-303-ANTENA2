@@ -8808,7 +8808,7 @@ GameObject:
   - component: {fileID: 1158940089}
   m_Layer: 0
   m_Name: TelefoneAtende
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11966,7 +11966,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueData:
   - {fileID: 11400000, guid: 0f8406f92945a084989dc1bdaad67405, type: 2}
-  - {fileID: 11400000, guid: bf12d57aaf69f034db7dd9b14992b134, type: 2}
   telefoneDesliga: {fileID: 0}
   typeText: {fileID: 1605516013}
   dialogueUI: {fileID: 1692315139}
@@ -14648,7 +14647,7 @@ GameObject:
   - component: {fileID: 1933795878}
   m_Layer: 0
   m_Name: TelefoneDesliga
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
