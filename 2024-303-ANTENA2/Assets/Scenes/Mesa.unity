@@ -15483,7 +15483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoRelogio: {fileID: 2091721350}
   timeInADay: 86400
-  timeScale: 90
+  timeScale: 2000
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}
