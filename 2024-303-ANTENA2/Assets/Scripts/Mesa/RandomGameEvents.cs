@@ -44,14 +44,16 @@ public class RandomGameEvents : MonoBehaviour {
         }
     }
     void RandomizeGames() {
-        randomNumber = Random.Range(0, max_number);
-        if(randomNumber == 1) {
-            paneNaMesa.desligaMesa();
-            gameManagerMemoria.StartGame();
-        }
-        if(randomNumber == 2) {
-            paneNaMesa.desligaMesa();
-            miniGameFios.StartFios();
+        if(gameManagerMemoria.gameOn == false && miniGameFios.fiosOn == false) {
+            randomNumber = Random.Range(0, max_number);
+            if(randomNumber == 1) {
+                paneNaMesa.desligaMesa();
+                gameManagerMemoria.StartGame();
+            }
+            if(randomNumber == 2) {
+                paneNaMesa.desligaMesa();
+                miniGameFios.StartFios();
+            }
         }
     }
 }

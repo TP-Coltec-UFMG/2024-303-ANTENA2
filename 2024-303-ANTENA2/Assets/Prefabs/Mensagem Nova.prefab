@@ -219,6 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imgToHighlight: {fileID: 6859678789861228740}
   text: {fileID: 8606908610631468775}
+  bg: {fileID: 2172471906868493214}
+  bg1: {fileID: 6859678789861228740}
 --- !u!114 &3635037491827327872
 MonoBehaviour:
   m_ObjectHideFlags: 0
