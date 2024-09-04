@@ -5,6 +5,9 @@ using UnityEngine;
 public class PaneNaMesa : MonoBehaviour {
     [SerializeField] GameObject Relogio;
     private PausaTempo pausaTempo;
+    
+    [SerializeField] GameObject Slots;
+    [SerializeField] GameObject editorCentral;
 
     void Awake() {
         pausaTempo = Relogio.GetComponent<PausaTempo>();
@@ -12,12 +15,26 @@ public class PaneNaMesa : MonoBehaviour {
     public void desligaMesa() {
         pausaTempo.PausarJogo();
         GameHandler.Instance.PausarMensagens(true);
-        Debug.Log("pausou");
+        Slots.SetActive(false);
+        DeactivateImmediateChildrenOnly(editorCentral);
     }
     public void ligaMesa() {
         pausaTempo.PausarJogo();
         GameHandler.Instance.PausarMensagens(false);
-        Debug.Log("Despausou");
+        Slots.SetActive(true);
+        ActivateImmediateChildrenOnly(editorCentral);
     }
 
+    public void DeactivateImmediateChildrenOnly(GameObject parentObject) {
+        foreach (Transform child in parentObject.transform) {
+            child.gameObject.SetActive(false);
+        }
+    }
+    public void ActivateImmediateChildrenOnly(GameObject parentObject) {
+        foreach (Transform child in parentObject.transform) {
+            child.gameObject.SetActive(true);
+        }
+    }
+    
 }
+
