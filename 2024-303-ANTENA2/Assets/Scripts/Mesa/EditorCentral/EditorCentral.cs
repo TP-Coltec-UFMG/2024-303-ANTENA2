@@ -200,7 +200,19 @@ public class EditorCentral : MouseInteractive
         // casos que tem que denunciar
         bool denunciar = !ehGoverno;
 
-
+        if (tipoBotaoSm == TipoBotaoSM.Aprova)
+        {
+            mensagemEnviada.Play();
+        }
+        else if (tipoBotaoSm == TipoBotaoSM.Desaprova)
+        {
+            mensagemDescartada.Play();
+        }
+        else if (tipoBotaoSm == TipoBotaoSM.Denuncia)
+        {
+            mensagemDenunciada.Play();
+        }
+        
         if (!ehGoverno)
         {
             NumMensagensRebeldes++;

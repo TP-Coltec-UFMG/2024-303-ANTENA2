@@ -14,6 +14,7 @@ public class DialogueSystem : MonoBehaviour {
     [SerializeField] private List<DialogueData> dialogueData;
     int textoAtual = 0;
     bool finalizado = false;
+    public AudioSource telefoneDesliga;
 
     [SerializeField] private TypeTextAnimation typeText;
     [SerializeField] private DialogueUI dialogueUI;
@@ -75,6 +76,7 @@ public class DialogueSystem : MonoBehaviour {
             estado = ESTADO.DESATIVADO;
             textoAtual = 0;
             finalizado = false;
+            telefoneDesliga.Play();
         }
     }
 

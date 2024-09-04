@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2eaeab75de99a449d574f0832f6a0d, type: 3}
+  m_Name: TS_Cena3
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: 0
+    text: "* Voc\xEA observa enquanto o m\xE9dico sutura os ferimentos mais profundos
+      do rebelde ferido. Ele trabalha delicadamente, mas com firmeza."
+  - name: 1
+    text: "* Depois das suturas, o m\xE9dico come\xE7a a aplicar curativos nos ferimentos
+      mais leves e a limpar o sangue e a terra que cobriam o corpo do amigo."
+  - name: 2
+    text: "* Voc\xEA puxa uma cadeira para se sentar e assistir ao trabalho do m\xE9dico.
+      Antes que voc\xEA se desse conta, os gritos e gemidos de dor cessaram. O rebelde
+      ferido - a quem o m\xE9dico chama de Dreyfus - parece estar desacordado."
+  - name: 3
+    text: "* Depois de um tempo, o m\xE9dico se afasta da mesa, tentando limpar as
+      m\xE3os no pano cheio de sangue. N\xE3o d\xE1 muito certo. Ele se aproxima
+      de voc\xEA."
+  - name: 4
+    text: "[M\xE9dico] Voc\xEA\u2026 \xE9 o operador dessa Antena, n\xE3o \xE9?...
+      Estou correto em supor que esta \xE9 a Antena 2?"
+  - name: 5
+    text: "* Voc\xEA assente."
+  - name: 6
+    text: "[M\xE9dico] Demos sorte. Muita sorte. Tivemos que fugir t\xE3o \xE0s pressas
+      do Acampamento, fomos perseguidos pela floresta\u2026"
+  - name: 7
+    text: "[M\xE9dico] Conseguimos matar os que ainda nos perseguiram, mas Dreyfus
+      foi baleado e sofreu alguns cortes bem fundos. Eu o ajudei para continuarmos
+      fugindo. Nos perdemos do resto dos nossos, nor perdemos da trilha\u2026"
+  - name: 8
+    text: "[M\xE9dico] Por sorte achamos a estrada que leva at\xE9 essa cabana. N\xE3o
+      sei o que\u2026 o que poderia ter acontecido\u2026 Obrigado, Operador. De verdade,
+      obrigado de cora\xE7\xE3o."
+  - name: 9
+    text: "* Voc\xEA assente com ternura."
+  - name: 10
+    text: "[Jaques] Meu nome \xE9 Jaques, ali\xE1s. N\xE3o tivemos tempo de nos apresentar,
+      n\xE9? E aquele fort\xE3o ali \xE9 o Dreyfus, como voc\xEA j\xE1 deve ter percebido."
+  - name: 11
+    text: "[Jaques] Vou s\xF3 esperar ele descansar um pouco e n\xF3s vamos seguir
+      nosso caminho. E eu vou ajud\xE1-lo a limpar essa bagun\xE7a claro! "
+  - name: 12
+    text: "* Voc\xEAs dois pegam panos e um rodo e come\xE7am a arrumar um pouco
+      o ambiente da cozinha. Voc\xEAs j\xE1 estavam quase acabando quando Dreyfus
+      acorda."

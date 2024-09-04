@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 167850554}
   m_Layer: 0
   m_Name: Botao2
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3724,7 +3724,7 @@ GameObject:
   - component: {fileID: 456440439}
   m_Layer: 0
   m_Name: mensagemEnviada
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9517,7 +9517,7 @@ GameObject:
   - component: {fileID: 1314922338}
   m_Layer: 0
   m_Name: erroDeMensagem
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9914,7 +9914,7 @@ GameObject:
   - component: {fileID: 1401866465}
   m_Layer: 0
   m_Name: Botao4_2
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10225,7 +10225,7 @@ GameObject:
   - component: {fileID: 1438296168}
   m_Layer: 0
   m_Name: Botao3
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10353,7 +10353,7 @@ GameObject:
   - component: {fileID: 1440824686}
   m_Layer: 0
   m_Name: mensagemSelecionada
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10919,7 +10919,7 @@ GameObject:
   - component: {fileID: 1538074298}
   m_Layer: 0
   m_Name: mensagemDescartada
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11882,6 +11882,7 @@ MonoBehaviour:
   dialogueData:
   - {fileID: 11400000, guid: 0f8406f92945a084989dc1bdaad67405, type: 2}
   - {fileID: 11400000, guid: bf12d57aaf69f034db7dd9b14992b134, type: 2}
+  telefoneDesliga: {fileID: 0}
   typeText: {fileID: 1605516013}
   dialogueUI: {fileID: 1692315139}
   telefoneFora: {fileID: 251381715}
@@ -12125,7 +12126,7 @@ GameObject:
   - component: {fileID: 1670363587}
   m_Layer: 0
   m_Name: mensagemDenunciada
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12580,7 +12581,7 @@ GameObject:
   - component: {fileID: 1733011759}
   m_Layer: 0
   m_Name: Botao4
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14690,7 +14691,7 @@ GameObject:
   - component: {fileID: 1935098582}
   m_Layer: 0
   m_Name: Botao1
-  m_TagString: Untagged
+  m_TagString: Efeitos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
