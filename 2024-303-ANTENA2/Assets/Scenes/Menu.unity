@@ -581,8 +581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.2263, y: -26.5434}
-  m_SizeDelta: {x: 24.674, y: 46.9134}
+  m_AnchoredPosition: {x: 0, y: -4.2}
+  m_SizeDelta: {x: 5.3367, y: 0.6743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316957158
 MonoBehaviour:
@@ -606,15 +606,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gabriel Veiga
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ce154335a4d8c7440b7e2d5c1094e4f5, type: 2}
+  m_sharedMaterial: {fileID: -4573895640939826071, guid: ce154335a4d8c7440b7e2d5c1094e4f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293305774
+  m_fontColor: {r: 0.68235296, g: 0.64705884, b: 0.90196085, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -631,8 +631,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1567,7 +1567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &971651333
 Transform:
   m_ObjectHideFlags: 0
