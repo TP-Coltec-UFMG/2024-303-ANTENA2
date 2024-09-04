@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2eaeab75de99a449d574f0832f6a0d, type: 3}
+  m_Name: TS_Cena1
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: 0
+    text: "[M\xE9dico] Muito obrigado, muito obrigado! R\xE1pido, me ajude aqui,
+      vamos coloc\xE1-lo em cima daquela mesa ali. Vamos, Dreyfus, vamos, segure
+      s\xF3 mais um pouco\u2026"
+  - name: 1
+    text: "* Voc\xEA ajuda o m\xE9dico rebelde a carregar o homem ferido at\xE9 a
+      mesa da copa. O sangue dele mancha suas roupas. "
+  - name: 2
+    text: "* O m\xE9dico tira uma pequena maleta de metal amassada de um dos bolsos
+      do uniforme e tira de dentro dela gaze e suturas."

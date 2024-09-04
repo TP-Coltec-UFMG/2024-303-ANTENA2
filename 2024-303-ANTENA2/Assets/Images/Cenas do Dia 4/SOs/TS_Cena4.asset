@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2eaeab75de99a449d574f0832f6a0d, type: 3}
+  m_Name: TS_Cena4
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: 0
+    text: '* Jaques se aproxima e eles trocam algumas palavras.'
+  - name: 1
+    text: "[Jaques] Voc\xEA parece melhor, meu amigo!"
+  - name: 2
+    text: "[Dreyfus] Gra\xE7as a voc\xEA, Jaques. A voc\xEA e ao noss amigo Operador
+      aqui."
+  - name: 3
+    text: "[Jaques] Preparado para andar um pouquinho? \xC9 um bom ch\xE3o daqui
+      at\xE9 o Acampamento do Vale\u2026"
+  - name: 4
+    text: "[Dreyfus] Mais pronto imposs\xEDvel! Vamos tentar chegar l\xE1 antes do
+      amanhecer. Adeus, Operador. E de novo, obrigado pela ajuda. Salvou minha vida,
+      sabia disso n\xE9? At\xE9 uma pr\xF3xima\u2026"
+  - name: 5
+    text: '* Dreyfus se levanta da mesa com dificuldade, ajeitando a roupa'
