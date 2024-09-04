@@ -11,15 +11,15 @@ public class TextBoxAnimation : MonoBehaviour {
     public float typeDelay = 0.05f;
     public TextMeshProUGUI textObject;
 
-    public string inicioFrase;
-    public string finalFrase;
+    public string inicioFrase = "Você encontrou";
+    public string finalFrase = ". Gostaria de ler?";
     [SerializeField] private EscritosSO escritosDocs;
     private string fullText;
 
     Coroutine coroutine;
 
     void Awake() {
-        fullText = inicioFrase + " " + escritosDocs.nomeDocumento + " " + finalFrase;
+        fullText = inicioFrase + " " + escritosDocs.nomeDocumento + finalFrase;
         StartTyping();
     }
 
