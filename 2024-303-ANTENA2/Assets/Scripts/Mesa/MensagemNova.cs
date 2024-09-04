@@ -11,10 +11,15 @@ public class MensagemNova : MouseInteractive
 {
     public MensagemSO Mensagem { get; private set; }
     [SerializeField] private TextMeshPro text;
+    [SerializeField] private SpriteRenderer bg;
+    [SerializeField] private SpriteRenderer bg1;
 
+    private bool _hidden;
 
     private void Update()
     {
+        if (_hidden) return;
+        
         if (IsSelected)
         {
             Highlight();
@@ -43,5 +48,10 @@ public class MensagemNova : MouseInteractive
         Mensagem = mensagem;
         // text.text = mensagem.mensagem;
     }
+
+    public void Hide(bool state)
+    {
+        _hidden = state;
+        text.enabled = bg.enabled = bg1.enabled = !state;
+    }
 }
-    
