@@ -15,7 +15,6 @@ public class PassaDia : MonoBehaviour {
     [SerializeField] private AudioSource musiquinhaDia1;
     [SerializeField] private AudioSource musiquinhaCasa;
     [SerializeField] private GameObject tutoAndar;
-    
     public int dia;
     
     private void Start() {
@@ -30,8 +29,7 @@ public class PassaDia : MonoBehaviour {
 
             //"ande com awsd ou setinhas"
             tutoAndar.SetActive(true);
-            //depois de 7 segundos some 
-            Destroy(tutoAndar, 7);
+            Destroy(tutoAndar, 7); //dps de 7 segundos some
         }
     }
 

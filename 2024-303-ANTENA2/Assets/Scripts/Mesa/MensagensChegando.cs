@@ -13,7 +13,14 @@ public class MensagensChegando : MonoBehaviour
     private List<MensagemNova> _mensagemNovas = new();
     
     private int _numMensagensDisplay;
-    
+
+    private static MensagensChegando Instance;
+
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Update()
     {
@@ -43,5 +50,13 @@ public class MensagensChegando : MonoBehaviour
         }
 
         _numMensagensDisplay--;
+    }
+
+    public static void HideMessages(bool state)
+    {
+        foreach (GameObject slot in Instance.slots)
+        {
+            slot.GetComponentInChildren<MensagemNova>()?.Hide(state);
+        }
     }
 }

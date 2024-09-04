@@ -2453,11 +2453,11 @@ RectTransform:
   m_Children:
   - {fileID: 694220980}
   - {fileID: 155197066}
+  - {fileID: 1603926862}
   - {fileID: 603040594}
   - {fileID: 1569222265}
   - {fileID: 1290884619}
   - {fileID: 1777773446}
-  - {fileID: 466773257}
   - {fileID: 1603926862}
   - {fileID: 1608116518}
   - {fileID: 1061359641}
@@ -8322,7 +8322,7 @@ MonoBehaviour:
   botao: {fileID: 603040593}
   musiquinhaDia1: {fileID: 156169445}
   musiquinhaCasa: {fileID: 1870033467}
-  tutoAndar: {fileID: 466773256}
+  tutoAndar: {fileID: 1603926861}
   dia: 0
 --- !u!61 &909631460
 BoxCollider2D:

@@ -27,6 +27,8 @@ public class EditorCentral : MouseInteractive
     [SerializeField] private TextMeshPro paginasText;
     [SerializeField] private ChavesDeSeguranca chaveSegurancaInstance;
 
+    [SerializeField] private FADEOUTHIAGO fadeouthiago;
+
     private MensagensChegando _mensagensChegando;
 
     public int NumOfPages { get; private set; }
@@ -107,10 +109,15 @@ public class EditorCentral : MouseInteractive
 
         if (NumErros >= _toleranciaErros)
         {
-            // Debug.Log("PERDEU MANE, PERDEU");
             // SceneManager.LoadScene("Mesa");
-            AtivaFinais.QualFinal = 3;
-            SceneManager.LoadScene("Final");
+
+            fadeouthiago.gameObject.SetActive(true);
+            
+            if (fadeouthiago.Terminou)
+            {
+                AtivaFinais.QualFinal = 3;
+                SceneManager.LoadScene("Final");
+            }
         }
     }
 
@@ -178,10 +185,10 @@ public class EditorCentral : MouseInteractive
         bool chaveCorreta = GameHandler.Dia == 1 || ChavesDeSeguranca.Instance.ChecaChave(_mensagemSO.chave);
         
         // casos que tem que aprovar
-        bool aprovar = rangeFrequencia && frequenciaCorreta && ehGoverno && chaveCorreta;
+        bool aprovar = rangeFrequencia && ehGoverno;
         
         // casos que tem que negar
-        bool negar = (!rangeFrequencia || !frequenciaCorreta || !chaveCorreta) && ehGoverno;
+        bool negar = !rangeFrequencia && ehGoverno;
         
         // casos que tem que denunciar
         bool denunciar = !ehGoverno;
@@ -195,7 +202,7 @@ public class EditorCentral : MouseInteractive
         if (aprovar)
         {
             NumMensagensLegais++;
-            if (tipoBotaoSm == TipoBotaoSM.Aprova)
+            if (tipoBotaoSm == TipoBotaoSM.Aprova && frequenciaCorreta && chaveCorreta)
             {
                 NumMensagensLegaisAprovadas++;
             }
@@ -207,14 +214,20 @@ public class EditorCentral : MouseInteractive
         else if (negar)
         {
             if (tipoBotaoSm != TipoBotaoSM.Desaprova)
+            {
                 NumErros++;
+            }
         }
         else if (denunciar)
         {
             if (tipoBotaoSm != TipoBotaoSM.Denuncia)
+            {
                 NumErros++;
+            }
             else
+            {
                 NumMensagensRebeldesDenunciadas++;
+            }
         }
         
         

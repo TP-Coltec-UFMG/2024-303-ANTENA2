@@ -18,7 +18,7 @@ public class BotoesEditorCentral : MouseInteractive
     {
         base.Start();
         
-        _editorCentral = GetComponentInParent<EditorCentral>();
+        _editorCentral = GetComponentInParent<EditorCentral>() ?? FindFirstObjectByType<EditorCentral>();
         text?.gameObject.SetActive(false);
     }
 
