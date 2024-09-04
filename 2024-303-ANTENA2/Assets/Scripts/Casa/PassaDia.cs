@@ -44,7 +44,30 @@ public class PassaDia : MonoBehaviour {
         GameHandler.Dia ++;
         textoDiaTrans.text = GameHandler.Dia.ToString();
         botao.SetActive(false);
+        if (dia != 0)
+        {
+            StartCoroutine(FadeOutAudio(musiquinhaCasa, 2));
+        }
+        else if (dia == 0)
+        {
+            StartCoroutine(FadeOutAudio(musiquinhaDia1, 2));
+        }   
 
         FadeDia.Play("FadeInDia"); //fade in dia x
+    }
+
+    public static IEnumerator FadeOutAudio(AudioSource audioSource, float FadeTime)
+    {
+        float startVolume = audioSource.volume;
+
+        while (audioSource.volume > 0)
+        {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        audioSource.Stop();
+        audioSource.volume = startVolume;
     }
 }

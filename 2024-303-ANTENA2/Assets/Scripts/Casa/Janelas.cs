@@ -7,6 +7,7 @@ public class Janelas : MonoBehaviour {
     //[SerializeField] private GameObject player;
     //[SerializeField] private Collider2D janelas;
     [SerializeField] private GameObject textoFechar;
+    public AudioSource janelaFechando;
     public bool foiFechada = false;
     public int numApertancias = 0;
     public bool stay = false; //fazendo a função do OnCollisionStay
@@ -17,6 +18,7 @@ public class Janelas : MonoBehaviour {
                 JanelasManager.janelasFechadas++;
                 foiFechada = true;
                 numApertancias++;
+                janelaFechando.Play();
             }
         }
     }
