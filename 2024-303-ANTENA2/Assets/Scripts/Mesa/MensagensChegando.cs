@@ -9,6 +9,7 @@ public class MensagensChegando : MonoBehaviour
     [SerializeField] private MensagemNova mensagemNova;
     [SerializeField] private GameObject[] slots;
     [SerializeField] private GameObject overflow;
+    public AudioSource mensagemChegando;
 
     private List<MensagemNova> _mensagemNovas = new();
     
@@ -34,6 +35,7 @@ public class MensagensChegando : MonoBehaviour
         MensagemNova mensagemNovaObj = Instantiate(mensagemNova, slots[_numMensagensDisplay].transform);
         _mensagemNovas.Add(mensagemNovaObj);
         mensagemNovaObj.SetMensagem(mensagem);
+        mensagemChegando.Play();
         _numMensagensDisplay++;
     }
 

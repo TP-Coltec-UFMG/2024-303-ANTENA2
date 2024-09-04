@@ -27,6 +27,12 @@ public class EditorCentral : MouseInteractive
     [SerializeField] private TextMeshPro paginasText;
     [SerializeField] private ChavesDeSeguranca chaveSegurancaInstance;
 
+    public AudioSource mensagemSelecionada;
+    public AudioSource mensagemEnviada;
+    public AudioSource mensagemDescartada;
+    public AudioSource mensagemDenunciada;
+    public AudioSource erroDeMensagem;
+
     [SerializeField] private FADEOUTHIAGO fadeouthiago;
 
     private MensagensChegando _mensagensChegando;
@@ -126,6 +132,7 @@ public class EditorCentral : MouseInteractive
         HasMensagem = true;
         _mensagemSO = mensagemSO;
         frequenciaText.text = "F: " + mensagemSO.frequencia;
+        mensagemSelecionada.Play();
 
         if (GameHandler.Dia != 1)
         {

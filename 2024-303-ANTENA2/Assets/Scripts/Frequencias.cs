@@ -14,6 +14,7 @@ public class Frequencias : MonoBehaviour
     [SerializeField] private Button aumentaFrequencia;
     [SerializeField] private Button diminuiFrequencia;
     public float frequencia;
+    public AudioSource botaoFrequencia;
 
     public static Frequencias Instance { get; private set; }
 
@@ -29,11 +30,13 @@ public class Frequencias : MonoBehaviour
         {
             frequencia += .1f;
             slider.value += 1f;
+            botaoFrequencia.Play();
         });
         diminuiFrequencia.onClick.AddListener(() =>
         {
             frequencia -= .1f;
             slider.value -= 1f;
+            botaoFrequencia.Play();
         });
     }
     
