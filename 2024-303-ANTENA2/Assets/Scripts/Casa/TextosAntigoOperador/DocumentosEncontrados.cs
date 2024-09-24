@@ -31,8 +31,8 @@ public class DocumentosEncontrados : MonoBehaviour {
         }
     }
     public void FechaDoc() {
-        fundoPreto.SetActive(false);
-        fundoDoc.SetActive(false);
         textObject.text = "";
+        fundoDoc.SetActive(false);
+        fundoPreto.SetActive(false);
     }
 }

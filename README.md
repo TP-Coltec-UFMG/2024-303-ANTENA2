@@ -1,7 +1,11 @@
 # ANTENA2
-<div><p>Antena 2 é um jogo de decisões. Ajudar rebeldes ou seguir o governo? É o que deve se pensar no jogo, pois ao jogar você se encontra na pele de um trabalhador cuja função é retransmitir mensagens vindas de várias origens. Ao ler uma mensagem, decida retransmiti-la, apagá-la ou denuncia-la. Siga seu trabalho retransmitindo mensagens governamentais ou colabore com a comunicação dos rebeldes. Devido a esse trabalho, o jogo se passa em uma cabana com as bugingangas necessárias para controlar a Antena 2, dentre elas a grande mesa de transmissão. Aproveite sua acomodação nada usual e explore-a! </p>
-<p>Feito por: <a href="https://github.com/giovananlm">Nana</a>, <a href="https://github.com/R3nn4">Renna</a>, <a href="https://github.com/Hiaaf">Hiago</a>, <a href="https://github.com/gabidsr">Gabi</a>, <a href="https://github.com/omarioow">Mario</a> e <a href="https://github.com/Jubiris">14</a> <3</p></div>
+<div><p>TOSTES, J. R. W. ; MEMBRIVE, G. N. L. ; ALVES, H. A. F. ; REZENDE, G. D. S. ; RAMOS, M. ; CABRAL, J. P. ; VIEIRA, R. e S. ; MOTA, V. F. . Antena 2: Glória a Invicta ou abaixo o Governo?. In: Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames), 2024, Manaus. Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames), 2024.
+</p></div>
+<p>Um jogo por: <a href="https://github.com/giovananlm">Nana</a>, <a href="https://github.com/R3nn4">Renna</a>, <a href="https://github.com/Hiaaf">Hiago</a>, <a href="https://github.com/gabidsr">Gabi</a>, <a href="https://github.com/omarioow">Mario</a> e <a href="https://github.com/Jubiris">14</a> <3</p></div></p>
 
+
+## Sobre o jogo
+<div><p>Antena 2 é um jogo de decisões. Ajudar rebeldes ou seguir o governo? É o que deve se pensar no jogo, pois ao jogar você se encontra na pele de um trabalhador cuja função é retransmitir mensagens vindas de várias origens. Ao ler uma mensagem, decida retransmiti-la, apagá-la ou denuncia-la. Siga seu trabalho retransmitindo mensagens governamentais ou colabore com a comunicação dos rebeldes. Devido a esse trabalho, o jogo se passa em uma cabana com as bugingangas necessárias para controlar a Antena 2, dentre elas a grande mesa de transmissão. Aproveite sua acomodação nada usual e explore-a! </p>
 
 ## Menu Inicial
 <img src="inicioprint.png">

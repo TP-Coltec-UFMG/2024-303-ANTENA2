@@ -13,12 +13,6 @@ public class AtendeTelefone : MonoBehaviour {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
     }
 
-    void Update() {
-        if(Input.GetKeyDown(KeyCode.Return)) {
-            dialogueSystem.Next();   
-        }
-    }
-
     private void OnMouseDown() {
         if(dialogueSystem != null) {
             gameObject.SetActive(false);
