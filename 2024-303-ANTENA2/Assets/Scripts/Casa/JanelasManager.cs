@@ -9,6 +9,7 @@ public class JanelasManager : MonoBehaviour {
     public static int janelasFechadas;
     void Update(){
         if(GameHandler.Dia != 0){
+            janelasFechadas == 0;
             qtd_janelas.text = string.Format("Janelas fechadas: {00}/6", janelasFechadas);
         } else if(GameHandler.Dia == 0){
             texto.SetActive(false);
