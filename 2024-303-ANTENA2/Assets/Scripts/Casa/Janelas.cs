@@ -4,17 +4,14 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class Janelas : MonoBehaviour {
-    //[SerializeField] private GameObject player;
-    //[SerializeField] private Collider2D janelas;
     [SerializeField] private GameObject textoFechar;
-    public AudioSource janelaFechando;
-    public bool foiFechada = false;
+    [SerializeField] public AudioSource janelaFechando;
+    static public bool foiFechada = false;
     public int numApertancias = 0;
     public bool stay = false; //fazendo a função do OnCollisionStay
     void Update(){
         if(stay == true && numApertancias == 0){
             if(Input.GetKeyDown(KeyCode.F)){
-                Debug.Log("pertou");
                 JanelasManager.janelasFechadas++;
                 foiFechada = true;
                 numApertancias++;
