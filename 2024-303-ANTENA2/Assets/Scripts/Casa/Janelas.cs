@@ -6,7 +6,7 @@ using UnityEngine;
 public class Janelas : MonoBehaviour {
     [SerializeField] private GameObject textoFechar;
     [SerializeField] public AudioSource janelaFechando;
-    static public bool foiFechada = false;
+    public bool foiFechada = false;
     public int numApertancias = 0;
     public bool stay = false; //fazendo a função do OnCollisionStay
     void Update(){

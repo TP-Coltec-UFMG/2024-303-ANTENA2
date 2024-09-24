@@ -6,14 +6,16 @@ using UnityEngine;
 public class JanelasManager : MonoBehaviour {
     [SerializeField] private GameObject texto;
     [SerializeField] private TMP_Text qtd_janelas;
-    [SerializeField] private GameObject janelaTrans;
-    [SerializeField] private GameObject janelaArmazem;
+    [SerializeField] private GameObject janelaTransSprite;
+    [SerializeField] private GameObject janelaArmazemSprite;
+    [SerializeField] private Janelas janelaTrans;
+    [SerializeField] private Janelas janelaArmazem;
     public static int janelasFechadas;
     void Start(){
         if(GameHandler.Dia != 0){
             janelasFechadas = 0;
-            //janelaTrans aberta
-            //janelaArmazem aberta
+            janelaTransSprite.SetActive(false);
+            janelaArmazemSprite.SetActive(false);
         }
     }
     void Update(){
@@ -22,8 +24,11 @@ public class JanelasManager : MonoBehaviour {
         } else if(GameHandler.Dia == 0){
             texto.SetActive(false);
         }
-        //if janelaTrans foiFechada == true -> bota a imagem da janela fechada
-        //if janelaArmazem foiFechada == true -> bota a imagem da janela fechada
-        
+        if(janelaTrans.foiFechada == true){
+            janelaTransSprite.SetActive(true);
+        }
+        if(janelaArmazem.foiFechada == true){
+            janelaArmazemSprite.SetActive(true);
+        }
     }
 }
