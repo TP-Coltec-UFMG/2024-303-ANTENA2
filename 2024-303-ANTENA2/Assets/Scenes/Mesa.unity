@@ -871,7 +871,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e04ca3148194404099c130967549599, type: 2}
   - {fileID: 11400000, guid: cd50a39369857234194f720a2f273e4f, type: 2}
   - {fileID: 11400000, guid: b11508d9c694bd943838137106b5dc04, type: 2}
-  timerNovaMensagemMax: 10
+  timerNovaMensagemMax: 5
   mensagemSelecionada: {fileID: 0}
   todasMensagensTransmitidas: 0
 --- !u!4 &175116985
@@ -15568,7 +15568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textoRelogio: {fileID: 2091721350}
   timeInADay: 86400
-  timeScale: 5000
+  timeScale: 2
   textoDia: {fileID: 357855764}
   textoDiaTrans: {fileID: 279798981}
   FadeOutDia: {fileID: 1470057769}

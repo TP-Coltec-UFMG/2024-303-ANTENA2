@@ -18,7 +18,7 @@ public class GameHandler : MonoBehaviour
     private List<MensagemSO> _mensagensDisponiveisDia = new();
     private List<MensagemSO> _mensagensDispoDiaFacil = new();
     
-    public float timerNovaMensagemMax = 10f;
+    public float timerNovaMensagemMax = 5f;
     private float _timerNovaMensagemCounter;
 
     private MensagensChegando _mensagensChegando;
@@ -76,6 +76,7 @@ public class GameHandler : MonoBehaviour
         
         MensagemSO mensagem = _mensagensDisponiveisDia[Random.Range(0, numMensagensDisponiveis)];
         _mensagensChegando.AddMensagem(mensagem);
+        Debug.Log("Mensagem removida do mensagensDisponiveisDia: ", mensagem);
         _mensagensDisponiveisDia.Remove(mensagem);
     }
 

@@ -7,13 +7,13 @@ using UnityEngine;
 public class MensagensChegando : MonoBehaviour
 {
     [SerializeField] private MensagemNova mensagemNova;
-    [SerializeField] private GameObject[] slots;
+    [SerializeField] public GameObject[] slots;
     [SerializeField] private GameObject overflow;
     public AudioSource mensagemChegando;
 
     private List<MensagemNova> _mensagemNovas = new();
     
-    private int _numMensagensDisplay;
+    private int _numMensagensDisplay = 0;
 
     private static MensagensChegando Instance;
 
@@ -31,12 +31,16 @@ public class MensagensChegando : MonoBehaviour
     public void AddMensagem(MensagemSO mensagem)
     {
         if (_numMensagensDisplay >= slots.Length) return;
-        
-        MensagemNova mensagemNovaObj = Instantiate(mensagemNova, slots[_numMensagensDisplay].transform);
+
+        Debug.Log(slots.Length);
+        Debug.Log(Instance.slots[_numMensagensDisplay].name);
+
+        MensagemNova mensagemNovaObj = Instantiate(mensagemNova, Instance.slots[_numMensagensDisplay].transform);
+        _numMensagensDisplay++;
+        Debug.Log(_numMensagensDisplay);
         _mensagemNovas.Add(mensagemNovaObj);
         mensagemNovaObj.SetMensagem(mensagem);
         mensagemChegando.Play();
-        _numMensagensDisplay++;
     }
 
     public void RemoveMensagem(MensagemSO mensagem)
@@ -52,6 +56,7 @@ public class MensagensChegando : MonoBehaviour
         }
 
         _numMensagensDisplay--;
+        Debug.Log(_numMensagensDisplay);
     }
 
     public static void HideMessages(bool state)
