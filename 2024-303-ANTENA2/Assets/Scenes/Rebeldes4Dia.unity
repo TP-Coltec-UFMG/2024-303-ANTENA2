@@ -196,7 +196,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 108}
-  m_SizeDelta: {x: 419.42, y: 432.77}
+  m_SizeDelta: {x: 221.31, y: 228.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &79226669
 GameObject:
@@ -406,7 +406,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.19215687, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.050980397, g: 0.04705883, b: 0.08627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -609,12 +609,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a008ebd24193910c692cf12e82cc6096, type: 3}
+  m_Sprite: {fileID: -1811125463, guid: a008ebd24193910c692cf12e82cc6096, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -784,7 +784,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 108}
-  m_SizeDelta: {x: 419.42, y: 432.77}
+  m_SizeDelta: {x: 221.31, y: 228.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &271326842
 GameObject:
@@ -928,8 +928,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 381367688}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 381367695}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -1126,9 +1126,9 @@ GameObject:
   - component: {fileID: 381367694}
   - component: {fileID: 381367693}
   - component: {fileID: 381367692}
-  - component: {fileID: 381367688}
+  - component: {fileID: 381367696}
+  - component: {fileID: 381367695}
   - component: {fileID: 381367689}
-  - component: {fileID: 381367691}
   - component: {fileID: 381367690}
   m_Layer: 5
   m_Name: Cena3
@@ -1161,23 +1161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &381367688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381367686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: 9f31c6e6cdc8f8c73be1dd5bf8246d10, type: 2}
-  finalizado: 0
-  typeText: {fileID: 381367690}
-  dialogueUI: {fileID: 381367689}
-  creditos: {fileID: 2139207526}
 --- !u!114 &381367689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,21 +1191,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 1400353218}
   fullText: 
---- !u!114 &381367691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381367686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 381367688}
-  Skip: {fileID: 1652965676}
-  Next: {fileID: 271326842}
 --- !u!114 &381367692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,6 +1254,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &381367695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381367686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: 9f31c6e6cdc8f8c73be1dd5bf8246d10, type: 2}
+  finalizado: 0
+  typeText: {fileID: 381367690}
+  dialogueUI: {fileID: 381367689}
+--- !u!114 &381367696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381367686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 381367695}
+  Skip: {fileID: 1652965676}
+  Next: {fileID: 271326842}
 --- !u!1 &404765624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 108}
+  m_AnchoredPosition: {x: 6, y: 108}
   m_SizeDelta: {x: 221.31, y: 228.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404765626
@@ -1343,12 +1342,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eab5037427905713786e6f0c420ad29a, type: 3}
+  m_Sprite: {fileID: -1117365168, guid: eab5037427905713786e6f0c420ad29a, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 0.015
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1374,12 +1373,12 @@ GameObject:
   - component: {fileID: 595249936}
   - component: {fileID: 595249935}
   m_Layer: 5
-  m_Name: BotaoQueDecide (2)
+  m_Name: BotaoSim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &595249934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1421,11 +1420,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    m_HighlightedColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    m_PressedColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    m_SelectedColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+    m_DisabledColor: {r: 0.7137255, g: 0.7137255, b: 0.7137255, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1443,7 +1442,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 595249936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1091303582}
+        m_TargetAssemblyTypeName: ManagerCenasDia4, Assembly-CSharp
+        m_MethodName: botaoSim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &595249936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 1}
+  m_Color: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1502,7 +1513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &688499249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1624,8 +1635,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 982142268}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 982142275}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -1649,7 +1660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.07924521, g: 0.078198574, b: 0.078198574, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1759,8 +1770,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1875103669}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1875103670}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -1879,12 +1890,12 @@ GameObject:
   - component: {fileID: 778669983}
   - component: {fileID: 778669982}
   m_Layer: 5
-  m_Name: BotaoQueDecide (1)
+  m_Name: BotaoNao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &778669981
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1948,7 +1959,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 778669983}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1091303582}
+        m_TargetAssemblyTypeName: ManagerCenasDia4, Assembly-CSharp
+        m_MethodName: botaoNao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &778669983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 1}
+  m_Color: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2030,7 +2053,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2146,8 +2169,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2232,7 +2255,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2498,8 +2521,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654951624}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1654951631}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -2560,9 +2583,9 @@ GameObject:
   - component: {fileID: 982142274}
   - component: {fileID: 982142273}
   - component: {fileID: 982142272}
-  - component: {fileID: 982142268}
+  - component: {fileID: 982142275}
   - component: {fileID: 982142269}
-  - component: {fileID: 982142271}
+  - component: {fileID: 982142276}
   - component: {fileID: 982142270}
   m_Layer: 5
   m_Name: Cena Antes de Abrir a Porta
@@ -2595,23 +2618,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &982142268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982142266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: 0f1a7459cebdad489af94950326356b0, type: 2}
-  finalizado: 0
-  typeText: {fileID: 982142270}
-  dialogueUI: {fileID: 982142269}
-  creditos: {fileID: 2139207526}
 --- !u!114 &982142269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,21 +2648,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 2038809314}
   fullText: 
---- !u!114 &982142271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982142266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 982142268}
-  Skip: {fileID: 688499248}
-  Next: {fileID: 1524981661}
 --- !u!114 &982142272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2720,6 +2711,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &982142275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982142266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: 0f1a7459cebdad489af94950326356b0, type: 2}
+  finalizado: 0
+  typeText: {fileID: 982142270}
+  dialogueUI: {fileID: 982142269}
+--- !u!114 &982142276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982142266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 982142275}
+  Skip: {fileID: 688499248}
+  Next: {fileID: 1524981661}
 --- !u!1 &1066780637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,10 +2953,15 @@ MonoBehaviour:
   cena3: {fileID: 1225605368}
   cena4: {fileID: 381367686}
   cena5: {fileID: 1654951622}
-  cena6: {fileID: 0}
+  cena6: {fileID: 2097200084}
   cenaCasa:
     m_Handle: 0
   botaoQueFoi: {fileID: 0}
+  SkipAntesPorta: {fileID: 688499248}
+  NextAntesPorta: {fileID: 1524981661}
+  Sim: {fileID: 595249933}
+  Nao: {fileID: 778669980}
+  textAbrirPorta: {fileID: 2038809314}
 --- !u!1 &1170607920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,9 +3108,9 @@ GameObject:
   - component: {fileID: 1225605372}
   - component: {fileID: 1225605371}
   - component: {fileID: 1225605370}
+  - component: {fileID: 1225605377}
   - component: {fileID: 1225605376}
   - component: {fileID: 1225605375}
-  - component: {fileID: 1225605374}
   - component: {fileID: 1225605373}
   m_Layer: 5
   m_Name: Cena2
@@ -3194,21 +3221,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 1465064457}
   fullText: 
---- !u!114 &1225605374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225605368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 1225605376}
-  Skip: {fileID: 1903348156}
-  Next: {fileID: 1458694797}
 --- !u!114 &1225605375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3233,14 +3245,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1225605368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 1225605377}
+  Skip: {fileID: 1903348156}
+  Next: {fileID: 1458694797}
+--- !u!114 &1225605377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225605368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 410f0e122b9beb3ccbafde31c144159b, type: 2}
   finalizado: 0
   typeText: {fileID: 1225605373}
   dialogueUI: {fileID: 1225605375}
-  creditos: {fileID: 2139207526}
 --- !u!1 &1257562790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,8 +3609,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3814,8 +3840,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1225605376}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1225605377}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -4012,8 +4038,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4146,8 +4172,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4345,7 +4371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1524981662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4467,8 +4493,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 982142268}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 982142275}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -4492,7 +4518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4602,8 +4628,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1875103669}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1875103670}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -4783,7 +4809,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.078431375, g: 0.13725491, b: 0.19607845, a: 1}
+  m_Color: {r: 0.10196079, g: 0.10980393, b: 0.22352943, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4935,8 +4961,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 381367688}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 381367695}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -4997,9 +5023,9 @@ GameObject:
   - component: {fileID: 1654951630}
   - component: {fileID: 1654951629}
   - component: {fileID: 1654951628}
-  - component: {fileID: 1654951624}
+  - component: {fileID: 1654951632}
+  - component: {fileID: 1654951631}
   - component: {fileID: 1654951625}
-  - component: {fileID: 1654951627}
   - component: {fileID: 1654951626}
   m_Layer: 5
   m_Name: Cena4
@@ -5032,23 +5058,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1654951624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654951622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: ad5d8f38a3de6120cba63460c8237855, type: 2}
-  finalizado: 0
-  typeText: {fileID: 1654951626}
-  dialogueUI: {fileID: 1654951625}
-  creditos: {fileID: 2139207526}
 --- !u!114 &1654951625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5079,21 +5088,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 1930334789}
   fullText: 
---- !u!114 &1654951627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654951622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 1654951624}
-  Skip: {fileID: 948895290}
-  Next: {fileID: 1894153547}
 --- !u!114 &1654951628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5157,6 +5151,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1654951631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654951622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: ad5d8f38a3de6120cba63460c8237855, type: 2}
+  finalizado: 0
+  typeText: {fileID: 1654951626}
+  dialogueUI: {fileID: 1654951625}
+--- !u!114 &1654951632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654951622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 1654951631}
+  Skip: {fileID: 948895290}
+  Next: {fileID: 1894153547}
 --- !u!1 &1738691997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5484,8 +5509,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2097200086}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 2097200093}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -5618,8 +5643,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5740,8 +5765,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5814,10 +5839,10 @@ GameObject:
   - component: {fileID: 1875103666}
   - component: {fileID: 1875103665}
   - component: {fileID: 1875103664}
-  - component: {fileID: 1875103668}
-  - component: {fileID: 1875103667}
   - component: {fileID: 1875103670}
   - component: {fileID: 1875103669}
+  - component: {fileID: 1875103668}
+  - component: {fileID: 1875103667}
   m_Layer: 5
   m_Name: Cena1
   m_TagString: Untagged
@@ -5951,14 +5976,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875103662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: 12ed187a92886ea36aca19990d8d6079, type: 2}
-  finalizado: 0
-  typeText: {fileID: 1875103667}
-  dialogueUI: {fileID: 1875103668}
-  creditos: {fileID: 2139207526}
+  legendas: {fileID: 1875103670}
+  Skip: {fileID: 717703230}
+  Next: {fileID: 1573179573}
 --- !u!114 &1875103670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5968,12 +5991,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875103662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  legendas: {fileID: 1875103669}
-  Skip: {fileID: 717703230}
-  Next: {fileID: 1573179573}
+  dialogueData: {fileID: 11400000, guid: 12ed187a92886ea36aca19990d8d6079, type: 2}
+  finalizado: 0
+  typeText: {fileID: 1875103667}
+  dialogueUI: {fileID: 1875103668}
 --- !u!1 &1894153547
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,8 +6140,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654951624}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1654951631}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -6308,8 +6332,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2097200086}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 2097200093}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: BtnNext
         m_Mode: 1
         m_Arguments:
@@ -6443,8 +6467,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1225605376}
-        m_TargetAssemblyTypeName: SistemaLegendasFinal, Assembly-CSharp
+      - m_Target: {fileID: 1225605377}
+        m_TargetAssemblyTypeName: SistemaLegendasQuartoDia, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
         m_Arguments:
@@ -6622,8 +6646,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6756,8 +6780,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7265,7 +7289,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -7295,7 +7319,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 108}
-  m_SizeDelta: {x: 419.42, y: 432.77}
+  m_SizeDelta: {x: 221.31, y: 228.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2097200084
 GameObject:
@@ -7309,9 +7333,9 @@ GameObject:
   - component: {fileID: 2097200092}
   - component: {fileID: 2097200091}
   - component: {fileID: 2097200090}
-  - component: {fileID: 2097200086}
+  - component: {fileID: 2097200094}
+  - component: {fileID: 2097200093}
   - component: {fileID: 2097200087}
-  - component: {fileID: 2097200089}
   - component: {fileID: 2097200088}
   m_Layer: 5
   m_Name: Cena5
@@ -7344,23 +7368,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2097200086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097200084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e053468147e4f4f9f00a4661eddd49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueData: {fileID: 11400000, guid: ad5d8f38a3de6120cba63460c8237855, type: 2}
-  finalizado: 0
-  typeText: {fileID: 2097200088}
-  dialogueUI: {fileID: 2097200087}
-  creditos: {fileID: 2139207526}
 --- !u!114 &2097200087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7391,21 +7398,6 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 1815798690}
   fullText: 
---- !u!114 &2097200089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097200084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3ed1adce6208243bcd84bb3ad8dd16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  legendas: {fileID: 2097200086}
-  Skip: {fileID: 1755686771}
-  Next: {fileID: 1899229343}
 --- !u!114 &2097200090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7469,6 +7461,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2097200093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097200084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f391b3f1e1d2a4e8533a0108a1cdbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: 13a227f75fd85eb009a3e2078f28720b, type: 2}
+  finalizado: 0
+  typeText: {fileID: 2097200088}
+  dialogueUI: {fileID: 2097200087}
+--- !u!114 &2097200094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097200084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911bff8f9c8f25f44b3cf674e4a9ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  legendas: {fileID: 2097200093}
+  Skip: {fileID: 1755686771}
+  Next: {fileID: 1899229343}
 --- !u!1 &2123754991
 GameObject:
   m_ObjectHideFlags: 0
