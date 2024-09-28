@@ -9,7 +9,7 @@ public class ProximityDetector : MonoBehaviour
     private GameObject boneco; // the object to detect proximity to
     [SerializeField] private GameObject textBox;
     [SerializeField] private TextBoxAnimation textBoxAnimation;
-    public GameObject textoInteracao;
+    [SerializeField] private GameObject textoInteracao;
     public EscritosSO escritoNoMovel;
     [SerializeField] private DocumentosEncontrados documentosEncontrados;
     [SerializeField] private Button btnSim;
@@ -42,11 +42,13 @@ public class ProximityDetector : MonoBehaviour
         if (existeDoc) {
             if (horizontalDistance <= horizontalRange && verticalDistance <= verticalRange) {
                 textoInteracao.SetActive(true);
+                Debug.Log("Texto interacao active");
                 if(Input.GetKeyDown(KeyCode.E)) {
 
                     Debug.Log("E key was released.");
 
                     textoInteracao.SetActive(false);
+                    Debug.Log("Texto interacao desactivated");
                     textBox.SetActive(true);
 
                     textBoxAnimation.StartTyping();

@@ -888,6 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 362c521b589b5a342ade0172f6ef9a6e, type: 2}
+  finalizado: 0
   typeText: {fileID: 381367690}
   dialogueUI: {fileID: 381367689}
   creditos: {fileID: 2139207526}
@@ -1302,7 +1303,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.11372549, g: 0.1254902, b: 0.24313726, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1848,6 +1849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 9def8f5015d4fdb4885d429bfc597e81, type: 2}
+  finalizado: 0
   typeText: {fileID: 1225605373}
   dialogueUI: {fileID: 1225605375}
   creditos: {fileID: 2139207526}
@@ -3253,6 +3255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: b78728bf1b3b1a84080f0778c8bdf4f4, type: 2}
+  finalizado: 0
   typeText: {fileID: 1875103667}
   dialogueUI: {fileID: 1875103668}
   creditos: {fileID: 2139207526}

@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: 'final 2 '
+    text: "Sinto muito, Operador, mas o Programa de Antenas est\xE1 sendo encerrado. "
   - name: 
-    text: 'final 2 legenda 2
-
-'
+    text: "Foram encontrados ind\xEDcios de que poderiam haver infiltrados dos rebeldes
+      trabalhando entre voc\xEAs, ent\xE3o n\xF3s decidimos encerrar de vez. \n"
+  - name: 
+    text: "Mensagens s\xF3 poder\xE3o ser transmitidas agora por meios oficiais,
+      nada de civis para tramar contra seu pr\xF3prio pa\xEDs."
+  - name: 
+    text: "E voc\xEAs operadores... est\xE3o dispensados. \n"
+  - name: 
+    text: "Voc\xEAs serviram bem, mas, veja bem, n\xE3o podemos deixar essa situa\xE7\xE3o
+      passar... impune. As pessoas entendem exemplos, Operador.\n"
+  - name: 
+    text: "Gl\xF3ria a Invicta,\_Operador."
+  - name: 
+    text: "Ent\xE3o daremos a elas um belo exemplo. Obrigado pelos seus servi\xE7os
+      \xE0 p\xE1tria, e lembre-se sempre: o trabalho liberta.\n"

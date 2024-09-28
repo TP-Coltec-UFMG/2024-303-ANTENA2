@@ -603,6 +603,7 @@ Transform:
   - {fileID: 20832910}
   - {fileID: 1277094809}
   - {fileID: 537367052}
+  - {fileID: 1080208333}
   m_Father: {fileID: 2102791241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60071942
@@ -904,12 +905,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 116369052}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 116369052}
+  m_maskType: 0
 --- !u!23 &116369052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1489,12 +1490,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 168441788}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 168441788}
+  m_maskType: 0
 --- !u!23 &168441788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2650,9 +2651,6 @@ GameObject:
   - component: {fileID: 301583159}
   - component: {fileID: 301583160}
   - component: {fileID: 301583161}
-  - component: {fileID: 301583164}
-  - component: {fileID: 301583163}
-  - component: {fileID: 301583162}
   m_Layer: 0
   m_Name: Geladeira
   m_TagString: Untagged
@@ -2772,61 +2770,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4444447, y: 5.3974895}
   m_EdgeRadius: 0
---- !u!114 &301583162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301583158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b25e7d8493e51d3816993ebc187411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typeDelay: 0.05
-  textObject: {fileID: 767301928}
-  inicioFrase: "Voc\xEA encontrou"
-  finalFrase: .Gostaria de ler?
-  escritosDocs: {fileID: 11400000, guid: 97eddf0538ed8154b8027186d38d4942, type: 2}
---- !u!114 &301583163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301583158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  documentos: {fileID: 11400000, guid: 97eddf0538ed8154b8027186d38d4942, type: 2}
-  textObject: {fileID: 1179695247}
-  fundoDoc: {fileID: 259432883}
-  fundoPreto: {fileID: 1386863776}
-  textBox: {fileID: 1602701375}
---- !u!114 &301583164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301583158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d8333a6e4ecea59bae172642e82eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalRange: 3
-  verticalRange: 5
-  textBox: {fileID: 1602701375}
-  textBoxAnimation: {fileID: 301583162}
-  textoInteracao: {fileID: 1410900304}
-  escritoNoMovel: {fileID: 11400000, guid: 97eddf0538ed8154b8027186d38d4942, type: 2}
-  documentosEncontrados: {fileID: 301583163}
-  btnSim: {fileID: 580885539}
-  btnFecha: {fileID: 817684870}
 --- !u!1 &329446796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,9 +3816,6 @@ GameObject:
   m_Component:
   - component: {fileID: 487387214}
   - component: {fileID: 487387215}
-  - component: {fileID: 487387219}
-  - component: {fileID: 487387217}
-  - component: {fileID: 487387218}
   - component: {fileID: 487387216}
   m_Layer: 0
   m_Name: Caixas2
@@ -3996,61 +3936,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.987677, y: 1.1316805}
   m_EdgeRadius: 0
---- !u!114 &487387217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487387213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d8333a6e4ecea59bae172642e82eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalRange: 2
-  verticalRange: 1.8
-  textBox: {fileID: 1602701375}
-  textBoxAnimation: {fileID: 487387218}
-  textoInteracao: {fileID: 1410900304}
-  escritoNoMovel: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
-  documentosEncontrados: {fileID: 487387219}
-  btnSim: {fileID: 580885539}
-  btnFecha: {fileID: 817684870}
---- !u!114 &487387218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487387213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b25e7d8493e51d3816993ebc187411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typeDelay: 0.05
-  textObject: {fileID: 767301928}
-  inicioFrase: "Voc\xEA encontrou"
-  finalFrase: . Gostaria de ler?
-  escritosDocs: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
---- !u!114 &487387219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487387213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  documentos: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
-  textObject: {fileID: 1384110722}
-  fundoDoc: {fileID: 2094249}
-  fundoPreto: {fileID: 1386863776}
-  textBox: {fileID: 1602701375}
 --- !u!1 &520119897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,12 +6027,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 687962260}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 687962260}
+  m_maskType: 0
 --- !u!23 &687962260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6637,12 +6522,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 721815490}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 721815490}
+  m_maskType: 0
 --- !u!23 &721815490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8864,9 +8749,6 @@ GameObject:
   - component: {fileID: 992591841}
   - component: {fileID: 992591842}
   - component: {fileID: 992591843}
-  - component: {fileID: 992591846}
-  - component: {fileID: 992591845}
-  - component: {fileID: 992591844}
   m_Layer: 0
   m_Name: "Sof\xE1"
   m_TagString: Untagged
@@ -8986,61 +8868,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.6666665, y: 8.623835}
   m_EdgeRadius: 0
---- !u!114 &992591844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992591840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  documentos: {fileID: 11400000, guid: ba68a3391c71b3f4c946e2dcec3c4a97, type: 2}
-  textObject: {fileID: 1128833273}
-  fundoDoc: {fileID: 2039081492}
-  fundoPreto: {fileID: 1386863776}
-  textBox: {fileID: 1602701375}
---- !u!114 &992591845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992591840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d8333a6e4ecea59bae172642e82eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalRange: 6
-  verticalRange: 6
-  textBox: {fileID: 1602701375}
-  textBoxAnimation: {fileID: 992591846}
-  textoInteracao: {fileID: 1410900304}
-  escritoNoMovel: {fileID: 11400000, guid: ba68a3391c71b3f4c946e2dcec3c4a97, type: 2}
-  documentosEncontrados: {fileID: 992591844}
-  btnSim: {fileID: 580885539}
-  btnFecha: {fileID: 817684870}
---- !u!114 &992591846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992591840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b25e7d8493e51d3816993ebc187411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typeDelay: 0.05
-  textObject: {fileID: 767301928}
-  inicioFrase: "Voc\xEA encontrou"
-  finalFrase: . Gostaria de ler?
-  escritosDocs: {fileID: 11400000, guid: ba68a3391c71b3f4c946e2dcec3c4a97, type: 2}
 --- !u!1 &1001676474
 GameObject:
   m_ObjectHideFlags: 0
@@ -9776,6 +9603,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068977335}
   m_CullTransparentMesh: 1
+--- !u!1 &1080208332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080208333}
+  - component: {fileID: 1080208334}
+  m_Layer: 0
+  m_Name: fundo_janela_arm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1080208333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080208332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.4, y: 67.97, z: -0.74238575}
+  m_LocalScale: {x: 5.7018, y: 3.7342, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 49315988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1080208334
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080208332}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1083327049
 GameObject:
   m_ObjectHideFlags: 0
@@ -10117,7 +10028,7 @@ MonoBehaviour:
   textBox: {fileID: 1602701375}
   textBoxAnimation: {fileID: 1124078698}
   textoInteracao: {fileID: 1410900304}
-  escritoNoMovel: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
+  escritoNoMovel: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
   documentosEncontrados: {fileID: 1124078699}
   btnSim: {fileID: 580885539}
   btnFecha: {fileID: 817684870}
@@ -10137,7 +10048,7 @@ MonoBehaviour:
   textObject: {fileID: 767301928}
   inicioFrase: "Voc\xEA encontrou"
   finalFrase: .Gostaria de ler?
-  escritosDocs: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
+  escritosDocs: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
 --- !u!114 &1124078699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10150,9 +10061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5fc80f92ba04753adcf8db8f385a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  documentos: {fileID: 11400000, guid: 32d4231828f51d14ea234a64c9be9bec, type: 2}
-  textObject: {fileID: 1427014785}
-  fundoDoc: {fileID: 717985995}
+  documentos: {fileID: 11400000, guid: 8e9bf6063074fc44d86399cde3d225a4, type: 2}
+  textObject: {fileID: 1384110722}
+  fundoDoc: {fileID: 2094249}
   fundoPreto: {fileID: 1386863776}
   textBox: {fileID: 1602701375}
 --- !u!1 &1128833271
@@ -11520,6 +11431,7 @@ Transform:
   - {fileID: 605733060}
   - {fileID: 1640129417}
   - {fileID: 2087232564}
+  - {fileID: 1618806360}
   m_Father: {fileID: 2102791241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313305028
@@ -13866,6 +13778,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608116517}
   m_CullTransparentMesh: 1
+--- !u!1 &1618806359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618806360}
+  - component: {fileID: 1618806361}
+  m_Layer: 0
+  m_Name: fundo_janela_transm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618806360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618806359}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.17, y: 73.94, z: -0.74238575}
+  m_LocalScale: {x: 5.7018, y: 3.7342, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1299595663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1618806361
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618806359}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1640129416
 GameObject:
   m_ObjectHideFlags: 0
