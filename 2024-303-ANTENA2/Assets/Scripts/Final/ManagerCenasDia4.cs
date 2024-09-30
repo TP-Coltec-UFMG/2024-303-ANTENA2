@@ -75,6 +75,9 @@ public class ManagerCenasDia4 : MonoBehaviour {
     }
 
     public void botaoNao() {
+        cena1.SetActive(false);
+        Sim.SetActive(false);
+        Nao.SetActive(false);
         cena6.SetActive(true);
     }
 }
