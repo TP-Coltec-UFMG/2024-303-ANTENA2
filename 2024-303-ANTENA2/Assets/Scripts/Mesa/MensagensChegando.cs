@@ -32,12 +32,8 @@ public class MensagensChegando : MonoBehaviour
     {
         if (_numMensagensDisplay >= slots.Length) return;
 
-        Debug.Log(slots.Length);
-        Debug.Log(Instance.slots[_numMensagensDisplay].name);
-
         MensagemNova mensagemNovaObj = Instantiate(mensagemNova, Instance.slots[_numMensagensDisplay].transform);
         _numMensagensDisplay++;
-        Debug.Log(_numMensagensDisplay);
         _mensagemNovas.Add(mensagemNovaObj);
         mensagemNovaObj.SetMensagem(mensagem);
         mensagemChegando.Play();
@@ -56,7 +52,6 @@ public class MensagensChegando : MonoBehaviour
         }
 
         _numMensagensDisplay--;
-        Debug.Log(_numMensagensDisplay);
     }
 
     public static void HideMessages(bool state)

@@ -14,17 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: "Ap\xF3s intensa reflex\xE3o, ciente dos riscos envolvidos, voc\xEA decide
-      enviar o hack para os rebeldes... e assim que a mensagem \xE9 transmitida,
-      os militares descobrem sua a\xE7\xE3o."
+    text: "Voc\xEA levanta da sua Mesa de Transmiss\xE3o, enquanto ouve o ru\xEDdo
+      de carros se aproximando da sua Cabana."
   - name: 
-    text: "e assim que a mensagem \xE9 transmitida, os militares descobrem sua a\xE7\xE3o."
+    text: "Voc\xEA sabe quem s\xE3o, voc\xEA sabe porqu\xEA est\xE3o aqui. Voc\xEA
+      traiu Invicta, e ela agora veio cobrar o pre\xE7o. "
   - name: 
-    text: "Aflito com sua decis\xE3o, voc\xEA recebe uma mensagem dos rebeldes envolvendo
-      um ponto de encontro para fuga."
+    text: "Quando voc\xEA abre a porta, voc\xEA v\xEA tr\xEAs figuras\u2026 mas n\xE3o
+      soldados invictos, como voc\xEA esperava."
   - name: 
-    text: "Antes mesmo dos militares chegarem, voc\xEA corre para se juntar aos rebeldes
-      do lado de fora."
+    text: " O rosto s\xE9rio, e ao mesmo tempo terno, de Jaques. Ao seu lado, Dreyfus
+      e um outro soldado rebelde que voc\xEA desconhece.\r\n"
   - name: 
-    text: "Juntos, voc\xEAs fogem sob a escurid\xE3o, sentindo a adrenalina da luta
-      pela liberdade e pela justi\xE7a, tornando-se verdadeiros soldados da resist\xEAncia.\r\n"
+    text: "Jaques se aproxima de voc\xEA e te informa sobre as opera\xE7\xF5es internas
+      do governo de Invicta. "
+  - name: 
+    text: "Centenas de funcion\xE1rios mortos, milhares exilados e presos, tudo por
+      conta da suspeita de espi\xF5es rebeldes nos escrit\xF3rios governamentais."
+  - name: 
+    text: "Centenas de funcion\xE1rios mortos, milhares exilados e presos, tudo por
+      conta da suspeita de espi\xF5es rebeldes nos escrit\xF3rios governamentais."
+  - name: 
+    text: " Dreyfus tamb\xE9m conta sobre a informa\xE7\xE3o que eles interceptaram
+      acerca do projeto de execu\xE7\xE3o dos Operadores das Antenas."
+  - name: 
+    text: "\u201CEles dizem que voc\xEAs s\xE3o terroristas infiltrados\u201D, ele
+      conta, e te pede para juntar suas coisas. Para sobreviver, voc\xEA ter\xE1
+      de fugir com eles. \r\n"
+  - name: 
+    text: "Ap\xF3s arrumar os preparativos, voc\xEAs partem. Uma \xFAltima vez, voc\xEA
+      olha a Cabana de Transmiss\xE3o. N\xE3o \xE9 s\xF3 ela que voc\xEA est\xE1
+      deixando para tr\xE1s..."
+  - name: 
+    text: "Mas voc\xEA desvia o olhar. O caminho que voc\xEA tem que seguir n\xE3o
+      est\xE1 \xE0s suas costas, mas \xE0 sua frente.\r\n"
+  - name: 
+    text: "\u201CParab\xE9ns, Operador\u2026 voc\xEA agora \xE9 um rebelde.\u201D\r\n"
