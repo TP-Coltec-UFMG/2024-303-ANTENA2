@@ -14,6 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: 
-    text: final 1
+    text: "Ap\xF3s intensa reflex\xE3o, ciente dos riscos envolvidos, voc\xEA decide
+      enviar o hack para os rebeldes... e assim que a mensagem \xE9 transmitida,
+      os militares descobrem sua a\xE7\xE3o."
   - name: 
-    text: final 1 legenda 2
+    text: "e assim que a mensagem \xE9 transmitida, os militares descobrem sua a\xE7\xE3o."
+  - name: 
+    text: "Aflito com sua decis\xE3o, voc\xEA recebe uma mensagem dos rebeldes envolvendo
+      um ponto de encontro para fuga."
+  - name: 
+    text: "Antes mesmo dos militares chegarem, voc\xEA corre para se juntar aos rebeldes
+      do lado de fora."
+  - name: 
+    text: "Juntos, voc\xEAs fogem sob a escurid\xE3o, sentindo a adrenalina da luta
+      pela liberdade e pela justi\xE7a, tornando-se verdadeiros soldados da resist\xEAncia.\r\n"
