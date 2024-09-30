@@ -11967,6 +11967,9 @@ MonoBehaviour:
   dialogueData:
   - {fileID: 11400000, guid: 0f8406f92945a084989dc1bdaad67405, type: 2}
   - {fileID: 11400000, guid: bf12d57aaf69f034db7dd9b14992b134, type: 2}
+  - {fileID: 11400000, guid: 4658dc5dec2524043acb12eb5b05bd07, type: 2}
+  - {fileID: 11400000, guid: 3aa1d5092f6c65f4fa0ac90fd8060b1e, type: 2}
+  - {fileID: 11400000, guid: 82cd5fefe555fa14aaf948c05a90b47b, type: 2}
   telefoneDesliga: {fileID: 0}
   typeText: {fileID: 1605516013}
   dialogueUI: {fileID: 1692315139}
