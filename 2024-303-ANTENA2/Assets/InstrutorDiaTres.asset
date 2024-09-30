@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2eaeab75de99a449d574f0832f6a0d, type: 3}
+  m_Name: InstrutorDiaTres
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: 
+    text: "Iniciando conex\xE3o com a Antena de Retransmiss\xE3o N\xB02, protocolo
+      1011008-809.\r\nAntena 2, na escuta?\r"
+  - name: 
+    text: "\u2014 sim\u2026 "
+  - name: 
+    text: "Certo, vamos come\xE7ar. \t"
+  - name: 
+    text: "N\xE3o sei se voc\xEA ficou sabendo, mas houve ontem uma opera\xE7\xE3o
+      do ex\xE9rcito. Por causa dos resultado da opera\xE7\xE3o, suspeitamos que
+      os rebeldes podem estar de alguma forma interceptando nossas transmiss\xF5es."
+  - name: 
+    text: "Precisamos ficar em alerta, operador, ent\xE3o seja r\xEDgido: qualquer
+      mensagem com suspeitas de envolvimento rebelde, denuncie."
+  - name: 
+    text: "Teremos mais atualiza\xE7\xF5es amanh\xE3, provavelmente. At\xE9 l\xE1
+      operador, fique atento. Gl\xF3ria a Invicta!"
+  - name: 
+    text: "\rEncerrando conex\xE3o com a Antena de Retransmiss\xE3o N\xB0 2.\r"
