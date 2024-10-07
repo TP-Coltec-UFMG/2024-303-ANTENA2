@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc74237fcfebcf41a20f30a83dd6d05, type: 3}
   m_Name: 20
   m_EditorClassIdentifier: 
-  mensagem: "O DIG entrou em contato conosco na noite passada. Disseram que a revis\xE3o
-    ainda vai demorar alguns dias, mas provavelmente eles est\xE3o pedindo mais tempo
-    do que precisam. Eu tenho o contato de pessoas l\xE1 dentro, vou tentar pression\xE1-los
-    pra ver se conseguimos adiantar as coisas."
+  mensagem: "O D.I.G. entrou em contato conosco na noite passada. Disseram que a
+    revis\xE3o ainda vai demorar alguns dias, mas provavelmente eles est\xE3o pedindo
+    mais tempo do que precisam. Eu tenho o contato de pessoas l\xE1 dentro, vou tentar
+    pression\xE1-los pra ver se conseguimos adiantar as coisas."
   tiposDeCifra: 
   frequencia: 114.6
   chave: 0

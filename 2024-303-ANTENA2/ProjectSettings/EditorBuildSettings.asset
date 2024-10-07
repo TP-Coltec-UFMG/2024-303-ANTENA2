@@ -15,17 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d7a548161621fa44bbaa7901871fbcb5
   - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 38cf4f861664d3448921836d1876661b
+  - enabled: 1
+    path: Assets/Scenes/Mesa.unity
+    guid: 559f052fb5dfcd14ea0b6df49e5a51d1
+  - enabled: 1
     path: Assets/Scenes/Casa.unity
     guid: c67ab41ee06d15c408ddc25ef760acce
   - enabled: 1
     path: Assets/Scenes/Rebeldes4Dia.unity
     guid: fad69b5e576bf4bc3ab163069755815d
-  - enabled: 1
-    path: Assets/Scenes/Mesa.unity
-    guid: 559f052fb5dfcd14ea0b6df49e5a51d1
-  - enabled: 1
-    path: Assets/Scenes/Inicio.unity
-    guid: 38cf4f861664d3448921836d1876661b
   - enabled: 1
     path: Assets/Scenes/Final.unity
     guid: 95d59d597816fe042a0aafccb7fc664a

@@ -24,34 +24,39 @@ MonoBehaviour:
     text: "Seja bem vindo ao que voc\xEA vai chamar de lar por um bom tempo..."
   - name: 
     text: "Pode n\xE3o ser o mais confort\xE1vel, muito menos o mais limpo, mas tenho
-      certeza que voc\xEA vai se acostumar rapidinho. "
+      certeza que voc\xEA vai se acostumar rapidinho. Mas bem que a gente podia dar
+      uma reformada nessas cabanas de transmiss\xE3o depois, n\xE9? Vou dar uma olhada
+      com o chefe..."
   - name: 
     text: "Deve ter algumas comidas na geladeira que v\xE3o durar a semana inteira,
       nos fins de semana eu sempre fa\xE7o uma visitinha para repor seu estoque,
       ent\xE3o por favor, pelo menos tome um banho!\r\n"
   - name: 
-    text: "Mas chega de papo furado, vamos falar sobre o que voc\xEA vai fazer a\xED:
+    text: "Mas chega de papo furado, vamos falar sobre o que voc\xEA vai fazer a\xED.
       \r\n"
   - name: 
     text: "Seu trabalho consiste em receber as mensagens que s\xE3o enviadas para
-      a sua torre e retransmiti-las, com o aux\xEDlio da sua melhor amiga daqui pra
-      frente: a mesa de transmiss\xE3o!"
+      a sua torre e retransmiti-las. Como qualquer um pode transmitir coisas nas
+      frequ\xEAncias de r\xE1dio, \xE9 seu trabalho mant\xEA-las seguras."
   - name: 
-    text: "V\xE1 para o lado (<--) para acess\xE1-la."
+    text: "Voc\xEA far\xE1 isso com o aux\xEDlio da sua melhor amiga daqui pra frente:
+      a mesa de transmiss\xE3o! V\xE1 para o lado (aperte <-- setinha pra esquerda)
+      para acess\xE1-la."
   - name: 
     text: "Ela pode causar uma m\xE1 impress\xE3o no come\xE7o mas n\xE3o se preocupe,
       todos gostam dela com o tempo! Ou pelo menos a maioria.\r\n"
   - name: 
     text: "Ent\xE3o vamos come\xE7ar explicando as fun\xE7\xF5es dela:\r\n"
   - name: 
-    text: "Do lado esquerdo da mesa temos a Caixa de Entrada, onde voc\xEA receber\xE1
-      as mensagens que voc\xEA precisa decodificar. Para visualiz\xE1-las melhor,
-      s\xF3 selecione-as e depois clique no Editor de Mensagens no centro da mesa..\r\n"
+    text: "Do lado esquerdo inferior da mesa temos a Caixa de Entrada, onde voc\xEA
+      receber\xE1 as mensagens que voc\xEA precisa decodificar. Para visualiz\xE1-las
+      melhor, s\xF3 selecione-as e depois clique no Editor de Mensagens, o quadrad\xE3o
+      no centro da mesa.\r\n"
   - name: 
     text: "Voc\xEA vai perceber que as mensagens chegam no m\xEDnimo, estranhas\u2026
       \r"
   - name: 
-    text: "mas n\xE3o se preocupe, isso s\xE3o apenas Cifras, medidas de seguran\xE7a
+    text: "Mas n\xE3o se preocupe, isso s\xE3o apenas Cifras, medidas de seguran\xE7a
       para evitar que o conte\xFAdo delas seja acessado caso elas sejam interceptadas
       por aqueles rebeldezinhos de merda. "
   - name: 
@@ -59,7 +64,7 @@ MonoBehaviour:
       nem se tentassem!"
   - name: 
     text: "Para conseguir decodific\xE1-las voc\xEA vai precisar do seu Cat\xE1logo
-      de Cifras. "
+      de Cifras, aquela gaveta com v\xE1rias pastas coloridas, na direita embaixo. "
   - name: 
     text: "Selecione o trecho codificado que voc\xEA deseja decodificar no Editor
       de Mensagens e depois selecione a Cifra correspondente no Cat\xE1logo de Cifras."
@@ -80,7 +85,8 @@ MonoBehaviour:
       por rebeldes, ela deve ser denunciada, e n\xF3s tomaremos as devidas provid\xEAncias."
   - name: 
     text: "Mas, caso esteja tudo certinho, selecione a frequ\xEAncia correta no Seletor
-      de Frequ\xEAncias e envie-a!\r\n \r      \r\n"
+      de Frequ\xEAncias, o tro\xE7o que parece um r\xE1dio no canto superior esquerdo,
+      e envie-a!\r\n \r      \r\n"
   - name: 
     text: "\xC9 isso! Nada muito complicado, n\xE3o \xE9?\n"
   - name: 
@@ -91,8 +97,8 @@ MonoBehaviour:
       funcionamento da Antena e da pr\xF3pria Mesa tamb\xE9m."
   - name: 
     text: "N\xE3o precisa se preocupar com eles, o m\xE1ximo que voc\xEA vai ter
-      que fazer \xE9 seguir as instru\xE7\xF5es que aparecerem no Monitor de Manuten\xE7\xE3o
-      que fica ali em cima."
+      que fazer \xE9 seguir as instru\xE7\xF5es que aparecerem no Monitor de Manuten\xE7\xE3o,
+      que fica ali em cima \xE0 direita."
   - name: 
     text: "Caso d\xEA algum biziu nos sistemas internos da Torre, ele vai mostrar
       os bot\xF5es que voc\xEA precisa apertar, voc\xEA aperta e tudo resolvido. "
@@ -125,10 +131,11 @@ MonoBehaviour:
   - name: 
     text: "\xC0s 18h acaba seu turno e a mesa \xE9 automatizada para desligar nesse
       hor\xE1rio por quest\xF5es de seguran\xE7a, mas caso voc\xEA termine antes
-      basta apertar o maior bot\xE3o e ela desliga.\r\n"
+      basta apertar o maior bot\xE3o e ela desliga. Mas nada de abusar em? O bot\xE3o
+      s\xF3 \xE9 liberado DEPOIS que seu hor\xE1rio de trabalho acaba. \r\n"
   - name: 
-    text: "Lembre-se de fechar as janelas antes de dormir, voc\xEA n\xE3o vai querer
-      ouvir a sinfonia dos pernilongos \xE0 noite."
+    text: "Lembre-se tamb\xE9m de fechar as janelas antes de dormir, voc\xEA n\xE3o
+      vai querer ouvir a sinfonia dos pernilongos \xE0 noite."
   - name: 
     text: "Bom, por hoje \xE9 isso! Em breve voc\xEA deve come\xE7ar a receber as
       mensagens."
